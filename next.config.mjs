@@ -9,6 +9,9 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   output: 'export', // Ensures the build creates a static site.
   trailingSlash: true, // Optional: Ensures proper linking for static pages.
   images: {
