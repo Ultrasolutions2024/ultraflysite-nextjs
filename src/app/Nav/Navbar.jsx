@@ -281,9 +281,9 @@ function Navbar() {
             </div>
           </div>
 
-          <Link href="/blog" className="hover:text-[#007bff] text-gray-700 font-semibold ">
+          {/* <Link href="/blog" className="hover:text-[#007bff] text-gray-700 font-semibold ">
             Blog
-          </Link>
+          </Link> */}
           <div href="  " className="group max-lg:border-b max-lg:py-3 relative">
             <p
               href="javascript:void(0)"
@@ -556,11 +556,11 @@ function Navbar() {
               )}
             </li>
 
-            <li className="border-b" onClick={toggleMenu}>
+            {/* <li className="border-b" onClick={toggleMenu}>
               <Link href="/blog" className="block py-2">
                 Blog
               </Link>
-            </li>
+            </li> */}
             <li className="border-b">
               <button
                 onClick={() => toggleDropdown(3)}
