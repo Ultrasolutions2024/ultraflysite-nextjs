@@ -57,7 +57,7 @@ function LinkedinFollowers() {
         </div>
 
         <span className="text-lg md:text-2xl font-bold text-gray-500 pl-6">
-          735 Articles
+          1 Articles
         </span>
       </div>
 
