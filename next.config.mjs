@@ -2,10 +2,11 @@ import path from 'path';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // webpack: (config) => {
-  //   config.resolve.alias['@'] = path.resolve('src');
-  //   return config;
-  // },
+  webpack: (config) => {
+    config.resolve.alias['@'] = path.resolve('src');
+    config.cache = false;
+    return config;
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -16,7 +17,7 @@ const nextConfig = {
   trailingSlash: true, // Optional: Ensures proper linking for static pages.
   images: {
     domains: ['readymadeui.com', 'ultraflysolutions.com'], // Add the external domain here.
-    unoptimized:true
+    unoptimized: true,
   },
 };
 
