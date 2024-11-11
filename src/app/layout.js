@@ -25,16 +25,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-      <meta name="google-site-verification" content="SwDsm2it5yHa7AES5dS3Gk8qwJMCmlM8m_pMlASrmlY" />
+        {/* Google Site Verification */}
+        <meta
+          name="google-site-verification"
+          content="SwDsm2it5yHa7AES5dS3Gk8qwJMCmlM8m_pMlASrmlY"
+        />
         <meta name="yandex-verification" content="5fa3dbee124941e5" />
         <link rel="apple-touch-icon" href="./favicon.ico" />
       </Head>
       <body>
-        <TopHeader />
-        <Navbar />
-        {children}
-        <SocialMedias />
-        <Footer />
+        <div className="app-container">
+          <TopHeader />
+          <Navbar />
+          <main className="main-content h-full">{children}</main>
+          <SocialMedias />
+          <Footer />
+        </div>
 
         {/* Schema Markup */}
         <Script
@@ -63,7 +69,11 @@ export default function RootLayout({ children }) {
         />
 
         {/* StatCounter */}
-        <Script type="text/javascript" id="statcounter-script" strategy="afterInteractive">
+        <Script
+          type="text/javascript"
+          id="statcounter-script"
+          strategy="afterInteractive"
+        >
           {`
             var sc_project=13049783; 
             var sc_invisible=1; 

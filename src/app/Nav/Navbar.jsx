@@ -129,7 +129,7 @@ function Navbar() {
                         </p>
                       </li>
                     </Link>
-                    <Link href="/hire-laravel-developers"  prefetch={false}>
+                    <Link href="/hire-laravel-developers">
                       <li className="max-lg:border-b px-2 -ml-2 rounded-lg  py-2  transition-transform transform hover:scale-105 hover:shadow-lg">
                         <p className="hover:text-[#007bff] text-gray-500 font-bold text-sm block">
                           Hire Laravel Developers
@@ -150,7 +150,7 @@ function Navbar() {
                         </p>
                       </li>
                     </Link>
-                    <Link href="/hire-python-developers"  prefetch={false}>
+                    <Link href="/hire-python-developers">
                       <li className="max-lg:border-b px-2 -ml-2 rounded-lg  py-2  transition-transform transform hover:scale-105 hover:shadow-lg">
                         <p className="hover:text-[#007bff] text-gray-500 font-bold text-sm block">
                           Hire Python Developers
