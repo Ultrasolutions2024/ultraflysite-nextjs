@@ -1,5 +1,8 @@
 import React from 'react'
-import Portfolio from './portfolio'
+import dynamic from 'next/dynamic';
+const Portfolio=dynamic(()=>import('./portfolio'),{
+  ssr:false
+})
 export const metadata = {
   title: `Our Portfolio | Ultrafly Solutions`,
   description:

@@ -1,5 +1,8 @@
 import React from "react";
-import Angular from "./Angular";
+import dynamic from "next/dynamic";
+const Angular=dynamic(()=>import('./Angular'),{
+  ssr:false
+})
 export const metadata = {
   title: "Hire AngularJS Developers | Ultrafly Solutions for Web Apps",
   description:

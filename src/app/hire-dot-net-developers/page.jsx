@@ -1,5 +1,8 @@
 import React from "react";
-import Dotnet from "./Dotnet";
+import dynamic from "next/dynamic";
+const Dotnet=dynamic(()=>import('./Dotnet'),{
+  ssr:false,
+})
 export const metadata = {
   title: ` Hire Expert .NET Developers | Ultrafly Solutions for Scalable Apps`,
   description:

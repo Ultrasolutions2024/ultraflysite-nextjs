@@ -1,5 +1,8 @@
 import React from "react";
-import LinkedinFollowers from "./LinkedinFollowers";
+import dynamic from "next/dynamic";
+const LinkedinFollowers=dynamic(()=>import('./LinkedinFollowers'),{
+  ssr:false
+})
 export const metadata = {
   title: "Top 05 Mobile App Development Frameworks in 2024",
   description: "Top 05 Mobile App Development Frameworks in 2024",

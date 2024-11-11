@@ -1,5 +1,8 @@
 import React from "react";
-import Javascript from "./Javascript";
+import dynamic from "next/dynamic";
+const Javascript=dynamic(()=>import('./Javascript'),{
+  ssr:false
+})
 export const metadata = {
   title: `Hire JavaScript Developers | Ultrafly Solutions for Interactive App`,
   description:

@@ -1,5 +1,8 @@
 import React from 'react'
-import Contact from './Contact';
+import dynamic from 'next/dynamic';
+const Contact=dynamic(()=>import('./Contact'),{
+  ssr:false
+})
 export const metadata = {
   title: "Contact Us | Ultrafly Solutions",
   description: "Get in touch with Ultrafly Solutions for expert IT solutions and services. We're here to help your business grow and succeed.",

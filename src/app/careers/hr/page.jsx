@@ -1,10 +1,10 @@
-import React from 'react'
-import Hr from './Hr'
-
+import React from "react";
+import dynamic from "next/dynamic";
+const Hr = dynamic(() => import("./Hr"), {
+  ssr: false,
+});
 function page() {
-  return (
-    <Hr/>
-  )
+  return <Hr />;
 }
 
-export default page
+export default page;

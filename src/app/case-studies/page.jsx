@@ -1,5 +1,8 @@
 import React from "react";
-import Casest from "./casest";
+import dynamic from "next/dynamic";
+const Casest=dynamic(()=>import('./casest'),{
+  ssr:false
+})
 export const metadata = {
   title: "Case Studies | Ultrafly Solutions",
   description:

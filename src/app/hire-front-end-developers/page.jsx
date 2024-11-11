@@ -1,5 +1,8 @@
 import React from "react";
-import FrontendDevelopers from "./FrontendDevelopers";
+import dynamic from "next/dynamic";
+const FrontendDevelopers =dynamic(()=>import('./FrontendDevelopers'),{
+  ssr:false
+})
 export const metadata = {
   title: "Hire Frontend Developers | Ultrafly Solutions for Web Apps",
   description:

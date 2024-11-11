@@ -1,5 +1,8 @@
 import React from "react";
-import Seo from "./Seo";
+import dynamic from "next/dynamic";
+const Seo=dynamic(()=>import('./Seo'),{
+  ssr:false
+})
 export const metadata = {
   title: "SEO & Digital Marketing | Ultrafly Solutions ",
   description:

@@ -1,5 +1,8 @@
 import React from "react";
-import ReactNative from "./ReactNative";
+import dynamic from "next/dynamic"; 
+const ReactNative=dynamic(()=>import('./ReactNative'),{
+  ssr:false
+})
 export const metadata = {
   title: "Hire React Native Developers | Ultrafly Solutions for Fast Apps",
   description:

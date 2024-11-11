@@ -1,5 +1,8 @@
 import React from "react";
-import Android from "./Android";
+import dynamic from "next/dynamic";
+const Android=dynamic(()=>import('./Android'),{
+  ssr:false
+})
 export const metadata = {
   title: "Hire Android App Developers | Ultrafly Solutions for Mobile",
   description:

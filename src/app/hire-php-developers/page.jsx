@@ -1,5 +1,8 @@
 import React from "react";
-import PHP from "./php";
+import dynamic from "next/dynamic";
+const PHP=dynamic(()=>import('./php'),{
+  ssr:false
+})
 export const metadata = {
   title: ` Hire PHP Developers | Ultrafly Solutions for Web Solutions`,
   description:

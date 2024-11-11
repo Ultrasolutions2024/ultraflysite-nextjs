@@ -1,5 +1,8 @@
 import React from "react";
-import UnlockingSuccess from "./UnlockingSuccess";
+import dynamic from "next/dynamic";
+const UnlockingSuccess=dynamic(()=>import('./UnlockingSuccess'),{
+  ssr:false
+})
 export const metadata = {
   title:
     "Unlocking Success: Why SEO Is Important in Business and How to Leverage It Today!", // Page title

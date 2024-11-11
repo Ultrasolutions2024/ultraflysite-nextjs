@@ -1,5 +1,8 @@
 import React from "react";
-import Ionic from "./Ionic";
+import dynamic from "next/dynamic";
+const Ionic=dynamic(()=>import('./Ionic'),{
+  ssr:false,
+})
 export const metadata = {
   title: `Hire Ionic Developers | Ultrafly Solutions for Hybrid Apps`,
   description:

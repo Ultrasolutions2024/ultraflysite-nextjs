@@ -1,5 +1,8 @@
 import React from "react";
-import Flutter from "./Flutter";
+import dynamic from "next/dynamic";
+const Flutter=dynamic(()=>import('./Flutter'),{
+  ssr:false
+})
 export const metadata = {
   title: "Hire Flutter Developers | Ultrafly Solutions for Cross-Platform",
   description:

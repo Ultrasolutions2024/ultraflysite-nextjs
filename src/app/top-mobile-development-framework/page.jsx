@@ -1,5 +1,8 @@
 import React from "react";
-import MobileDevelopment from "./MobileDevelopment";
+import dynamic from "next/dynamic";
+const MobileDevelopment=dynamic(()=>import('./MobileDevelopment'),{
+  ssr:false
+})
 export const metadata = {
   title: "Top 05 Mobile App Development Frameworks in 2024",
   description: "Top 05 Mobile App Development Frameworks in 2024",
