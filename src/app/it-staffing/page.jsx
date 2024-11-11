@@ -1,5 +1,8 @@
 import React from 'react'
-import ITStaffing from './ITStaffing';
+import dynamic from 'next/dynamic';
+const ITStaffing=dynamic(()=>import("./ITStaffing"),{
+  ssr:false
+})
 export const metadata = {
   title: "IT Staffing Solutions | Ultrafly Solutions",
   description: "Find the right IT talent with Ultrafly Solutions' staffing services. We connect businesses with skilled professionals to meet their IT needs.",

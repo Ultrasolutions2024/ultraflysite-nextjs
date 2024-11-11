@@ -1,5 +1,8 @@
 import React from "react";
-import Blog from "./Blog";
+import dynamic from "next/dynamic";
+const Blog=dynamic(()=>import('./Blog'),{
+  ssr:false
+})
 export const metadata = {
   title: "Ultrafly Solutions Blog – Latest Tech Insights & Innovations",
   description:

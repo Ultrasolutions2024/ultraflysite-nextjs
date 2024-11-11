@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+      <meta name="google-site-verification" content="SwDsm2it5yHa7AES5dS3Gk8qwJMCmlM8m_pMlASrmlY" />
         <meta name="yandex-verification" content="5fa3dbee124941e5" />
         <link rel="apple-touch-icon" href="./favicon.ico" />
       </Head>

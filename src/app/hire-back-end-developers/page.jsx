@@ -1,5 +1,8 @@
 import React from "react";
-import BackendDevelopers from "./BackendDevelopers";
+import dynamic from "next/dynamic";
+const BackendDevelopers=dynamic(()=>import('./BackendDevelopers'),{
+  ssr:false
+})
 export const metadata = {
   title: "Hire Backend Developers | Ultrafly Solutions for Scalable Apps",
   description:

@@ -1,5 +1,8 @@
 import React from "react";
-import Java from "./Java";
+import dynamic from "next/dynamic";
+const Java=dynamic(()=>import('./Java'),{
+  ssr:false,
+})
 export const metadata = {
   title: " Hire Java Developers | Ultrafly Solutions for Performance Apps",
   description:

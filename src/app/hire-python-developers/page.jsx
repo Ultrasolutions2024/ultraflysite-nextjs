@@ -1,5 +1,8 @@
 import React from "react";
-import Python from "./Python";
+import dynamic from "next/dynamic";
+const Python=dynamic(()=>import('./Python'),{
+  ssr:false
+})
 export const metadata = {
   title: "Hire Python Developers | Ultrafly Solutions for Secure Apps",
   description:

@@ -1,6 +1,9 @@
 import React from 'react'
-import Bd from './Bd'
 
+import dynamic from 'next/dynamic'
+const Bd=dynamic(()=>import('./Bd'),{
+  ssr:false
+})
 function page() {
   return (
     <Bd/>

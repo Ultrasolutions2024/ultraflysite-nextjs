@@ -1,5 +1,8 @@
 import React from "react";
-import UnlockingFuture from "./UnlockingFuture";
+import dynamic from "next/dynamic";
+const UnlockingFuture=dynamic(()=>import('./UnlockingFuture'),{
+  ssr:false
+})
 export const metadata = {
   title:
     "Unlocking the Future: How Ultrafly Solutions is Shaping the Next Generation of Technology",

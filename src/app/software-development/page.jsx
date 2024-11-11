@@ -1,5 +1,8 @@
 import React from "react";
-import Software from "./Software";
+import dynamic from "next/dynamic";
+const Software=dynamic(()=>import('./Software'),{
+  ssr:false
+})
 export const metadata = {
   title: `Software Development Company | Ultrafly Solutions`,
   description:

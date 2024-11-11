@@ -1,5 +1,8 @@
 import React from "react";
-import MernfullStack from "./MernFullStack";
+import dynamic from "next/dynamic";
+const MernfullStack=dynamic(()=>import('./MernFullStack'),{
+  ssr:false
+})
 export const metadata = {
   title: " Hire MERN Stack Developers | Ultrafly Solutions for Full-Stack",
   description:

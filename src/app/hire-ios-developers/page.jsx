@@ -1,5 +1,8 @@
 import React from "react";
-import IOS from "./IOS";
+import dynamic from "next/dynamic";
+const IOS=dynamic(()=>import('./IOS'),{
+  ssr:false,
+})
 export const metadata = {
   title: ` Hire iOS Developers | Ultrafly Solutions for Innovative Apps`,
   description:

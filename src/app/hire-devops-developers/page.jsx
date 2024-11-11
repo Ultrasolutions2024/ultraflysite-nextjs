@@ -1,5 +1,8 @@
 import React from "react";
-import DevOps from "./DevOps";
+import dynamic from "next/dynamic";
+const DevOps=dynamic(()=>import('./DevOps'),{
+  ssr:false
+})
 export const metadata = {
   title: "Hire DevOps Developers | Ultrafly Solutions for Efficient Workflows",
   description:

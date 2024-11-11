@@ -1,6 +1,8 @@
 import React from 'react'
-import PrivacyPolicy from './PrivacyPolicy'
-
+import dynamic from 'next/dynamic'
+const PrivacyPolicy=dynamic(()=>import('./PrivacyPolicy'),{
+  ssr:false
+})
 function page() {
   return (
     <PrivacyPolicy/>

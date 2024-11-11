@@ -1,5 +1,8 @@
 import React from "react";
-import Node from "./Node";
+import dynamic from "next/dynamic";
+const Node=dynamic(()=>import('./Node'),{
+  ssr:false
+})
 export const metadata = {
   title: " Hire Expert Node.JS Developer | Ultrafly Solutions for Scalable Apps",
   description:

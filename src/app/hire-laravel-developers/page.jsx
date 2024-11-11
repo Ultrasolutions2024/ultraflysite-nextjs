@@ -1,5 +1,8 @@
 import React from "react";
-import Laravel from "./Laravel";
+import dynamic from "next/dynamic";
+const Laravel=dynamic(()=>import('./Laravel'),{
+  ssr:false
+})
 export const metadata = {
   title: "Hire Laravel Developers | Ultrafly Solutions for Custom Web Apps",
   description:

@@ -1,5 +1,8 @@
 import React from 'react'
-import Website from './Website'
+import dynamic from 'next/dynamic';
+const Website=dynamic(()=>import('./Website'),{
+  ssr:false
+})
 export const metadata = {
   title: "Website Development | Ultrafly Solutions",
   description: "Professional website development services by Ultrafly Solutions. We build responsive and user-friendly websites tailored to your business needs.",
