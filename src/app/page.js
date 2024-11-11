@@ -8,6 +8,7 @@ import ChooseUs from "./ChooseUs/ChooseUs";
 import OurIndustryExpertise from "./homeComponents/OurIndustryExpertise";
 import ClientReview from "./homeComponents/ClientReview";
 import PartneredWith from "./homeComponents/PartneredWith";
+import Head from "next/head";
 // Global metadata
 export const metadata = {
   title: "Ultrafly Solutions | Software Development Company",
@@ -22,6 +23,10 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+    <Head>
+       {/* Google Site Verification */}
+    <meta name="google-site-verification" content="SwDsm2it5yHa7AES5dS3Gk8qwJMCmlM8m_pMlASrmlY" />
+    </Head>
     <Hero/>
     <About/>
     <Badges/>

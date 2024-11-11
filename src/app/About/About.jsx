@@ -43,7 +43,8 @@ function About() {
 
             {/* stats cards with background image */}
             <div className="relative w-full flex justify-center items-center">
-              <Image
+              <Image 
+ quality={100}
                 src={bgImage}
                 alt="background"
                 className="absolute inset-0 w-3/4 h-[400px] object-cover opacity-[0.7] rounded-lg max-lg:mx-auto lg:top-20 lg:left-28"
@@ -51,7 +52,8 @@ function About() {
               <div className="relative grid gap-6 mt-4">
                 {/* Stat card 1 */}
                 <div className="flex flex-row items-center text-center bg-white rounded-lg shadow-lg py-2 px-4 w-48 transform -translate-x-20 md:-translate-x-60 lg:-translate-x-40 mt-4se sm:mt-12  hover:scale-105 transition-all duration-300 ease-in-out">
-                  <Image
+                  <Image 
+ quality={100}
                     src={projexticon}
                     alt="Completed Projects"
                     className=" w-10 sm:w-[3.5rem] mb-4 h-auto"
@@ -75,7 +77,8 @@ function About() {
 
                 {/* Stat card 2 */}
                 <div className="flex flex-row items-center text-center bg-white rounded-lg shadow-lg py-2 px-4 w-48 transform translate-x-20 md:translate-x-60 lg:translate-x-60  mt-12 sm:mt-0 md:self-end hover:scale-105 transition-all duration-300 ease-in-out">
-                  <Image
+                  <Image 
+ quality={100}
                     src={clients}
                     alt="Happy Clients"
                     className=" w-10 sm:w-[3.5rem] mb-4 h-auto"
@@ -99,7 +102,8 @@ function About() {
 
                 {/* Stat card 3 */}
                 <div className="flex flex-row items-center text-center bg-white rounded-lg shadow-lg py-2 px-4 w-48 transform -translate-x-20 md:-translate-x-60 lg:-translate-x-40  hover:scale-105 transition-all duration-300 ease-in-out mt-6">
-                  <Image
+                  <Image 
+ quality={100}
                     src={customerservice}
                     alt="Customer Service"
                     className=" w-10 sm:w-[3.5rem] mb-4 h-auto"

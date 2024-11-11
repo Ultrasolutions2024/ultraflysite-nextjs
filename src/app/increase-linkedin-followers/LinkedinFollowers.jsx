@@ -44,7 +44,8 @@ function LinkedinFollowers() {
       <div className="flex justify-between items-center mt-8 ml-5 p-8 bg-white rounded-lg shadow-md">
         {/* Profile Image */}
         <div className="flex items-center space-x-6">
-          <Image
+          <Image 
+ quality={100}
             src={profile}
             alt="Unlocking the Future"
             className="w-16 h-16 rounded-full object-cover" // Increased size of the image
@@ -79,7 +80,8 @@ function LinkedinFollowers() {
             </div>
 
             <figure>
-              <Image
+              <Image 
+ quality={100}
                 src={bg1}
                 alt="Unlocking the Future"
                 className="h-[30vh] object-scale-down md:h-[50vh] p-2 w-full " // Decreased size
@@ -128,7 +130,8 @@ function LinkedinFollowers() {
               </h2>
 
               <figure>
-                <Image
+                <Image 
+ quality={100}
                   src={bg2}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -221,7 +224,8 @@ function LinkedinFollowers() {
               </h2>
 
               <figure>
-                <Image
+                <Image 
+ quality={100}
                   src={bg3}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -245,7 +249,8 @@ function LinkedinFollowers() {
                 Share Company Updates
               </h2>
               <figure>
-                <Image
+                <Image 
+ quality={100}
                   src={bg4}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md"
@@ -271,7 +276,8 @@ function LinkedinFollowers() {
               </h2>
 
               <figure>
-                <Image
+                <Image 
+ quality={100}
                   src={bg5}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -307,7 +313,8 @@ function LinkedinFollowers() {
               </h2>
 
               <figure>
-                <Image
+                <Image 
+ quality={100}
                   src={bg6}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -332,7 +339,8 @@ function LinkedinFollowers() {
               </h2>
 
               <figure>
-                <Image
+                <Image 
+ quality={100}
                   src={bg7}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -359,7 +367,8 @@ function LinkedinFollowers() {
               </h2>
 
               <figure>
-                <Image
+                <Image 
+ quality={100}
                   src={bg8}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -391,7 +400,8 @@ function LinkedinFollowers() {
               </h2>
 
               <figure>
-                <Image
+                <Image 
+ quality={100}
                   src={bg9}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -416,7 +426,8 @@ function LinkedinFollowers() {
               </h2>
 
               <figure>
-                <Image
+                <Image 
+ quality={100}
                   src={bg10}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -489,7 +500,8 @@ function LinkedinFollowers() {
               </h2>
 
               <figure>
-                <Image
+                <Image 
+ quality={100}
                   src={bg11}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md mt-4"
@@ -514,7 +526,8 @@ function LinkedinFollowers() {
               </h2>
 
               <figure>
-                <Image
+                <Image 
+ quality={100}
                   src={bg12}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -609,7 +622,8 @@ function LinkedinFollowers() {
           {/* Sticky Position Let's Connect Div */}
           <div className="sticky top-24 self-start md:w-[24rem] p-8 ml-4">
             <div className="border-2 border-gray-300 bg-gradient-to-r from-blue-100 to-blue-900 p-6 rounded-lg">
-              <Image src={logo} alt="logo" className="w-5px" />
+              <Image 
+ quality={100} src={logo} alt="logo" className="w-5px" />
               <p className="text-center font-bold text-xl mt-4 text-black">
                 Let&apos;s connect! Explore more about IT solutions.
               </p>
@@ -634,7 +648,8 @@ function About() {
   return (
     <div className="flex flex-wrap items-center gap-4 mt-4 px-4">
       <div className="flex items-center">
-        <Image
+        <Image 
+ quality={100}
           src={projexticon}
           alt="About Us | Ultrafly Solutions"
           className="w-[3rem] h-auto mr-2"
@@ -656,7 +671,8 @@ function About() {
       </div>
 
       <div className="flex items-center">
-        <Image
+        <Image 
+ quality={100}
           src={clients}
           alt="icon_img ultraflysolutions"
           className="w-[3rem] h-auto mr-2"
@@ -678,7 +694,8 @@ function About() {
       </div>
 
       <div className="flex items-center">
-        <Image
+        <Image 
+ quality={100}
           src={customerservice}
           alt="icon_img ultraflysolutions"
           className="w-[3rem] h-auto mr-2"

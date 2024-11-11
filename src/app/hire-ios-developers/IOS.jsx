@@ -113,7 +113,8 @@ const IOS = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed]  opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image
+                <Image 
+ quality={100}
                   src={manualPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -138,7 +139,8 @@ const IOS = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image
+                <Image 
+ quality={100}
                   src={developmentPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -163,7 +165,8 @@ const IOS = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image
+                <Image 
+ quality={100}
                   src={solutionPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -188,7 +191,8 @@ const IOS = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image
+                <Image 
+ quality={100}
                   src={ideaPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -213,7 +217,8 @@ const IOS = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image
+                <Image 
+ quality={100}
                   src={micorPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -239,7 +244,8 @@ const IOS = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image
+                <Image 
+ quality={100}
                   src={servicePng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -284,7 +290,8 @@ const IOS = () => {
 
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
-              <Image
+              <Image 
+ quality={100}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"

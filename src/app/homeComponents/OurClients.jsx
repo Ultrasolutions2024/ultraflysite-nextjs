@@ -40,7 +40,8 @@ function OurClients() {
               data-aos-duration="3000"
               className="inline-block w-20 h-14 sm:w-36 sm:h-28 mx-2 hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]"
             >
-              <Image
+              <Image 
+ quality={100}
                 src={clientImages[index % clientImages.length]} // Cycle through the client images
                 alt="Client"
                 className="w-full h-full rounded-xl"

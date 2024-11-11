@@ -28,7 +28,8 @@ const ClientReview = () => {
             <h2 className="text-2xl md:text-4xl text-center font-bold text-white w-full">
               What Our Clients Say
             </h2>
-            <Image src={fiveStar} alt="star" className="w-80 hidden md:block" />
+            <Image 
+ quality={100} src={fiveStar} alt="star" className="w-80 hidden md:block" />
           <div className="flex items-center gap-8">
             <button
               ref={prevRef}
@@ -83,7 +84,8 @@ const ClientReview = () => {
                 &quot;Ultrafly Solutions transformed our digital presence with their exceptional web development and SEO services. Our patient engagement has increased significantly!&quot;
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
-                <Image
+                <Image 
+ quality={100}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -118,7 +120,8 @@ const ClientReview = () => {
                 remarkable growth in lead generation.&quot;
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
-                <Image
+                <Image 
+ quality={100}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -152,7 +155,8 @@ const ClientReview = () => {
                 expectations in both service and results!&quot;
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
-                <Image
+                <Image 
+ quality={100}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -187,7 +191,8 @@ const ClientReview = () => {
                 and tech expertise are unmatched!&quot;
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
-                <Image
+                <Image 
+ quality={100}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -221,7 +226,8 @@ const ClientReview = () => {
                 digital transformation.&quot;
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
-                <Image
+                <Image 
+ quality={100}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -254,7 +260,8 @@ const ClientReview = () => {
                 evident in every aspect of the project.&quot;
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
-                <Image
+                <Image 
+ quality={100}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -287,7 +294,8 @@ const ClientReview = () => {
                 fintech expertise is truly impressive!&quot;
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
-                <Image
+                <Image 
+ quality={100}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -320,7 +328,8 @@ const ClientReview = () => {
                 game-changer for the construction industry!&quot;
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
-                <Image
+                <Image 
+ quality={100}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -353,7 +362,8 @@ const ClientReview = () => {
                 customer satisfaction and bookings!&quot;
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
-                <Image
+                <Image 
+ quality={100}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -386,7 +396,8 @@ const ClientReview = () => {
                 Solutions truly knows how to drive growth!&quot;
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
-                <Image
+                <Image 
+ quality={100}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -419,7 +430,8 @@ const ClientReview = () => {
                 times. Ultrafly Solutions exceeded expectations!&quot;
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
-                <Image
+                <Image 
+ quality={100}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"

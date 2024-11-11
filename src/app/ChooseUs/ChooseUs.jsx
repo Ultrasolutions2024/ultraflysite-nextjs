@@ -70,7 +70,8 @@ function ChooseUs() {
       backgroundRepeat: 'no-repeat',
     }}
   ></div> */}
-  <Image src={background} className="w-full h-full hidden md:block bg-[length:100%] bg-right bg-no-repeat" alt="Digital Marketing"/>
+  <Image 
+ quality={100} src={background} className="w-full h-full hidden md:block bg-[length:100%] bg-right bg-no-repeat" alt="Digital Marketing"/>
     </div>
   );
 }

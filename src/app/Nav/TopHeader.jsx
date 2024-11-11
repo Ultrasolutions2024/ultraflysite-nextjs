@@ -17,7 +17,8 @@ function TopHeader() {
         </Link>
       </div>
       <div>
-        <Image
+        <Image 
+ quality={100}
           src={usa}
           alt="USA"
           className="inline-block lg:w-6 w-3 md:w-6"
@@ -27,7 +28,8 @@ function TopHeader() {
         <Link href="tel:+15625219684">+1 562 521 9684</Link>
       </div>
       <div>
-        <Image
+        <Image 
+ quality={100}
           src={india}
           alt="India"
           className="inline-block lg:w-6 w-3 md:w-6"

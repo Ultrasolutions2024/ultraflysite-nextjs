@@ -74,7 +74,8 @@ function About() {
         </div>
 
         <div className="center-image mx-auto">
-          <Image
+          <Image 
+ quality={100}
             src={intro}
             alt="Center Image"
             className="w-full  md:w-full mt-10 md:h-full lg:w-96 lg:h-96 h-full object-contain animate-bounce-slow"
@@ -264,7 +265,8 @@ function About() {
               />
             </div>
             <div>
-              <Image src={aboutImg} alt="about" className="w-auto" />
+              <Image 
+ quality={100} src={aboutImg} alt="about" className="w-auto" />
             </div>
           </div>
           <div className="mt-[10rem]">
@@ -273,7 +275,8 @@ function About() {
                 className="w-full bg-white h-80 md:h-[43rem] flex flex-col justify-center items-center text-center px-4"
                 data-aos="fade-right"
               >
-                <Image
+                <Image 
+ quality={100}
                   src={Target}
                   alt="Our Mission"
                   className="w-1/3 md:w-[9rem] transition duration-300 transform hover:rotate-6"
@@ -294,7 +297,8 @@ function About() {
                 className="w-full bg-white h-80 md:h-[43rem]"
                 data-aos="fade-left"
               >
-                <Image
+                <Image 
+ quality={100}
                   src={Img3}
                   alt="UltraFly Solutions Office"
                   className="w-full h-full object-cover bg-center"
@@ -304,7 +308,8 @@ function About() {
                 className="w-full bg-white h-80 md:h-[43rem]"
                 data-aos="fade-right"
               >
-                <Image
+                <Image 
+ quality={100}
                   src={Img4}
                   alt="About"
                   className="w-full h-full object-cover bg-center"
@@ -314,7 +319,8 @@ function About() {
                 className="w-full bg-white h-80 md:h-[43rem] flex flex-col justify-center items-center text-center px-4"
                 data-aos="fade-left"
               >
-                <Image
+                <Image 
+ quality={100}
                   src={Mountain}
                   alt="Our Vision"
                   className="w-1/3 md:w-[9rem] transition duration-300 transform hover:rotate-6"
