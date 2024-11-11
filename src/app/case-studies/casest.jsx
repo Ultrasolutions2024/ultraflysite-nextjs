@@ -25,7 +25,8 @@ const Casest = () => {
         <div className="grid lg:grid-cols-2 gap-10 mb-12">
           {/* Image Section for Dental Care */}
           <div className="rounded-3xl w-full md:w-[550px] lg:w-[500px] h-fit shadow-lg">
-            <Image
+            <Image 
+ quality={100}
               src={dental}
               alt="Dental Care Professionals"
               className="object-contain rounded-3xl transition-transform duration-300 hover:scale-105 "
@@ -93,7 +94,8 @@ const Casest = () => {
 
           {/* Image Section */}
           <div className="rounded-3xl w-full md:w-[550px] lg:w-[620px] h-fit shadow-lg lg:mt-7">
-            <Image
+            <Image 
+ quality={100}
               src={division}
               alt="Team Image"
               className="object-contain rounded-3xl transition-transform duration-300 hover:scale-105"
@@ -108,7 +110,8 @@ const Casest = () => {
         <div className="grid lg:grid-cols-2 gap-10 mb-12">
           {/* Image Section for Dental Care */}
           <div className="rounded-3xl w-full md:w-[550px] lg:w-[500px] h-fit shadow-lg">
-            <Image
+            <Image 
+ quality={100}
               src={mgs}
               alt="Dental Care Professionals"
               className="object-contain rounded-3xl transition-transform duration-300 hover:scale-105"

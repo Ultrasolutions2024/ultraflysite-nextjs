@@ -97,7 +97,8 @@ function Portfolio() {
         <div className="grid lg:grid-cols-2 gap-10 mb-12">
           {/* Image Section for Dental Care */}
           <div className="rounded-3xl w-full md:w-[550px] lg:w-[500px] h-fit shadow-lg">
-            <Image
+            <Image 
+ quality={100}
               src={dental}
               alt="Dental Care Professionals"
               className="object-contain rounded-3xl transition-transform duration-300 hover:scale-105 "
@@ -165,7 +166,8 @@ function Portfolio() {
 
           {/* Image Section */}
           <div className="rounded-3xl w-full md:w-[550px] lg:w-[620px] h-fit shadow-lg lg:mt-7">
-            <Image
+            <Image 
+ quality={100}
               src={division}
               alt="Team Image"
               className="object-contain rounded-3xl transition-transform duration-300 hover:scale-105"
@@ -180,7 +182,8 @@ function Portfolio() {
         <div className="grid lg:grid-cols-2 gap-10 mb-12">
           {/* Image Section for Dental Care */}
           <div className="rounded-3xl w-full md:w-[550px] lg:w-[500px] h-fit shadow-lg">
-            <Image
+            <Image 
+ quality={100}
               src={mgs}
               alt="Dental Care Professionals"
               className="object-contain rounded-3xl transition-transform duration-300 hover:scale-105"
@@ -333,7 +336,8 @@ function Portfolio() {
           {projects.map((project, index) => (
             <div className="max-w-sm overflow-hidden shadow-lg p-8 rounded-2xl" key={index}>
              <div className="h-44  rounded-2xl">
-                <Image
+                <Image 
+ quality={100}
                   className="h-full w-full rounded-2xl border-2"
                   src={project.bgImg}
                   alt="Sunset in the mountains"

@@ -57,7 +57,8 @@ const Badges = () => {
                   background: "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
                 }}
               >
-                <Image
+                <Image 
+ quality={100}
                   alt={`Badge ${index + 1}`}
                   src={badge}
                   className="w-2/4"

@@ -129,7 +129,8 @@ function Software() {
                   className="rounded-3xl md:w-[400px] md:-mt-10 md:-ml-20 lg:ml-0 lg:mt-0 lg:w-[600px] h-fit shadow-lg lg:relative md:absolute hidden md:block"
                   data-aos="fade-right"
                 >
-                  <Image
+                  <Image 
+ quality={100}
                     src={bg1}
                     alt="Placeholder Image"
                     className="object-contain rounded-3xl -z-10"
@@ -187,7 +188,8 @@ function Software() {
                   className="rounded-3xl md:w-[400px] md:-mt-10 md:-ml-20 lg:ml-0 lg:mt-0 lg:w-[600px] h-fit shadow-lg lg:relative md:absolute hidden md:block"
                   data-aos="fade-left"
                 >
-                  <Image
+                  <Image 
+ quality={100}
                     src={bg2}
                     alt="Placeholder Image"
                     className="object-contain rounded-3xl -z-10"
@@ -209,7 +211,8 @@ function Software() {
                 >
                   {/* Card header */}
                   <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg shadow-blue-500/40">
-                    <Image
+                    <Image 
+ quality={100}
                       src={expertise.icon}
                       alt={`${expertise.title} icon`}
                       className="h-full w-full object-cover"
@@ -665,7 +668,8 @@ function Software() {
               </p>
             </div>
             <div className="lg:w-1/2 mt-6 lg:mt-0">
-              <Image
+              <Image 
+ quality={100}
                 src={cased}
                 alt="Case Studies"
                 className="w-full h-auto rounded-lg "

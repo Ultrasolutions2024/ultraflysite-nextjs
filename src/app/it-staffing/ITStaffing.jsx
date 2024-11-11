@@ -40,7 +40,8 @@ function ITStaffing() {
               className="rounded-3xl md:w-[400px] md:-mt-16 md:-ml-16 lg:ml-0 lg:mt-0 lg:w-[600px] h-fit shadow-lg lg:relative md:absolute hidden md:block"
               data-aos="fade-right"
             >
-              <Image
+              <Image 
+ quality={100}
                 src={bg1}
                 alt="Placeholder Image"
                 className="object-contain rounded-3xl -z-10"

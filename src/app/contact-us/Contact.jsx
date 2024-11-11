@@ -195,7 +195,8 @@ function Login() {
                 </h3>
                 <div className="text-[#646464] pl-2">
                   <p className="text-base md:text-lg">
-                    <Image
+                    <Image 
+ quality={100}
                       src={india}
                       alt="India Flag"
                       className="inline-block w-4 h-4"
@@ -203,7 +204,8 @@ function Login() {
                     +91 91500 01089
                   </p>
                   <p className="text-base md:text-lg">
-                    <Image
+                    <Image 
+ quality={100}
                       src={india}
                       alt="India Flag"
                       className="inline-block w-4 h-4"
@@ -211,7 +213,8 @@ function Login() {
                     +91 91500 01090
                   </p>
                   <p className="text-base md:text-lg">
-                    <Image
+                    <Image 
+ quality={100}
                       src={usa}
                       alt="USA Flag"
                       className="inline-block w-4 h-4"
@@ -223,7 +226,8 @@ function Login() {
                   Landline
                 </h3>
                 <p className="text-base md:text-lg pl-1">
-                  <Image
+                  <Image 
+ quality={100}
                     src={india}
                     alt="India Flag"
                     className="inline-block w-4 h-4"

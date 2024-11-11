@@ -15,7 +15,8 @@ function SocialMedias() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
+        <Image 
+ quality={100}
           src={wAppImg}
           alt="WhatsApp"
           className="social-icon w-12 hover:scale-110 transition-transform duration-300"

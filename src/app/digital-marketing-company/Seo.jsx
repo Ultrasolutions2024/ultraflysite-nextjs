@@ -92,7 +92,8 @@ function Seo() {
               {/* Repeat this block for each service card */}
               <div className="bg-white h-fit rounded-lg shadow-lg p-4 flex flex-col md:flex-row transition-transform transform scale-95 lg:hover:scale-[97%]">
                 <div className="md:w-1/3">
-                  <Image
+                  <Image 
+ quality={100}
                     src={Image4}
                     alt="SEO"
                     className="w-full h-full object-cover rounded-lg shadow-md"
@@ -144,7 +145,8 @@ function Seo() {
               </div>
               <div className="bg-white h-fit rounded-lg shadow-lg p-4 flex flex-col md:flex-row transition-transform transform scale-95 lg:hover:scale-[97%]">
                 <div className="md:w-1/3">
-                  <Image
+                  <Image 
+ quality={100}
                     src={ad}
                     alt="SEO"
                     className="w-full h-full object-cover rounded-lg shadow-md"
@@ -182,7 +184,8 @@ function Seo() {
               </div>
               <div className="bg-white h-fit rounded-lg shadow-lg p-4 flex flex-col md:flex-row transition-transform transform scale-95 lg:hover:scale-[97%]">
                 <div className="md:w-1/3">
-                  <Image
+                  <Image 
+ quality={100}
                     src={social}
                     alt="SEO"
                     className="w-full h-full object-cover rounded-lg shadow-md"
@@ -226,7 +229,8 @@ function Seo() {
               </div>
               <div className="bg-white h-fit rounded-lg shadow-lg p-4 flex flex-col md:flex-row transition-transform transform scale-95 lg:hover:scale-[97%]">
                 <div className="md:w-1/3">
-                  <Image
+                  <Image 
+ quality={100}
                     src={content}
                     alt="SEO"
                     className="w-full h-full object-cover rounded-lg shadow-md"
@@ -269,7 +273,8 @@ function Seo() {
               </div>
               <div className="bg-white h-fit rounded-lg shadow-lg p-4 flex flex-col md:flex-row transition-transform transform scale-95 lg:hover:scale-[97%]">
                 <div className="md:w-1/3">
-                  <Image
+                  <Image 
+ quality={100}
                     src={mail}
                     alt="SEO"
                     className="w-full h-full object-cover rounded-lg shadow-md"
@@ -312,7 +317,8 @@ function Seo() {
               </div>
               <div className="bg-white h-fit rounded-lg shadow-lg p-4 flex flex-col md:flex-row transition-transform transform scale-95 lg:hover:scale-[97%]">
                 <div className="md:w-1/3">
-                  <Image
+                  <Image 
+ quality={100}
                     src={brand}
                     alt="SEO"
                     className="w-full h-full object-cover rounded-lg shadow-md"
@@ -354,7 +360,8 @@ function Seo() {
               </div>
               <div className="bg-white h-fit rounded-lg shadow-lg p-4 flex flex-col md:flex-row transition-transform transform scale-95 lg:hover:scale-[97%]">
                 <div className="md:w-1/3">
-                  <Image
+                  <Image 
+ quality={100}
                     src={digital}
                     alt="SEO"
                     className="w-full h-full object-cover rounded-lg shadow-md"

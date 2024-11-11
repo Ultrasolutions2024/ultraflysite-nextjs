@@ -69,7 +69,8 @@ function Featured() {
               </button>
             </Link>
           </div>
-          <Image src={Image1} alt="df" className="h-full w-full" />
+          <Image 
+ quality={100} src={Image1} alt="df" className="h-full w-full" />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h1 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               SOFTWARE DEVELOPMENT
@@ -109,7 +110,8 @@ function Featured() {
               </button>
             </Link>
           </div>
-          <Image src={Image2} alt="df" className="h-full w-full" />
+          <Image 
+ quality={100} src={Image2} alt="df" className="h-full w-full" />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h1 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               MOBILE APP DEVELOPMENT
@@ -148,7 +150,8 @@ function Featured() {
               </button>
             </Link>
           </div>
-          <Image src={Image3} alt="df" className="h-full w-full" />
+          <Image 
+ quality={100} src={Image3} alt="df" className="h-full w-full" />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h1 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               WEBSITE DEVELOPMENT
@@ -188,7 +191,8 @@ function Featured() {
               </button>
             </Link>
           </div>
-          <Image src={Image4} alt="df" className="h-full w-full" />
+          <Image 
+ quality={100} src={Image4} alt="df" className="h-full w-full" />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h1 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               SEO OPTIMIZATION
@@ -228,7 +232,8 @@ function Featured() {
               </button>
             </Link>
           </div>
-          <Image src={Image5} alt="df" className="h-full w-full" />
+          <Image 
+ quality={100} src={Image5} alt="df" className="h-full w-full" />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h1 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               DIGITAL MARKETING
@@ -268,7 +273,8 @@ function Featured() {
               </button>
             </Link>
           </div>
-          <Image src={Image6} alt="df" className="h-full w-full" />
+          <Image 
+ quality={100} src={Image6} alt="df" className="h-full w-full" />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h1 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               IT STAFFING
@@ -312,7 +318,8 @@ function Featured() {
             </button>
           </Link>
         </div>
-        <Image
+        <Image 
+ quality={100}
           src={software}
           className="object-contain absolute inset-0 h-full w-full lg:translate-x-36 md:-translate-x-2 hidden sm:block"
           alt="Image"

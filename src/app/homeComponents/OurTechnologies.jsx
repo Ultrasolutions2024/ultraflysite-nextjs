@@ -45,7 +45,8 @@ function OurTechnologies() {
             className="w-24 h-16 sm:w-36 sm:h-32 p-4 rounded-3xl bg-white shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center"
             style={{ backgroundImage: 'linear-gradient(145deg, #f5f5f5, #ffffff)', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.05)' }}
           >
-            <Image src={tech.src} alt={tech.alt} className="h-full w-auto rounded-md" />
+            <Image 
+ quality={100} src={tech.src} alt={tech.alt} className="h-full w-auto rounded-md" />
           </div>
         ))}
       </section>

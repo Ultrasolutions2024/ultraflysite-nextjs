@@ -14,7 +14,8 @@ function AboutCarts() {
           >
             {/* Card Image */}
             <div className="w-[75px] h-[75px] mb-4">
-              <Image
+              <Image 
+ quality={100}
                 src={card.img}
                 alt={card.title}
                 className="w-full h-full object-contain transition-transform duration-500 hover:scale-110"

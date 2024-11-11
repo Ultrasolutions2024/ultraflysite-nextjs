@@ -30,7 +30,8 @@ function Navbar() {
       {/* Navbar */}
       <div className="flex items-center justify-between px-10 py-4 bg-gray-50">
         <Link href="/">
-          <Image src={logo} alt="logo" className="w-36" />
+          <Image 
+ quality={100} src={logo} alt="logo" className="w-36" />
         </Link>
 
         {/* Hamburger button for mobile */}
@@ -58,7 +59,7 @@ function Navbar() {
           </Link>
           <div className="group max-lg:border-b max-lg:py-3 relative">
             <p
-              href="javascript:void(0)"
+              
               className="hover:text-[#007bff] text-[15px] text-gray-700 font-semibold hover:cursor-pointer  lg:hover:fill-[#007bff] block"
             >
               Services
@@ -104,7 +105,7 @@ function Navbar() {
           <div className="relative group">
             <div className="group text-[14px] max-lg:border-b max-lg:px-3 max-lg:py-2 relative">
               <p
-                href="javascript:void(0)"
+                
                 className="hover:text-[#007bff] hover:fill-[#007bff] hover:cursor-pointer  text-[15px] text-gray-700 font-semibold block"
               >
                 Hire Our Resources
@@ -284,9 +285,9 @@ function Navbar() {
           <Link href="/blog" className="hover:text-[#007bff] text-gray-700 font-semibold ">
             Blog
           </Link>
-          <div href="  " className="group max-lg:border-b max-lg:py-3 relative">
+          <div  className="group max-lg:border-b max-lg:py-3 relative">
             <p
-              href="javascript:void(0)"
+             
               className="hover:text-[#007bff] hover:cursor-pointer  text-[15px]  lg:hover:fill-[#007bff] text-gray-700 font-semibold  block"
             >
               Company
@@ -347,7 +348,8 @@ function Navbar() {
         >
           <div className="flex justify-between items-center p-4 text-white ">
             <Link href="/">
-              <Image src={logo} alt="logo" className="w-28" />
+              <Image 
+ quality={100} src={logo} alt="logo" className="w-28" />
             </Link>
             <button onClick={toggleMenu} aria-label="Close Menu">
               <svg

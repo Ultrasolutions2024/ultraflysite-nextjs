@@ -25,26 +25,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        {/* Google Site Verification */}
-        <meta
-          name="google-site-verification"
-          content="SwDsm2it5yHa7AES5dS3Gk8qwJMCmlM8m_pMlASrmlY"
-        />
+      <meta name="google-site-verification" content="SwDsm2it5yHa7AES5dS3Gk8qwJMCmlM8m_pMlASrmlY" />
         <meta name="yandex-verification" content="5fa3dbee124941e5" />
         <link rel="apple-touch-icon" href="./favicon.ico" />
       </Head>
       <body>
-        <div className="app-container">
-          <TopHeader />
-          <Navbar />
-          <main className="main-content h-full">{children}</main>
-          <SocialMedias />
-          <Footer />
-        </div>
+        <TopHeader />
+        <Navbar />
+        {children}
+        <SocialMedias />
+        <Footer />
 
         {/* Schema Markup */}
         <Script
-          id="schema-markup"
+          id="schema-markup" 
           type="application/ld+json"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
@@ -69,11 +63,7 @@ export default function RootLayout({ children }) {
         />
 
         {/* StatCounter */}
-        <Script
-          type="text/javascript"
-          id="statcounter-script"
-          strategy="afterInteractive"
-        >
+        <Script type="text/javascript" id="statcounter-script" strategy="afterInteractive">
           {`
             var sc_project=13049783; 
             var sc_invisible=1; 
@@ -94,7 +84,8 @@ export default function RootLayout({ children }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
+              <Image 
+ quality={100}
                 className="statcounter"
                 src="https://c.statcounter.com/13049783/0/b0f333ac/1/"
                 alt="Web Analytics Made Easy - Statcounter"
