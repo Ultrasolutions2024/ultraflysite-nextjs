@@ -43,7 +43,7 @@ function Hero() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="grid md:grid-cols-2 h-full px-4 md:px-8">
+        <div className="grid lg:grid-cols-2 h-full px-4 md:px-8">
           {/* Swiper Section */}
           <div className="px-4 md:px-0 pt-16 max-md:pb-16">
             <div className="carousel rounded-box w-full overflow-hidden text-white sm:mt-20">
@@ -78,7 +78,7 @@ function Hero() {
 
                   <Link href="/contact-us">
                     <div className="w-fit mx-auto mt-10">
-                      <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600">
+                      <button className="btn btn-primary px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
                         Get Started Now
                       </button>
                     </div>
@@ -113,7 +113,7 @@ function Hero() {
                   </ul>
                   <Link href="/contact-us">
                     <div className="w-fit mx-auto mt-10">
-                      <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600">
+                      <button className="btn btn-primary px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
                         Get Started Now
                       </button>
                     </div>
@@ -124,14 +124,14 @@ function Hero() {
           </div>
 
           {/* Animated Section */}
-          <div className="relative h-[300px] md:h-[400px] w-full md:place-self-center max-md:hidden">
+          <div className="relative h-[300px] md:h-[400px] w-full md:place-self-center max-lg:hidden">
             {/* Main Hexagon Background with Image */}
-            <div className="max-sm:w-56 max-sm:h-56 max-sm:mt-10 sm:absolute bottom-10 h-full w-full mx-auto flex justify-center items-center max-sm:p-10 px-10 mask mask-hexagon bg-[#eca918]">
+            <div className="max-sm:w-48 max-sm:h-48 max-sm:mt-10 sm:absolute bottom-10 h-full w-[400px] lg:translate-x-36  rounded-xl  mx-auto flex justify-center items-center max-sm:p-10  clip-hexagon bg-[#eca918]">
               <Image
                 quality={100}
                 src={womenImg}
                 alt="women"
-                className="object-cover"
+                className="object-cover w-full h-full"
               />
             </div>
 
@@ -140,7 +140,7 @@ function Hero() {
               <div className="relative w-full h-full">
                 {/* Mood Section */}
                 <motion.div
-                  className="bg-white w-fit h-fit p-3 rounded-md absolute -top-10 left-0"
+                  className="bg-white w-fit h-fit p-3 rounded-md absolute -top-10 left-10"
                   animate={{ y: ["0%", "-20%", "0%"] }}
                   transition={{
                     duration: 5,

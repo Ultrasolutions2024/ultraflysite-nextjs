@@ -136,7 +136,7 @@ const BackendDevelopers = () => {
             </ul>
             <div className="flex justify-center mb-5">
               <a href="#sendBtn">
-                <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600 px-4 py-2 rounded-xl">
+                <button className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 px-4 py-2 rounded-xl">
                   Talk with Our Experts
                 </button>
               </a>
@@ -464,7 +464,7 @@ const BackendDevelopers = () => {
         </div>
         <div className="w-fit mx-auto mt-10">
           <Link href={"/contact-us"}>
-            <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600">
+            <button className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
               Get Started Now
             </button>
           </Link>
@@ -548,7 +548,7 @@ const BackendDevelopers = () => {
               </label>
               <button
                 type="submit"
-                className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600"
+                className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300"
               >
                 Send
               </button>

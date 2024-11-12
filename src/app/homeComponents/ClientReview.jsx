@@ -457,7 +457,7 @@ const ClientReview = () => {
 
       <div className="w-fit mx-auto mt-10">
         <Link href={'/contact-us'}>
-          <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600">
+          <button className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
             Join with us
           </button>
         </Link>
