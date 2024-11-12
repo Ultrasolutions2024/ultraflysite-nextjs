@@ -31,8 +31,12 @@ function Blog() {
           {/* Post 1 */}
           <Link href="/ultrafly-solutions-driving-tech-innovation">
             <div className="w-full rounded overflow-hidden shadow-2xl sm:h-[380px] p-4 hover:scale-105 transition-all duration-300">
-              <Image 
- quality={100} className="w-full" src={Fimg} alt="Unlocking the Future" />
+              <Image
+                quality={100}
+                className="w-full"
+                src={Fimg}
+                alt="Unlocking the Future"
+              />
               <div className="py-4">
                 <h2 className="font-bold text-xl">Unlocking the Future:</h2>
                 <p className="text-gray-700 text-base font-bold">
@@ -45,8 +49,12 @@ function Blog() {
           {/* Post 2 */}
           <Link href="/why-seo-important-in-business">
             <div className="w-full rounded overflow-hidden shadow-2xl sm:h-[380px] p-4 hover:scale-105 transition-all duration-300">
-              <Image 
- quality={100} className="w-full" src={Simg} alt="Unlocking the Future" />
+              <Image
+                quality={100}
+                className="w-full"
+                src={Simg}
+                alt="Unlocking the Future"
+              />
               <div className="py-4">
                 <h2 className="font-bold text-xl">Unlocking Success:</h2>
                 <p className="text-gray-700 text-base font-bold">
@@ -58,8 +66,12 @@ function Blog() {
           {/* Post 3 */}
           <Link href="/top-mobile-development-framework">
             <div className="w-full rounded overflow-hidden shadow-2xl sm:h-[380px] p-4 hover:scale-105 transition-all duration-300">
-              <Image 
- quality={100} className="w-full" src={Timg} alt="Unlocking the Future" />
+              <Image
+                quality={100}
+                className="w-full"
+                src={Timg}
+                alt="Unlocking the Future"
+              />
               <div className="py-4">
                 <h2 className="font-bold text-xl">Application Development:</h2>
                 <p className="text-gray-700 text-base font-bold">
@@ -71,8 +83,12 @@ function Blog() {
           {/* Post 4 - LinkedIn */}
           <Link href="/increase-linkedin-followers">
             <div className="w-full rounded h-fit overflow-hidden shadow-2xl p-4 hover:scale-105 transition-all duration-300">
-              <Image 
- quality={100} className="w-full" src={bg1} alt="Unlocking the Future" />
+              <Image
+                quality={100}
+                className="w-full"
+                src={bg1}
+                alt="Unlocking the Future"
+              />
               <div className="py-4">
                 <h2 className="font-bold text-xl">LinkedIn Assists</h2>
                 <p className="text-gray-700 text-base font-bold">

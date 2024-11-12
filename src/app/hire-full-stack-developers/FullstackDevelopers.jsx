@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import background from "../images/Resources/background.avif";
 import faq from "../images/Resources/faq.jpg";
 import { FaUser } from "react-icons/fa";
@@ -49,25 +49,68 @@ const FullstackDevelopers = () => {
         }
       );
   };
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+  const accordionData = [
+    {
+      question:
+        "Why should I hire a full-stack developer from Ultrafly Solutions?",
+      answer:
+        "At Ultrafly Solutions, our full-stack developers bring a wealth of experience across frontend and backend technologies. We deliver scalable, efficient, and secure solutions that meet your unique business requirements.",
+    },
+    {
+      question: "Can I hire a full-stack developer on a project basis?",
+      answer:
+        "Yes! We offer flexible hiring models, including full-time, part-time, or project-based engagements, to fit your specific needs.",
+    },
+    {
+      question:
+        "What type of applications can your full-stack developers build?",
+      answer:
+        "Our developers can build a wide range of applications, including responsive websites, custom web applications, API integrations, and more, suitable for startups and large enterprises alike.",
+    },
+    {
+      question: "How do you ensure the security of my application?",
+      answer:
+        "Our developers follow industry-standard security protocols and best practices to safeguard your applications. We also provide post-launch monitoring and maintenance to keep your systems secure.",
+    },
+    {
+      question: "What is the typical timeline for a full-stack project?",
+      answer:
+        "The timeline varies based on the scope and complexity of your project. After understanding your requirements, we provide a clear project plan with estimated timelines.",
+    },
+    {
+      question: "How do I communicate with the full-stack development team?",
+      answer:
+        "We prioritize transparent communication. You will have direct access to your dedicated project manager and development team via email, calls, or collaboration tools for regular updates and smooth progress.",
+    },
+  ];
+
   return (
     <>
       <div
-        className="hero min-h-screen"
+        className="relative hero min-h-screen"
         style={{
           backgroundImage: `url(${background.src})`,
           backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
-        <div className="hero-overlay bg-opacity-80"></div>
-        <div className="hero-content text-neutral-content text-left flex items-start pl-0 md:pl-8 lg:pl-10">
-          <div className="max-w-l ml-1p px-10">
+        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+
+        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+          <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
             <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
               Hire Full-Stack Developers
             </h1>
             <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
               Why Hire Full-Stack Developers from Ultrafly Solutions
             </h3>
-            <ul className="list-disc list-inside mb-7 text-white text-sm md:text-xl grid gap-4">
+            <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-xl grid gap-4">
               <li>
                 Expert developers with extensive experience in both frontend and
                 backend technologies
@@ -83,14 +126,13 @@ const FullstackDevelopers = () => {
                 timely updates
               </li>
               <li>
-                {" "}
                 Full-cycle support from design to deployment with a focus on
                 performance and scalability
               </li>
             </ul>
             <div className="flex justify-center mb-5">
               <a href="#sendBtn">
-                <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600">
+                <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600 px-4 py-2 rounded-xl">
                   Talk with Our Experts
                 </button>
               </a>
@@ -112,8 +154,8 @@ const FullstackDevelopers = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed]  opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={manualPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -137,8 +179,8 @@ const FullstackDevelopers = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={developmentPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -162,8 +204,8 @@ const FullstackDevelopers = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={solutionPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -187,8 +229,8 @@ const FullstackDevelopers = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={ideaPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -210,8 +252,8 @@ const FullstackDevelopers = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={micorPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -235,8 +277,8 @@ const FullstackDevelopers = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={servicePng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -280,13 +322,13 @@ const FullstackDevelopers = () => {
 
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
-              <Image 
- quality={100}
+              <Image
+                quality={100}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"
-                width={500}  // Set width in pixels (e.g., the actual image width)
-  height={500} // Set height in pixels (maintain aspect ratio)
+                width={500} // Set width in pixels (e.g., the actual image width)
+                height={500} // Set height in pixels (maintain aspect ratio)
               />
             </div>
           </div>
@@ -534,97 +576,55 @@ const FullstackDevelopers = () => {
             </form>
           </div>
           {/* faq */}
+
           <div className="col-span-2 grid gap-2 ">
-            <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-              Frequently Asked Questions (FAQs)
-            </h1>
-            <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-              <input type="radio" name="my-accordion-2" defaultChecked />
-              <div className="collapse-title text-xl font-medium">
-                Why should I hire a full-stack developer from Ultrafly
-                Solutions?
-              </div>
-              <div className="collapse-content">
-                <p>
-                  At Ultrafly Solutions, our full-stack developers bring a
-                  wealth of experience across frontend and backend technologies.
-                  We deliver scalable, efficient, and secure solutions that meet
-                  your unique business requirements.
-                </p>
-              </div>
-            </div>
-
-            <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-              <input type="radio" name="my-accordion-2" />
-              <div className="collapse-title text-xl font-medium">
-                Can I hire a full-stack developer on a project basis?
-              </div>
-              <div className="collapse-content">
-                <p>
-                  Yes! We offer flexible hiring models, including full-time,
-                  part-time, or project-based engagements, to fit your specific
-                  needs.
-                </p>
-              </div>
-            </div>
-
-            <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-              <input type="radio" name="my-accordion-2" />
-              <div className="collapse-title text-xl font-medium">
-                What type of applications can your full-stack developers build?
-              </div>
-              <div className="collapse-content">
-                <p>
-                  Our developers can build a wide range of applications,
-                  including responsive websites, custom web applications, API
-                  integrations, and more, suitable for startups and large
-                  enterprises alike.
-                </p>
-              </div>
-            </div>
-
-            <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-              <input type="radio" name="my-accordion-2" />
-              <div className="collapse-title text-xl font-medium">
-                How do you ensure the security of my application?
-              </div>
-              <div className="collapse-content">
-                <p>
-                  Our developers follow industry-standard security protocols and
-                  best practices to safeguard your applications. We also provide
-                  post-launch monitoring and maintenance to keep your systems
-                  secure.
-                </p>
-              </div>
-            </div>
-
-            <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-              <input type="radio" name="my-accordion-2" />
-              <div className="collapse-title text-xl font-medium">
-                What is the typical timeline for a full-stack project?
-              </div>
-              <div className="collapse-content">
-                <p>
-                  The timeline varies based on the scope and complexity of your
-                  project. After understanding your requirements, we provide a
-                  clear project plan with estimated timelines.
-                </p>
-              </div>
-            </div>
-
-            <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-              <input type="radio" name="my-accordion-2" />
-              <div className="collapse-title text-xl font-medium">
-                How do I communicate with the full-stack development team?
-              </div>
-              <div className="collapse-content">
-                <p>
-                  We prioritize transparent communication. You will have direct
-                  access to your dedicated project manager and development team
-                  via email, calls, or collaboration tools for regular updates
-                  and smooth progress.
-                </p>
-              </div>
+            <div className="font-[sans-serif] space-y-4 max-w-6xl mx-auto mt-4">
+              {accordionData.map((item, index) => (
+                <div
+                  key={index}
+                  className={`shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] border-2 ${
+                    openIndex === index
+                      ? "border-blue-600"
+                      : "border-transparent"
+                  } rounded-lg transition-all duration-300`}
+                  style={{
+                    overflow: "hidden",
+                    transition: "max-height 0.3s ease-in-out",
+                    maxHeight: openIndex === index ? "300px" : "60px", // adjust maxHeight based on the open or closed state
+                  }}
+                  role="accordion"
+                >
+                  <button
+                    onClick={() => toggleAccordion(index)}
+                    type="button"
+                    className="w-full text-base font-semibold text-left p-5 text-gray-800 flex items-center"
+                  >
+                    <span className="mr-4">{item.question}</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={`w-4 fill-current ml-auto shrink-0 transition-transform ${
+                        openIndex === index ? "rotate-180" : "-rotate-90"
+                      }`}
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    className={`transition-opacity duration-300 ${
+                      openIndex === index ? "opacity-100" : "opacity-0"
+                    } pb-5 px-5`}
+                  >
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {item.answer}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

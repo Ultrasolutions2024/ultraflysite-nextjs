@@ -1,16 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import gif from "../images/our_services/software_dev/software-development{}-gif.gif";
 import bg1 from "../images/our_services/software_dev/bg1.jpg";
 import bg2 from "../images/our_services/software_dev/bg2.jpg";
-import icon1 from "../images/our_services/seo&digital/dig-mar-icon-1.png";
-import icon2 from "../images/our_services/seo&digital/dig-mar-icon-2.png";
-import icon3 from "../images/our_services/seo&digital/dig-mar-icon-3.png";
-import icon4 from "../images/our_services/seo&digital/dig-mar-icon- 4.png";
-import icon5 from "../images/our_services/seo&digital/dig-mar-icon-5.png";
-import icon6 from "../images/our_services/seo&digital/dig-mar-icon-6.png";
-import developmentsoftwareImg from "../images/our_services/software_dev/development-software.jpg";
-import softwareImgBg from "../images/our_services/software_dev/software_bg.webp";
+
 import "../mobile-app-development/services.css";
 import Head from "next/head";
 import Link from "next/link";
@@ -129,8 +121,8 @@ function Software() {
                   className="rounded-3xl md:w-[400px] md:-mt-10 md:-ml-20 lg:ml-0 lg:mt-0 lg:w-[600px] h-fit shadow-lg lg:relative md:absolute hidden md:block"
                   data-aos="fade-right"
                 >
-                  <Image 
- quality={100}
+                  <Image
+                    quality={100}
                     src={bg1}
                     alt="Placeholder Image"
                     className="object-contain rounded-3xl -z-10"
@@ -188,8 +180,8 @@ function Software() {
                   className="rounded-3xl md:w-[400px] md:-mt-10 md:-ml-20 lg:ml-0 lg:mt-0 lg:w-[600px] h-fit shadow-lg lg:relative md:absolute hidden md:block"
                   data-aos="fade-left"
                 >
-                  <Image 
- quality={100}
+                  <Image
+                    quality={100}
                     src={bg2}
                     alt="Placeholder Image"
                     className="object-contain rounded-3xl -z-10"
@@ -211,8 +203,8 @@ function Software() {
                 >
                   {/* Card header */}
                   <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg shadow-blue-500/40">
-                    <Image 
- quality={100}
+                    <Image
+                      quality={100}
                       src={expertise.icon}
                       alt={`${expertise.title} icon`}
                       className="h-full w-full object-cover"
@@ -668,8 +660,8 @@ function Software() {
               </p>
             </div>
             <div className="lg:w-1/2 mt-6 lg:mt-0">
-              <Image 
- quality={100}
+              <Image
+                quality={100}
                 src={cased}
                 alt="Case Studies"
                 className="w-full h-auto rounded-lg "
