@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import background from "../images/Resources/background.avif";
 import faq from "../images/Resources/faq.jpg";
 import { FaUser } from "react-icons/fa";
@@ -49,18 +49,59 @@ const Python = () => {
         }
       );
   };
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+  const accordionData = [
+    {
+      question: "Why should I hire a Python developer from Ultrafly Solutions?",
+      answer:
+        "At Ultrafly Solutions, we bring years of expertise in Python development, providing custom, scalable, and secure solutions tailored to your business needs. Our developers are skilled in the latest technologies and follow best practices to ensure optimal performance.",
+    },
+    {
+      question: "Can I hire a Python developer on a project basis?",
+      answer:
+        "Yes! We offer flexible hiring models to fit your requirements. Whether you need a full-time developer, a part-time team, or project-based support, we can customize the engagement to suit your project scope and budget.",
+    },
+    {
+      question: "What type of applications can your Python developers build?",
+      answer:
+        "Our Python developers have experience building a variety of applications, including custom web applications, enterprise solutions, API integrations, mobile apps, and more. We cater to both startups and large-scale enterprises.",
+    },
+    {
+      question: "How do I ensure the security of my project?",
+      answer:
+        "We take security seriously at Ultrafly Solutions. Our developers follow industry best practices for code security, data protection, and secure coding standards. We also offer post-launch maintenance and support to ensure your application remains secure.",
+    },
+    {
+      question: "What is the typical timeline for a Python project?",
+      answer:
+        "The timeline depends on the complexity and scope of your project. After discussing your requirements, we provide a clear project plan with estimated timelines to ensure transparency and alignment with your goals.",
+    },
+    {
+      question: "How do I communicate with the Python development team?",
+      answer:
+        "We prioritize clear, transparent communication. You'll have direct access to your dedicated project manager and development team via email, calls, or collaboration tools to ensure smooth progress and updates throughout the project.",
+    },
+  ];
+
   return (
     <>
       <div
-        className="hero min-h-screen"
+        className="relative hero min-h-screen"
         style={{
           backgroundImage: `url(${background.src})`,
           backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
-        <div className="hero-overlay bg-opacity-80"></div>
-        <div className="hero-content text-neutral-content text-left flex items-start pl-0 md:pl-8 lg:pl-10">
-          <div className="max-w-l ml-1p px-10">
+        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+
+        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+          <div className="max-w-4xl text-left px-6 md:px-12 lg:px-16">
             <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
               Hire Python Developers
             </h1>
@@ -70,10 +111,9 @@ const Python = () => {
             <ul className="list-disc list-inside mb-7 text-white text-sm md:text-xl grid gap-4">
               <li>
                 Expert Python developers with industry-leading skills and
-                extensive experience
+                extensive experience.
               </li>
               <li>
-                {" "}
                 Flexible hiring models—full-time, part-time, or project-based.
               </li>
               <li>
@@ -95,7 +135,7 @@ const Python = () => {
             </ul>
             <div className="flex justify-center mb-5">
               <a href="#sendBtn">
-                <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600">
+                <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600 px-4 py-2 rounded-xl">
                   Talk with Our Experts
                 </button>
               </a>
@@ -117,8 +157,8 @@ const Python = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed]  opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={manualPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -143,8 +183,8 @@ const Python = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={developmentPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -168,8 +208,8 @@ const Python = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={solutionPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -193,8 +233,8 @@ const Python = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={ideaPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -216,8 +256,8 @@ const Python = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={micorPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -241,8 +281,8 @@ const Python = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={servicePng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -286,13 +326,13 @@ const Python = () => {
 
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
-              <Image 
- quality={100}
+              <Image
+                quality={100}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"
-                width={500}  // Set width in pixels (e.g., the actual image width)
-  height={500} // Set height in pixels (maintain aspect ratio)
+                width={500} // Set width in pixels (e.g., the actual image width)
+                height={500} // Set height in pixels (maintain aspect ratio)
               />
             </div>
           </div>
@@ -358,105 +398,7 @@ const Python = () => {
           </div>
         </div>
       </div>
-      {/* Steps Section as Cards */}
-      {/* <section className="relative overflow-hidden bg-gray-100 mt-10">
-        <div className="mt-2 md:mt-0 py-12 pb-6 sm:py-16 lg:pb-24 overflow-hidden">
-          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
-            <div className="relative mt-12 lg:mt-20">
-              <div className="relative grid grid-cols-1 text-center md:grid-cols-4 gap-x-12">
-                <div className="relative flex flex-col items-center rounded-lg transition-transform transform ">
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                    <span className="text-xl font-semibold text-gray-700 dark:text-gray-200">
-                      1
-                    </span>
-                  </div>
-                  <div className="mt-12 flex-1 border-x-2 border-b border-black hover:scale-105 hover:bg-blue-500">
-                    <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight md:mt-10">
-                      Contact Us
-                    </h3>
-                    <p className="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
-                      We take the time to understand your ideas! Share your
-                      vision and have a detailed conversation with our team to
-                      clarify your project goals and expectations.
-                    </p>
-                  </div>
-                </div>
 
-                <div className="relative flex flex-col items-center rounded-xl transition-transform transform hover:scale-105">
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                    <span className="text-xl font-semibold text-gray-700 dark:text-gray-200">
-                      2
-                    </span>
-                  </div>
-                  <div
-                    className="shadow-lg mt-12 flex-1"
-                    style={{
-                      boxShadow: "2px 5px 1px rgba(0, 0, 255, 0.5)", 
-                      height: "250px", 
-                    }}>
-                    <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
-                      Discuss Your Project
-                    </h3>
-                    <p className="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
-                      Benefit from our expertise as we help you identify the key
-                      skills and technologies needed for your project.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="relative flex flex-col items-center transition-transform transform hover:scale-105">
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                    <span className="text-xl font-semibold text-gray-700 dark:text-gray-200">
-                      3
-                    </span>
-                  </div>
-                  <div
-                    className="shadow-lg mt-12 flex-1"
-                    style={{
-                      boxShadow: "2px 5px 1px rgba(0, 0, 255, 0.5)", 
-                      height: "250px", 
-                    }}>
-                    <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
-                      Receive Expert Guidance
-                    </h3>
-                    <p className="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
-                      Work closely with our developers to ensure your vision is
-                      realized, fostering a partnership that drives innovation
-                      and success.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="relative flex flex-col items-center transition-transform transform hover:scale-105">
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                    <span className="text-xl font-semibold text-gray-700 dark:text-gray-200">
-                      4
-                    </span>
-                  </div>
-                  <div
-                    className="shadow-lg mt-12 flex-1"
-                    style={{
-                      boxShadow: "2px 5px 1px rgba(0, 0, 255, 0.5)", 
-                      height: "250px",
-                    }}>
-                    <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
-                      Get Ongoing Support
-                    </h3>
-                    <p className="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
-                      Enjoy continuous collaboration and support throughout the
-                      development process so your project stays on track and
-                      meets your goals.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600">
-          Get Started Now
-        </button>
-      </section> */}
       <section className="p-10 md:p-20 w-full">
         <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
           4 Easy Steps to Hire a Python Developer
@@ -617,100 +559,53 @@ const Python = () => {
           </form>
         </div>
         {/* faq */}
+
         <div className="col-span-2 grid gap-2 ">
-          <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-            Frequently Asked Questions (FAQs)
-          </h1>
-          <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-            <input type="radio" name="my-accordion-2" defaultChecked />
-            <div className="collapse-title text-xl font-medium">
-              Why should I hire a Python developer from Ultrafly Solutions?
-            </div>
-            <div className="collapse-content">
-              <p>
-                At Ultrafly Solutions, we bring years of expertise in Python
-                development, providing custom, scalable, and secure solutions
-                tailored to your business needs. Our developers are skilled in
-                the latest technologies and follow best practices to ensure
-                optimal performance.
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              Can I hire a Python developer on a project basis?
-            </div>
-            <div className="collapse-content">
-              <p>
-                Yes! We offer flexible hiring models to fit your requirements.
-                Whether you need a full-time developer, a part-time team, or
-                project-based support, we can customize the engagement to suit
-                your project scope and budget.
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              What type of applications can your Python developers build?
-            </div>
-            <div className="collapse-content">
-              <p>
-                Our Python developers have experience building a variety of
-                applications, including custom web applications, enterprise
-                solutions, API integrations, mobile apps, and more. We cater to
-                both startups and large-scale enterprises.
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              How do I ensure the security of my project?
-            </div>
-            <div className="collapse-content">
-              <p>
-                We take security seriously at Ultrafly Solutions. Our developers
-                follow industry best practices for code security, data
-                protection, and secure coding standards. We also offer
-                post-launch maintenance and support to ensure your application
-                remains secure.
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              What is the typical timeline for a Python project?
-            </div>
-            <div className="collapse-content">
-              <p>
-                The timeline depends on the complexity and scope of your
-                project. After discussing your requirements, we provide a clear
-                project plan with estimated timelines to ensure transparency and
-                alignment with your goals.
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              How do I communicate with the Python development team?
-            </div>
-            <div className="collapse-content">
-              <p>
-                We prioritize clear, transparent communication. You&apos;ll have
-                direct access to your dedicated project manager and development
-                team via email, calls, or collaboration tools to ensure smooth
-                progress and updates throughout the project.
-              </p>
-            </div>
+          <div className="font-[sans-serif] space-y-4 max-w-6xl mx-auto mt-4">
+            {accordionData.map((item, index) => (
+              <div
+                key={index}
+                className={`shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] border-2 ${
+                  openIndex === index ? "border-blue-600" : "border-transparent"
+                } rounded-lg transition-all duration-300`}
+                style={{
+                  overflow: "hidden",
+                  transition: "max-height 0.3s ease-in-out",
+                  maxHeight: openIndex === index ? "300px" : "60px", // adjust maxHeight based on the open or closed state
+                }}
+                role="accordion"
+              >
+                <button
+                  onClick={() => toggleAccordion(index)}
+                  type="button"
+                  className="w-full text-base font-semibold text-left p-5 text-gray-800 flex items-center"
+                >
+                  <span className="mr-4">{item.question}</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className={`w-4 fill-current ml-auto shrink-0 transition-transform ${
+                      openIndex === index ? "rotate-180" : "-rotate-90"
+                    }`}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  className={`transition-opacity duration-300 ${
+                    openIndex === index ? "opacity-100" : "opacity-0"
+                  } pb-5 px-5`}
+                >
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {item.answer}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

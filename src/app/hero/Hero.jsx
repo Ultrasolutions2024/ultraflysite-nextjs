@@ -59,7 +59,7 @@ function Hero() {
                     Welcome to Ultrafly Solutions
                   </h1>
                   <h2 className="text-2xl md:text-3xl font-bold text-center">
-                  &quot;Your Partner in Digital Transformation&quot;
+                    &quot;Your Partner in Digital Transformation&quot;
                   </h2>
                   <ul className="grid grid-cols-1 md:grid-cols-2 font-medium text-xs md:text-sm gap-4 md:gap-6 px-4 md:px-6 mt-4 md:mt-6">
                     <li className="bg-[#eca918] p-2 rounded-lg">
@@ -95,7 +95,7 @@ function Hero() {
               >
                 <div className="flex flex-col items-center justify-center w-full h-full p-6  rounded-lg backdrop-blur-lg bg-white/10 shadow-lg border border-white/20">
                   <h1 className="text-xl md:text-4xl font-bold text-center">
-                  &quot;Transforming Businesses with Digital Innovation&quot;
+                    &quot;Transforming Businesses with Digital Innovation&quot;
                   </h1>
                   <ul className="grid grid-cols-1 md:grid-cols-2 font-medium text-xs md:text-sm gap-4 md:gap-6 px-4 md:px-6 mt-4 md:mt-6">
                     <li className="bg-[#eca918] p-2 rounded-lg">
@@ -127,8 +127,12 @@ function Hero() {
           <div className="relative h-[300px] md:h-[400px] w-full md:place-self-center max-md:hidden">
             {/* Main Hexagon Background with Image */}
             <div className="max-sm:w-56 max-sm:h-56 max-sm:mt-10 sm:absolute bottom-10 h-full w-full mx-auto flex justify-center items-center max-sm:p-10 px-10 mask mask-hexagon bg-[#eca918]">
-              <Image 
- quality={100} src={womenImg} alt="women" className="object-cover" />
+              <Image
+                quality={100}
+                src={womenImg}
+                alt="women"
+                className="object-cover"
+              />
             </div>
 
             {/* Overlay for Animated Content */}
@@ -166,8 +170,8 @@ function Hero() {
                     ease: "easeInOut",
                   }}
                 >
-                  <Image 
- quality={100}
+                  <Image
+                    quality={100}
                     src={mobile}
                     alt="review"
                     className="w-full h-full object-cover "
@@ -184,8 +188,8 @@ function Hero() {
                     ease: "easeInOut",
                   }}
                 >
-                  <Image 
- quality={100}
+                  <Image
+                    quality={100}
                     src={screen}
                     alt="face recognition"
                     className="w-40 h-20 md:w-56 md:h-32 mx-auto"
@@ -202,8 +206,8 @@ function Hero() {
                     ease: "easeInOut",
                   }}
                 >
-                  <Image 
- quality={100}
+                  <Image
+                    quality={100}
                     src={seo}
                     alt="SEO"
                     className="w-full h-full object-cover"

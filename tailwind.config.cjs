@@ -31,8 +31,4 @@ module.exports = {
       }                    
     },
   },
-  plugins: [daisyui],
-  daisyui: {
-    themes: ['light'], // Include only the light theme
-  },
 };

@@ -48,25 +48,7 @@ const Mobile = () => {
       />
       <Head />
       <div className="mt-[20px]">
-        {/* banner */}
-        {/* <div
-          className="h-60 w-screen flex items-center justify-center flex-col gap-4 max-sm:px-10"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${mobile_bg.src})`,
-            backgroundSize: "cover",
-            backgroundPosition: "bottom",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <h1 className="text-2xl md:text-4xl lg:text-5xl text-white font-semibold">
-            Custom Mobile App Development Services
-          </h1>
-          <Link href="/contact-us">
-            <button className=" text-black bg-white border border-white py-2 px-4 rounded-lg transition ease-in-out delay-150 duration-300 hover:bg-transparent hover:text-white ">
-              Join with us
-            </button>
-          </Link>
-        </div> */}
+   
 
         <div className="font-sans bg-gray-50 p-4 lg:pt-10 pt-10 md:pt-20 lg:pr-48 md:pl-16">
           <div className="lg:max-w-5xl max-w-xl mx-auto">

@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import background from "../images/Resources/background.avif";
 import faq from "../images/Resources/faq.jpg";
 import { FaUser } from "react-icons/fa";
@@ -48,33 +48,74 @@ const IOS = () => {
         }
       );
   };
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+  const accordionData = [
+    {
+      question: "Why should I hire an iOS developer from Ultrafly Solutions?",
+      answer:
+        "Our iOS developers bring years of experience in building dynamic, scalable, and high-performing mobile applications for Apple’s ecosystem. We focus on delivering secure and tailored solutions to fit your business needs.",
+    },
+    {
+      question: "Can I hire an iOS developer on a project basis?",
+      answer:
+        "Yes! We offer flexible hiring models to suit your project scope, whether you need full-time, part-time, or project-based engagement.",
+    },
+    {
+      question: "What type of applications can your iOS developers build?",
+      answer:
+        "Our iOS developers are skilled in creating custom mobile apps, enterprise-grade solutions, and apps for iOS-integrated systems. We cater to a wide range of industries and business sizes.",
+    },
+    {
+      question: "How do you ensure project security?",
+      answer:
+        "We follow industry best practices for secure development, from data protection to secure coding. Post-launch, we offer maintenance and support to keep your applications secure.",
+    },
+    {
+      question: "What’s the typical timeline for an iOS project?",
+      answer:
+        "Project timelines depend on complexity and scope. Once we understand your requirements, we provide a detailed project plan with clear timelines.",
+    },
+    {
+      question: "How do I communicate with the iOS development team?",
+      answer:
+        "You’ll have direct access to your project manager and development team through regular updates via email, calls, or collaboration tools, ensuring a seamless communication process.",
+    },
+  ];
+
   return (
     <>
       <div
-        className="hero min-h-screen"
+        className="relative hero min-h-screen"
         style={{
           backgroundImage: `url(${background.src})`,
           backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
-        <div className="hero-overlay bg-opacity-80"></div>
-        <div className="hero-content text-neutral-content text-left flex items-start pl-0 md:pl-8 lg:pl-10">
-          <div className="max-w-l ml-1p px-10">
+        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+
+        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+          <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
             <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
-              Hire IOS Developers
+              Hire iOS Developers
             </h1>
             <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
-              Why Hire IOS Developers from Ultrafly Solutions?
+              Why Hire iOS Developers from Ultrafly Solutions?
             </h3>
             <ul className="list-disc list-inside mb-7 text-white text-sm md:text-xl grid gap-4">
               <li>
                 Expert iOS Developers with comprehensive knowledge and hands-on
                 experience in building high-performance, user-friendly mobile
-                applications for Apple’s ecosystem
+                applications for Apple’s ecosystem.
               </li>
               <li>
                 Flexible Hiring Models—choose from full-time, part-time, or
-                project-based options to suit your business needs.{" "}
+                project-based options to suit your business needs.
               </li>
               <li>
                 Scalable Solutions designed to grow with your business, ensuring
@@ -91,7 +132,7 @@ const IOS = () => {
             </ul>
             <div className="flex justify-center mb-5">
               <a href="#sendBtn">
-                <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600">
+                <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600 px-4 py-2 rounded-xl">
                   Talk with Our Experts
                 </button>
               </a>
@@ -113,8 +154,8 @@ const IOS = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed]  opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={manualPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -139,8 +180,8 @@ const IOS = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={developmentPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -165,8 +206,8 @@ const IOS = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={solutionPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -191,8 +232,8 @@ const IOS = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={ideaPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -217,8 +258,8 @@ const IOS = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={micorPng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -244,8 +285,8 @@ const IOS = () => {
             <span className="absolute top-20 left-20 z-0 h-10 w-10 rounded-full bg-[#03a4ed] opacity-75 transition-all duration-500 transform group-hover:scale-[30]"></span>
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
-                <Image 
- quality={100}
+                <Image
+                  quality={100}
                   src={servicePng}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -290,8 +331,8 @@ const IOS = () => {
 
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
-              <Image 
- quality={100}
+              <Image
+                quality={100}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"
@@ -544,93 +585,53 @@ const IOS = () => {
           </form>
         </div>
         {/* faq */}
+
         <div className="col-span-2 grid gap-2 ">
-          <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-            Frequently Asked Questions (FAQs)
-          </h1>
-          <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-            <input type="radio" name="my-accordion-2" defaultChecked />
-            <div className="collapse-title text-xl font-medium">
-              Why should I hire an iOS developer from Ultrafly Solutions?
-            </div>
-            <div className="collapse-content">
-              <p>
-                Our iOS developers bring years of experience in building
-                dynamic, scalable, and high-performing mobile applications for
-                Apple’s ecosystem. We focus on delivering secure and tailored
-                solutions to fit your business needs
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              Can I hire an iOS developer on a project basis?
-            </div>
-            <div className="collapse-content">
-              <p>
-                Yes! We offer flexible hiring models to suit your project scope,
-                whether you need full-time, part-time, or project-based
-                engagement.
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              What type of applications can your iOS developers build?
-            </div>
-            <div className="collapse-content">
-              <p>
-                Our iOS developers are skilled in creating custom mobile apps,
-                enterprise-grade solutions, and apps for iOS-integrated systems.
-                We cater to a wide range of industries and business sizes.
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              How do you ensure project security?
-            </div>
-            <div className="collapse-content">
-              <p>
-                We follow industry best practices for secure development, from
-                data protection to secure coding. Post-launch, we offer
-                maintenance and support to keep your applications secure.
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              What’s the typical timeline for an iOS project?
-            </div>
-            <div className="collapse-content">
-              <p>
-                Project timelines depend on complexity and scope. Once we
-                understand your requirements, we provide a detailed project plan
-                with clear timelines.
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse collapse-arrow bg-blue-100 border-blue-800 border-[2px]">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              How do I communicate with the iOS development team?
-            </div>
-            <div className="collapse-content">
-              <p>
-                You’ll have direct access to your project manager and
-                development team through regular updates via email, calls, or
-                collaboration tools, ensuring a seamless communication process.
-              </p>
-            </div>
+          <div className="font-[sans-serif] space-y-4 max-w-6xl mx-auto mt-4">
+            {accordionData.map((item, index) => (
+              <div
+                key={index}
+                className={`shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] border-2 ${
+                  openIndex === index ? "border-blue-600" : "border-transparent"
+                } rounded-lg transition-all duration-300`}
+                style={{
+                  overflow: "hidden",
+                  transition: "max-height 0.3s ease-in-out",
+                  maxHeight: openIndex === index ? "300px" : "60px", // adjust maxHeight based on the open or closed state
+                }}
+                role="accordion"
+              >
+                <button
+                  onClick={() => toggleAccordion(index)}
+                  type="button"
+                  className="w-full text-base font-semibold text-left p-5 text-gray-800 flex items-center"
+                >
+                  <span className="mr-4">{item.question}</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className={`w-4 fill-current ml-auto shrink-0 transition-transform ${
+                      openIndex === index ? "rotate-180" : "-rotate-90"
+                    }`}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  className={`transition-opacity duration-300 ${
+                    openIndex === index ? "opacity-100" : "opacity-0"
+                  } pb-5 px-5`}
+                >
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {item.answer}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
