@@ -15,11 +15,11 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // output: 'export', // Ensures the build creates a static site.
+  output: 'export', // Ensures the build creates a static site.
   // trailingSlash: true, // Optional: Ensures proper linking for static pages.
   images: {
     domains: ['readymadeui.com', 'ultraflysolutions.com', 'c.statcounter.com'], // External domains for image optimization
-    // unoptimized: true, // If you want to disable image optimization (use only if necessary)
+    unoptimized: true, // If you want to disable image optimization (use only if necessary)
   },
 };
 
