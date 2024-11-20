@@ -14,7 +14,7 @@ export const metadata = {
       " Ultrafly Solutions offers React Native developers to build fast, cross-platform mobile apps. Optimize your mobile presence. Contact us today!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-react-native-developers", // Updated to match main content

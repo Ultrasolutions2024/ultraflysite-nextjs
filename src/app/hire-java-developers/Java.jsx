@@ -1,20 +1,20 @@
 "use client";
 
 import React, { useRef, useEffect, useState } from "react";
-import background from "../images/Resources/background.avif";
-import faq from "../images/Resources/faq.jpg";
+import background from "../images/Resources/background.webp";
+import faq from "../images/Resources/faq.webp";
 import { FaUser } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaMobileButton } from "react-icons/fa6";
 import Link from "next/link";
-import manualPng from "../images/Resources/python/manual.png";
-import developmentPng from "../images/Resources/python/development.png";
-import solutionPng from "../images/Resources/python/solution.png";
-import ideaPng from "../images/Resources/python/idea.png";
-import micorPng from "../images/Resources/python/self-development.png";
-import servicePng from "../images/Resources/python/service-provider.png";
-import resource from "../images/Resources/resource.png";
+import manualwebp from "../images/Resources/python/manual.webp";
+import developmentwebp from "../images/Resources/python/development.webp";
+import solutionwebp from "../images/Resources/python/solution.webp";
+import ideawebp from "../images/Resources/python/idea.webp";
+import micorwebp from "../images/Resources/python/self-development.webp";
+import servicewebp from "../images/Resources/python/service-provider.webp";
+import resource from "../images/Resources/resource.webp";
 import { IoIosArrowForward } from "react-icons/io";
 import emailjs from "emailjs-com";
 import { NotificationManager } from "react-notifications";
@@ -160,7 +160,7 @@ const Java = () => {
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
                   quality={100}
-                  src={manualPng}
+                  src={manualwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
                 />
@@ -185,7 +185,7 @@ const Java = () => {
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
                   quality={100}
-                  src={developmentPng}
+                  src={developmentwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
                 />
@@ -210,7 +210,7 @@ const Java = () => {
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
                   quality={100}
-                  src={solutionPng}
+                  src={solutionwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
                 />
@@ -235,7 +235,7 @@ const Java = () => {
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
                   quality={100}
-                  src={ideaPng}
+                  src={ideawebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
                 />
@@ -258,7 +258,7 @@ const Java = () => {
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
                   quality={100}
-                  src={micorPng}
+                  src={micorwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
                 />
@@ -283,7 +283,7 @@ const Java = () => {
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
                   quality={100}
-                  src={servicePng}
+                  src={servicewebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
                 />

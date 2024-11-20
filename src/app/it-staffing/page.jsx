@@ -12,7 +12,7 @@ export const metadata = {
     description: "Discover our professional website development services. We create responsive and user-friendly websites tailored to your business needs.",
     images: [
       {
-        url: 'https://www.ultraflysolutions.com/images/blog/timg.jpg', // Updated to absolute URL
+        url: 'https://www.ultraflysolutions.com/images/blog/timg.webp', // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/it-staffing", // Updated to match main content

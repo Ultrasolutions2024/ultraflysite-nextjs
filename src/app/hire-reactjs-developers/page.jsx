@@ -14,7 +14,7 @@ export const metadata = {
       " Hire ReactJS developers from Ultrafly Solutions to build fast, scalable frontend apps. Boost your digital experience. Contact us to get started today!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-reactjs-developers", // Updated to match main content

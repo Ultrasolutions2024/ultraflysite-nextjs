@@ -15,7 +15,7 @@ export const metadata = {
       "Learn more about Ultrafly Solutions, our mission, values, and the expert team driving innovative IT solutions for businesses worldwide.",
     images: [
       {
-        url: "/images/blog/timg.jpg", // Ensure this path is correct
+        url: "/images/blog/timg.webp", // Ensure this path is correct
       },
     ],
     url: "https://www.ultraflysolutions.com/about-us",

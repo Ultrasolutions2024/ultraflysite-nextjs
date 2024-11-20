@@ -1,6 +1,6 @@
 /* software.jsx */
 .software_dev_banner{
-    background-image: url('../images/our_services/circle-tech-with-light-blue-and-lamp-bulb-on-technology-background-vector.jpg');
+    background-image: url('../images/our_services/circle-tech-with-light-blue-and-lamp-bulb-on-technology-background-vector.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -63,7 +63,7 @@
     margin: 0 auto;
 }
 .soft-banner-footer{
-    background-image: url(../images/our_services/software_dev/banner-footer.png);
+    background-image: url(../images/our_services/software_dev/banner-footer.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,6 +1,6 @@
-import ProgressionImg from "../images/who-we-are/progresion.png";
-import recruitment from '../images/who-we-are/recuriment.png'
-import Software from '../images/who-we-are/software.png'
+import ProgressionImg from "../images/who-we-are/progresion.webp";
+import recruitment from '../images/who-we-are/recuriment.webp'
+import Software from '../images/who-we-are/software.webp'
 
 export const cardList = [
   {

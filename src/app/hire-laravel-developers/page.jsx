@@ -14,7 +14,7 @@ export const metadata = {
       "Ultrafly Solutions offers skilled Laravel developers to create custom, scalable web apps. Elevate your business with our expert services. Contact us today!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-laravel-developers", // Updated to match main content

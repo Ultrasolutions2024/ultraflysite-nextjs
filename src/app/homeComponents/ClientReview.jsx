@@ -4,10 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import avatarImg from '../images/logo/profile.png'
+import avatarImg from '../images/logo/profile.webp'
 import Link from "next/link";
 import clientBgImg from '../images/Company/clients.webp'
-import fiveStar from '../images/Company/five_star.png'
+import fiveStar from '../images/Company/five_star.webp'
 import Image from "next/image";
 const ClientReview = () => {
   const prevRef = useRef(null);

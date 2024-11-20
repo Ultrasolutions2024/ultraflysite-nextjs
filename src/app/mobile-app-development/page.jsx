@@ -3,11 +3,11 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import "./services.css";
 import SocialMedias from "../(Services)/SocialMedias";
-import bg1 from "../images/our_services/mobileImgs/mobile.jpg";
-import bg2 from "../images/our_services/mobileImgs/mobile2.jpg";
+import bg1 from "../images/our_services/mobileImgs/mobile.webp";
+import bg2 from "../images/our_services/mobileImgs/mobile2.webp";
 
 import gif1 from "../images/our_services/software_dev/software-development{}-gif.gif";
-import gif2 from "../images/our_services/mobileImgs/android_app_dev_lt-removebg-preview.png";
+import gif2 from "../images/our_services/mobileImgs/android_app_dev_lt-removebg-preview.webp";
 import gif3 from "../images/our_services/mobileImgs/iphone-application-development.webp";
 import ScrollToTop from "../lib/ScrollToTop";
 import {

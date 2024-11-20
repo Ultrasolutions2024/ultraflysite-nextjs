@@ -15,7 +15,7 @@ export const metadata = {
       "Discover the Ultrafly Solutions blog for expert insights on tech trends, industry innovations, and our cutting-edge solutions. Stay informed and ahead in the digital world.",
     images: [
       {
-        url: "../images/blog/timg.jpg", // Ensure this path is correct
+        url: "../images/blog/timg.webp", // Ensure this path is correct
       },
     ],
     url: "https://www.ultraflysolutions.com/blog",

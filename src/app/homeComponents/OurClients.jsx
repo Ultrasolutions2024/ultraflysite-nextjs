@@ -1,10 +1,10 @@
 import React from "react";
-import imageOne from "../../images/blog/back1.jpg";
-import brahmmis from '../../images/Clients/brahmmis.jpg';
-import makros from "../../images/Clients/makros.png";
-import srimathe from "../../images/Clients/srimathe.png";
-import exceed from "../../images/Clients/EXCEED LOGO.png";
-import mgs from "../../images/Clients/mgs.jpg";
+import imageOne from "../../images/blog/back1.webp";
+import brahmmis from '../../images/Clients/brahmmis.webp';
+import makros from "../../images/Clients/makros.webp";
+import srimathe from "../../images/Clients/srimathe.webp";
+import exceed from "../../images/Clients/EXCEED LOGO.webp";
+import mgs from "../../images/Clients/mgs.webp";
 import Image from "next/image";
 
 function OurClients() {

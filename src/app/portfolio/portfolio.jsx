@@ -1,19 +1,19 @@
 "use client";
 import React, { useEffect } from "react";
 import Head from "next/head";
-import bg1 from "../images/classes/cycling.jpg";
-import bg2 from "../images/classes/meditation.jpg";
-import bg3 from "../images/classes/A.png";
-import bg4 from "../images/classes/app1.png";
-import bg5 from "../images/classes/app2.png";
-import bg6 from "../images/classes/mobileapps.png";
+import bg1 from "../images/classes/cycling.webp";
+import bg2 from "../images/classes/meditation.webp";
+import bg3 from "../images/classes/A.webp";
+import bg4 from "../images/classes/app1.webp";
+import bg5 from "../images/classes/app2.webp";
+import bg6 from "../images/classes/mobileapps.webp";
 import portfolio_banner from "../images/career/portfolio_banner.webp";
 import Link from "next/link";
 import Image from "next/image";
-import division from "../images/our_services/websiteImg/division.jpeg";
-import mgs from "../images/our_services/websiteImg/mgs.jpg";
+import division from "../images/our_services/websiteImg/division.webp";
+import mgs from "../images/our_services/websiteImg/mgs.webp";
 import { FaIndustry, FaChartLine, FaStar, FaEnvelope } from "react-icons/fa";
-import dental from "../images/our_services/websiteImg/dental.png";
+import dental from "../images/our_services/websiteImg/dental.webp";
 
 function Portfolio() {
   useEffect(() => {

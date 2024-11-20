@@ -14,7 +14,7 @@ export const metadata = {
       "Hire expert iOS developers from Ultrafly Solutions for high-performance, user-friendly mobile apps. Elevate your mobile strategy. Get started today!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-ios-developers", // Updated to match main content

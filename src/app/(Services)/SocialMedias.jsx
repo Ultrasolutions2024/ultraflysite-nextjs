@@ -1,10 +1,10 @@
 import React from "react";
 import fbImg from "../images/our_services/social-medias/facebook.webp";
-import twitterImg from "../images/our_services/social-medias/twitter.png";
+import twitterImg from "../images/our_services/social-medias/twitter.webp";
 import instaImg from "../images/our_services/social-medias/Instagram.webp";
-import linkedinImg from "../images/our_services/social-medias/linkedin.png";
-import wAppImg from "../images/our_services/social-medias/whatsapp.png";
-import UtubeImg from "../images/our_services/social-medias/youtube.png";
+import linkedinImg from "../images/our_services/social-medias/linkedin.webp";
+import wAppImg from "../images/our_services/social-medias/whatsapp.webp";
+import UtubeImg from "../images/our_services/social-medias/youtube.webp";
 import Link from "next/link";
 import Image from "next/image";
 function SocialMedias() {

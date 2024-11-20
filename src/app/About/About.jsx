@@ -1,10 +1,10 @@
 "use client";
 import React, { useRef } from "react";
 import AboutCarts from "./AboutCarts";
-import projexticon from "../images/ultrafly/project-management.png";
-import clients from "../images/ultrafly/client-assistance.png";
-import customerservice from "../images/ultrafly/customer-service-agent.png";
-import bgImage from "../images/ultrafly/about-bg.jpg"; // Add a background image
+import projexticon from "../images/ultrafly/project-management.webp";
+import clients from "../images/ultrafly/client-assistance.webp";
+import customerservice from "../images/ultrafly/customer-service-agent.webp";
+import bgImage from "../images/ultrafly/about-bg.webp"; // Add a background image
 import CountUp from "react-countup";
 import Image from "next/image";
 function About() {

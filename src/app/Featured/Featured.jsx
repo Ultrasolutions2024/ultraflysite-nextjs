@@ -1,13 +1,13 @@
 import MainButton from "./MainButton";
 import TitleRed from "../images/features/title-bg.svg";
 import "./featured.css";
-import Image1 from "../images/features/bg1.jpg";
-import Image2 from "../images/features/bg2.jpg";
-import Image3 from "../images/features/bg5.jpg";
-import Image4 from "../images/features/bg7.jpg";
-import Image5 from "../images/features/bg4.jpg";
-import Image6 from "../images/features/bg6.jpg";
-import software from "../images/features/bg.png";
+import Image1 from "../images/features/bg1.webp";
+import Image2 from "../images/features/bg2.webp";
+import Image3 from "../images/features/bg5.webp";
+import Image4 from "../images/features/bg7.webp";
+import Image5 from "../images/features/bg4.webp";
+import Image6 from "../images/features/bg6.webp";
+import software from "../images/features/bg.webp";
 import Link from "next/link";
 import Image from "next/image";
 function Featured() {

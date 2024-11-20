@@ -14,7 +14,7 @@ export const metadata = {
       "Hire Ionic developers from Ultrafly Solutions to build secure, versatile hybrid mobile apps. Reach your audience on all platforms. Contact us now!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-ionic-developers", // Updated to match main content

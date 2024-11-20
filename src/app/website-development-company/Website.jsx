@@ -4,13 +4,13 @@ import "../mobile-app-development/services.css";
 import SocialMedias from "../(Services)/SocialMedias";
 import Link from "next/link";
 import gif1 from "../images/our_services/software_dev/software-development{}-gif.gif";
-import webImg from "../images/who-we-are/web.png";
-import softimg from "../images/our_services/websiteImg/software-img.jpg";
+import webImg from "../images/who-we-are/web.webp";
+import softimg from "../images/our_services/websiteImg/software-img.webp";
 import ScrollToTop from "../lib/ScrollToTop";
 import Head from "next/head";
 import web_bg from "../images/our_services/mobileImgs/mobile_bg.webp";
 import Image from "next/image";
-import bg1 from "../images/our_services/websiteImg/web.jpg";
+import bg1 from "../images/our_services/websiteImg/web.webp";
 import { FaMobileAlt, FaPaintBrush, FaUserEdit, FaCode } from "react-icons/fa";
 import { IoSettings } from "react-icons/io5";
 import {

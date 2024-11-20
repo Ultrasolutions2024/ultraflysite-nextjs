@@ -14,7 +14,7 @@ export const metadata = {
       "Hire frontend developers from Ultrafly Solutions for responsive, dynamic web apps. Deliver outstanding user experiences. Contact us today to learn more!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-front-end-developers", // Updated to match main content

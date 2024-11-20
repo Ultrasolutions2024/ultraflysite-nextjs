@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import logo from "../images/ultrafly/ultraflysolutionslog.png";
+import logo from "../images/ultrafly/ultraflysolutionslog.webp";
 import { motion, useScroll } from "framer-motion";
 import "./nav.css";
 import Link from "next/link";

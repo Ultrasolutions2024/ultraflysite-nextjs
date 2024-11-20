@@ -14,7 +14,7 @@ export const metadata = {
       "Hire Java developers from Ultrafly Solutions for robust, secure, high-performance applications. Drive business success with us. Get started now!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-java-developers", // Updated to match main content

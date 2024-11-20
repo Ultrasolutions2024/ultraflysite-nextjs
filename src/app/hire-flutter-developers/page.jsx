@@ -14,7 +14,7 @@ export const metadata = {
       "Ultrafly Solutions offers Flutter developers for seamless, cross-platform mobile apps. Build with us and boost your mobile presence. Contact us today!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-flutter-developers", // Updated to match main content

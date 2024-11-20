@@ -14,7 +14,7 @@ export const metadata = {
       "Ultrafly Solutions offers full stack developers for end-to-end solutions. Build comprehensive web apps with us. Reach out today to get started!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-full-stack-developers", // Updated to match main content

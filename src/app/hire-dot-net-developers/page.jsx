@@ -14,7 +14,7 @@ export const metadata = {
       "Hire skilled.NET developers from Ultrafly Solutions to build secure, scalable web apps. Boost your business with our expert services. Contact us today!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-dot-net-developers", // Updated to match main content

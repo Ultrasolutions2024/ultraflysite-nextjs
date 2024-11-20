@@ -12,7 +12,7 @@ export const metadata = {
     description: "Get in touch with Ultrafly Solutions for expert IT solutions and services. We're here to help your business grow and succeed.",
     images: [
       {
-        url: '../images/blog/timg.jpg', // Ensure this path is correct
+        url: '../images/blog/timg.webp', // Ensure this path is correct
       },
     ],
     url: "https://www.ultraflysolutions.com/contact-us",

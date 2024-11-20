@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Fimg from "../images/blog/first.jpg";
+import Fimg from "../images/blog/first.webp";
 import Link from "next/link";
-import logo from "../images/ultrafly/ultraflysolutionslog.png";
-import projexticon from "../images/ultrafly/projection.png";
-import clients from "../images/ultrafly/clients.png";
-import customerservice from "../images/ultrafly/customer service.png";
+import logo from "../images/ultrafly/ultraflysolutionslog.webp";
+import projexticon from "../images/ultrafly/projection.webp";
+import clients from "../images/ultrafly/clients.webp";
+import customerservice from "../images/ultrafly/customer service.webp";
 import CountUp from "react-countup";
 import { FaEye } from "react-icons/fa";
 import Head from "next/head";

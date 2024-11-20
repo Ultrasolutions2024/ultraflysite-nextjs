@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import bg1 from "../images/blog/linkedin.jpg";
-import profile from '../images/blog/profile.png';
+import bg1 from "../images/blog/linkedin.webp";
+import profile from '../images/blog/profile.webp';
 const JeevaBlogs = () => {
   return (
     <>

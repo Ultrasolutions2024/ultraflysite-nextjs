@@ -1,19 +1,19 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import bg1 from "../images/our_services/software_dev/bg1.jpg";
-import bg2 from "../images/our_services/software_dev/bg2.jpg";
+import bg1 from "../images/our_services/software_dev/bg1.webp";
+import bg2 from "../images/our_services/software_dev/bg2.webp";
 
 import "../mobile-app-development/services.css";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import iconCRM from "../images/our_services/software_dev/crm.jpg";
-import iconERP from "../images/our_services/software_dev/erp.jpg";
-import iconSCM from "../images/our_services/software_dev/scm.jpg";
-import iconHCM from "../images/our_services/software_dev/hcm.jpg";
-import iconBI from "../images/our_services/software_dev/bi.jpg";
-import iconConsultation from "../images/our_services/software_dev/cons.jpg";
-import cased from "../images/our_services/software_dev/case.png";
+import iconCRM from "../images/our_services/software_dev/crm.webp";
+import iconERP from "../images/our_services/software_dev/erp.webp";
+import iconSCM from "../images/our_services/software_dev/scm.webp";
+import iconHCM from "../images/our_services/software_dev/hcm.webp";
+import iconBI from "../images/our_services/software_dev/bi.webp";
+import iconConsultation from "../images/our_services/software_dev/cons.webp";
+import cased from "../images/our_services/software_dev/case.webp";
 import {
   FaRocket,
   FaSmile,

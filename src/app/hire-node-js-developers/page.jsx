@@ -14,7 +14,7 @@ export const metadata = {
       "Hire Node.js developers from Ultrafly Solutions for fast, efficient server-side apps. Optimize your backend with us. Reach out today to get started!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com//hire-node-js-developers", // Updated to match main content

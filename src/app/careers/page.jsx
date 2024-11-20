@@ -16,7 +16,7 @@ export const metadata = {
       "Join the Ultrafly Solutions team and build a rewarding career in the tech industry. Explore our current job openings and apply today.",
     images: [
       {
-        url: "/images/blog/timg.jpg", // Ensure this path is correct
+        url: "/images/blog/timg.webp", // Ensure this path is correct
       },
     ],
     url: "https://www.ultraflysolutions.com/careers",

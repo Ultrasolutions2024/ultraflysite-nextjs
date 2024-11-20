@@ -1,15 +1,15 @@
 import Link from "next/link";
 import { MdOutlineEmail } from "react-icons/md";
 import { TbDeviceMobile } from "react-icons/tb";
-import india from '../images/hero/india.png';
-import usa from '../images/hero/united-states.png';
-import whatsapp from '../images/our_services/social-medias/whatsapp.png'
+import india from '../images/hero/india.webp';
+import usa from '../images/hero/united-states.webp';
+import whatsapp from '../images/our_services/social-medias/whatsapp.webp'
 import facebook from '../images/our_services/social-medias/facebook.webp'
-import twitter from '../images/our_services/social-medias/twitter.png'
-import linkedin from '../images/our_services/social-medias/linkedin.png'
-import youtube from '../images/our_services/social-medias/youtube.png'
+import twitter from '../images/our_services/social-medias/twitter.webp'
+import linkedin from '../images/our_services/social-medias/linkedin.webp'
+import youtube from '../images/our_services/social-medias/youtube.webp'
 import instagram from '../images/our_services/social-medias/Instagram.webp'
-import location from '../images/our_services/social-medias/location.jpeg'
+import location from '../images/our_services/social-medias/location.webp'
 import Image from "next/image";
 function Footer() {
   return (
