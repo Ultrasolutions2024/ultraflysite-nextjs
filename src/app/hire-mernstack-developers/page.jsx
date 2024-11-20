@@ -14,7 +14,7 @@ export const metadata = {
       "Hire MERN stack developers from Ultrafly Solutions for fast, full-stack apps. Seamlessly integrate frontend and backend. Contact us today!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-mernstack-developers", // Updated to match main content

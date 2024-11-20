@@ -1,12 +1,12 @@
 "use client";
 import React, { useRef, useEffect } from 'react';
-import badge1 from '../images/technologies/highly recommended.png';
-import badge2 from '../images/technologies/topservice.png';
-import badge3 from '../images/technologies/Ultrafly Solutions - Good Firms.png';
-import badge4 from '../images/technologies/review.png';
-import badge5 from '../images/technologies/itfirms.png';
-import badge6 from '../images/technologies/gptw (1).png';
-import badge7 from '../images/features/techreviewer.png';
+import badge1 from '../images/technologies/highly recommended.webp';
+import badge2 from '../images/technologies/topservice.webp';
+import badge3 from '../images/technologies/Ultrafly Solutions - Good Firms.webp';
+import badge4 from '../images/technologies/review.webp';
+import badge5 from '../images/technologies/itfirms.webp';
+import badge6 from '../images/technologies/gptw (1).webp';
+import badge7 from '../images/features/techreviewer.webp';
 import { cn } from "../lib/utils";
 import Image from 'next/image';
 const Badges = () => {

@@ -14,7 +14,7 @@ export const metadata = {
       "Ultrafly Solutions offers expert JavaScript developers to create interactive, high-performance apps. Enhance engagement. Get in touch now!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-javascript-developers", // Updated to match main content

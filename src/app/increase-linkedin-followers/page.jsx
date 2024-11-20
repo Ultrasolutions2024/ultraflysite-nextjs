@@ -11,7 +11,7 @@ export const metadata = {
     description: "Top 05 Mobile App Development Frameworks in 2024",
     images: [
       {
-        url: "/images/blog/timg.jpg", // Ensure this path is correct
+        url: "/images/blog/timg.webp", // Ensure this path is correct
       },
     ],
     url: "https://www.ultraflysolutions.com/top-mobile-development-framework",

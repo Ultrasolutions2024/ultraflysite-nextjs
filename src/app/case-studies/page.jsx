@@ -14,7 +14,7 @@ export const metadata = {
       "Explore the success stories and impactful case studies from Ultrafly Solutions. Discover how our expert IT solutions have helped businesses grow and succeed.",
     images: [
       {
-        url: "../images/blog/timg.jpg", // Ensure this path is correct
+        url: "../images/blog/timg.webp", // Ensure this path is correct
       },
     ],
     url: "https://www.ultraflysolutions.com/contact-us",

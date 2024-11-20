@@ -4,13 +4,13 @@ import "../mobile-app-development/services.css";
 import SocialMedias from "../(Services)/SocialMedias";
 import Link from "next/link";
 import gif1 from "../images/our_services/software_dev/software-development{}-gif.gif";
-import webImg from "../images/our_services/websiteImg/Recruiter hr.jpg";
-import softimg from "../images/who-we-are/staffing.png";
+import webImg from "../images/our_services/websiteImg/Recruiter hr.webp";
+import softimg from "../images/who-we-are/staffing.webp";
 import ScrollToTop from "../lib/ScrollToTop";
 import Head from "next/head";
 import it_bg from "../images/our_services/seo&digital/it_bg.webp";
 import Image from "next/image";
-import bg1 from "../images/our_services/software_dev/it.jpg";
+import bg1 from "../images/our_services/software_dev/it.webp";
 function ITStaffing() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

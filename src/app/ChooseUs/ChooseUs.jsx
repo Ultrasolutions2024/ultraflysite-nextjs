@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import background from '../images/choose-us/background.png';
+import background from '../images/choose-us/background.webp';
 import Image from "next/image";
 function ChooseUs() {
   return (

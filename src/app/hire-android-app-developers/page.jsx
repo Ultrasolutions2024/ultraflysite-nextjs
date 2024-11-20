@@ -14,7 +14,7 @@ export const metadata = {
       "Hire Android app developers from Ultrafly Solutions to build custom, high-performance mobile apps. Enhance user experience. Get in touch today!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-android-app-developers", // Updated to match main content

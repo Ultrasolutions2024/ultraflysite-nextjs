@@ -2,8 +2,8 @@
 
 import React from "react";
 import Image from "next/image"; // Import Next.js Image component
-import india from "../images/hero/india.png";
-import usa from "../images/hero/united-states.png";
+import india from "../images/hero/india.webp";
+import usa from "../images/hero/united-states.webp";
 import { IoArrowForward } from "react-icons/io5";
 import Link from "next/link"; // Import Next.js Link component
 

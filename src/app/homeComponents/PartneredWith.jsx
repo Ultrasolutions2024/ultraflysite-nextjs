@@ -1,6 +1,6 @@
 "use client";
-import images from "../images/partner.png";
-import star from "../images/star.png";
+import images from "../images/partner.webp";
+import star from "../images/star.webp";
 import Image from "next/image";
 
 const PartneredWith = () => {

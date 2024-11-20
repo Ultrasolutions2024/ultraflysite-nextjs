@@ -15,7 +15,7 @@ export const metadata = {
       "Explore our portfolio showcasing successful projects in mobile app development, website development, and digital marketing by Ultrafly Solutions.",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/portfolio", // Updated to match main content

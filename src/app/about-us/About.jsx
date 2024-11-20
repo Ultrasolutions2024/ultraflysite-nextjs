@@ -1,12 +1,12 @@
 "use client";
 import MainButton from "../Featured/MainButton";
 import React, { useEffect } from "react";
-import Img3 from "../images/AboutPage/3.jpg";
-import Img4 from "../images/GalleryPage/4.jpg";
-import Target from "../images/AboutPage/target.png";
-import Mountain from "../images/AboutPage/mountain.png";
-import aboutImg from "../images/AboutPage/new.png";
-import intro from "../images/AboutPage/intro.png";
+import Img3 from "../images/AboutPage/3.webp";
+import Img4 from "../images/GalleryPage/4.webp";
+import Target from "../images/AboutPage/target.webp";
+import Mountain from "../images/AboutPage/mountain.webp";
+import aboutImg from "../images/AboutPage/new.webp";
+import intro from "../images/AboutPage/intro.webp";
 import aboutBanner from "../images/AboutPage/about_us_banner.webp";
 import Image from "next/image";
 import {

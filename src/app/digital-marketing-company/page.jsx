@@ -15,7 +15,7 @@ export const metadata = {
       "Boost your online presence with our SEO and digital marketing services. Ultrafly Solutions helps your business reach its full potential.",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.jpg", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/digital-marketing-company", // Updated to match main content

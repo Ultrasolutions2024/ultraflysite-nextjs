@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import team from "../images/our_services/websiteImg/team.png";
-import dental from "../images/our_services/websiteImg/dental.png";
-import division from "../images/our_services/websiteImg/division.jpeg";
-import mgs from "../images/our_services/websiteImg/mgs.jpg";
+import team from "../images/our_services/websiteImg/team.webp";
+import dental from "../images/our_services/websiteImg/dental.webp";
+import division from "../images/our_services/websiteImg/division.webp";
+import mgs from "../images/our_services/websiteImg/mgs.webp";
 import { FaIndustry, FaChartLine, FaStar, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 

@@ -2,10 +2,10 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Fimg from "../images/blog/first.jpg";
-import Simg from "../images/blog/seoblog.jpg";
-import Timg from "../images/blog/timg.jpg";
-import bg1 from "../images/blog/linkedin.jpg";
+import Fimg from "../images/blog/first.webp";
+import Simg from "../images/blog/seoblog.webp";
+import Timg from "../images/blog/timg.webp";
+import bg1 from "../images/blog/linkedin.webp";
 
 function Blog() {
   useEffect(() => {

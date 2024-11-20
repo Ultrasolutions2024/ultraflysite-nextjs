@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from "react";
-import india from "../images/hero/india.png";
-import usa from "../images/hero/united-states.png";
+import india from "../images/hero/india.webp";
+import usa from "../images/hero/united-states.webp";
 import emailjs from "emailjs-com";
 import {
   NotificationContainer,
