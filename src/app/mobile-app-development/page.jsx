@@ -1,15 +1,9 @@
 "use client";
-import Link from "next/link";
 import React, { useEffect } from "react";
 import "./services.css";
-import SocialMedias from "../(Services)/SocialMedias";
 import bg1 from "../images/our_services/mobileImgs/mobile.webp";
 import bg2 from "../images/our_services/mobileImgs/mobile2.webp";
 
-import gif1 from "../images/our_services/software_dev/software-development{}-gif.gif";
-import gif2 from "../images/our_services/mobileImgs/android_app_dev_lt-removebg-preview.webp";
-import gif3 from "../images/our_services/mobileImgs/iphone-application-development.webp";
-import ScrollToTop from "../lib/ScrollToTop";
 import {
   FiZap,
   FiCheckCircle,
@@ -19,7 +13,6 @@ import {
   FiShield,
   FiHeadphones,
 } from "react-icons/fi";
-import mobile_bg from "../images/our_services/mobileImgs/mobile_bg.webp";
 import Head from "next/head";
 import Image from "next/image";
 import {
@@ -59,7 +52,7 @@ const Mobile = () => {
                 data-aos="fade-right"
               >
                 <Image 
- quality={100}
+  quality={75}
                   src={bg1}
                   alt="Placeholder Image"
                   className="object-contain rounded-3xl -z-10"
@@ -121,7 +114,7 @@ const Mobile = () => {
                 data-aos="fade-left"
               >
                 <Image 
- quality={100}
+  quality={75}
                   src={bg2}
                   alt="Placeholder Image"
                   className="object-contain rounded-3xl -z-10"

@@ -25,9 +25,47 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-      <meta name="google-site-verification" content="SwDsm2it5yHa7AES5dS3Gk8qwJMCmlM8m_pMlASrmlY" />
+        <meta
+          name="google-site-verification"
+          content="SwDsm2it5yHa7AES5dS3Gk8qwJMCmlM8m_pMlASrmlY"
+        />
         <meta name="yandex-verification" content="5fa3dbee124941e5" />
         <link rel="apple-touch-icon" href="./favicon.ico" />
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:url" content="https://www.ultraflysolutions.com" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Ultrafly Solutions | Best Software Development Company"
+        />
+        <meta
+          property="og:description"
+          content="Discover cutting-edge IT solutions with Ultrafly Solutions. From mobile app development to digital marketing, we help your business soar to new heights."
+        />
+        <meta
+          property="og:image"
+          content="https://opengraph.b-cdn.net/production/images/1d54d2c6-31a8-42c5-ba1e-747d6c79bddd.png?token=Ty_PLD9MwsDhernxtU33kOEaHGTdMKBrxIzkPnAGa2g&height=630&width=1200&expires=33268088827"
+        />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="ultraflysolutions.com" />
+        <meta
+          property="twitter:url"
+          content="https://www.ultraflysolutions.com"
+        />
+        <meta
+          name="twitter:title"
+          content="Ultrafly Solutions | Best Software Development Company"
+        />
+        <meta
+          name="twitter:description"
+          content="Discover cutting-edge IT solutions with Ultrafly Solutions. From mobile app development to digital marketing, we help your business soar to new heights."
+        />
+        <meta
+          name="twitter:image"
+          content="https://opengraph.b-cdn.net/production/images/1d54d2c6-31a8-42c5-ba1e-747d6c79bddd.png?token=Ty_PLD9MwsDhernxtU33kOEaHGTdMKBrxIzkPnAGa2g&height=630&width=1200&expires=33268088827"
+        />
       </Head>
       <body>
         <TopHeader />
@@ -38,7 +76,7 @@ export default function RootLayout({ children }) {
 
         {/* Schema Markup */}
         <Script
-          id="schema-markup" 
+          id="schema-markup"
           type="application/ld+json"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
@@ -61,9 +99,38 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+        {/* Meta Pixel Code */}
+        <Script id="facebook-pixel" strategy="afterInteractive">
+          {`
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '476081301593579');
+          fbq('track', 'PageView');
+        `}
+        </Script>
+        <noscript>
+          <Image
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=476081301593579&ev=PageView&noscript=1"
+            alt="Meta Pixel"
+          />
+        </noscript>
+        {/* End Meta Pixel Code */}
 
         {/* StatCounter */}
-        <Script type="text/javascript" id="statcounter-script" strategy="afterInteractive">
+        <Script
+          type="text/javascript"
+          id="statcounter-script"
+          strategy="afterInteractive"
+        >
           {`
             var sc_project=13049783; 
             var sc_invisible=1; 
@@ -84,8 +151,8 @@ export default function RootLayout({ children }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image 
- quality={100}
+              <Image
+                quality={75}
                 className="statcounter"
                 src="https://c.statcounter.com/13049783/0/b0f333ac/1/"
                 alt="Web Analytics Made Easy - Statcounter"

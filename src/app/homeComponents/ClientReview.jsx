@@ -29,7 +29,7 @@ const ClientReview = () => {
               What Our Clients Say
             </h2>
             <Image 
- quality={100} src={fiveStar} alt="star" className="w-80 hidden md:block" />
+  quality={75} src={fiveStar} alt="star" className="w-80 hidden md:block" />
           <div className="flex items-center gap-8">
             <button
               ref={prevRef}
@@ -85,7 +85,7 @@ const ClientReview = () => {
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
                 <Image 
- quality={100}
+  quality={75}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -121,7 +121,7 @@ const ClientReview = () => {
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
                 <Image 
- quality={100}
+  quality={75}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -156,7 +156,7 @@ const ClientReview = () => {
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
                 <Image 
- quality={100}
+  quality={75}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -192,7 +192,7 @@ const ClientReview = () => {
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
                 <Image 
- quality={100}
+  quality={75}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -227,7 +227,7 @@ const ClientReview = () => {
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
                 <Image 
- quality={100}
+  quality={75}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -261,7 +261,7 @@ const ClientReview = () => {
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
                 <Image 
- quality={100}
+  quality={75}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -295,7 +295,7 @@ const ClientReview = () => {
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
                 <Image 
- quality={100}
+  quality={75}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -329,7 +329,7 @@ const ClientReview = () => {
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
                 <Image 
- quality={100}
+  quality={75}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -363,7 +363,7 @@ const ClientReview = () => {
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
                 <Image 
- quality={100}
+  quality={75}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -397,7 +397,7 @@ const ClientReview = () => {
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
                 <Image 
- quality={100}
+  quality={75}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"
@@ -431,7 +431,7 @@ const ClientReview = () => {
               </p>
               <div className="flex flex-col justify-center items-center gap-5">
                 <Image 
- quality={100}
+  quality={75}
                   className="rounded-full object-cover"
                   src={avatarImg}
                   alt="avatar"

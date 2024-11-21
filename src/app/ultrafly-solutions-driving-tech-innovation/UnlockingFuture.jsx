@@ -45,7 +45,7 @@ function UnlockingFuture() {
             </div>
 
             <Image 
- quality={100}
+  quality={75}
               src={Fimg}
               alt="Unlocking the Future"
               className="h-[30vh] object-cover md:h-[50vh] p-2 w-full" // Decreased size
@@ -125,7 +125,7 @@ function UnlockingFuture() {
           <div className="sticky top-24 self-start md:w-[24rem] p-8 ml-4">
             <div className="border-2 border-gray-300 bg-gradient-to-r from-blue-100 to-blue-900 p-6 rounded-lg">
               <Image 
- quality={100} src={logo} alt="logo" className="w-5px" />
+  quality={75} src={logo} alt="logo" className="w-5px" />
               <p className="text-center font-bold text-xl mt-4 text-black">
                 Let&apos;s connect! Explore more about IT solutions.
               </p>
@@ -151,7 +151,7 @@ function About() {
     <div className="flex flex-wrap items-center gap-4 mt-4 px-4">
       <div className="flex items-center">
         <Image 
- quality={100}
+  quality={75}
           src={projexticon}
           alt="About Us | Ultrafly Solutions"
           className="w-[3rem] h-auto mr-2"
@@ -174,7 +174,7 @@ function About() {
 
       <div className="flex items-center">
         <Image 
- quality={100}
+  quality={75}
           src={clients}
           alt="icon_img ultraflysolutions"
           className="w-[3rem] h-auto mr-2"
@@ -197,7 +197,7 @@ function About() {
 
       <div className="flex items-center">
         <Image 
- quality={100}
+  quality={75}
           src={customerservice}
           alt="icon_img ultraflysolutions"
           className="w-[3rem] h-auto mr-2"

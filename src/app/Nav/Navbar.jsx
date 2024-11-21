@@ -31,7 +31,7 @@ function Navbar() {
       <div className="flex items-center justify-between px-10 py-4 bg-gray-50">
         <Link href="/">
           <Image 
- quality={100} src={logo} alt="logo" className="w-36" />
+  quality={75} src={logo} alt="logo" className="w-36" />
         </Link>
 
         {/* Hamburger button for mobile */}
@@ -349,7 +349,7 @@ function Navbar() {
           <div className="flex justify-between items-center p-4 text-white ">
             <Link href="/">
               <Image 
- quality={100} src={logo} alt="logo" className="w-28" />
+  quality={75} src={logo} alt="logo" className="w-28" />
             </Link>
             <button onClick={toggleMenu} aria-label="Close Menu">
               <svg

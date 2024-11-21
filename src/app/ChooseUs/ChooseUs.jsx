@@ -71,7 +71,7 @@ function ChooseUs() {
     }}
   ></div> */}
   <Image 
- quality={100} src={background} className="w-full h-full hidden md:block bg-[length:100%] bg-right bg-no-repeat" alt="Digital Marketing"/>
+  quality={75} src={background} className="w-full h-full hidden md:block bg-[length:100%] bg-right bg-no-repeat" alt="Digital Marketing"/>
     </div>
   );
 }

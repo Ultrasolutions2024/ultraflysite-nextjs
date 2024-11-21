@@ -13,7 +13,6 @@ import mobile from "../images/hero/mobile.webp";
 import seo from "../images/hero/seo.webp";
 import homeimg from "../images/hero/home2.webp";
 import Link from "next/link";
-import Head from "next/head";
 import Image from "next/image";
 import "../globals.css";
 function Hero() {
@@ -128,7 +127,7 @@ function Hero() {
             {/* Main Hexagon Background with Image */}
             <div className="max-sm:w-48 max-sm:h-48 max-sm:mt-10 sm:absolute bottom-10 h-full w-[400px] lg:translate-x-36  rounded-xl  mx-auto flex justify-center items-center max-sm:p-10  clip-hexagon bg-[#eca918]">
               <Image
-                quality={100}
+                 quality={75}
                 src={womenImg}
                 alt="women"
                 className="object-cover w-full h-full"
@@ -171,7 +170,7 @@ function Hero() {
                   }}
                 >
                   <Image
-                    quality={100}
+                     quality={75}
                     src={mobile}
                     alt="review"
                     className="w-full h-full object-cover "
@@ -189,7 +188,7 @@ function Hero() {
                   }}
                 >
                   <Image
-                    quality={100}
+                     quality={75}
                     src={screen}
                     alt="face recognition"
                     className="w-40 h-20 md:w-56 md:h-32 mx-auto"
@@ -207,7 +206,7 @@ function Hero() {
                   }}
                 >
                   <Image
-                    quality={100}
+                     quality={75}
                     src={seo}
                     alt="SEO"
                     className="w-full h-full object-cover"

@@ -46,7 +46,7 @@ function OurTechnologies() {
             style={{ backgroundImage: 'linear-gradient(145deg, #f5f5f5, #ffffff)', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.05)' }}
           >
             <Image 
- quality={100} src={tech.src} alt={tech.alt} className="h-full w-auto rounded-md" />
+  quality={75} src={tech.src} alt={tech.alt} className="h-full w-auto rounded-md" />
           </div>
         ))}
       </section>

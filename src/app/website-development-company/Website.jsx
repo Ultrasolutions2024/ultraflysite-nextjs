@@ -1,14 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
 import "../mobile-app-development/services.css";
-import SocialMedias from "../(Services)/SocialMedias";
-import Link from "next/link";
-import gif1 from "../images/our_services/software_dev/software-development{}-gif.gif";
-import webImg from "../images/who-we-are/web.webp";
-import softimg from "../images/our_services/websiteImg/software-img.webp";
-import ScrollToTop from "../lib/ScrollToTop";
-import Head from "next/head";
-import web_bg from "../images/our_services/mobileImgs/mobile_bg.webp";
 import Image from "next/image";
 import bg1 from "../images/our_services/websiteImg/web.webp";
 import { FaMobileAlt, FaPaintBrush, FaUserEdit, FaCode } from "react-icons/fa";
@@ -23,7 +15,6 @@ import {
   FaRocket,
   FaShieldAlt,
   FaTools,
-  FaClock,
   FaChartLine,
   FaUsers,
   FaThumbsUp,
@@ -46,7 +37,7 @@ function Website() {
               data-aos="fade-right"
             >
               <Image 
- quality={100}
+  quality={75}
                 src={bg1}
                 alt="Placeholder Image"
                 className="object-contain rounded-3xl -z-10"
@@ -480,7 +471,7 @@ function Website() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-14">
             <div>
               <Image 
- quality={100}
+  quality={75}
                 src={gif1}
                 alt="Tools Used for Website Development at UltraFly Solutions"
                 className="mx-auto w-full md:w-2/4 lg:w-full"
@@ -536,7 +527,7 @@ function Website() {
             </div>
             <div>
               <Image 
- quality={100}
+  quality={75}
                 src={softimg}
                 alt="Responsive Website Design on Different Devices"
                 className="mx-auto w-1/2 md:w-2/4 lg:w-full"
@@ -546,7 +537,7 @@ function Website() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-14">
             <div>
               <Image 
- quality={100}
+  quality={75}
                 src={webImg}
                 alt="E-commerce Website Developed by UltraFly Solutions"
                 className="mx-auto w-1/2"

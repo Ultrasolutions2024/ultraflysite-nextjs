@@ -16,7 +16,7 @@ function SocialMedias() {
         rel="noopener noreferrer"
       >
         <Image 
- quality={100}
+  quality={75}
           src={wAppImg}
           alt="WhatsApp"
           className="social-icon w-12 hover:scale-110 transition-transform duration-300"

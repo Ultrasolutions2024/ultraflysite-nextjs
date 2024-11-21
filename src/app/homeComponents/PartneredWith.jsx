@@ -14,7 +14,7 @@ const PartneredWith = () => {
         {/* Partner Logo */}
         <div>
           <Image 
- quality={100} src={images} alt="Partner logo" className="w-80 sm:ml-10" />
+  quality={75} src={images} alt="Partner logo" className="w-80 sm:ml-10" />
         </div>
 
         {/* Partner Description */}
@@ -36,7 +36,7 @@ const PartneredWith = () => {
           ].map((text, index) => (
             <div key={index} className="flex items-start gap-2">
               <Image 
- quality={100} src={star} alt="Star icon" className="w-5 mt-1" />
+  quality={75} src={star} alt="Star icon" className="w-5 mt-1" />
               <p className="text-sm sm:text-base">{text}</p>
             </div>
           ))}

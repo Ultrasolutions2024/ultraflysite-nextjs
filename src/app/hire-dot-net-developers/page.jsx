@@ -1,28 +1,43 @@
 import React from "react";
 import dynamic from "next/dynamic";
-const Dotnet=dynamic(()=>import('./Dotnet'),{
-  ssr:false,
-})
+import Head from "next/head";
+
+const Dotnet = dynamic(() => import('./Dotnet'), {
+  ssr: false,
+});
+
 export const metadata = {
-  title: ` Hire Expert .NET Developers | Ultrafly Solutions for Scalable Apps`,
+  title: `Hire Expert .NET Developers | Ultrafly Solutions for Scalable Apps`,
   description:
-    "Hire skilled.NET developers from Ultrafly Solutions to build secure, scalable web apps. Boost your business with our expert services. Contact us today!",
-  // keywords: "SEO, digital marketing, online presence, search engine optimization, Ultrafly Solutions",
+    "Hire skilled .NET developers from Ultrafly Solutions to build secure, scalable web apps. Boost your business with our expert services. Contact us today!",
   openGraph: {
-    title: ` Hire Expert .NET Developers | Ultrafly Solutions for Scalable Apps`,
+    title: `Hire Expert .NET Developers | Ultrafly Solutions for Scalable Apps`,
     description:
-      "Hire skilled.NET developers from Ultrafly Solutions to build secure, scalable web apps. Boost your business with our expert services. Contact us today!",
+      "Hire skilled .NET developers from Ultrafly Solutions to build secure, scalable web apps. Boost your business with our expert services. Contact us today!",
     images: [
       {
         url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-dot-net-developers", // Updated to match main content
-    // type: "website",
   },
 };
-function page() {
-  return <Dotnet />;
+
+function Page() {
+  return (
+    <>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <link rel="canonical" href={metadata.openGraph.url} />
+      </Head>
+      <Dotnet />
+    </>
+  );
 }
 
-export default page;
+export default Page;

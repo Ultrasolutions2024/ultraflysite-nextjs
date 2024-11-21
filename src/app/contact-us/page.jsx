@@ -1,12 +1,15 @@
 import React from 'react'
 import dynamic from 'next/dynamic';
-const Contact=dynamic(()=>import('./Contact'),{
-  ssr:false
-})
+import Head from 'next/head';
+
+const Contact = dynamic(() => import('./Contact'), {
+  ssr: false,
+});
+
 export const metadata = {
   title: "Contact Us | Ultrafly Solutions",
   description: "Get in touch with Ultrafly Solutions for expert IT solutions and services. We're here to help your business grow and succeed.",
-  keywords:"contact Ultrafly Solutions, get in touch, IT solutions, business inquiries",
+  keywords: "contact Ultrafly Solutions, get in touch, IT solutions, business inquiries",
   openGraph: {
     title: "Contact Us | Ultrafly Solutions",
     description: "Get in touch with Ultrafly Solutions for expert IT solutions and services. We're here to help your business grow and succeed.",
@@ -20,10 +23,22 @@ export const metadata = {
   },
 };
 
-function page() {
+function Page() {
   return (
-    <Contact/>
-  )
+    <>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <link rel="canonical" href={metadata.openGraph.url} />
+      </Head>
+      <Contact />
+    </>
+  );
 }
 
-export default page
+export default Page;
