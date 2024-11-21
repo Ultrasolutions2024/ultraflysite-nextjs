@@ -18,7 +18,7 @@ function TopHeader() {
       </div>
       <div>
         <Image 
- quality={100}
+  quality={75}
           src={usa}
           alt="USA"
           className="inline-block lg:w-6 w-3 md:w-6"
@@ -29,7 +29,7 @@ function TopHeader() {
       </div>
       <div>
         <Image 
- quality={100}
+  quality={75}
           src={india}
           alt="India"
           className="inline-block lg:w-6 w-3 md:w-6"

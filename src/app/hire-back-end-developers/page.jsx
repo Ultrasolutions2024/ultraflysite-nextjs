@@ -1,13 +1,15 @@
 import React from "react";
 import dynamic from "next/dynamic";
-const BackendDevelopers=dynamic(()=>import('./BackendDevelopers'),{
-  ssr:false
-})
+import Head from "next/head";
+
+const BackendDevelopers = dynamic(() => import('./BackendDevelopers'), {
+  ssr: false
+});
+
 export const metadata = {
   title: "Hire Backend Developers | Ultrafly Solutions for Scalable Apps",
   description:
     "Hire backend developers from Ultrafly Solutions for secure, scalable server-side solutions. Strengthen your infrastructure. Get started with us today!",
-  // keywords: "SEO, digital marketing, online presence, search engine optimization, Ultrafly Solutions",
   openGraph: {
     title: "Hire Backend Developers | Ultrafly Solutions for Scalable Apps",
     description:
@@ -18,11 +20,24 @@ export const metadata = {
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-back-end-developers", // Updated to match main content
-    // type: "website",
   },
 };
-function page() {
-  return <BackendDevelopers />;
+
+function Page() {
+  return (
+    <>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <link rel="canonical" href={metadata.openGraph.url} />
+      </Head>
+      <BackendDevelopers />
+    </>
+  );
 }
 
-export default page;
+export default Page;

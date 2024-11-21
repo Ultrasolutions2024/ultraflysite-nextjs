@@ -158,7 +158,7 @@ const Flutter = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                  quality={100}
+                   quality={75}
                   src={manualwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -184,7 +184,7 @@ const Flutter = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                  quality={100}
+                   quality={75}
                   src={servicewebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -209,7 +209,7 @@ const Flutter = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                  quality={100}
+                   quality={75}
                   src={solutionwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -235,7 +235,7 @@ const Flutter = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                  quality={100}
+                   quality={75}
                   src={ideawebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -261,7 +261,7 @@ const Flutter = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                  quality={100}
+                   quality={75}
                   src={micorwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -286,7 +286,7 @@ const Flutter = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                  quality={100}
+                   quality={75}
                   src={developmentwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -332,7 +332,7 @@ const Flutter = () => {
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
               <Image
-                quality={100}
+                 quality={75}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"

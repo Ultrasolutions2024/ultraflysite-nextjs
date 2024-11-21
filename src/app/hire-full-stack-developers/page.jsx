@@ -1,13 +1,15 @@
 import React from "react";
 import dynamic from "next/dynamic";
-const FullstackDevelopers=dynamic(()=>import('./FullstackDevelopers'),{
-  ssr:false,
-})
+import Head from "next/head";
+
+const FullstackDevelopers = dynamic(() => import('./FullstackDevelopers'), {
+  ssr: false,
+});
+
 export const metadata = {
   title: "Hire Full Stack Developers | Ultrafly Solutions for Web Apps",
   description:
     "Ultrafly Solutions offers full stack developers for end-to-end solutions. Build comprehensive web apps with us. Reach out today to get started!",
-  // keywords: "SEO, digital marketing, online presence, search engine optimization, Ultrafly Solutions",
   openGraph: {
     title: "Hire Full Stack Developers | Ultrafly Solutions for Web Apps",
     description:
@@ -17,12 +19,25 @@ export const metadata = {
         url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
       },
     ],
-    url: "https://www.ultraflysolutions.com/hire-full-stack-developers", // Updated to match main content
-    // type: "website",
+    url: "https://www.ultraflysolutions.com/hire-full-stack-developers",
   },
 };
-function page() {
-  return <FullstackDevelopers />;
+
+function Page() {
+  return (
+    <>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <link rel="canonical" href={metadata.openGraph.url} />
+      </Head>
+      <FullstackDevelopers />
+    </>
+  );
 }
 
-export default page;
+export default Page;

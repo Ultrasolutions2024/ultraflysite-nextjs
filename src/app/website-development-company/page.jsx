@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
 import dynamic from 'next/dynamic';
-const Website=dynamic(()=>import('./Website'),{
-  ssr:false
-})
+import Head from 'next/head'; // Import Head for managing metadata
+
+const Website = dynamic(() => import('./Website'), {
+  ssr: false,
+});
+
 export const metadata = {
   title: "Website Development | Ultrafly Solutions",
   description: "Professional website development services by Ultrafly Solutions. We build responsive and user-friendly websites tailored to your business needs.",
@@ -20,13 +23,23 @@ export const metadata = {
   },
 };
 
-function page() {
+function Page() {
   return (
     <>
-    
-   <Website/>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:type" content={metadata.openGraph.type} />
+        <link rel="canonical" href={metadata.openGraph.url} />
+      </Head>
+      <Website />
     </>
-  )
+  );
 }
 
-export default page
+export default Page;

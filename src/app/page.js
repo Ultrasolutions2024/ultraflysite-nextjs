@@ -11,9 +11,9 @@ import PartneredWith from "./homeComponents/PartneredWith";
 import Head from "next/head";
 // Global metadata
 export const metadata = {
-  title: "Ultrafly Solutions | Software Development Company",
+  title: "Ultrafly Solutions: Software Development & Digital Marketing Company",
   description:
-    "Discover cutting-edge IT solutions with Ultrafly Solutions. From mobile app development to digital marketing, we help your business soar to new heights.",
+    "Ultrafly Solutions is a trusted enterprise partner in software development and digital marketing services. It offers innovative, data-driven solutions for business growth.",
   keywords:
     "IT solutions, mobile app development, digital marketing, website development, Ultrafly Solutions",
   icons: {
@@ -23,19 +23,23 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-    <Head>
-       {/* Google Site Verification */}
-    <meta name="google-site-verification" content="SwDsm2it5yHa7AES5dS3Gk8qwJMCmlM8m_pMlASrmlY" />
-    </Head>
-    <Hero/>
-    <About/>
-    <Badges/>
-    <Featured/>
-    <OurTechnologies/>
-    <ChooseUs/>
-    <OurIndustryExpertise/>
-    <ClientReview/>
-    <PartneredWith/>
+      <Head>
+        {/* Google Site Verification */}
+        <meta
+          name="google-site-verification"
+          content="SwDsm2it5yHa7AES5dS3Gk8qwJMCmlM8m_pMlASrmlY"
+        />
+        <link rel="canonical" href="https://www.ultraflysolutions.com/" />
+      </Head>
+      <Hero />
+      <About />
+      <Badges />
+      <Featured />
+      <OurTechnologies />
+      <ChooseUs />
+      <OurIndustryExpertise />
+      <ClientReview />
+      <PartneredWith />
     </>
   );
 }

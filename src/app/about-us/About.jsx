@@ -75,7 +75,7 @@ function About() {
 
         <div className="center-image mx-auto">
           <Image 
- quality={100}
+  quality={75}
             src={intro}
             alt="Center Image"
             className="w-full  md:w-full mt-10 md:h-full lg:w-96 lg:h-96 h-full object-contain animate-bounce-slow"

@@ -21,7 +21,7 @@ function Footer() {
             <p className="font-medium hover:text-blue-600">
               <Link href="https://tinyurl.com/bpbxt9ra">
               <Image 
- quality={100} src={india} alt="india" className="inline-block w-4 h-4" />
+  quality={75} src={india} alt="india" className="inline-block w-4 h-4" />
               {"  "}<b>Office Address: India</b><br />
               27/9, Nivedh Vikas, Pankaja Mills <br />Road, Puliakulam,  <br />
               Coimbatore-641 045.
@@ -30,7 +30,7 @@ function Footer() {
             <br />
             <p className="font-medium hover:text-blue-600">
               <Image 
- quality={100} src={usa} alt="usa" className="inline-block w-4 h-4" />
+  quality={75} src={usa} alt="usa" className="inline-block w-4 h-4" />
               {"  "}<b>Office Address: USA</b><br />
               1101 Iroquois Ave, Naperville,<br /> Illinois- 60563.
             </p>
@@ -91,19 +91,19 @@ function Footer() {
             <Link href="/">
               <p className="flex items-center gap-2 hover:text-blue-600">
                 <Image 
- quality={100} src={india} alt="india" className="w-4 h-4" />
+  quality={75} src={india} alt="india" className="w-4 h-4" />
                 +91 91500 01089
               </p>
             </Link>
 
             <p className="flex items-center gap-2 hover:text-blue-600">
               <Image 
- quality={100} src={india} alt="india" className="w-4 h-4" />
+  quality={75} src={india} alt="india" className="w-4 h-4" />
               +91 91500 01090
             </p>
             <p className="flex items-center gap-2 hover:text-blue-600">
               <Image 
- quality={100} src={usa} alt="usa" className="w-4 h-4" />
+  quality={75} src={usa} alt="usa" className="w-4 h-4" />
               +1 562 521 9684
             </p>
 
@@ -116,7 +116,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer">
                     <Image 
- quality={100}
+  quality={75}
                       src={facebook}
                       alt="Facebook"
                       className="bg-[#efefef] rounded-xl h-10 w-10"
@@ -128,7 +128,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer">
                     <Image 
- quality={100}
+  quality={75}
                       src={twitter}
                       alt="Twitter"
                       className="bg-[#efefef] rounded-xl h-10 w-10"
@@ -140,7 +140,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer">
                     <Image 
- quality={100}
+  quality={75}
                       src={linkedin}
                       alt="LinkedIn"
                       className="bg-[#efefef] rounded-xl h-10 w-10"
@@ -152,7 +152,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer">
                     <Image 
- quality={100}
+  quality={75}
                       src={instagram}
                       alt="Instagram"
                       className="bg-[#efefef] rounded-xl h-10 w-10"
@@ -164,7 +164,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer">
                      <Image 
- quality={100}
+  quality={75}
                       src={location}
                       alt="location"
                       className="bg-[#efefef] rounded-xl h-10 w-10"
@@ -176,7 +176,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer">
                     <Image 
- quality={100}
+  quality={75}
                       src={youtube}
                       alt="YouTube"
                       className="bg-[#efefef] rounded-xl h-10 w-10"

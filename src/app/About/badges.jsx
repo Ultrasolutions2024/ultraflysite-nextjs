@@ -9,7 +9,7 @@ import badge6 from '../images/technologies/gptw (1).webp';
 import badge7 from '../images/features/techreviewer.webp';
 import { cn } from "../lib/utils";
 import Image from 'next/image';
-const Badges = () => {
+const  Badges = () => {
   const badges = [badge1, badge2, badge3, badge4, badge5, badge6, badge7];
   const containerRef = useRef(null);
 
@@ -58,7 +58,7 @@ const Badges = () => {
                 }}
               >
                 <Image 
- quality={100}
+  quality={75}
                   alt={`Badge ${index + 1}`}
                   src={badge}
                   className="w-2/4"

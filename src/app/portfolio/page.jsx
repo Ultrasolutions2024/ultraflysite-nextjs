@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
 import dynamic from 'next/dynamic';
-const Portfolio=dynamic(()=>import('./portfolio'),{
-  ssr:false
-})
+import Head from 'next/head';
+
+const Portfolio = dynamic(() => import('./portfolio'), {
+  ssr: false,
+});
+
 export const metadata = {
   title: `Our Portfolio | Ultrafly Solutions`,
   description:
@@ -22,10 +25,24 @@ export const metadata = {
     // type: "website",
   },
 };
-function page() {
+
+function Page() {
   return (
-   <Portfolio/>
-  )
+    <>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href={metadata.openGraph.url} />
+      </Head>
+      <Portfolio />
+    </>
+  );
 }
 
-export default page
+export default Page;

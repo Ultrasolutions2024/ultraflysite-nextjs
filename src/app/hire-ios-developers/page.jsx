@@ -1,28 +1,43 @@
 import React from "react";
 import dynamic from "next/dynamic";
-const IOS=dynamic(()=>import('./IOS'),{
-  ssr:false,
-})
+import Head from "next/head";
+
+const IOS = dynamic(() => import('./IOS'), {
+  ssr: false,
+});
+
 export const metadata = {
-  title: ` Hire iOS Developers | Ultrafly Solutions for Innovative Apps`,
+  title: "Hire iOS Developers | Ultrafly Solutions for Innovative Apps",
   description:
     "Hire expert iOS developers from Ultrafly Solutions for high-performance, user-friendly mobile apps. Elevate your mobile strategy. Get started today!",
-  // keywords: "SEO, digital marketing, online presence, search engine optimization, Ultrafly Solutions",
   openGraph: {
-    title: ` Hire iOS Developers | Ultrafly Solutions for Innovative Apps`,
+    title: "Hire iOS Developers | Ultrafly Solutions for Innovative Apps",
     description:
       "Hire expert iOS developers from Ultrafly Solutions for high-performance, user-friendly mobile apps. Elevate your mobile strategy. Get started today!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp",
       },
     ],
-    url: "https://www.ultraflysolutions.com/hire-ios-developers", // Updated to match main content
-    // type: "website",
+    url: "https://www.ultraflysolutions.com/hire-ios-developers",
   },
 };
-function page() {
-  return <IOS />;
+
+function Page() {
+  return (
+    <>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <link rel="canonical" href={metadata.openGraph.url} />
+      </Head>
+      <IOS />
+    </>
+  );
 }
 
-export default page;
+export default Page;

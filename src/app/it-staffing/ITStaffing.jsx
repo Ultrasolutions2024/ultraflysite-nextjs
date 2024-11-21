@@ -1,14 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
 import "../mobile-app-development/services.css";
-import SocialMedias from "../(Services)/SocialMedias";
-import Link from "next/link";
-import gif1 from "../images/our_services/software_dev/software-development{}-gif.gif";
-import webImg from "../images/our_services/websiteImg/Recruiter hr.webp";
-import softimg from "../images/who-we-are/staffing.webp";
-import ScrollToTop from "../lib/ScrollToTop";
-import Head from "next/head";
-import it_bg from "../images/our_services/seo&digital/it_bg.webp";
 import Image from "next/image";
 import bg1 from "../images/our_services/software_dev/it.webp";
 function ITStaffing() {
@@ -18,8 +10,6 @@ function ITStaffing() {
   return (
     <>
       <div className="mt-[20px]">
-       
-
         <div className="lg:max-w-5xl max-w-xl mx-auto lg:pr-24 md:mt-20 p-4">
           <div className="grid lg:grid-cols-2 gap-12 mb-10">
             {/* Image Section */}
@@ -27,8 +17,8 @@ function ITStaffing() {
               className="rounded-3xl md:w-[400px] md:-mt-16 md:-ml-16 lg:ml-0 lg:mt-0 lg:w-[600px] h-fit shadow-lg lg:relative md:absolute hidden md:block"
               data-aos="fade-right"
             >
-              <Image 
- quality={100}
+              <Image
+                quality={75}
                 src={bg1}
                 alt="Placeholder Image"
                 className="object-contain rounded-3xl -z-10"

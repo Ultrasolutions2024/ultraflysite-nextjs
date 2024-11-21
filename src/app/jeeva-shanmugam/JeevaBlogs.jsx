@@ -10,7 +10,7 @@ const JeevaBlogs = () => {
   {/* Profile Image */}
   <div className="flex items-center space-x-6">
     <Image 
- quality={100}
+  quality={75}
       src={profile}
       alt="Unlocking the Future"
       className="w-16 h-16 rounded-full object-cover"  // Increased size of the image
@@ -31,7 +31,7 @@ const JeevaBlogs = () => {
         <Link href="/increase-linkedin-followers">
           <div className="w-full rounded h-fit overflow-hidden shadow-2xl p-4 hover:scale-105 transition-all duration-300">
             <Image 
- quality={100} className="w-full" src={bg1} alt="Unlocking the Future" />
+  quality={75} className="w-full" src={bg1} alt="Unlocking the Future" />
             <div className="py-4">
               <h2 className="font-bold text-xl">LinkedIn Assists</h2>
               <p className="text-gray-700 text-base font-bold">

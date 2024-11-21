@@ -196,7 +196,7 @@ function Login() {
                 <div className="text-[#646464] pl-2">
                   <p className="text-base md:text-lg">
                     <Image 
- quality={100}
+  quality={75}
                       src={india}
                       alt="India Flag"
                       className="inline-block w-4 h-4"
@@ -205,7 +205,7 @@ function Login() {
                   </p>
                   <p className="text-base md:text-lg">
                     <Image 
- quality={100}
+  quality={75}
                       src={india}
                       alt="India Flag"
                       className="inline-block w-4 h-4"
@@ -214,7 +214,7 @@ function Login() {
                   </p>
                   <p className="text-base md:text-lg">
                     <Image 
- quality={100}
+  quality={75}
                       src={usa}
                       alt="USA Flag"
                       className="inline-block w-4 h-4"
@@ -227,7 +227,7 @@ function Login() {
                 </h3>
                 <p className="text-base md:text-lg pl-1">
                   <Image 
- quality={100}
+  quality={75}
                     src={india}
                     alt="India Flag"
                     className="inline-block w-4 h-4"
