@@ -91,59 +91,64 @@ const Android = () => {
 
   return (
     <>
-        <div
-          className="relative hero min-h-screen"
-          style={{
-            backgroundImage: `url(${background.src})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          {/* Dimmed Background Overlay */}
-          <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+       <div className="relative hero min-h-screen">
+     
+      <div className="absolute inset-0">
+        <Image
+          src={background} 
+          alt="Background"
+           layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          priority 
+        />
+      </div>
 
-          {/* Hero Content - Centered */}
-          <div className="hero-content absolute  inset-0 flex justify-center items-center text-neutral-content text-left">
-            <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
-              <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
-                Hire Android Developers
-              </h1>
-              <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
-                Why Hire Android App Developers from Ultrafly Solutions?
-              </h3>
-              <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-lg grid gap-4">
-                <li>
-                  Expert Android developers with comprehensive knowledge and
-                  hands-on experience in building high-performance, user-friendly
-                  mobile applications.
-                </li>
-                <li>
-                  Flexible hiring models—choose from full-time, part-time, or
-                  project-based options to suit your business requirements.
-                </li>
-                <li>
-                  Scalable solutions designed to grow with your business, ensuring
-                  optimal performance across all devices.
-                </li>
-                <li>
-                  Seamless communication with dedicated project managers, ensuring
-                  regular updates and smooth project progress.
-                </li>
-                <li>
-                  Security-first development, adhering to the latest best
-                  practices to guarantee secure and reliable mobile apps.
-                </li>
-              </ul>
-              <div className="flex justify-center mb-5">
-                <a href="#sendBtn">
-                  <button className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 px-4 py-2 rounded-xl">
-                    Talk with Our Experts
-                  </button>
-                </a>
-              </div>
-            </div>
+ 
+      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+
+
+      <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+        <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
+          <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
+            Hire Android Developers
+          </h1>
+          <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
+            Why Hire Android App Developers from Ultrafly Solutions?
+          </h3>
+          <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-lg grid gap-4">
+            <li>
+              Expert Android developers with comprehensive knowledge and
+              hands-on experience in building high-performance, user-friendly
+              mobile applications.
+            </li>
+            <li>
+              Flexible hiring models—choose from full-time, part-time, or
+              project-based options to suit your business requirements.
+            </li>
+            <li>
+              Scalable solutions designed to grow with your business, ensuring
+              optimal performance across all devices.
+            </li>
+            <li>
+              Seamless communication with dedicated project managers, ensuring
+              regular updates and smooth project progress.
+            </li>
+            <li>
+              Security-first development, adhering to the latest best
+              practices to guarantee secure and reliable mobile apps.
+            </li>
+          </ul>
+          <div className="flex justify-center mb-5">
+            <a href="#sendBtn">
+              <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
+                Talk with Our Experts
+              </button>
+            </a>
           </div>
         </div>
+      </div>
+    </div>
 
       <div className="max-w-7xl mx-auto py-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 w-3/4 mx-auto">
@@ -499,36 +504,38 @@ const Android = () => {
         </Link>
       </section>
 
-      <div
-        className="hero h-fit md:h-96 my-2 md:my-10"
-        style={{
-          backgroundImage: `url(${resource.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "right",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        {/* <div className="hero-overlay"></div> */}
-        <div className="pl-10 text-neutral-content text-left items-start py-10 ">
-          <div className="">
-            <h2 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-              Hire top Android app developers today.
-            </h2>
-            <p className="mb-5 text-xs md:text-xl text-white w-3/4">
-              At Ultrafly Solutions, we’re dedicated to delivering Android app
-              solutions that give your business a competitive edge. Our
-              developers bring a results-driven approach, ensuring your mobile
-              applications deliver efficiency and value.
-            </p>
-            <Link
-              href={"/contact-us"}
-              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2 "
-            >
-              Get in touch
-            </Link>
-          </div>
+      <div className="relative hero h-fit md:h-96 my-2 md:my-10">
+      {/* Background Image */}
+      <Image
+        src={resource}
+        alt="Hero Background"
+         layout="fill" // Makes the image span the container
+        objectFit="cover" // Mimics CSS `background-size: cover`
+        objectPosition="right" // Mimics CSS `background-position: right`
+        priority // Ensures the image is loaded promptly
+        quality={75} // Optimizes image quality
+        className="z-0" // Ensures the image is behind content
+      />
+
+      {/* Content Overlay */}
+      <div className="relative z-10 pl-10 text-neutral-content text-left items-start py-10">
+        <div>
+          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            Hire top Android app developers today.
+          </h1>
+          <p className="mb-5 text-xs md:text-xl text-white w-3/4">
+            At Ultrafly Solutions, we’re dedicated to delivering Android app
+            solutions that give your business a competitive edge. Our developers bring a results-driven approach, ensuring your mobile applications deliver efficiency and value.
+          </p>
+          <Link
+            href="/contact-us"
+            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+          >
+            Get in touch
+          </Link>
         </div>
       </div>
+    </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-10 mb-10">
         {/* form */}
         <div

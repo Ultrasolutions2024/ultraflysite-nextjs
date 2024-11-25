@@ -9,7 +9,8 @@ const JeevaBlogs = () => {
     <div className="flex justify-between items-center mt-8 ml-5 p-8 bg-white rounded-lg shadow-md">
   {/* Profile Image */}
   <div className="flex items-center space-x-6">
-    <Image 
+    <Image
+loading="lazy" 
   quality={75}
       src={profile}
       alt="Unlocking the Future"
@@ -30,7 +31,8 @@ const JeevaBlogs = () => {
         {/* Post 4 - LinkedIn */}
         <Link href="/increase-linkedin-followers">
           <div className="w-full rounded h-fit overflow-hidden shadow-2xl p-4 hover:scale-105 transition-all duration-300">
-            <Image 
+            <Image
+loading="lazy" 
   quality={75} className="w-full" src={bg1} alt="Unlocking the Future" />
             <div className="py-4">
               <h2 className="font-bold text-xl">LinkedIn Assists</h2>

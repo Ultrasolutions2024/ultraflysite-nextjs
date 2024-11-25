@@ -93,60 +93,58 @@ const ReactNative = () => {
         <title></title>
         <meta name="description" content="" />
       </Head>
-      <div
-        className="relative hero min-h-screen"
-        style={{
-          backgroundImage: `url(${background.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        {/* Dimmed Background Overlay */}
-        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="relative hero min-h-screen">
+      {/* Optimized Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src={background.src} // Background image passed as a prop
+          alt="Hire ReactNative Developers"
+           layout="fill" // Fills the container with the image
+          objectFit="cover" // Ensures the image covers the container
+          objectPosition="center" // Centers the image
+          priority // Preloads the image for better performance
+        />
+      </div>
 
-        {/* Hero Content - Centered */}
-        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
-          <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
-            <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
-              Hire ReactNative Developers
-            </h1>
-            <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
-              Why Hire ReactNative Developers from Ultrafly Solutions?
-            </h3>
-            <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-lg grid gap-4">
-              <li>
-                Expert React Native Developers with extensive knowledge and
-                hands-on experience in developing high-performance,
-                cross-platform mobile applications.
-              </li>
-              <li>
-                Flexible Hiring Models—choose between full-time, part-time, or
-                project-based options tailored to your business needs.
-              </li>
-              <li>
-                Scalable Solutions that grow with your business, ensuring smooth
-                performance across iOS and Android platforms.
-              </li>
-              <li>
-                Streamlined Communication with dedicated project managers to
-                keep you updated on progress and ensure smooth project
-                execution.
-              </li>
-              <li>
-                Security-First Development that adheres to the latest industry
-                standards to guarantee secure, reliable mobile applications.
-              </li>
-            </ul>
-            <div className="flex justify-center mb-5">
-              <a href="#sendBtn">
-                <button className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 px-4 py-2 rounded-xl">
-                  Talk with Our Experts
-                </button>
-              </a>
-            </div>
+      {/* Dimmed Background Overlay */}
+      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+
+      {/* Hero Content - Centered */}
+      <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+        <div className="max-w-4xl text-left px-6 md:px-12 lg:px-8">
+          <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
+            Hire ReactNative Developers
+          </h1>
+          <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
+            Why Hire ReactNative Developers from Ultrafly Solutions?
+          </h3>
+          <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-lg grid gap-4">
+            <li>
+              Expert React Native Developers with extensive knowledge and hands-on experience in developing high-performance, cross-platform mobile applications.
+            </li>
+            <li>
+              Flexible Hiring Models—choose between full-time, part-time, or project-based options tailored to your business needs.
+            </li>
+            <li>
+              Scalable Solutions that grow with your business, ensuring smooth performance across iOS and Android platforms.
+            </li>
+            <li>
+              Streamlined Communication with dedicated project managers to keep you updated on progress and ensure smooth project execution.
+            </li>
+            <li>
+              Security-First Development that adheres to the latest industry standards to guarantee secure, reliable mobile applications.
+            </li>
+          </ul>
+          <div className="flex justify-center mb-5">
+            <a href="#sendBtn">
+              <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
+                Talk with Our Experts
+              </button>
+            </a>
           </div>
         </div>
       </div>
+    </div>
 
       <div className="max-w-7xl mx-auto py-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 w-3/4 mx-auto">
@@ -162,6 +160,7 @@ const ReactNative = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={manualwebp}
                   alt="custom"
@@ -188,6 +187,7 @@ const ReactNative = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={developmentwebp}
                   alt="custom"
@@ -214,6 +214,7 @@ const ReactNative = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={solutionwebp}
                   alt="custom"
@@ -239,6 +240,7 @@ const ReactNative = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={ideawebp}
                   alt="custom"
@@ -265,6 +267,7 @@ const ReactNative = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={micorwebp}
                   alt="custom"
@@ -292,6 +295,7 @@ const ReactNative = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={servicewebp}
                   alt="custom"
@@ -336,6 +340,7 @@ const ReactNative = () => {
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
               <Image
+loading="lazy"
                  quality={75}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
@@ -505,36 +510,45 @@ const ReactNative = () => {
         </Link>
       </section>
 
-      <div
-        className="hero h-fit md:h-96 my-2 md:my-10"
-        style={{
-          backgroundImage: `url(${resource.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "right",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        {/* <div className="hero-overlay"></div> */}
-        <div className="pl-10 text-neutral-content text-left items-start py-10 ">
-          <div className="">
-            <h2 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-              Hire Top ReactNative Developers Today
-            </h2>
-            <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
-              At Ultrafly Solutions, we’re committed to delivering React Native
-              solutions that give your business a competitive edge. Our
-              developers bring a results-driven approach, ensuring your mobile
-              applications deliver optimal performance and value.
-            </p>
-            <Link
-              href={"/contact-us"}
-              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2 "
-            >
-              Get in Touch
-            </Link>
-          </div>
+      <div className="relative hero h-fit md:h-96 my-2 md:my-10">
+      {/* Background Image using Next.js Image component */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={resource}
+          alt="React Native Development"
+           layout="fill" // Ensures the image fills the container
+          objectFit="cover" // Mimics background-size: cover
+          objectPosition="right" // Align the image to the right
+          quality={75} // Optimizes the image quality
+          priority // Load image quickly for better performance
+          className="z-0" // Ensures the image is behind the content
+        />
+      </div>
+
+      {/* Overlay */}
+      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+
+      {/* Content */}
+      <div className="text-neutral-content text-left pl-10 items-start py-10 z-20 relative">
+        <div>
+          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            Hire Top ReactNative Developers Today
+          </h1>
+          <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
+            At Ultrafly Solutions, we’re committed to delivering React Native
+            solutions that give your business a competitive edge. Our developers
+            bring a results-driven approach, ensuring your mobile applications
+            deliver optimal performance and value.
+          </p>
+          <Link
+            href={"/contact-us"}
+            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+          >
+            Get in Touch
+          </Link>
         </div>
       </div>
+    </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-10 mb-10">
         {/* form */}
         <div

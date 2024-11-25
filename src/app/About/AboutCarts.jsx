@@ -14,7 +14,8 @@ function AboutCarts() {
           >
             {/* Card Image */}
             <div className="w-[75px] h-[75px] mb-4">
-              <Image 
+              <Image
+loading="lazy" 
   quality={75}
                 src={card.img}
                 alt={card.title}

@@ -92,56 +92,63 @@ const Javascript = () => {
 
   return (
     <>
-      <div
-        className="relative hero min-h-screen"
-        style={{
-          backgroundImage: `url(${background.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+     <div className="relative hero min-h-screen">
+      {/* Optimized Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src={background.src} // Background image source passed as prop
+          alt="Hire Javascript Developers"
+           layout="fill" // Ensures the image fills the container
+          objectFit="cover" // Ensures the image covers the container without distortion
+          objectPosition="center" // Centers the image
+          priority // Preloads the image for better performance
+        />
+      </div>
 
-        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
-          <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
-            <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
-              Hire Javascript Developers
-            </h1>
-            <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
-              Why Hire JavaScript Developers from Ultrafly Solutions
-            </h3>
-            <ul className="list-disc list-inside mb-7 text-white text-sm md:text-xl grid gap-4">
-              <li>
-                Expert JavaScript developers with extensive industry experience
-                delivering high-performance web solutions.
-              </li>
-              <li>
-                Flexible hiring options—choose full-time, part-time, or
-                project-based engagement that suits your needs.
-              </li>
-              <li>
-                Scalable, custom solutions built to grow with your business and
-                ensure long-term success.
-              </li>
-              <li>
-                Security-focused development following the latest standards to
-                protect your applications.
-              </li>
-              <li>
-                Comprehensive services from development to post-launch support,
-                ensuring a seamless experience.
-              </li>
-            </ul>
-            <div className="flex justify-center mb-5">
-              <a href="#sendBtn">
-                <button className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 px-4 py-2 rounded-xl">
-                  Talk with Our Experts
-                </button>
-              </a>
-            </div>
+      {/* Dimmed Background Overlay */}
+      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+
+      {/* Hero Content - Centered */}
+      <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+        <div className="max-w-4xl text-left px-6 md:px-12 lg:px-8">
+          <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
+            Hire Javascript Developers
+          </h1>
+          <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
+            Why Hire JavaScript Developers from Ultrafly Solutions
+          </h3>
+          <ul className="list-disc list-inside mb-7 text-white text-sm md:text-xl grid gap-4">
+            <li>
+              Expert JavaScript developers with extensive industry experience
+              delivering high-performance web solutions.
+            </li>
+            <li>
+              Flexible hiring options—choose full-time, part-time, or
+              project-based engagement that suits your needs.
+            </li>
+            <li>
+              Scalable, custom solutions built to grow with your business and
+              ensure long-term success.
+            </li>
+            <li>
+              Security-focused development following the latest standards to
+              protect your applications.
+            </li>
+            <li>
+              Comprehensive services from development to post-launch support,
+              ensuring a seamless experience.
+            </li>
+          </ul>
+          <div className="flex justify-center mb-5">
+            <a href="#sendBtn">
+              <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
+                Talk with Our Experts
+              </button>
+            </a>
           </div>
         </div>
       </div>
+    </div>
 
       <div className="max-w-7xl mx-auto py-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 w-3/4 mx-auto">
@@ -157,6 +164,7 @@ const Javascript = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={manualwebp}
                   alt="custom"
@@ -182,6 +190,7 @@ const Javascript = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={developmentwebp}
                   alt="custom"
@@ -207,6 +216,7 @@ const Javascript = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={solutionwebp}
                   alt="custom"
@@ -232,6 +242,7 @@ const Javascript = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={ideawebp}
                   alt="custom"
@@ -258,6 +269,7 @@ const Javascript = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={micorwebp}
                   alt="custom"
@@ -303,6 +315,7 @@ const Javascript = () => {
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
               <Image
+loading="lazy"
                  quality={75}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
@@ -473,36 +486,45 @@ const Javascript = () => {
         </div>
       </section>
 
-      <div
-        className="hero h-fit md:h-96 my-2 md:my-10"
-        style={{
-          backgroundImage: `url(${resource.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "right",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        {/* <div className="hero-overlay"></div> */}
-        <div className="pl-10 text-neutral-content text-left items-start py-10 ">
-          <div className="">
-            <h2 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-              Hire expert JavaScript developers today.
-            </h2>
-            <p className="mb-5 text-xs md:text-xl text-white w-3/4">
-              At Ultrafly Solutions, we provide JavaScript development services
-              designed to give your business a competitive edge. Our developers
-              focus on creating high-performance applications tailored to your
-              needs.
-            </p>
-            <Link
-              href={"/contact-us"}
-              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2 "
-            >
-              Get in touch
-            </Link>
-          </div>
+      <div className="relative hero h-fit md:h-96 my-2 md:my-10">
+      {/* Background Image using Next.js Image component */}
+      <div className="absolute inset-0">
+        <Image
+          src={resource}
+          alt="JavaScript Development"
+           layout="fill" // Ensures the image fills the container
+          objectFit="cover" // Mimics background-size: cover
+          objectPosition="right" // Align the image to the right
+          quality={75} // Optimizes the image quality
+          priority // Load image quickly for better performance
+          className="z-0" // Ensures the image is behind the content
+        />
+      </div>
+
+      {/* Overlay */}
+      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+
+      {/* Content */}
+      <div className="pl-10 text-neutral-content text-left items-start py-10 z-20 relative">
+        <div>
+          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            Hire expert JavaScript developers today.
+          </h1>
+          <p className="mb-5 text-xs md:text-xl text-white w-3/4">
+            At Ultrafly Solutions, we provide JavaScript development services
+            designed to give your business a competitive edge. Our developers
+            focus on creating high-performance applications tailored to your
+            needs.
+          </p>
+          <Link
+            href={"/contact-us"}
+            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+          >
+            Get in touch
+          </Link>
         </div>
       </div>
+    </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-10 mb-10">
         {/* form */}
         <div

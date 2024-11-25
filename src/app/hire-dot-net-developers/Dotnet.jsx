@@ -91,59 +91,65 @@ const Dotnet = () => {
 
   return (
     <>
-      <div
-        className="relative hero min-h-screen"
-        style={{
-          backgroundImage: `url(${background.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+     <div className="relative hero min-h-screen">
+     
+      <div className="absolute inset-0">
+        <Image
+          src={background}
+          alt="Hero Background"
+           layout="fill" 
+          objectFit="cover" 
+          objectPosition="center" 
+          priority 
+        />
+      </div>
 
-        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
-          <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
-            <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
-              Hire .NET Developers
-            </h1>
-            <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
-              Why Hire .NET Developers from Ultrafly Solutions?
-            </h3>
-            <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-lg grid gap-4">
-              <li>
-                Expert .NET developers with industry-leading skills and
-                extensive experience.
-              </li>
-              <li>
-                Flexible hiring models – full-time, part-time, or project-based.
-              </li>
-              <li>
-                Robust and scalable solutions tailored to your business needs.
-              </li>
-              <li>
-                Seamless communication with dedicated project managers and
-                regular updates.
-              </li>
-              <li>
-                Security-first development practices adhering to the latest
-                standards.
-              </li>
-              <li>
-                Full-cycle services, from development to maintenance and
-                support.
-              </li>
-              <li>Trusted by leading brands across various industries.</li>
-            </ul>
-            <div className="flex justify-center mb-5">
-              <a href="#sendBtn">
-                <button className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 px-4 py-2 rounded-xl">
-                  Talk with Our Experts
-                </button>
-              </a>
-            </div>
+      {/* Dimmed Overlay */}
+      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+
+      {/* Hero Content */}
+      <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+        <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
+          <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
+            Hire .NET Developers
+          </h1>
+          <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
+            Why Hire .NET Developers from Ultrafly Solutions?
+          </h3>
+          <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-lg grid gap-4">
+            <li>
+              Expert .NET developers with industry-leading skills and extensive
+              experience.
+            </li>
+            <li>
+              Flexible hiring models – full-time, part-time, or project-based.
+            </li>
+            <li>
+              Robust and scalable solutions tailored to your business needs.
+            </li>
+            <li>
+              Seamless communication with dedicated project managers and
+              regular updates.
+            </li>
+            <li>
+              Security-first development practices adhering to the latest
+              standards.
+            </li>
+            <li>
+              Full-cycle services, from development to maintenance and support.
+            </li>
+            <li>Trusted by leading brands across various industries.</li>
+          </ul>
+          <div className="flex justify-center mb-5">
+            <a href="#sendBtn">
+              <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
+                Talk with Our Experts
+              </button>
+            </a>
           </div>
         </div>
       </div>
+    </div>
 
       <div className="max-w-7xl mx-auto py-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 w-3/4 mx-auto">
@@ -159,6 +165,7 @@ const Dotnet = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={manualwebp}
                   alt="custom"
@@ -184,6 +191,7 @@ const Dotnet = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={developmentwebp}
                   alt="custom"
@@ -209,6 +217,7 @@ const Dotnet = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={solutionwebp}
                   alt="custom"
@@ -234,6 +243,7 @@ const Dotnet = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={ideawebp}
                   alt="custom"
@@ -257,6 +267,7 @@ const Dotnet = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={micorwebp}
                   alt="custom"
@@ -282,6 +293,7 @@ const Dotnet = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={servicewebp}
                   alt="custom"
@@ -327,6 +339,7 @@ const Dotnet = () => {
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
               <Image
+loading="lazy"
                  quality={75}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
@@ -470,38 +483,41 @@ const Dotnet = () => {
         </div>
       </section>
 
-      <div
-        className="hero h-fit md:h-96 my-2 md:my-10"
-        style={{
-          backgroundImage: `url(${resource.src})`,
-          backgroundSize: "contain",
-          backgroundPosition: "right",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100%",
-        }}
-      >
-        {/* <div className="hero-overlay"></div> */}
-        <div className="pl-10 text-neutral-content text-left items-start py-10 ">
-          <div className="">
-            <h2 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-              Hire the Best .NET Talent Today
-            </h2>
-            <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
-              At Ultrafly Solutions, we&apos;re committed to delivering .NET
-              development services that help you stay ahead of the competition.
-              Our developers are not only experts in coding, but they also bring
-              a business-centric approach to ensure your software delivers value
-              and efficiency.
-            </p>
-            <Link
-              href={"/contact-us"}
-              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2 "
-            >
-              Get in touch
-            </Link>
-          </div>
+      <div className="relative hero h-fit md:h-96 my-2 md:my-10">
+      {/* Background Image using Next.js Image component */}
+      <Image
+        src={resource}
+        alt="NET Talent"
+         layout="fill" // Ensures the image fills the container
+        objectFit="contain" // Mimics background-size: contain
+        objectPosition="right" // Mimics background-position: right
+        quality={75} // Optimizes the image quality
+        priority // Load image quickly for better performance
+        className="z-0" // Ensures the image is behind the content
+      />
+
+      {/* Content Overlay */}
+      <div className="relative z-10 text-neutral-content text-left pl-10 items-start py-10">
+        <div>
+          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            Hire the Best .NET Talent Today
+          </h1>
+          <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
+            At Ultrafly Solutions, we&apos;re committed to delivering .NET
+            development services that help you stay ahead of the competition.
+            Our developers are not only experts in coding, but they also bring
+            a business-centric approach to ensure your software delivers value
+            and efficiency.
+          </p>
+          <Link
+            href="/contact-us"
+            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+          >
+            Get in touch
+          </Link>
         </div>
       </div>
+    </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-5 mx:px-10 mb-10">
         {/* form */}
         <div

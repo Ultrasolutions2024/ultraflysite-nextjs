@@ -13,7 +13,8 @@ const PartneredWith = () => {
       <div className="flex flex-col sm:flex-row items-center gap-10 sm:gap-40 mb-10 p-5 sm:p-0">
         {/* Partner Logo */}
         <div>
-          <Image 
+          <Image
+loading="lazy" 
   quality={75} src={images} alt="Partner logo" className="w-80 sm:ml-10" />
         </div>
 
@@ -35,7 +36,8 @@ const PartneredWith = () => {
             "Profitable partnership programs for referrals, resellers, and tech partners.",
           ].map((text, index) => (
             <div key={index} className="flex items-start gap-2">
-              <Image 
+              <Image
+loading="lazy" 
   quality={75} src={star} alt="Star icon" className="w-5 mt-1" />
               <p className="text-sm sm:text-base">{text}</p>
             </div>

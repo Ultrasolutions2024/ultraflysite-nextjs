@@ -92,54 +92,53 @@ const FullstackDevelopers = () => {
 
   return (
     <>
-      <div
-        className="relative hero min-h-screen"
-        style={{
-          backgroundImage: `url(${background.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+     <div className="relative hero min-h-screen">
+      {/* Optimized Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src={background}
+          alt="Hire Full-Stack Developers Background"
+           layout="fill"
+          objectFit="cover"
+          quality={75}
+          priority
+          className="-z-10"
+        />
+      </div>
 
-        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
-          <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
-            <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
-              Hire Full-Stack Developers
-            </h1>
-            <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
-              Why Hire Full-Stack Developers from Ultrafly Solutions
-            </h3>
-            <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-xl grid gap-4">
-              <li>
-                Expert developers with extensive experience in both frontend and
-                backend technologies
-              </li>
-              <li>
-                Flexible hiring options: full-time, part-time, or project-based
-              </li>
-              <li>
-                End-to-end development solutions tailored to your business needs
-              </li>
-              <li>
-                Dedicated project managers for transparent communication and
-                timely updates
-              </li>
-              <li>
-                Full-cycle support from design to deployment with a focus on
-                performance and scalability
-              </li>
-            </ul>
-            <div className="flex justify-center mb-5">
-              <a href="#sendBtn">
-                <button className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 px-4 py-2 rounded-xl">
-                  Talk with Our Experts
-                </button>
-              </a>
-            </div>
+      {/* Dimmed Background Overlay */}
+      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+
+      {/* Hero Content */}
+      <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+        <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
+          <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
+            Hire Full-Stack Developers
+          </h1>
+          <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
+            Why Hire Full-Stack Developers from Ultrafly Solutions
+          </h3>
+          <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-xl grid gap-4">
+            <li>
+              Expert developers with extensive experience in both frontend and backend technologies
+            </li>
+            <li>Flexible hiring options: full-time, part-time, or project-based</li>
+            <li>End-to-end development solutions tailored to your business needs</li>
+            <li>Dedicated project managers for transparent communication and timely updates</li>
+            <li>
+              Full-cycle support from design to deployment with a focus on performance and scalability
+            </li>
+          </ul>
+          <div className="flex justify-center mb-5">
+            <a href="#sendBtn">
+              <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
+                Talk with Our Experts
+              </button>
+            </a>
           </div>
         </div>
       </div>
+    </div>
 
       <div className="max-w-7xl mx-auto py-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 w-3/4 mx-auto">
@@ -155,6 +154,7 @@ const FullstackDevelopers = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={manualwebp}
                   alt="custom"
@@ -180,6 +180,7 @@ const FullstackDevelopers = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={developmentwebp}
                   alt="custom"
@@ -205,6 +206,7 @@ const FullstackDevelopers = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={solutionwebp}
                   alt="custom"
@@ -230,6 +232,7 @@ const FullstackDevelopers = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={ideawebp}
                   alt="custom"
@@ -253,6 +256,7 @@ const FullstackDevelopers = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={micorwebp}
                   alt="custom"
@@ -278,6 +282,7 @@ const FullstackDevelopers = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={servicewebp}
                   alt="custom"
@@ -323,6 +328,7 @@ const FullstackDevelopers = () => {
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
               <Image
+loading="lazy"
                  quality={75}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
@@ -491,37 +497,41 @@ const FullstackDevelopers = () => {
           </div>
         </section>
 
-        <div
-          className="hero h-fit md:h-96 my-2 md:my-10"
-          style={{
-            backgroundImage: `url(${resource.src})`,
-            backgroundSize: "cover",
-            backgroundPosition: "right",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          {/* <div className="hero-overlay"></div> */}
-          <div className="text-neutral-content text-left pl-10 items-start py-10 ">
-            <div className="">
-              <h2 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-                Hire the Best Full-Stack Talent Today
-              </h2>
-              <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
-                At Ultrafly Solutions, we are dedicated to delivering full-stack
-                development services that help your business thrive. Our
-                developers are proficient in both frontend and backend
-                technologies, providing a comprehensive approach to development
-                that enhances performance, scalability, and user satisfaction.
-              </p>
-              <Link
-                href={"/contact-us"}
-                className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2 "
-              >
-                Get in touch
-              </Link>
-            </div>
-          </div>
+        <div className="relative hero h-fit md:h-96 my-2 md:my-10">
+      {/* Background Image using Next.js Image component */}
+      <Image
+        src={resource}
+        alt="Full-Stack Talent"
+         layout="fill" // Ensures the image fills the container
+        objectFit="cover" // Mimics background-size: cover
+        objectPosition="right" // Mimics background-position: right
+        quality={75} // Optimizes the image quality
+        priority // Load image quickly for better performance
+        className="z-0" // Ensures the image is behind the content
+      />
+
+      {/* Content Overlay */}
+      <div className="relative z-10 text-neutral-content text-left pl-10 items-start py-10">
+        <div>
+          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            Hire the Best Full-Stack Talent Today
+          </h1>
+          <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
+            At Ultrafly Solutions, we are dedicated to delivering full-stack
+            development services that help your business thrive. Our
+            developers are proficient in both frontend and backend
+            technologies, providing a comprehensive approach to development
+            that enhances performance, scalability, and user satisfaction.
+          </p>
+          <Link
+            href="/contact-us"
+            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+          >
+            Get in touch
+          </Link>
         </div>
+      </div>
+    </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-2 md:px-10 mb-10">
           {/* form */}
           <div

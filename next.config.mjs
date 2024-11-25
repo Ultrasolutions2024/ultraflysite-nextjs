@@ -3,6 +3,11 @@ import withBundleAnalyzer from '@next/bundle-analyzer';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    analytics: {
+      enabled: true,
+    },
+  },
   webpack: (config) => {
     // Adding alias for 'src'
     config.resolve.alias['@'] = path.resolve('src');

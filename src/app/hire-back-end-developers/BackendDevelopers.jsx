@@ -92,58 +92,64 @@ const BackendDevelopers = () => {
   
   return (
     <>
-      <div
-        className="relative hero min-h-screen"
-        style={{
-          backgroundImage: `url(${background.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        {/* Dimmed Background Overlay */}
-        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="relative hero min-h-screen">
+      {/* Optimized Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src={background} // Path to the background image
+          alt="Background"
+           layout="fill" // Makes the image fill the container
+          objectFit="cover" // Ensures the image covers the entire background
+          quality={75} // Optional: Adjust quality for optimization
+          priority // Loads this image as a priority for better performance
+          className="-z-10" // Sends image to the back layer
+        />
+      </div>
 
-        {/* Hero Content - Centered */}
-        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
-          <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
-            <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
-              Hire Backend Developers
-            </h1>
-            <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
-              Why Hire Backend Developers from Ultrafly Solutions
-            </h3>
-            <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-lg grid gap-4">
-              <li>
-                Expert developers with extensive experience in delivering
-                reliable, scalable backend solutions.
-              </li>
-              <li>
-                Flexible hiring options: full-time, part-time, or project-based
-                to match your specific needs.
-              </li>
-              <li>
-                We design custom, high-performance architectures to power your
-                business applications.
-              </li>
-              <li>
-                Dedicated project managers for smooth communication and
-                real-time updates.
-              </li>
-              <li>
-                End-to-end support from development to maintenance with a strong
-                focus on security.
-              </li>
-            </ul>
-            <div className="flex justify-center mb-5">
-              <a href="#sendBtn">
-                <button className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 px-4 py-2 rounded-xl">
-                  Talk with Our Experts
-                </button>
-              </a>
-            </div>
+      {/* Dimmed Background Overlay */}
+      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+
+      {/* Hero Content - Centered */}
+      <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+        <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
+          <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
+            Hire Backend Developers
+          </h1>
+          <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
+            Why Hire Backend Developers from Ultrafly Solutions
+          </h3>
+          <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-lg grid gap-4">
+            <li>
+              Expert developers with extensive experience in delivering
+              reliable, scalable backend solutions.
+            </li>
+            <li>
+              Flexible hiring options: full-time, part-time, or project-based
+              to match your specific needs.
+            </li>
+            <li>
+              We design custom, high-performance architectures to power your
+              business applications.
+            </li>
+            <li>
+              Dedicated project managers for smooth communication and
+              real-time updates.
+            </li>
+            <li>
+              End-to-end support from development to maintenance with a strong
+              focus on security.
+            </li>
+          </ul>
+          <div className="flex justify-center mb-5">
+            <a href="#sendBtn">
+              <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
+                Talk with Our Experts
+              </button>
+            </a>
           </div>
         </div>
       </div>
+    </div>
 
       <div className="max-w-7xl mx-auto py-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 w-3/4 mx-auto">
@@ -159,6 +165,7 @@ const BackendDevelopers = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={manualwebp}
                   alt="custom"
@@ -185,6 +192,7 @@ const BackendDevelopers = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={developmentwebp}
                   alt="custom"
@@ -211,6 +219,7 @@ const BackendDevelopers = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={solutionwebp}
                   alt="custom"
@@ -237,6 +246,7 @@ const BackendDevelopers = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={ideawebp}
                   alt="custom"
@@ -263,6 +273,7 @@ const BackendDevelopers = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
+loading="lazy"
                    quality={75}
                   src={micorwebp}
                   alt="custom"
@@ -311,6 +322,7 @@ const BackendDevelopers = () => {
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
               <Image
+loading="lazy"
                  quality={75}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
@@ -471,37 +483,37 @@ const BackendDevelopers = () => {
         </div>
       </section>
 
-      <div
-        className="hero h-fit md:h-96 my-2 md:my-10"
-        style={{
-          backgroundImage: `url(${resource.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "right",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        {/* <div className="hero-overlay"></div> */}
-        <div className="pl-10 text-neutral-content text-left items-start py-10 ">
-          <div className="">
-            <h2 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-              Hire Top Backend Developers Today
-            </h2>
-            <p className="mb-5 text-xs md:text-xl text-white w-3/4">
-              At Ultrafly Solutions, we are committed to delivering backend
-              solutions that give your business a competitive edge. Our team of
-              experts focuses on creating efficient, scalable, and secure
-              architectures to power your business applications. Contact us
-              today to hire a backend developer and kickstart your project.
-            </p>
-            <Link
-              href={"/contact-us"}
-              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2 "
-            >
-              Get in touch
-            </Link>
-          </div>
+      <div className="relative hero h-fit md:h-96 my-2 md:my-10">
+      {/* Background Image */}
+      <Image
+        src={resource}
+        alt="Backend Development"
+         layout="fill" // Ensures the image spans the container
+        objectFit="cover" // Mimics background-size: cover
+        objectPosition="right" // Mimics background-position: right
+        quality={75} // Optimize image quality
+        priority // Load image quickly for better performance
+        className="z-0" // Ensures the image is behind the content
+      />
+
+      {/* Content Overlay */}
+      <div className="relative z-10 pl-10 text-neutral-content text-left items-start py-10">
+        <div>
+          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            Hire Top Backend Developers Today
+          </h1>
+          <p className="mb-5 text-xs md:text-xl text-white w-3/4">
+            At Ultrafly Solutions, we are committed to delivering backend solutions that give your business a competitive edge. Our team of experts focuses on creating efficient, scalable, and secure architectures to power your business applications. Contact us today to hire a backend developer and kickstart your project.
+          </p>
+          <Link
+            href="/contact-us"
+            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+          >
+            Get in touch
+          </Link>
         </div>
       </div>
+    </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-2 md:px-6 lg:px-10 mb-10">
         {/* form */}
         <div

@@ -32,7 +32,8 @@ function Blog() {
           <Link href="/ultrafly-solutions-driving-tech-innovation">
             <div className="w-full rounded overflow-hidden shadow-2xl sm:h-[380px] p-4 hover:scale-105 transition-all duration-300">
               <Image
-                 quality={75}
+                loading="lazy"
+                quality={75}
                 className="w-full"
                 src={Fimg}
                 alt="Unlocking the Future"
@@ -50,7 +51,8 @@ function Blog() {
           <Link href="/why-seo-important-in-business">
             <div className="w-full rounded overflow-hidden shadow-2xl sm:h-[380px] p-4 hover:scale-105 transition-all duration-300">
               <Image
-                 quality={75}
+                loading="lazy"
+                quality={75}
                 className="w-full"
                 src={Simg}
                 alt="Unlocking the Future"
@@ -67,7 +69,8 @@ function Blog() {
           <Link href="/top-mobile-development-framework">
             <div className="w-full rounded overflow-hidden shadow-2xl sm:h-[380px] p-4 hover:scale-105 transition-all duration-300">
               <Image
-                 quality={75}
+                loading="lazy"
+                quality={75}
                 className="w-full"
                 src={Timg}
                 alt="Unlocking the Future"
@@ -84,7 +87,8 @@ function Blog() {
           <Link href="/increase-linkedin-followers">
             <div className="w-full rounded h-fit overflow-hidden shadow-2xl p-4 hover:scale-105 transition-all duration-300">
               <Image
-                 quality={75}
+                loading="lazy"
+                quality={75}
                 className="w-full"
                 src={bg1}
                 alt="Unlocking the Future"

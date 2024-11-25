@@ -36,7 +36,8 @@ function Website() {
               className="rounded-3xl md:w-[400px] md:-mt-10 md:-ml-20 lg:ml-0 lg:mt-0 lg:w-[600px] h-fit shadow-lg lg:relative md:absolute hidden md:block"
               data-aos="fade-right"
             >
-              <Image 
+              <Image
+loading="lazy" 
   quality={75}
                 src={bg1}
                 alt="Placeholder Image"
@@ -470,7 +471,8 @@ function Website() {
         {/* <div className=" ">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-14">
             <div>
-              <Image 
+              <Image
+loading="lazy" 
   quality={75}
                 src={gif1}
                 alt="Tools Used for Website Development at UltraFly Solutions"
@@ -526,7 +528,8 @@ function Website() {
               </p>
             </div>
             <div>
-              <Image 
+              <Image
+loading="lazy" 
   quality={75}
                 src={softimg}
                 alt="Responsive Website Design on Different Devices"
@@ -536,7 +539,8 @@ function Website() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-14">
             <div>
-              <Image 
+              <Image
+loading="lazy" 
   quality={75}
                 src={webImg}
                 alt="E-commerce Website Developed by UltraFly Solutions"

@@ -91,16 +91,22 @@ const Java = () => {
 
   return (
     <>
-      <div
-        className="relative hero min-h-screen"
-        style={{
-          backgroundImage: `url(${background.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="relative hero min-h-screen">
+        <div className="absolute inset-0">
+          <Image
+            src={background}
+            alt="Hero Background"
+             layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            priority
+          />
+        </div>
+
+        {/* Dimmed Overlay */}
         <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
 
+        {/* Hero Content */}
         <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
           <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
             <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
@@ -136,7 +142,7 @@ const Java = () => {
             </ul>
             <div className="flex justify-center mb-5">
               <a href="#sendBtn">
-                <button className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 px-4 py-2 rounded-xl">
+                <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
                   Talk with Our Experts
                 </button>
               </a>
@@ -159,7 +165,8 @@ const Java = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={manualwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -184,7 +191,8 @@ const Java = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={developmentwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -209,7 +217,8 @@ const Java = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={solutionwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -234,7 +243,8 @@ const Java = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={ideawebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -257,7 +267,8 @@ const Java = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={micorwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -282,7 +293,8 @@ const Java = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={servicewebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -328,7 +340,8 @@ const Java = () => {
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
               <Image
-                 quality={75}
+                loading="lazy"
+                quality={75}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"
@@ -471,38 +484,46 @@ const Java = () => {
         </div>
       </section>
 
-      <div
-        className="hero h-fit md:h-96 my-2 md:my-10"
-        style={{
-          backgroundImage: `url(${resource.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "right",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100%",
-        }}
-      >
-        {/* <div className="hero-overlay"></div> */}
-        <div className="pl-10 text-neutral-content text-left items-start py-10 ">
-          <div className="">
-            <h2 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-              Hire the Best Java Talent Today
-            </h2>
-            <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
-              At Ultrafly Solutions, we&apos;re committed to delivering Java
-              development services that help you stay ahead of the competition.
-              Our developers are not only experts in coding, but they also bring
-              a business-centric approach to ensure your software delivers value
-              and efficiency.
-            </p>
-            <Link
-              href={"/contact-us"}
-              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2 "
-            >
-              Get in touch
-            </Link>
-          </div>
+      <div className="relative hero h-fit md:h-96 my-2 md:my-10">
+      {/* Background Image using Next.js Image component */}
+      <div className="absolute inset-0">
+        <Image
+          src={resource}
+          alt="Java Talent"
+           layout="fill" // Ensures the image fills the container
+          objectFit="cover" // Mimics background-size: cover
+          objectPosition="right" // Align the image to the right
+          quality={75} // Optimizes the image quality
+          priority // Load image quickly for better performance
+          className="z-0" // Ensures the image is behind the content
+        />
+      </div>
+
+      {/* Overlay */}
+      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+
+      {/* Content */}
+      <div className="pl-10 text-neutral-content text-left items-start py-10 z-20 relative">
+        <div>
+          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            Hire the Best Java Talent Today
+          </h1>
+          <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
+            At Ultrafly Solutions, we&apos;re committed to delivering Java
+            development services that help you stay ahead of the competition.
+            Our developers are not only experts in coding, but they also bring
+            a business-centric approach to ensure your software delivers value
+            and efficiency.
+          </p>
+          <Link
+            href={"/contact-us"}
+            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+          >
+            Get in touch
+          </Link>
         </div>
       </div>
+    </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 p-5 md:px-10 mb-10">
         {/* form */}
         <div

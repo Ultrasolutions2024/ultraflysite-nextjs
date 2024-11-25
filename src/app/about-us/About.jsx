@@ -74,7 +74,8 @@ function About() {
         </div>
 
         <div className="center-image mx-auto">
-          <Image 
+          <Image
+loading="lazy" 
   quality={75}
             src={intro}
             alt="Center Image"

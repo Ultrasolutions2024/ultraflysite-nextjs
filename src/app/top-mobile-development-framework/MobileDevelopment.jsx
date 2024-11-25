@@ -46,7 +46,8 @@ function MobileDevelopment() {
               </span>
             </div>
 
-            <Image 
+            <Image
+loading="lazy" 
   quality={75}
               src={Timg}
               alt="Unlocking the Future"
@@ -197,7 +198,8 @@ function MobileDevelopment() {
           {/* Sticky Position Let's Connect Div */}
           <div className="sticky top-24 self-start md:w-[24rem] p-8 ml-4">
             <div className="border-2 border-gray-300 bg-gradient-to-r from-blue-100 to-blue-900 p-6 rounded-lg">
-              <Image 
+              <Image
+loading="lazy" 
   quality={75} src={logo} alt="logo" className="w-5px" />
               <p className="text-center font-bold text-xl mt-4 text-black">
                 Let&apos;s connect! Explore more about IT solutions.
@@ -223,7 +225,8 @@ function About() {
   return (
     <div className="flex flex-wrap items-center gap-4 mt-4 px-4">
       <div className="flex items-center">
-        <Image 
+        <Image
+loading="lazy" 
   quality={75}
           src={projexticon}
           alt="About Us | Ultrafly Solutions"
@@ -246,7 +249,8 @@ function About() {
       </div>
 
       <div className="flex items-center">
-        <Image 
+        <Image
+loading="lazy" 
   quality={75}
           src={clients}
           alt="icon_img ultraflysolutions"
@@ -269,7 +273,8 @@ function About() {
       </div>
 
       <div className="flex items-center">
-        <Image 
+        <Image
+loading="lazy" 
   quality={75}
           src={customerservice}
           alt="icon_img ultraflysolutions"
