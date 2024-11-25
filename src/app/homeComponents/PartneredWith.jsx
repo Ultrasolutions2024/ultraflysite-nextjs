@@ -6,9 +6,9 @@ import Image from "next/image";
 const PartneredWith = () => {
   return (
     <>
-      <h1 className="text-center text-3xl font-bold mb-6 mt-10">
+      <h2 className="text-center text-3xl font-bold mb-6 mt-10">
         PARTNERED WITH
-      </h1>
+      </h2>
 
       <div className="flex flex-col sm:flex-row items-center gap-10 sm:gap-40 mb-10 p-5 sm:p-0">
         {/* Partner Logo */}
@@ -19,10 +19,10 @@ const PartneredWith = () => {
 
         {/* Partner Description */}
         <div className="text-justify space-y-6">
-          <h1 className="text-xl sm:font-extrabold font-bold">
+          <h2 className="text-xl sm:font-extrabold font-bold">
             UTIP Technologies is a leading provider of software solutions for
             the Forex and OTC markets, offering a full set of services:
-          </h1>
+          </h2>
 
           {/* Reusable List Items */}
           {[

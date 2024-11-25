@@ -127,9 +127,9 @@ function About() {
 
       <div className="bg-blue-50 pb-24 mt-10 pt-10">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-blue-800">
+          <h2 className="text-4xl font-bold text-blue-800">
             Why Ultrafly Solutions?
-          </h1>
+          </h2>
         </div>
 
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-8 ">

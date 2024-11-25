@@ -106,9 +106,9 @@ function Seo() {
   return (
     <>
       <div className=" mt-[20px] bg-gray-50">
-        <h2 className="text-[1.4rem] text-center text-gray-800 md:text-3xl lg:text-5xl mt-16 font-semibold">
+        <h1 className="text-[1.4rem] text-center text-gray-800 md:text-3xl lg:text-5xl mt-16 font-semibold">
           Result-Driven SEO & Digital Marketing Services
-        </h2>
+        </h1>
         <div className="flex flex-col lg:flex-row bg-gray-50 lg:h-screen p-4">
           {/* Left Column (100% on small screens, 30% on medium and above) */}
           <div className="w-full lg:w-1/3 lg:sticky mdtop-0 mb-4 mt-14 md:mb-0">

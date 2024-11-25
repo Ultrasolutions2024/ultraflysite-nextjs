@@ -58,9 +58,9 @@ function MobileDevelopment() {
               Let’s dive in.
             </p>
             <br />
-            <h1 className="text-base md:text-2xl font-medium text-justify max-w-[70rem] w-full mx-auto">
+            <h2 className="text-base md:text-2xl font-medium text-justify max-w-[70rem] w-full mx-auto">
               What Is a Mobile App Development Framework?
-            </h1>
+            </h2>
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               I will come straight to the point, the framework is a set of
               tools, libraries, etc... that helps developers manage their work
@@ -150,9 +150,9 @@ function MobileDevelopment() {
 
             {/* Social Media Icons Section */}
             <div className="flex justify-center md:justify-start gap-6 text-[18px] text-[#646464] mt-8">
-              <h1 className="text-blue font-bold">
+              <h2 className="text-blue font-bold">
                 <u>Share Our Blog:</u>
-              </h1>
+              </h2>
               <br />
               <Link
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(

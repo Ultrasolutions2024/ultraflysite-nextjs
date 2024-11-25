@@ -30,7 +30,7 @@ const Mobile = () => {
   return (
     <>
       <Head />
-      <title>Mobile App Development | Ultrafly Solutions</title>
+      <title>Best Mobile App Development Company in Coimbatore | Ultrafly</title>
       <meta
         name="description"
         content="Get top-notch mobile app development services with Ultrafly Solutions. We create intuitive and engaging apps to enhance your business's digital presence.  "

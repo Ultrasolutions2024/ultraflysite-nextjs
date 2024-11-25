@@ -33,7 +33,7 @@ function Page() {
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
         <meta property="og:url" content={metadata.openGraph.url} />
         <meta property="og:type" content={metadata.openGraph.type} />
-        <link rel="canonical" href={metadata.openGraph.url} />
+        <link rel="canonical" href="https://www.ultraflysolutions.com/top-mobile-development-framework"/>
       </Head>
       <JeevaBlogs />
     </>

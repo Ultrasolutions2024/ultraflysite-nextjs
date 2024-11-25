@@ -128,9 +128,9 @@ function Software() {
 
                 {/* Text Section */}
                 <div className="text-left bg-blue-50 mt-6 px-5 lg:px-10 lg:-translate-x-10 rounded-3xl w-full lg:w-[650px]  h-auto lg:h-[380px] py-5 shadow-md">
-                  <h2 className="text-gray-800 text-xl md:text-2xl font-bold mb-4">
+                  <h1 className="text-gray-800 text-xl md:text-2xl font-bold mb-4">
                     Custom Software Development (CSD)
-                  </h2>
+                  </h1>
                   <p className="mb-4 text-sm lg:text-[16px] font-sans text-justify leading-relaxed text-gray-500">
                     Businesses can not rely on off-the-shelf software as
                     presented in this fast-paced digital age; their unique
@@ -189,9 +189,9 @@ function Software() {
           </div>
 
           <div className="min-h-screen bg-gray-100 p-10">
-            <h1 className="text-3xl md:text-5xl font-bold text-center text-blue-800 mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold text-center text-blue-800 mb-10">
               Our Core Expertise
-            </h1>
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:mx-10">
               {expertiseData.map((expertise, index) => (
                 <div
@@ -326,9 +326,9 @@ function Software() {
                 {/* Card 1: Agile Development */}
                 <div className="lg:h-[12em] h-[180px] w-full max-w-[400px] md:h-[300px] bg-white rounded-[1em] overflow-hidden relative group p-4 z-0 shadow-lg transition-transform transform hover:scale-105 md:p-6 lg:p-8 mx-auto flex flex-col items-center justify-center">
                   <div className="circle absolute h-[5em] w-[5em] -top-[2em] -right-[2em] rounded-full bg-blue-400 group-hover:scale-[1200%] duration-500 z-[-1]"></div>
-                  <h1 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
+                  <h2 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
                     Agile Development
-                  </h1>
+                  </h2>
                   <p className="text-sm text-gray-700 z-20 group-hover:text-white text-center">
                     If you need flexibility and fast iterations as an integral
                     part of your development process, agile development is your
@@ -341,9 +341,9 @@ function Software() {
                 {/* Card 2: Waterfall Methodology */}
                 <div className="lg:h-[12em] h-[180px] w-full max-w-[400px] md:h-[300px] bg-white m-auto rounded-[1em] overflow-hidden relative group p-4 z-0 shadow-lg transition-transform transform hover:scale-105 mx-auto flex flex-col items-center justify-center">
                   <div className="circle absolute h-[5em] w-[5em] -top-[2em] -right-[2em] rounded-full bg-blue-400 group-hover:scale-[1200%] duration-500 z-[-1]"></div>
-                  <h1 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
+                  <h2 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
                     Waterfall Methodology
-                  </h1>
+                  </h2>
                   <p className="text-sm text-gray-700 z-20 group-hover:text-white text-center">
                     If the requirements are rock-solid for a project, we take a
                     more structured approach to ensure that every stage from
@@ -354,9 +354,9 @@ function Software() {
                 {/* Card 3: DevOps Practices */}
                 <div className="lg:h-[12em] h-[180px] w-full max-w-[400px] md:h-[300px] bg-white m-auto rounded-[1em] overflow-hidden relative group p-4 z-0 shadow-lg transition-transform transform hover:scale-105 mx-auto flex flex-col items-center justify-center">
                   <div className="circle absolute h-[5em] w-[5em] -top-[2em] -right-[2em] rounded-full bg-blue-400 group-hover:scale-[1200%] duration-500 z-[-1]"></div>
-                  <h1 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
+                  <h2 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
                     DevOps Practices
-                  </h1>
+                  </h2>
                   <p className="text-sm text-gray-700 z-20 group-hover:text-white text-center">
                     DevOps is where development meets operations. We foster
                     collaboration across your teams to accelerate the delivery
@@ -368,9 +368,9 @@ function Software() {
                 {/* Card 4: Custom Software Development */}
                 <div className="lg:h-[12em] h-[180px] w-full max-w-[400px] md:h-[300px] bg-white m-auto rounded-[1em] overflow-hidden relative group p-4 z-0 shadow-lg transition-transform transform hover:scale-105 mx-auto flex flex-col items-center justify-center">
                   <div className="circle absolute h-[5em] w-[5em] -top-[2em] -right-[2em] rounded-full bg-blue-400 group-hover:scale-[1200%] duration-500 z-[-1]"></div>
-                  <h1 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
+                  <h2 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
                     Custom Software Development
-                  </h1>
+                  </h2>
                   <p className="text-sm text-gray-700 z-20 group-hover:text-white text-center">
                     The jewel of our offering: we make tailor-made solutions
                     particularly based on the problems in your business. Whether
@@ -382,9 +382,9 @@ function Software() {
                 {/* Card 5: Legacy System Modernization */}
                 <div className="lg:h-[12em] h-[180px] w-full max-w-[400px] md:h-[300px] lg:translate-x-[250px] md:translate-x-[200px] bg-white m-auto rounded-[1em] overflow-hidden relative group p-4 z-0 shadow-lg transition-transform transform hover:scale-105 mx-auto flex flex-col items-center justify-center">
                   <div className="circle absolute h-[5em] w-[5em] -top-[2em] -right-[2em] rounded-full bg-blue-400 group-hover:scale-[1200%] duration-500 z-[-1]"></div>
-                  <h1 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
+                  <h2 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
                     Legacy System Modernization
-                  </h1>
+                  </h2>
                   <p className="text-sm text-gray-700 z-20 group-hover:text-white text-center">
                     Whether or not your legacy systems are running a bit too
                     slow for you, it&apos;s time to upgrade. We modernize legacy

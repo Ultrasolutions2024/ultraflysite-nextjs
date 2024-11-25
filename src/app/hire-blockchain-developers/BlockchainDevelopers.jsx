@@ -362,9 +362,9 @@ const BlockchainDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-left"
           >
-            <h1 className="font-bold text-gray-800 mb-3">
+            <h2 className="font-bold text-gray-800 mb-3">
               Transparent Communication
-            </h1>
+            </h2>
             <p className="text-gray-600">
               We ensure open lines of communication throughout the project,
               keeping you informed every step of the way.
@@ -376,9 +376,9 @@ const BlockchainDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="flip-up"
           >
-            <h1 className="font-bold text-gray-800  mb-3">
+            <h2 className="font-bold text-gray-800  mb-3">
               Flexible Hiring Options
-            </h1>
+            </h2>
             <p className="text-gray-600">
               Whether you need a dedicated developer or a full team for a
               specific project, we offer adaptable hiring models tailored to
@@ -391,9 +391,9 @@ const BlockchainDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-right"
           >
-            <h1 className="font-bold text-gray-800  mb-3">
+            <h2 className="font-bold text-gray-800  mb-3">
               Proven Success Record
-            </h1>
+            </h2>
             <p className="text-gray-600">
               Our blockchain developers consistently deliver high-performing
               applications, backed by years of experience and client
@@ -405,9 +405,9 @@ const BlockchainDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-left"
           >
-            <h1 className="font-bold text-gray-800  mb-3">
+            <h2 className="font-bold text-gray-800  mb-3">
               Customer-Centric Approach
-            </h1>
+            </h2>
             <p className="text-gray-600">
               We work closely with you to understand your specific needs,
               ensuring that our solutions align with your business goals.
@@ -418,9 +418,9 @@ const BlockchainDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="flip-up"
           >
-            <h1 className="font-bold text-gray-800  mb-3">
+            <h2 className="font-bold text-gray-800  mb-3">
               Ongoing Support and Maintenance
-            </h1>
+            </h2>
             <p className="text-gray-600">
               After project completion, we provide continuous support and
               maintenance to keep your applications running smoothly and
@@ -431,18 +431,18 @@ const BlockchainDevelopers = () => {
       </div>
 
       <section className="p-20 w-full">
-        <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
           4 Easy Steps to Hire an Ionic Developer
-        </h1>
+        </h2>
         <div className="grid md:grid-cols-4 md:justify-between">
           <div className=" relative border-blue-600 border-b-[3px] max-md:border-r-[3px]">
-            <h1 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
+            <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               1
-            </h1>
+            </h2>
             <div className=" md:h-[500px] lg:h-72 md:border-r-[3px] border-blue-600 p-10">
-              <h1 className="text-xl font-bold">
+              <h2 className="text-xl font-bold">
                 Contact us and share your detailed requirements.
-              </h1>
+              </h2>
               <p className=" ">
                 We take the time to thoroughly understand your ideas! Discuss
                 your vision and engage in an in-depth conversation with our team
@@ -453,11 +453,11 @@ const BlockchainDevelopers = () => {
           </div>
           {/* <div className="divider md:divider-horizontal" /> */}
           <div className=" border-blue-600 max-md:border-b-[3px] max-md:border-l-[3px]">
-            <h1 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
+            <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               2
-            </h1>
+            </h2>
             <div className=" md:h-[500px] lg:h-72 md:border-t-[3px] border-blue-600  p-10">
-              <h1 className="text-xl font-bold">Receive Expert Guidance</h1>
+              <h2 className="text-xl font-bold">Receive Expert Guidance</h2>
               <p className=" ">
                 Benefit from our expertise as we help you identify the key
                 skills and technologies needed for your project.
@@ -466,13 +466,13 @@ const BlockchainDevelopers = () => {
           </div>
           {/* <div className="divider md:divider-horizontal" /> */}
           <div className=" border-blue-600 border-b-[3px] max-md:border-r-[3px]">
-            <h1 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
+            <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               3
-            </h1>
+            </h2>
             <div className=" md:h-[500px] lg:h-72 md:border-x-[3px] border-blue-600 p-10">
-              <h1 className="text-xl font-bold">
+              <h2 className="text-xl font-bold">
                 Build a collaborative relationship.
-              </h1>
+              </h2>
               <p className=" ">
                 Work closely with our developers to ensure your vision is
                 realized, fostering a partnership that drives innovation and
@@ -482,11 +482,11 @@ const BlockchainDevelopers = () => {
           </div>
           {/* <div className="divider md:divider-horizontal" /> */}
           <div className=" border-blue-600 max-md:border-l-[3px]">
-            <h1 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
+            <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               4
-            </h1>
+            </h2>
             <div className=" md:h-[500px] lg:h-72 relative md:border-t-[3px] border-blue-600 p-10">
-              <h1 className="text-xl font-bold">Get Ongoing Support</h1>
+              <h2 className="text-xl font-bold">Get Ongoing Support</h2>
               <p className=" ">
                 Enjoy continuous collaboration and support throughout the
                 development process so your project stays on track and meets
@@ -517,9 +517,9 @@ const BlockchainDevelopers = () => {
         {/* <div className="hero-overlay"></div> */}
         <div className="pl-10 text-neutral-content text-left items-start py-10 ">
           <div className="">
-            <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            <h2 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
               Hire the Best Blockchain Talent Today
-            </h1>
+            </h2>
             <p className="mb-5 text-xs md:text-xl text-white w-3/4">
               At Ultrafly Solutions, we&apos;re committed to delivering
               blockchain development services that help you stay ahead of the

@@ -20,9 +20,9 @@ function OurClients() {
   return (
     <section className="py-10 mt-5 w-full">
       <div data-aos="zoom-in">
-        <h1 className="text-center font-bold text-xl sm:text-2xl md:text-4xl">
+        <h2 className="text-center font-bold text-xl sm:text-2xl md:text-4xl">
           Our Clients
-        </h1>
+        </h2>
       </div>
       <div className="overflow-hidden mt-8">
         <div

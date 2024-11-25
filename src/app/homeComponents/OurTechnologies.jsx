@@ -33,7 +33,7 @@ function OurTechnologies() {
   return (
     <>
       <div className="mt-10">
-        <h1 className="text-center font-bold text-xl sm:text-2xl md:text-4xl text-gray-800 mb-8">Our Technologies</h1>
+        <h2 className="text-center font-bold text-xl sm:text-2xl md:text-4xl text-gray-800 mb-8">Our Technologies</h2>
       </div>
       <section className="flex flex-wrap gap-5 sm:gap-10 justify-center p-4 mb-20 mt-20">
         {technologies.map((tech, index) => (

@@ -48,11 +48,11 @@ function LinkedinFollowers() {
             alt="Unlocking the Future"
             className="w-16 h-16 rounded-full object-cover" // Increased size of the image
           />
-          <h1 className="text-2xl md:text-[30px] font-bold text-justify pr-6">
+          <h2 className="text-2xl md:text-[30px] font-bold text-justify pr-6">
             {" "}
             {/* Added more padding to the right */}
             Jeeva Shanmugam
-          </h1>
+          </h2>
         </div>
 
         <span className="text-lg md:text-2xl font-bold text-gray-500 pl-6">
@@ -65,10 +65,10 @@ function LinkedinFollowers() {
         <div className="grid md:grid-cols-3 gap-3 pr-10">
           <div className="col-span-2 grid justify-center gap-2">
             <div className="flex items-center">
-              <h1 className="text-2xl md:text-[30px] font-bold text-justify">
+              <h2 className="text-2xl md:text-[30px] font-bold text-justify">
                 How to Increase Your LinkedIn Followers and Make a Living in
                 2025?
-              </h1>
+              </h2>
             </div>
             <div className="flex items-center justify-end ml-4">
               <FaEye className="text-gray-600 mr-2" />
@@ -573,9 +573,9 @@ function LinkedinFollowers() {
 
             {/* Social Media Icons Section */}
             <div className="flex justify-center md:justify-start gap-6 text-[18px] text-[#646464] mt-8">
-              <h1 className="text-blue font-bold">
+              <h2 className="text-blue font-bold">
                 <u>Share Our Blog:</u>
-              </h1>
+              </h2>
               <br />
               <Link
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(

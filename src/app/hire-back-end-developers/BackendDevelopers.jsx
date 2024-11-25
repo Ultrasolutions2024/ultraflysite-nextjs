@@ -337,9 +337,9 @@ const BackendDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-left"
           >
-            <h1 className="font-bold text-gray-800 mb-3">
+            <h2 className="font-bold text-gray-800 mb-3">
               Transparent Communication
-            </h1>
+            </h2>
             <p className="text-gray-600">
               We maintain open lines of communication throughout the project,
               keeping you updated at every stage.
@@ -351,9 +351,9 @@ const BackendDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="flip-up"
           >
-            <h1 className="font-bold text-gray-800  mb-3">
+            <h2 className="font-bold text-gray-800  mb-3">
               Flexible Hiring Models
-            </h1>
+            </h2>
             <p className="text-gray-600">
               Choose from full-time, part-time, or project-based hiring options
               to meet your exact requirements.
@@ -365,9 +365,9 @@ const BackendDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-right"
           >
-            <h1 className="font-bold text-gray-800  mb-3">
+            <h2 className="font-bold text-gray-800  mb-3">
               Proven Success Record
-            </h1>
+            </h2>
             <p className="text-gray-600">
               With years of experience, our backend developers consistently
               deliver solutions that enhance performance and scale with your
@@ -379,9 +379,9 @@ const BackendDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-left"
           >
-            <h1 className="font-bold text-gray-800  mb-3">
+            <h2 className="font-bold text-gray-800  mb-3">
               Client-Centric Approach
-            </h1>
+            </h2>
             <p className="text-gray-600">
               We collaborate closely with you to understand your goals, ensuring
               our solutions align with your business vision for long-term
@@ -393,7 +393,7 @@ const BackendDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="flip-up"
           >
-            <h1 className="font-bold text-gray-800  mb-3">Ongoing Support</h1>
+            <h2 className="font-bold text-gray-800  mb-3">Ongoing Support</h2>
             <p className="text-gray-600">
               Post-development, we provide continuous support and maintenance to
               ensure your backend systems remain secure and efficient.
@@ -403,16 +403,16 @@ const BackendDevelopers = () => {
       </div>
 
       <section className="p-10 md:p-20 w-full">
-        <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
           4 Easy Steps to Hire an Ionic Developer
-        </h1>
+        </h2>
         <div className="grid md:grid-cols-4 md:justify-between">
           <div className=" relative border-blue-600 border-b-[3px] max-md:border-r-[3px]">
-            <h1 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
+            <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               1
-            </h1>
+            </h2>
             <div className=" md:h-[500px] lg:h-72 md:border-r-[3px] border-blue-600 p-10">
-              <h1 className="text-xl font-bold">Share Your Requirements</h1>
+              <h2 className="text-xl font-bold">Share Your Requirements</h2>
               <p className=" ">
                 Tell us your project needs and goals, and we?ll engage in
                 detailed discussions to clarify your expectations.
@@ -422,11 +422,11 @@ const BackendDevelopers = () => {
           </div>
           {/* <div className="divider md:divider-horizontal" /> */}
           <div className=" border-blue-600 max-md:border-b-[3px] max-md:border-l-[3px]">
-            <h1 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
+            <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               2
-            </h1>
+            </h2>
             <div className=" md:h-[500px] lg:h-72 md:border-t-[3px] border-blue-600  p-10">
-              <h1 className="text-xl font-bold">Receive Expert Guidance</h1>
+              <h2 className="text-xl font-bold">Receive Expert Guidance</h2>
               <p className=" ">
                 Benefit from our expert advice as we recommend the best
                 technologies and development approaches for your backend
@@ -436,11 +436,11 @@ const BackendDevelopers = () => {
           </div>
           {/* <div className="divider md:divider-horizontal" /> */}
           <div className=" border-blue-600 border-b-[3px] max-md:border-r-[3px]">
-            <h1 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
+            <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               3
-            </h1>
+            </h2>
             <div className=" md:h-[500px] lg:h-72 md:border-x-[3px] border-blue-600 p-10">
-              <h1 className="text-xl font-bold">Collaborate for Success</h1>
+              <h2 className="text-xl font-bold">Collaborate for Success</h2>
               <p className=" ">
                 Work closely with our developers, ensuring your vision becomes a
                 reality with high-quality, innovative solutions.
@@ -449,11 +449,11 @@ const BackendDevelopers = () => {
           </div>
           {/* <div className="divider md:divider-horizontal" /> */}
           <div className=" border-blue-600 max-md:border-l-[3px]">
-            <h1 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
+            <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               4
-            </h1>
+            </h2>
             <div className=" md:h-[500px] lg:h-72 relative md:border-t-[3px] border-blue-600 p-10">
-              <h1 className="text-xl font-bold">Ongoing Support</h1>
+              <h2 className="text-xl font-bold">Ongoing Support</h2>
               <p className=" ">
                 We offer continuous support throughout the project to ensure
                 everything runs smoothly and aligns with your objectives.
@@ -483,9 +483,9 @@ const BackendDevelopers = () => {
         {/* <div className="hero-overlay"></div> */}
         <div className="pl-10 text-neutral-content text-left items-start py-10 ">
           <div className="">
-            <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            <h2 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
               Hire Top Backend Developers Today
-            </h1>
+            </h2>
             <p className="mb-5 text-xs md:text-xl text-white w-3/4">
               At Ultrafly Solutions, we are committed to delivering backend
               solutions that give your business a competitive edge. Our team of
