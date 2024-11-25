@@ -2,27 +2,27 @@ import React from "react";
 import dynamic from "next/dynamic";
 import Head from "next/head"; // Import Head component for managing <head> elements
 
-// Dynamically import the PrivacyPolicy component
-const PrivacyPolicy = dynamic(() => import('./PrivacyPolicy'), {
+// Dynamically import the ChooseUs component
+const ChooseUs = dynamic(() => import('./ChooseUs'), {
   ssr: false,
 });
 
 // Define metadata for the page
 const metadata = {
-  title: "Privacy Policy | Ultrafly Solutions",
+  title: "Why Choose Us | Ultrafly Solutions",
   description:
-    "Read the privacy policy of Ultrafly Solutions to understand how we handle your data with transparency and care.",
-  keywords: "privacy policy, data protection, Ultrafly Solutions",
+    "Discover why Ultrafly Solutions is the right choice for your software development needs. Our expertise and commitment ensure success.",
+  keywords: "why choose us, Ultrafly Solutions, software development, reliable software services",
   openGraph: {
-    title: "Privacy Policy | Ultrafly Solutions",
+    title: "Why Choose Us | Ultrafly Solutions",
     description:
-      "Learn about the privacy practices of Ultrafly Solutions and how we ensure your data security.",
+      "Learn why businesses trust Ultrafly Solutions for innovative and reliable software solutions tailored to their needs.",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/privacy-policy-banner.webp", // Update this URL as appropriate
+        url: "https://www.ultraflysolutions.com/images/why-choose-us-banner.webp", // Update this URL as needed
       },
     ],
-    url: "https://www.ultraflysolutions.com/privacy-policy", // Update to match the privacy policy URL
+    url: "https://www.ultraflysolutions.com/why-choose-us", // Update to match the page URL
   },
 };
 
@@ -39,10 +39,10 @@ function Page() {
         <meta property="og:url" content={metadata.openGraph.url} />
         <link
           rel="canonical"
-          href="https://www.ultraflysolutions.com/privacy-policy"
+          href="https://www.ultraflysolutions.com/why-choose-us"
         />
       </Head>
-      <PrivacyPolicy />
+      <ChooseUs />
     </>
   );
 }

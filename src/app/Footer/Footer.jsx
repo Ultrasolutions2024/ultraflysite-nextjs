@@ -17,7 +17,7 @@ function Footer() {
       <footer className="bg-[#b3eeff5c] ">
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center p-5 md:p-10 w-[97%]">
           <div className="gap-[0.5px] grid hover:cursor-pointer">
-            <h2 className="text-xl font-bold">Ultrafly Solutions</h2>
+            <h1 className="text-xl font-bold">Ultrafly Solutions</h1>
             <p className="font-medium hover:text-blue-600">
               <Link href="https://tinyurl.com/bpbxt9ra">
               <Image 

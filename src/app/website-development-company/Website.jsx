@@ -46,9 +46,9 @@ function Website() {
 
             {/* Text Section */}
             <div className="text-left bg-gradient-to-r from-gray-50 to-blue-50 mt-6 px-5 lg:px-10 lg:-translate-x-10 rounded-3xl z-10  w-full lg:w-[650px]  h-auto lg:h-[400px] py-5 shadow-md">
-              <h2 className="text-gray-800 text-xl md:text-2xl font-bold mb-4">
+              <h1 className="text-gray-800 text-xl md:text-2xl font-bold mb-4">
                 Professional Website Development Services
-              </h2>
+              </h1>
               <p className="mb-4 text-sm lg:text-[16px] font-sans text-justify leading-relaxed text-gray-500">
                 A business cannot afford not to have an adequate online presence
                 is the need of every modern business that wants to survive in
@@ -588,9 +588,9 @@ function Website() {
         </div>
       </div>
       {/* <footer className="soft-banner-footer flex flex-col justify-center items-center gap-5 text-center px-4 lg:px-0">
-        <h1 className=" text-white text-xl md:text-3xl lg:text-5xl  ">
+        <h2 className=" text-white text-xl md:text-3xl lg:text-5xl  ">
           Let’s Get To Work Together Ready To Work With Us.
-        </h1>
+        </h2>
         <Link href="/contact-us">
           <button className=" text-white border border-white py-2 px-4 rounded-lg transition ease-in-out delay-150 duration-300 hover:bg-white hover:text-black">
             Join with us

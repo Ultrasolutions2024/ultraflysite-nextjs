@@ -9,6 +9,7 @@ const nextConfig = {
     config.cache = false;
     return config;
   },
+  reactStrictMode: true,
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -16,7 +17,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   output: 'export', // Ensures the build creates a static site.
-  // trailingSlash: true, // Optional: Ensures proper linking for static pages.
+  trailingSlash: true, // Optional: Ensures proper linking for static pages.
   images: {
     domains: ['readymadeui.com', 'ultraflysolutions.com', 'c.statcounter.com'], // External domains for image optimization
     unoptimized: true, // If you want to disable image optimization (use only if necessary)

@@ -23,9 +23,9 @@ function Featured() {
         <div className="container">
           {/* title */}
           <div data-aos="fade-in" className="mt-10">
-            <h1 className="text-center font-bold text-xl sm:text-2xl md:text-4xl text-gray-800">
+            <h2 className="text-center font-bold text-xl sm:text-2xl md:text-4xl text-gray-800">
               Our Services
-            </h1>
+            </h2>
           </div>
           <h2
             data-aos="fade-in"
@@ -40,9 +40,9 @@ function Featured() {
         {/* card -1 */}
         <div className="featured_card">
           <div className="hover-text">
-            <h1 className="text-center text-xl md:text-2xl font-bold ">
+            <h2 className="text-center text-xl md:text-2xl font-bold ">
               Custom Software Development Solutions
-            </h1>
+            </h2>
             <div className="flex justify-center items-center p-3">
               <span className="text-[13px] md:text-[16px] text-white text-justify max-w-3xl leading-relaxed">
                 We are experts in developing end-to-end applications based on
@@ -72,17 +72,17 @@ function Featured() {
           <Image 
   quality={75} src={Image1} alt="df" className="h-full w-full" />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
-            <h1 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
+            <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               SOFTWARE DEVELOPMENT
-            </h1>
+            </h2>
           </div>
         </div>
         {/* card -2 */}
         <div className="featured_card">
           <div className="hover-text">
-            <h1 className="text-center text-xl md:text-2xl font-bold mb-2">
+            <h2 className="text-center text-xl md:text-2xl font-bold mb-2">
               Custom Mobile App Development Services
-            </h1>
+            </h2>
             <div className="flex justify-center items-center p-3">
               <span className="text-[13px] md:text-[16px] text-white text-justify max-w-3xl leading-relaxed">
                 We excel in developing high-quality mobile apps. Whether you&apos;re
@@ -113,17 +113,17 @@ function Featured() {
           <Image 
   quality={75} src={Image2} alt="df" className="h-full w-full" />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
-            <h1 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
+            <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               MOBILE APP DEVELOPMENT
-            </h1>
+            </h2>
           </div>
         </div>
         {/* card -3 */}
         <div className="featured_card">
           <div className="hover-text">
-            <h1 className="text-center text-xl md:text-2xl font-bold mb-2">
+            <h2 className="text-center text-xl md:text-2xl font-bold mb-2">
               Professional Website Development Services
-            </h1>
+            </h2>
             <div className="flex justify-center items-center p-3">
               <span className="text-[13px] md:text-[16px] text-white text-justify max-w-3xl leading-relaxed">
                 As technology continues to evolve at an unprecedented pace, the
@@ -153,17 +153,17 @@ function Featured() {
           <Image 
   quality={75} src={Image3} alt="df" className="h-full w-full" />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
-            <h1 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
+            <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               WEBSITE DEVELOPMENT
-            </h1>
+            </h2>
           </div>
         </div>
         {/* card -4 */}
         <div className="featured_card">
           <div className="hover-text">
-            <h1 className="text-center text-xl md:text-2xl font-bold mb-2">
+            <h2 className="text-center text-xl md:text-2xl font-bold mb-2">
               Result-Driven SEO
-            </h1>
+            </h2>
             <div className="flex justify-center items-center p-3">
               <span className="text-[13px] md:text-[16px] text-white text-justify max-w-3xl leading-relaxed">
                 In Ultrafly Solutions social media marketing, you use popular
@@ -194,17 +194,17 @@ function Featured() {
           <Image 
   quality={75} src={Image4} alt="df" className="h-full w-full" />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
-            <h1 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
+            <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               SEO OPTIMIZATION
-            </h1>
+            </h2>
           </div>
         </div>
         {/* card -5 */}
         <div className="featured_card">
           <div className="hover-text">
-            <h1 className="text-center text-xl md:text-2xl font-bold mb-2">
+            <h2 className="text-center text-xl md:text-2xl font-bold mb-2">
               Social Media Marketing
-            </h1>
+            </h2>
             <div className="flex justify-center items-center p-3">
               <span className="text-[13px] md:text-[16px] text-white text-justify max-w-3xl leading-relaxed">
                 Digital marketing content is a pivotal tool for online success.
@@ -235,17 +235,17 @@ function Featured() {
           <Image 
   quality={75} src={Image5} alt="df" className="h-full w-full" />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
-            <h1 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
+            <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               DIGITAL MARKETING
-            </h1>
+            </h2>
           </div>
         </div>
         {/* card -6 */}
         <div className="featured_card">
           <div className="hover-text leading-4">
-            <h1 className="text-center text-xl md:text-2xl font-bold mb-2">
+            <h2 className="text-center text-xl md:text-2xl font-bold mb-2">
               Expert IT Staffing Solutions
-            </h1>
+            </h2>
             <div className="flex justify-center items-center p-3">
               <span className="text-[13px] md:text-[16px] text-white text-justify max-w-3xl leading-relaxed">
                 Staffing: key to success, blending recruiting, training,
@@ -276,9 +276,9 @@ function Featured() {
           <Image 
   quality={75} src={Image6} alt="df" className="h-full w-full" />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
-            <h1 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
+            <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               IT STAFFING
-            </h1>
+            </h2>
           </div>
         </div>
       </section>

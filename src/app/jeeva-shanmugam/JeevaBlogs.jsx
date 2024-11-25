@@ -15,9 +15,9 @@ const JeevaBlogs = () => {
       alt="Unlocking the Future"
       className="w-16 h-16 rounded-full object-cover"  // Increased size of the image
     />
-    <h1 className="text-2xl md:text-[30px] font-bold text-justify pr-6"> {/* Added more padding to the right */}
+    <h2 className="text-2xl md:text-[30px] font-bold text-justify pr-6"> {/* Added more padding to the right */}
       Jeeva Shanmugam
-    </h1>
+    </h2>
   </div>
 
   <span className="text-lg md:text-2xl font-bold text-gray-500 pl-6">

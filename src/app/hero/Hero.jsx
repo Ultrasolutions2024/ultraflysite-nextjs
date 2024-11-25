@@ -93,9 +93,9 @@ function Hero() {
                 style={{ display: currentIndex === 1 ? "block" : "none" }}
               >
                 <div className="flex flex-col items-center justify-center w-full h-full p-6  rounded-lg backdrop-blur-lg bg-white/10 shadow-lg border border-white/20">
-                  <h1 className="text-xl md:text-4xl font-bold text-center">
+                  <h2 className="text-xl md:text-4xl font-bold text-center">
                     &quot;Transforming Businesses with Digital Innovation&quot;
-                  </h1>
+                  </h2>
                   <ul className="grid grid-cols-1 md:grid-cols-2 font-medium text-xs md:text-sm gap-4 md:gap-6 px-4 md:px-6 mt-4 md:mt-6">
                     <li className="bg-[#eca918] p-2 rounded-lg">
                       Creating impactful, responsive web solutions.

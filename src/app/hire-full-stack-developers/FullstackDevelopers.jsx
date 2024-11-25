@@ -356,9 +356,9 @@ const FullstackDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-left"
           >
-            <h1 className="font-bold text-gray-800 mb-3">
+            <h2 className="font-bold text-gray-800 mb-3">
               Transparent Communication
-            </h1>
+            </h2>
             <p className="text-gray-600">
               We maintain open communication throughout the project, keeping you
               informed of every milestone.
@@ -370,9 +370,9 @@ const FullstackDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="flip-up"
           >
-            <h1 className="font-bold text-gray-800  mb-3">
+            <h2 className="font-bold text-gray-800  mb-3">
               Flexible Hiring Options
-            </h1>
+            </h2>
             <p className="text-gray-600">
               Choose from full-time, part-time, or project-based hiring models
               to match your business needs.
@@ -384,9 +384,9 @@ const FullstackDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-right"
           >
-            <h1 className="font-bold text-gray-800  mb-3">
+            <h2 className="font-bold text-gray-800  mb-3">
               Proven Success Record
-            </h1>
+            </h2>
             <p className="text-gray-600">
               Our full-stack developers consistently deliver high-performing,
               robust applications for various industries.
@@ -397,9 +397,9 @@ const FullstackDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-left"
           >
-            <h1 className="font-bold text-gray-800  mb-3">
+            <h2 className="font-bold text-gray-800  mb-3">
               Customer-Centric Approach
-            </h1>
+            </h2>
             <p className="text-gray-600">
               We focus on understanding your specific business challenges and
               work with you to create solutions that align with your goals.
@@ -410,9 +410,9 @@ const FullstackDevelopers = () => {
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="flip-up"
           >
-            <h1 className="font-bold text-gray-800  mb-3">
+            <h2 className="font-bold text-gray-800  mb-3">
               Ongoing Support and Maintenance
-            </h1>
+            </h2>
             <p className="text-gray-600">
               We provide continuous post-launch support to ensure your
               applications remain optimized and secure.
@@ -420,18 +420,18 @@ const FullstackDevelopers = () => {
           </div>
         </div>
         <section className="p-10 md:p-20 w-full">
-          <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
+          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
             4 Easy Steps to Hire a Full-Stack Developer
-          </h1>
+          </h2>
           <div className="grid md:grid-cols-4 md:justify-between">
             <div className=" relative border-blue-600 border-b-[3px] max-md:border-r-[3px]">
-              <h1 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
+              <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
                 1
-              </h1>
+              </h2>
               <div className=" md:h-[500px] lg:h-72 md:border-r-[3px] border-blue-600 p-10">
-                <h1 className="text-xl font-bold">
+                <h2 className="text-xl font-bold">
                   Contact us and share your detailed requirements.
-                </h1>
+                </h2>
                 <p className=" ">
                   We engage in an in-depth conversation about your vision,
                   goals, and technical needs.
@@ -441,11 +441,11 @@ const FullstackDevelopers = () => {
             </div>
             {/* <div className="divider md:divider-horizontal" /> */}
             <div className=" border-blue-600 max-md:border-b-[3px] max-md:border-l-[3px]">
-              <h1 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
+              <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
                 2
-              </h1>
+              </h2>
               <div className=" md:h-[500px] lg:h-72 md:border-t-[3px] border-blue-600  p-10">
-                <h1 className="text-xl font-bold">Receive Expert Guidance</h1>
+                <h2 className="text-xl font-bold">Receive Expert Guidance</h2>
                 <p className=" ">
                   Our team provides expert advice on the best full-stack
                   technologies and approaches for your project.
@@ -454,13 +454,13 @@ const FullstackDevelopers = () => {
             </div>
             {/* <div className="divider md:divider-horizontal" /> */}
             <div className=" border-blue-600 border-b-[3px] max-md:border-r-[3px]">
-              <h1 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
+              <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
                 3
-              </h1>
+              </h2>
               <div className=" md:h-[500px] lg:h-72 md:border-x-[3px] border-blue-600 p-10">
-                <h1 className="text-xl font-bold">
+                <h2 className="text-xl font-bold">
                   Build a collaborative relationship.
-                </h1>
+                </h2>
                 <p className=" ">
                   Work closely with our developers to ensure your project is
                   executed with precision, fostering innovation and success.
@@ -469,11 +469,11 @@ const FullstackDevelopers = () => {
             </div>
             {/* <div className="divider md:divider-horizontal" /> */}
             <div className=" border-blue-600 max-md:border-l-[3px]">
-              <h1 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
+              <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
                 4
-              </h1>
+              </h2>
               <div className=" md:h-[500px] lg:h-72 relative md:border-t-[3px] border-blue-600 p-10">
-                <h1 className="text-xl font-bold">Get Ongoing Support</h1>
+                <h2 className="text-xl font-bold">Get Ongoing Support</h2>
                 <p className=" ">
                   Benefit from continuous collaboration and support throughout
                   your project lifecycle, ensuring everything stays on track.
@@ -503,9 +503,9 @@ const FullstackDevelopers = () => {
           {/* <div className="hero-overlay"></div> */}
           <div className="text-neutral-content text-left pl-10 items-start py-10 ">
             <div className="">
-              <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+              <h2 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                 Hire the Best Full-Stack Talent Today
-              </h1>
+              </h2>
               <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
                 At Ultrafly Solutions, we are dedicated to delivering full-stack
                 development services that help your business thrive. Our

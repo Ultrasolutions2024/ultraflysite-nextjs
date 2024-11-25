@@ -34,9 +34,9 @@ const industries = [
 const OurIndustryExpertise = () => {
   return (
     <div className="bg-gray-100  py-14">
-      <h1 className="text-center font-bold text-xl sm:text-2xl md:text-4xl mt-4 b">
+      <h2 className="text-center font-bold text-xl sm:text-2xl md:text-4xl mt-4 b">
         Our Industry Expertise
-      </h1>
+      </h2>
       <h4 className="text-lg text-center mb-6 mt-2">
         We’ve excelled our experience in a wide range of industries to bring
         valuable insights and provide our clients with truly beneficial
@@ -76,9 +76,9 @@ const OurIndustryExpertise = () => {
         ))}
       </div>
 
-      <h1 className="text-center font-bold text-xl sm:text-2xl md:text-3xl mt-8">
+      <h2 className="text-center font-bold text-xl sm:text-2xl md:text-3xl mt-8">
         Reviews
-      </h1>
+      </h2>
       <div className="grid grid-cols-3 mt-4 gap-4 px-6 md:px-10 lg:px-20">
         <div
           className="h-20 md:h-36 lg:h-48 p-1 md:p-4 shadow-2xl rounded-lg overflow-hidden w-full"

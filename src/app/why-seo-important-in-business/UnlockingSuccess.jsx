@@ -70,9 +70,9 @@ function UnlockingSuccess() {
               modern businesses? Let&apos;s jump right in!{" "}
             </p>
             <br />
-            <h1 className="text-base md:text-2xl font-medium text-justify max-w-[70rem] w-full mx-auto">
+            <h2 className="text-base md:text-2xl font-medium text-justify max-w-[70rem] w-full mx-auto">
               Why SEO is Important in Business:
-            </h1>
+            </h2>
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               <b>1. Visibility and Traffic:</b> Consider owning a shop located
               on a secluded street that is unfamiliar to most people. Wouldn&apos;t
@@ -113,9 +113,9 @@ function UnlockingSuccess() {
               understand and effectively utilize SEO.
             </p>
             <br />
-            <h1 className="text-base md:text-2xl font-medium text-justify max-w-[70rem] w-full mx-auto">
+            <h2 className="text-base md:text-2xl font-medium text-justify max-w-[70rem] w-full mx-auto">
               How to Leverage SEO Today:
-            </h1>
+            </h2>
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               <b>1. Keyword Research:</b> Keywords are the terms individuals
               enter into search engines. For instance, if a person wants to buy
@@ -149,9 +149,9 @@ function UnlockingSuccess() {
               SEO.
             </p>
             <br />
-            <h1 className="text-base md:text-2xl font-medium text-justify max-w-[70rem] w-full mx-auto">
+            <h2 className="text-base md:text-2xl font-medium text-justify max-w-[70rem] w-full mx-auto">
               Conclusion
-            </h1>
+            </h2>
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               In conclusion, SEO is like a secret weapon in digital marketing
               that can help businesses succeed online. By making a website
@@ -164,9 +164,9 @@ function UnlockingSuccess() {
             </p>
             {/* Social Media Icons Section */}
             <div className="flex justify-center md:justify-start gap-6 text-[18px] text-[#646464] mt-8">
-              <h1 className="text-blue font-bold">
+              <h2 className="text-blue font-bold">
                 <u>Share Our Blog:</u>
-              </h1>
+              </h2>
               <br />
               <a
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
