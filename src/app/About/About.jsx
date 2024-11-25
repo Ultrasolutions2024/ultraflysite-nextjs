@@ -43,7 +43,8 @@ function About() {
 
             {/* stats cards with background image */}
             <div className="relative w-full flex justify-center items-center">
-              <Image 
+              <Image
+loading="lazy" 
   quality={75}
                 src={bgImage}
                 alt="background"
@@ -52,7 +53,8 @@ function About() {
               <div className="relative grid gap-6 mt-4">
                 {/* Stat card 1 */}
                 <div className="flex flex-row items-center text-center bg-white rounded-lg shadow-lg py-2 px-4 w-48 transform -translate-x-20 md:-translate-x-60 lg:-translate-x-40 mt-4se sm:mt-12  hover:scale-105 transition-all duration-300 ease-in-out">
-                  <Image 
+                  <Image
+loading="lazy" 
   quality={75}
                     src={projexticon}
                     alt="Completed Projects"
@@ -77,7 +79,8 @@ function About() {
 
                 {/* Stat card 2 */}
                 <div className="flex flex-row items-center text-center bg-white rounded-lg shadow-lg py-2 px-4 w-48 transform translate-x-20 md:translate-x-60 lg:translate-x-60  mt-12 sm:mt-0 md:self-end hover:scale-105 transition-all duration-300 ease-in-out">
-                  <Image 
+                  <Image
+loading="lazy" 
   quality={75}
                     src={clients}
                     alt="Happy Clients"
@@ -102,7 +105,8 @@ function About() {
 
                 {/* Stat card 3 */}
                 <div className="flex flex-row items-center text-center bg-white rounded-lg shadow-lg py-2 px-4 w-48 transform -translate-x-20 md:-translate-x-60 lg:-translate-x-40  hover:scale-105 transition-all duration-300 ease-in-out mt-6">
-                  <Image 
+                  <Image
+loading="lazy" 
   quality={75}
                     src={customerservice}
                     alt="Customer Service"

@@ -119,6 +119,7 @@ function Software() {
                   data-aos="fade-right"
                 >
                   <Image
+loading="lazy"
                      quality={75}
                     src={bg1}
                     alt="Placeholder Image"
@@ -178,6 +179,7 @@ function Software() {
                   data-aos="fade-left"
                 >
                   <Image
+loading="lazy"
                      quality={75}
                     src={bg2}
                     alt="Placeholder Image"
@@ -201,6 +203,7 @@ function Software() {
                   {/* Card header */}
                   <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg shadow-blue-500/40">
                     <Image
+loading="lazy"
                        quality={75}
                       src={expertise.icon}
                       alt={`${expertise.title} icon`}
@@ -658,6 +661,7 @@ function Software() {
             </div>
             <div className="lg:w-1/2 mt-6 lg:mt-0">
               <Image
+loading="lazy"
                  quality={75}
                 src={cased}
                 alt="Case Studies"

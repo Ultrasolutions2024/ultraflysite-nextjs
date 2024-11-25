@@ -18,6 +18,7 @@ function ITStaffing() {
               data-aos="fade-right"
             >
               <Image
+loading="lazy"
                 quality={75}
                 src={bg1}
                 alt="Placeholder Image"

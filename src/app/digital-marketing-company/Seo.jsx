@@ -154,6 +154,7 @@ function Seo() {
                 >
                   <div className="md:w-1/3">
                     <Image
+loading="lazy"
                       quality={75}
                       src={service.image}
                       alt={service.title}

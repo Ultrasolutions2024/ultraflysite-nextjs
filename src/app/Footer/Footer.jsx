@@ -20,7 +20,8 @@ function Footer() {
             <h1 className="text-xl font-bold">Ultrafly Solutions</h1>
             <p className="font-medium hover:text-blue-600">
               <Link href="https://tinyurl.com/bpbxt9ra">
-              <Image 
+              <Image
+loading="lazy" 
   quality={75} src={india} alt="india" className="inline-block w-4 h-4" />
               {"  "}<b>Office Address: India</b><br />
               27/9, Nivedh Vikas, Pankaja Mills <br />Road, Puliakulam,  <br />
@@ -29,7 +30,8 @@ function Footer() {
             </p>
             <br />
             <p className="font-medium hover:text-blue-600">
-              <Image 
+              <Image
+loading="lazy" 
   quality={75} src={usa} alt="usa" className="inline-block w-4 h-4" />
               {"  "}<b>Office Address: USA</b><br />
               1101 Iroquois Ave, Naperville,<br /> Illinois- 60563.
@@ -90,19 +92,22 @@ function Footer() {
             
             <Link href="/">
               <p className="flex items-center gap-2 hover:text-blue-600">
-                <Image 
+                <Image
+loading="lazy" 
   quality={75} src={india} alt="india" className="w-4 h-4" />
                 +91 91500 01089
               </p>
             </Link>
 
             <p className="flex items-center gap-2 hover:text-blue-600">
-              <Image 
+              <Image
+loading="lazy" 
   quality={75} src={india} alt="india" className="w-4 h-4" />
               +91 91500 01090
             </p>
             <p className="flex items-center gap-2 hover:text-blue-600">
-              <Image 
+              <Image
+loading="lazy" 
   quality={75} src={usa} alt="usa" className="w-4 h-4" />
               +1 562 521 9684
             </p>
@@ -115,7 +120,8 @@ function Footer() {
                     href="https://www.facebook.com/ultraflysolutions"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <Image 
+                    <Image
+loading="lazy" 
   quality={75}
                       src={facebook}
                       alt="Facebook"
@@ -127,7 +133,8 @@ function Footer() {
                     href="https://twitter.com/UltraflyS"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <Image 
+                    <Image
+loading="lazy" 
   quality={75}
                       src={twitter}
                       alt="Twitter"
@@ -139,7 +146,8 @@ function Footer() {
                     href="https://www.linkedin.com/company/ultraflysolutions/posts/?feedView=all"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <Image 
+                    <Image
+loading="lazy" 
   quality={75}
                       src={linkedin}
                       alt="LinkedIn"
@@ -151,7 +159,8 @@ function Footer() {
                     href="https://www.instagram.com/ultraflysolutions/"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <Image 
+                    <Image
+loading="lazy" 
   quality={75}
                       src={instagram}
                       alt="Instagram"
@@ -163,7 +172,8 @@ function Footer() {
                     href="https://tinyurl.com/bpbxt9ra"
                     target="_blank"
                     rel="noopener noreferrer">
-                     <Image 
+                     <Image
+loading="lazy" 
   quality={75}
                       src={location}
                       alt="location"
@@ -175,7 +185,8 @@ function Footer() {
                     href="https://www.youtube.com/channel/UC2mcL17ybjrgSQ6hJnboeTw"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <Image 
+                    <Image
+loading="lazy" 
   quality={75}
                       src={youtube}
                       alt="YouTube"

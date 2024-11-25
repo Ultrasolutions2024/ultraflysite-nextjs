@@ -17,7 +17,8 @@ function TopHeader() {
         </Link>
       </div>
       <div>
-        <Image 
+        <Image
+loading="lazy" 
   quality={75}
           src={usa}
           alt="USA"
@@ -28,7 +29,8 @@ function TopHeader() {
         <Link href="tel:+15625219684">+1 562 521 9684</Link>
       </div>
       <div>
-        <Image 
+        <Image
+loading="lazy" 
   quality={75}
           src={india}
           alt="India"

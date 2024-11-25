@@ -61,16 +61,8 @@ function ChooseUs() {
           </div>
         </div>
       </div>
-      {/* <div
-    className="w-full h-full hidden md:block"
-    style={{
-      backgroundImage: `url(${background})`,
-      backgroundSize: '100%',
-      backgroundPosition: 'right',
-      backgroundRepeat: 'no-repeat',
-    }}
-  ></div> */}
-  <Image 
+  <Image
+loading="lazy" 
   quality={75} src={background} className="w-full h-full hidden md:block bg-[length:100%] bg-right bg-no-repeat" alt="Digital Marketing"/>
     </div>
   );

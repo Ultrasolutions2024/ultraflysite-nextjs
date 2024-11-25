@@ -15,7 +15,8 @@ function SocialMedias() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image 
+        <Image
+loading="lazy" 
   quality={75}
           src={wAppImg}
           alt="WhatsApp"

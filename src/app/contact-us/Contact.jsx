@@ -45,19 +45,27 @@ function Login() {
 
   return (
     <>
-      <div
-        className="h-60 w-screen flex  items-center justify-center gap-4 max-sm:px-10"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${contact_banner.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <h2 className="text-[1.4rem] md:text-3xl lg:text-5xl text-white font-semibold">
-          GET IN TOUCH WITH US
-        </h2>
-      </div>
+      <div className="relative h-60 w-screen flex items-center justify-center gap-4 max-sm:px-10">
+      {/* Next.js Image for Background */}
+      <Image
+        src={contact_banner}
+        alt="Contact Banner"
+         layout="fill" // Ensures the image covers the container
+        objectFit="cover" // Covers the container without distortion
+        objectPosition="center" // Center the image like the original CSS
+        priority // Ensures the banner loads immediately for performance
+        quality={75} // Optimize image quality
+        className="z-0" // Keeps the image behind other content
+      />
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+
+      {/* Content */}
+      <h2 className="relative z-20 text-[1.4rem] md:text-3xl lg:text-5xl text-white font-semibold">
+        GET IN TOUCH WITH US
+      </h2>
+    </div>
       <div className="bg-white py-10 page-padding w-full container gap-10 items-center">
           {/* Left Column */}
           <div>
@@ -195,7 +203,8 @@ function Login() {
                 </h3>
                 <div className="text-[#646464] pl-2">
                   <p className="text-base md:text-lg">
-                    <Image 
+                    <Image
+loading="lazy" 
   quality={75}
                       src={india}
                       alt="India Flag"
@@ -204,7 +213,8 @@ function Login() {
                     +91 91500 01089
                   </p>
                   <p className="text-base md:text-lg">
-                    <Image 
+                    <Image
+loading="lazy" 
   quality={75}
                       src={india}
                       alt="India Flag"
@@ -213,7 +223,8 @@ function Login() {
                     +91 91500 01090
                   </p>
                   <p className="text-base md:text-lg">
-                    <Image 
+                    <Image
+loading="lazy" 
   quality={75}
                       src={usa}
                       alt="USA Flag"
@@ -226,7 +237,8 @@ function Login() {
                   Landline
                 </h3>
                 <p className="text-base md:text-lg pl-1">
-                  <Image 
+                  <Image
+loading="lazy" 
   quality={75}
                     src={india}
                     alt="India Flag"
