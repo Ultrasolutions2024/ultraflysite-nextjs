@@ -251,7 +251,7 @@ function Login() {
                     alt="India Flag"
                     className="inline-block w-4 h-4"
                   />{" "}
-                  +0422-267 0033
+                  +0422-350 0024
                 </p>
                 <h3 className="text-xl md:text-2xl font-semibold mt-4">
                   Email
