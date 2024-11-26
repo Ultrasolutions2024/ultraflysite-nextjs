@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect } from "react";
-import Image from "next/image"; // Import Next.js Image component
+import Image from "next/image";
 import career_banner from "../images/career/career_banner.webp";
 
 function Careers({ children }) {
@@ -12,16 +12,17 @@ function Careers({ children }) {
   return (
     <>
       <div className="relative h-60 w-screen flex items-center justify-center flex-col gap-4 max-sm:px-10">
-        {/* Next.js Image for Background */}
         <Image
           src={career_banner}
           alt="Career Banner"
-           layout="fill" // Ensures the image fills the container
-          objectFit="cover" // Covers the container without distortion
-          objectPosition="0 30%" // Matches the original background position
-          priority // Ensures the banner image loads immediately
-          quality={75} // Optimize image quality
-          className="z-0" // Keeps the image behind content
+          fill
+          style={{
+            objectFit: "cover",
+            objectPosition: "0 30%",
+          }}
+          priority
+          quality={75}
+          className="z-0"
         />
 
         {/* Gradient Overlay */}

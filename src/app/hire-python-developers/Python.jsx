@@ -1,9 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import background from "../images/Resources/background.webp";
-import faq from "../images/Resources/faq.webp";
 import { FaUser } from "react-icons/fa";
-import { FaMessage } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaMobileButton } from "react-icons/fa6";
 import Link from "next/link";
@@ -17,7 +15,6 @@ import resource from "../images/Resources/resource.webp";
 import { IoIosArrowForward } from "react-icons/io";
 import emailjs from "emailjs-com";
 import { NotificationManager } from "react-notifications";
-import Head from "next/head";
 import Image from "next/image";
 const Python = () => {
   useEffect(() => {
@@ -96,9 +93,12 @@ const Python = () => {
         <Image
           src={background.src} // Background image source
           alt="Hire Python Developers"
-           layout="fill" // Ensures the image fills the entire container
-          objectFit="cover" // Covers the container without distortion
-          objectPosition="center" // Centers the image
+           fill // Ensures the image fills the entire container
+          style={{
+    objectFit: "cover", // Replaces `objectFit`
+    objectPosition: "center", // Replaces `objectPosition`
+  }} // Covers the container without distortion
+            // Centers the image
           priority // Optimizes performance by preloading the image
         />
       </div>
@@ -140,11 +140,11 @@ const Python = () => {
             <li>Trusted by leading brands across various industries.</li>
           </ul>
           <div className="flex justify-center mb-5">
-            <a href="#sendBtn">
+            <Link href="#sendBtn">
               <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
                 Talk with Our Experts
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -493,9 +493,11 @@ loading="lazy"
         <Image
           src={resource}
           alt="Python Development"
-           layout="fill" // Ensures the image fills the container
-          objectFit="cover" // Mimics background-size: cover
-          objectPosition="right" // Align the image to the right
+           fill // Ensures the image fills the container
+          style={{
+    objectFit: "cover", // Replaces `objectFit`
+    objectPosition: "right", // Replaces `objectPosition`
+  }} // Mimics background-size: cover
           quality={75} // Optimizes the image quality
           priority // Load image quickly for better performance
           className="z-0" // Ensures the image is behind the content

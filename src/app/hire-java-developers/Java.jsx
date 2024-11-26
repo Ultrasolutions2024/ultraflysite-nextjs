@@ -2,9 +2,7 @@
 
 import React, { useRef, useEffect, useState } from "react";
 import background from "../images/Resources/background.webp";
-import faq from "../images/Resources/faq.webp";
 import { FaUser } from "react-icons/fa";
-import { FaMessage } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaMobileButton } from "react-icons/fa6";
 import Link from "next/link";
@@ -18,7 +16,6 @@ import resource from "../images/Resources/resource.webp";
 import { IoIosArrowForward } from "react-icons/io";
 import emailjs from "emailjs-com";
 import { NotificationManager } from "react-notifications";
-import Head from "next/head";
 import Image from "next/image";
 const Java = () => {
   useEffect(() => {
@@ -96,17 +93,17 @@ const Java = () => {
           <Image
             src={background}
             alt="Hero Background"
-             layout="fill"
-            objectFit="cover"
-            objectPosition="center"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
             priority
           />
         </div>
 
-        {/* Dimmed Overlay */}
         <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
 
-        {/* Hero Content */}
         <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
           <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
             <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
@@ -141,11 +138,11 @@ const Java = () => {
               <li>Trusted by leading brands across various industries.</li>
             </ul>
             <div className="flex justify-center mb-5">
-              <a href="#sendBtn">
+              <Link href="#sendBtn">
                 <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
                   Talk with Our Experts
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -156,7 +153,6 @@ const Java = () => {
           Elevate Your Business with Tailored JAVA Development Services
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
-          {/* Cards for Services */}
           <div
             className="group relative cursor-pointer overflow-hidden bg-white rounded-2xl px-6 pt-12 pb-10 shadow-2xl ring-1 ring-gray-900/5 transition-all duration-500 transform hover:scale-105 hover:shadow-3xl sm:mx-auto sm:max-w-sm sm:px-12"
             data-aos="fade-right"
@@ -314,7 +310,6 @@ const Java = () => {
         </div>
       </div>
 
-      {/* Call to Action Section */}
       <div className="bg-gray-50 relative max-w-full shadow-sm shadow-[#000000] mx-auto rounded overflow-hidden">
         <div className="grid sm:grid-cols-2 max-sm:gap-6">
           <div className="text-center p-6 flex flex-col justify-center items-center">
@@ -345,8 +340,8 @@ const Java = () => {
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"
-                width={500} // Set width in pixels (e.g., the actual image width)
-                height={500} // Set height in pixels (maintain aspect ratio)
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -355,7 +350,6 @@ const Java = () => {
         <div className="absolute -top-10 -left-10 w-28 h-28 rounded-full bg-[#2e8bb6] opacity-40 shadow-lg"></div>
       </div>
 
-      {/* Additional Information Section */}
       <div className="py-10 max-md:px-10">
         <h2 className="text-2xl font-bold text-center">
           Fueling Your Vision with Ultrafly Expertise
@@ -367,9 +361,7 @@ const Java = () => {
           enhance performance, and drive results.
         </p>
 
-        {/* Flexbox container for benefits */}
         <div className="mt-6 max-w-4xl mx-auto flex flex-col md:flex-row justify-between space-y-4 md:space-y-0 md:space-x-4">
-          {/* Benefit 1 */}
           <div
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-left"
@@ -383,7 +375,6 @@ const Java = () => {
             </p>
           </div>
 
-          {/* Benefit 2 */}
           <div
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="flip-up"
@@ -397,7 +388,6 @@ const Java = () => {
             </p>
           </div>
 
-          {/* Benefit 3 */}
           <div
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-right"
@@ -432,7 +422,7 @@ const Java = () => {
             </div>
             <IoIosArrowForward className="absolute -bottom-[16px] -left-[16px] text-3xl font-bold max-md:hidden" />
           </div>
-          {/* <div className="divider md:divider-horizontal" /> */}
+
           <div className=" border-blue-600 max-md:border-b-[3px] max-md:border-l-[3px]">
             <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               2
@@ -445,7 +435,7 @@ const Java = () => {
               </p>
             </div>
           </div>
-          {/* <div className="divider md:divider-horizontal" /> */}
+
           <div className=" border-blue-600 border-b-[3px] max-md:border-r-[3px]">
             <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               3
@@ -459,7 +449,7 @@ const Java = () => {
               </p>
             </div>
           </div>
-          {/* <div className="divider md:divider-horizontal" /> */}
+
           <div className=" border-blue-600 max-md:border-l-[3px]">
             <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               4
@@ -485,47 +475,45 @@ const Java = () => {
       </section>
 
       <div className="relative hero h-fit md:h-96 my-2 md:my-10">
-      {/* Background Image using Next.js Image component */}
-      <div className="absolute inset-0">
-        <Image
-          src={resource}
-          alt="Java Talent"
-           layout="fill" // Ensures the image fills the container
-          objectFit="cover" // Mimics background-size: cover
-          objectPosition="right" // Align the image to the right
-          quality={75} // Optimizes the image quality
-          priority // Load image quickly for better performance
-          className="z-0" // Ensures the image is behind the content
-        />
-      </div>
+        <div className="absolute inset-0">
+          <Image
+            src={resource}
+            alt="Java Talent"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "right",
+            }}
+            quality={75}
+            priority
+            className="z-0"
+          />
+        </div>
 
-      {/* Overlay */}
-      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60 z-10"></div>
 
-      {/* Content */}
-      <div className="pl-10 text-neutral-content text-left items-start py-10 z-20 relative">
-        <div>
-          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-            Hire the Best Java Talent Today
-          </h1>
-          <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
-            At Ultrafly Solutions, we&apos;re committed to delivering Java
-            development services that help you stay ahead of the competition.
-            Our developers are not only experts in coding, but they also bring
-            a business-centric approach to ensure your software delivers value
-            and efficiency.
-          </p>
-          <Link
-            href={"/contact-us"}
-            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
-          >
-            Get in touch
-          </Link>
+        <div className="pl-10 text-neutral-content text-left items-start py-10 z-20 relative">
+          <div>
+            <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+              Hire the Best Java Talent Today
+            </h1>
+            <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
+              At Ultrafly Solutions, we&apos;re committed to delivering Java
+              development services that help you stay ahead of the competition.
+              Our developers are not only experts in coding, but they also bring
+              a business-centric approach to ensure your software delivers value
+              and efficiency.
+            </p>
+            <Link
+              href={"/contact-us"}
+              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+            >
+              Get in touch
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 p-5 md:px-10 mb-10">
-        {/* form */}
         <div
           className="w-full flex items-center justify-center col-span-full md:col-span-1 max-lg:order-last"
           id="sendBtn"
@@ -577,7 +565,6 @@ const Java = () => {
             </div>
           </form>
         </div>
-        {/* faq */}
 
         <div className="col-span-2 grid gap-2 ">
           <div className="font-[sans-serif] space-y-4 max-w-6xl mx-auto mt-4">
@@ -590,7 +577,7 @@ const Java = () => {
                 style={{
                   overflow: "hidden",
                   transition: "max-height 0.3s ease-in-out",
-                  maxHeight: openIndex === index ? "300px" : "60px", // adjust maxHeight based on the open or closed state
+                  maxHeight: openIndex === index ? "300px" : "60px",
                 }}
                 role="accordion"
               >

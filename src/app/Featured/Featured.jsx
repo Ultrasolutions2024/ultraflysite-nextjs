@@ -1,5 +1,4 @@
 import MainButton from "./MainButton";
-import TitleRed from "../images/features/title-bg.svg";
 import "./featured.css";
 import Image1 from "../images/features/bg1.webp";
 import Image2 from "../images/features/bg2.webp";
@@ -11,12 +10,6 @@ import software from "../images/features/bg.webp";
 import Link from "next/link";
 import Image from "next/image";
 function Featured() {
-  const goTop = () => {
-    window.scrollTo({
-      top: 0,
-    });
-  };
-
   return (
     <>
       <section id="featured" className="page-padding pt-5">
@@ -70,8 +63,12 @@ function Featured() {
             </Link>
           </div>
           <Image
-loading="lazy" 
-  quality={75} src={Image1} alt="df" className="h-full w-full" />
+            loading="lazy"
+            quality={75}
+            src={Image1}
+            alt="df"
+            className="h-full w-full"
+          />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               SOFTWARE DEVELOPMENT
@@ -86,10 +83,10 @@ loading="lazy"
             </h2>
             <div className="flex justify-center items-center p-3">
               <span className="text-[13px] md:text-[16px] text-white text-justify max-w-3xl leading-relaxed">
-                We excel in developing high-quality mobile apps. Whether you&apos;re
-                a startup, a small business, or a large enterprise, having a
-                mobile app can help you reach a wider audience and customer
-                engagement.
+                We excel in developing high-quality mobile apps. Whether
+                you&apos;re a startup, a small business, or a large enterprise,
+                having a mobile app can help you reach a wider audience and
+                customer engagement.
               </span>
             </div>
 
@@ -112,8 +109,12 @@ loading="lazy"
             </Link>
           </div>
           <Image
-loading="lazy" 
-  quality={75} src={Image2} alt="df" className="h-full w-full" />
+            loading="lazy"
+            quality={75}
+            src={Image2}
+            alt="df"
+            className="h-full w-full"
+          />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               MOBILE APP DEVELOPMENT
@@ -153,8 +154,12 @@ loading="lazy"
             </Link>
           </div>
           <Image
-loading="lazy" 
-  quality={75} src={Image3} alt="df" className="h-full w-full" />
+            loading="lazy"
+            quality={75}
+            src={Image3}
+            alt="df"
+            className="h-full w-full"
+          />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               WEBSITE DEVELOPMENT
@@ -195,8 +200,12 @@ loading="lazy"
             </Link>
           </div>
           <Image
-loading="lazy" 
-  quality={75} src={Image4} alt="df" className="h-full w-full" />
+            loading="lazy"
+            quality={75}
+            src={Image4}
+            alt="df"
+            className="h-full w-full"
+          />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               SEO OPTIMIZATION
@@ -237,8 +246,12 @@ loading="lazy"
             </Link>
           </div>
           <Image
-loading="lazy" 
-  quality={75} src={Image5} alt="df" className="h-full w-full" />
+            loading="lazy"
+            quality={75}
+            src={Image5}
+            alt="df"
+            className="h-full w-full"
+          />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               DIGITAL MARKETING
@@ -279,8 +292,12 @@ loading="lazy"
             </Link>
           </div>
           <Image
-loading="lazy" 
-  quality={75} src={Image6} alt="df" className="h-full w-full" />
+            loading="lazy"
+            quality={75}
+            src={Image6}
+            alt="df"
+            className="h-full w-full"
+          />
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
               IT STAFFING
@@ -288,7 +305,6 @@ loading="lazy"
           </div>
         </div>
       </section>
-
 
       {/* featured cta */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between bg-gradient-to-tr from-orange-500 via-orange-400 to-yellow-200 mx-auto overflow-hidden shadow-xl py-16 my-16 relative">
@@ -325,8 +341,8 @@ loading="lazy"
           </Link>
         </div>
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={software}
           className="object-contain absolute inset-0 h-full w-full lg:translate-x-36 md:-translate-x-2 hidden sm:block"
           alt="Image"

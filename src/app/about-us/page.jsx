@@ -1,17 +1,16 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import Head from "next/head"; // Import Head component for managing <head> elements
+import Head from "next/head"; 
 
 // Dynamically import the About component
 const About = dynamic(() => import('./About'), {
   ssr: false,
 });
 
-// Define metadata for the page
 const metadata = {
-  title: "About Us | Ultrafly Solutions",
+  title: "Software Development Company Coimbatore | Ultrafly Solutions",
   description:
-    "Learn more about Ultrafly Solutions, our mission, values, and the expert team driving innovative IT solutions for businesses worldwide.",
+    "Ultrafly Solutions is one of the best software development company in Coimbatore offering software and digital marketing solutions for your business growth.",
   keywords:
     "about Ultrafly Solutions, IT company, tech solutions, company mission, expert team",
   openGraph: {
@@ -20,7 +19,7 @@ const metadata = {
       "Learn more about Ultrafly Solutions, our mission, values, and the expert team driving innovative IT solutions for businesses worldwide.",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL for SEO
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp",
       },
     ],
     url: "https://www.ultraflysolutions.com/about-us",

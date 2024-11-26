@@ -1,6 +1,5 @@
 import React from "react";
-import imageOne from "../../images/blog/back1.webp";
-import brahmmis from '../../images/Clients/brahmmis.webp';
+import brahmmis from "../../images/Clients/brahmmis.webp";
 import makros from "../../images/Clients/makros.webp";
 import srimathe from "../../images/Clients/srimathe.webp";
 import exceed from "../../images/Clients/EXCEED LOGO.webp";
@@ -9,13 +8,7 @@ import Image from "next/image";
 
 function OurClients() {
   // Array of client images
-  const clientImages = [
-    brahmmis,
-    makros,
-    srimathe,
-    exceed,
-    mgs,
-  ];
+  const clientImages = [brahmmis, makros, srimathe, exceed, mgs];
 
   return (
     <section className="py-10 mt-5 w-full">
@@ -28,11 +21,10 @@ function OurClients() {
         <div
           className="whitespace-nowrap animate-marquee"
           style={{
-            display: 'inline-flex',
-            animation: 'marquee 20s linear infinite',
+            display: "inline-flex",
+            animation: "marquee 20s linear infinite",
           }}
         >
-          {/* Repeat the client image elements for marquee effect */}
           {Array.from({ length: 20 }).map((_, index) => (
             <div
               key={index}
@@ -41,13 +33,13 @@ function OurClients() {
               className="inline-block w-20 h-14 sm:w-36 sm:h-28 mx-2 hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]"
             >
               <Image
-loading="lazy" 
-  quality={75}
-                src={clientImages[index % clientImages.length]} // Cycle through the client images
+                loading="lazy"
+                quality={75}
+                src={clientImages[index % clientImages.length]}
                 alt="Client"
                 className="w-full h-full rounded-xl"
-                width={500}  // Set width in pixels (e.g., the actual image width)
-  height={500} // Set height in pixels (maintain aspect ratio)
+                width={500}
+                height={500}
               />
             </div>
           ))}

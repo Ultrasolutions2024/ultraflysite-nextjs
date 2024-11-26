@@ -8,7 +8,6 @@ import clients from "../images/ultrafly/clients.webp";
 import customerservice from "../images/ultrafly/customer service.webp";
 import CountUp from "react-countup";
 import { FaEye } from "react-icons/fa";
-import Head from "next/head";
 import Image from "next/image";
 function UnlockingFuture() {
   const [views, setViews] = useState(0);
@@ -16,9 +15,8 @@ function UnlockingFuture() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 
-    // Mock fetching the number of views (this would be fetched from a database or an API in a real-world scenario)
     const fetchViews = async () => {
-      const viewsData = 1374; // Example number of views
+      const viewsData = 1374;
       setViews(viewsData);
     };
 
@@ -28,7 +26,6 @@ function UnlockingFuture() {
   return (
     <>
       <div className="mt-28 px-4 md:px-10 lg:px-46 grid gap-4 ml-6">
-        {/* Image and Text Section */}
         <div className="grid md:grid-cols-3 gap-3 pr-10">
           <div className="col-span-2 grid justify-center gap-2">
             <div className="flex items-center">
@@ -45,11 +42,11 @@ function UnlockingFuture() {
             </div>
 
             <Image
-loading="lazy" 
-  quality={75}
+              loading="lazy"
+              quality={75}
               src={Fimg}
               alt="Unlocking the Future"
-              className="h-[30vh] object-cover md:h-[50vh] p-2 w-full" // Decreased size
+              className="h-[30vh] object-cover md:h-[50vh] p-2 w-full"
             />
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               At Ultrafly Solutions, we&apos;re at the forefront of the digital
@@ -76,7 +73,6 @@ loading="lazy"
               latest advancements.
             </p>
 
-            {/* Social Media Icons Section */}
             <div className="flex justify-center md:justify-start gap-6 text-[18px] text-[#646464] mt-8">
               <h2 className="text-blue font-bold">
                 <u>Share Our Blog:</u>
@@ -122,12 +118,15 @@ loading="lazy"
             </div>
           </div>
 
-          {/* Sticky Position Let's Connect Div */}
           <div className="sticky top-24 self-start md:w-[24rem] p-8 ml-4">
             <div className="border-2 border-gray-300 bg-gradient-to-r from-blue-100 to-blue-900 p-6 rounded-lg">
               <Image
-loading="lazy" 
-  quality={75} src={logo} alt="logo" className="w-5px" />
+                loading="lazy"
+                quality={75}
+                src={logo}
+                alt="logo"
+                className="w-5px"
+              />
               <p className="text-center font-bold text-xl mt-4 text-black">
                 Let&apos;s connect! Explore more about IT solutions.
               </p>
@@ -136,7 +135,7 @@ loading="lazy"
                   Check & Demo
                 </button>
               </Link>
-              {/* About Section inside the div */}
+
               <div className="mt-10">
                 <About />
               </div>
@@ -153,8 +152,8 @@ function About() {
     <div className="flex flex-wrap items-center gap-4 mt-4 px-4">
       <div className="flex items-center">
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={projexticon}
           alt="About Us | Ultrafly Solutions"
           className="w-[3rem] h-auto mr-2"
@@ -177,8 +176,8 @@ loading="lazy"
 
       <div className="flex items-center">
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={clients}
           alt="icon_img ultraflysolutions"
           className="w-[3rem] h-auto mr-2"
@@ -201,8 +200,8 @@ loading="lazy"
 
       <div className="flex items-center">
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={customerservice}
           alt="icon_img ultraflysolutions"
           className="w-[3rem] h-auto mr-2"

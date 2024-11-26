@@ -1,6 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import Head from "next/head"; // Import Head component for managing <head> elements
+import Head from "next/head";
 
 const Software = dynamic(() => import("./Software"), {
   ssr: false,
@@ -11,7 +11,7 @@ export const metadata = {
 Ultrafly Solutions | Software Development Company Coimbatore
  `,
   description:
-    "Custom software development services by Ultrafly Solutions. We create robust and scalable software solutions tailored to your business needs.",
+    "Ultrafly Solutions is one the best software development companies in Coimbatore. Grow your business with our efficient software solutions in affordable price",
   keywords:
     "software development, custom software, software solutions, Ultrafly Solutions",
   openGraph: {
@@ -20,10 +20,10 @@ Ultrafly Solutions | Software Development Company Coimbatore
       "Custom software development services by Ultrafly Solutions. We create robust and scalable software solutions tailored to your business needs.",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp",
       },
     ],
-    url: "https://www.ultraflysolutions.com/software-development", // Updated to match main content
+    url: "https://www.ultraflysolutions.com/software-development",
   },
 };
 

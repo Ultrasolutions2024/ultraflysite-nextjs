@@ -7,8 +7,8 @@ const ITStaffing = dynamic(() => import("./ITStaffing"), {
 });
 
 export const metadata = {
-  title: "IT Staffing Solutions | Ultrafly Solutions",
-  description: "Find the right IT talent with Ultrafly Solutions' staffing services. We connect businesses with skilled professionals to meet their IT needs.",
+  title: "Expert IT Staffing Solutions Coimbatore | Ultrafly Solutions",
+  description: "Find skillfull talent with the help of Ultrafly Solutions. We offer industry expert IT staffing solutions in Coimbatore to meet your business needs efficiently",
   keywords: "IT staffing, IT talent, staffing services, IT professionals, Ultrafly Solutions",
   openGraph: {
     title: "IT Staffing Solutions | Ultrafly Solutions",

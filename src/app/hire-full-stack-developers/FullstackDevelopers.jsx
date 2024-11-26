@@ -1,9 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import background from "../images/Resources/background.webp";
-import faq from "../images/Resources/faq.webp";
 import { FaUser } from "react-icons/fa";
-import { FaMessage } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaMobileButton } from "react-icons/fa6";
 import Link from "next/link";
@@ -17,7 +15,6 @@ import resource from "../images/Resources/resource.webp";
 import { IoIosArrowForward } from "react-icons/io";
 import emailjs from "emailjs-com";
 import { NotificationManager } from "react-notifications";
-import Head from "next/head";
 import Image from "next/image";
 const FullstackDevelopers = () => {
   useEffect(() => {
@@ -92,60 +89,68 @@ const FullstackDevelopers = () => {
 
   return (
     <>
-     <div className="relative hero min-h-screen">
-      {/* Optimized Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src={background}
-          alt="Hire Full-Stack Developers Background"
-           layout="fill"
-          objectFit="cover"
-          quality={75}
-          priority
-          className="-z-10"
-        />
-      </div>
+      <div className="relative hero min-h-screen">
+        <div className="absolute inset-0">
+          <Image
+            src={background}
+            alt="Hire Full-Stack Developers Background"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
+            quality={75}
+            priority
+            className="-z-10"
+          />
+        </div>
 
-      {/* Dimmed Background Overlay */}
-      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
 
-      {/* Hero Content */}
-      <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
-        <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
-          <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
-            Hire Full-Stack Developers
-          </h1>
-          <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
-            Why Hire Full-Stack Developers from Ultrafly Solutions
-          </h3>
-          <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-xl grid gap-4">
-            <li>
-              Expert developers with extensive experience in both frontend and backend technologies
-            </li>
-            <li>Flexible hiring options: full-time, part-time, or project-based</li>
-            <li>End-to-end development solutions tailored to your business needs</li>
-            <li>Dedicated project managers for transparent communication and timely updates</li>
-            <li>
-              Full-cycle support from design to deployment with a focus on performance and scalability
-            </li>
-          </ul>
-          <div className="flex justify-center mb-5">
-            <a href="#sendBtn">
-              <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
-                Talk with Our Experts
-              </button>
-            </a>
+        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+          <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
+            <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
+              Hire Full-Stack Developers
+            </h1>
+            <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
+              Why Hire Full-Stack Developers from Ultrafly Solutions
+            </h3>
+            <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-xl grid gap-4">
+              <li>
+                Expert developers with extensive experience in both frontend and
+                backend technologies
+              </li>
+              <li>
+                Flexible hiring options: full-time, part-time, or project-based
+              </li>
+              <li>
+                End-to-end development solutions tailored to your business needs
+              </li>
+              <li>
+                Dedicated project managers for transparent communication and
+                timely updates
+              </li>
+              <li>
+                Full-cycle support from design to deployment with a focus on
+                performance and scalability
+              </li>
+            </ul>
+            <div className="flex justify-center mb-5">
+              <Link href="#sendBtn">
+                <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
+                  Talk with Our Experts
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
       <div className="max-w-7xl mx-auto py-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 w-3/4 mx-auto">
           Transform Your Vision with Expert Full Stack Development
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
-          {/* Cards for Services */}
           <div
             className="group relative cursor-pointer overflow-hidden bg-white rounded-2xl px-6 pt-12 pb-10 shadow-2xl ring-1 ring-gray-900/5 transition-all duration-500 transform hover:scale-105 hover:shadow-3xl sm:mx-auto sm:max-w-sm sm:px-12"
             data-aos="fade-right"
@@ -154,8 +159,8 @@ const FullstackDevelopers = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={manualwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -180,8 +185,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={developmentwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -206,8 +211,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={solutionwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -232,8 +237,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={ideawebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -256,8 +261,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={micorwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -282,8 +287,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={servicewebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -303,7 +308,6 @@ loading="lazy"
         </div>
       </div>
 
-      {/* Call to Action Section */}
       <div className="bg-gray-50 relative max-w-full shadow-sm shadow-[#000000] mx-auto rounded overflow-hidden">
         <div className="grid sm:grid-cols-2 max-sm:gap-6">
           <div className="text-center p-6 flex flex-col justify-center items-center">
@@ -328,13 +332,13 @@ loading="lazy"
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
               <Image
-loading="lazy"
-                 quality={75}
+                loading="lazy"
+                quality={75}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"
-                width={500} // Set width in pixels (e.g., the actual image width)
-                height={500} // Set height in pixels (maintain aspect ratio)
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -343,7 +347,6 @@ loading="lazy"
         <div className="absolute -top-10 -left-10 w-28 h-28 rounded-full bg-[#2e8bb6] opacity-40 shadow-lg"></div>
       </div>
 
-      {/* Additional Information Section */}
       <div className="py-10 max-md:px-10">
         <h2 className="text-2xl font-bold text-center">
           Drive Business Growth with Ultrafly Full Stack Expertise
@@ -355,9 +358,7 @@ loading="lazy"
           designed to meet both your immediate and long-term business goals.
         </p>
 
-        {/* Flexbox container for benefits */}
         <div className="mt-6 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-          {/* Benefit 1 */}
           <div
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-left"
@@ -371,7 +372,6 @@ loading="lazy"
             </p>
           </div>
 
-          {/* Benefit 2 */}
           <div
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="flip-up"
@@ -385,7 +385,6 @@ loading="lazy"
             </p>
           </div>
 
-          {/* Benefit 3 */}
           <div
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-right"
@@ -398,7 +397,7 @@ loading="lazy"
               robust applications for various industries.
             </p>
           </div>
-          {/* Benefit 4 */}
+
           <div
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-left"
@@ -411,7 +410,7 @@ loading="lazy"
               work with you to create solutions that align with your goals.
             </p>
           </div>
-          {/* Benefit 5 */}
+
           <div
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="flip-up"
@@ -445,7 +444,7 @@ loading="lazy"
               </div>
               <IoIosArrowForward className="absolute -bottom-[16px] -left-[16px] text-3xl font-bold max-md:hidden" />
             </div>
-            {/* <div className="divider md:divider-horizontal" /> */}
+
             <div className=" border-blue-600 max-md:border-b-[3px] max-md:border-l-[3px]">
               <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
                 2
@@ -458,7 +457,7 @@ loading="lazy"
                 </p>
               </div>
             </div>
-            {/* <div className="divider md:divider-horizontal" /> */}
+
             <div className=" border-blue-600 border-b-[3px] max-md:border-r-[3px]">
               <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
                 3
@@ -473,7 +472,7 @@ loading="lazy"
                 </p>
               </div>
             </div>
-            {/* <div className="divider md:divider-horizontal" /> */}
+
             <div className=" border-blue-600 max-md:border-l-[3px]">
               <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
                 4
@@ -498,42 +497,42 @@ loading="lazy"
         </section>
 
         <div className="relative hero h-fit md:h-96 my-2 md:my-10">
-      {/* Background Image using Next.js Image component */}
-      <Image
-        src={resource}
-        alt="Full-Stack Talent"
-         layout="fill" // Ensures the image fills the container
-        objectFit="cover" // Mimics background-size: cover
-        objectPosition="right" // Mimics background-position: right
-        quality={75} // Optimizes the image quality
-        priority // Load image quickly for better performance
-        className="z-0" // Ensures the image is behind the content
-      />
+          <Image
+            src={resource}
+            alt="Full-Stack Talent"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "right",
+            }}
+            quality={75}
+            priority
+            className="z-0"
+          />
 
-      {/* Content Overlay */}
-      <div className="relative z-10 text-neutral-content text-left pl-10 items-start py-10">
-        <div>
-          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-            Hire the Best Full-Stack Talent Today
-          </h1>
-          <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
-            At Ultrafly Solutions, we are dedicated to delivering full-stack
-            development services that help your business thrive. Our
-            developers are proficient in both frontend and backend
-            technologies, providing a comprehensive approach to development
-            that enhances performance, scalability, and user satisfaction.
-          </p>
-          <Link
-            href="/contact-us"
-            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
-          >
-            Get in touch
-          </Link>
+          {/* Content Overlay */}
+          <div className="relative z-10 text-neutral-content text-left pl-10 items-start py-10">
+            <div>
+              <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+                Hire the Best Full-Stack Talent Today
+              </h1>
+              <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
+                At Ultrafly Solutions, we are dedicated to delivering full-stack
+                development services that help your business thrive. Our
+                developers are proficient in both frontend and backend
+                technologies, providing a comprehensive approach to development
+                that enhances performance, scalability, and user satisfaction.
+              </p>
+              <Link
+                href="/contact-us"
+                className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+              >
+                Get in touch
+              </Link>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-2 md:px-10 mb-10">
-          {/* form */}
           <div
             className="w-full flex items-center justify-center col-span-full md:col-span-1 max-lg:order-last"
             id="sendBtn"
@@ -585,7 +584,6 @@ loading="lazy"
               </div>
             </form>
           </div>
-          {/* faq */}
 
           <div className="col-span-2 grid gap-2 ">
             <div className="font-[sans-serif] space-y-4 max-w-6xl mx-auto mt-4">
@@ -600,7 +598,7 @@ loading="lazy"
                   style={{
                     overflow: "hidden",
                     transition: "max-height 0.3s ease-in-out",
-                    maxHeight: openIndex === index ? "300px" : "60px", // adjust maxHeight based on the open or closed state
+                    maxHeight: openIndex === index ? "300px" : "60px",
                   }}
                   role="accordion"
                 >

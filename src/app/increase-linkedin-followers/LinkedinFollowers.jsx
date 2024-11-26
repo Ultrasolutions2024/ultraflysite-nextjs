@@ -40,18 +40,16 @@ function LinkedinFollowers() {
   return (
     <>
       <div className="flex justify-between items-center mt-8 ml-5 p-8 bg-white rounded-lg shadow-md">
-        {/* Profile Image */}
         <div className="flex items-center space-x-6">
           <Image
-loading="lazy" 
-  quality={75}
+            loading="lazy"
+            quality={75}
             src={profile}
             alt="Unlocking the Future"
-            className="w-16 h-16 rounded-full object-cover" // Increased size of the image
+            className="w-16 h-16 rounded-full object-cover"
           />
           <h2 className="text-2xl md:text-[30px] font-bold text-justify pr-6">
             {" "}
-            {/* Added more padding to the right */}
             Jeeva Shanmugam
           </h2>
         </div>
@@ -62,7 +60,6 @@ loading="lazy"
       </div>
 
       <div className="pt-12 px-4 md:px-10 lg:px-46 grid gap-4  bg-gray-100 ">
-        {/* Image and Text Section */}
         <div className="grid md:grid-cols-3 gap-3 pr-10">
           <div className="col-span-2 grid justify-center gap-2">
             <div className="flex items-center">
@@ -80,8 +77,8 @@ loading="lazy"
 
             <figure>
               <Image
-loading="lazy" 
-  quality={75}
+                loading="lazy"
+                quality={75}
                 src={bg1}
                 alt="Unlocking the Future"
                 className="h-[30vh] object-scale-down md:h-[50vh] p-2 w-full " // Decreased size
@@ -131,8 +128,8 @@ loading="lazy"
 
               <figure>
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg2}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -226,8 +223,8 @@ loading="lazy"
 
               <figure>
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg3}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -252,8 +249,8 @@ loading="lazy"
               </h2>
               <figure>
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg4}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md"
@@ -280,8 +277,8 @@ loading="lazy"
 
               <figure>
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg5}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -318,8 +315,8 @@ loading="lazy"
 
               <figure>
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg6}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -345,8 +342,8 @@ loading="lazy"
 
               <figure>
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg7}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -374,8 +371,8 @@ loading="lazy"
 
               <figure>
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg8}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -408,8 +405,8 @@ loading="lazy"
 
               <figure>
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg9}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -435,8 +432,8 @@ loading="lazy"
 
               <figure>
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg10}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -510,8 +507,8 @@ loading="lazy"
 
               <figure>
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg11}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md mt-4"
@@ -537,8 +534,8 @@ loading="lazy"
 
               <figure>
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg12}
                   alt="Unlocking the Future"
                   className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
@@ -634,8 +631,12 @@ loading="lazy"
           <div className="sticky top-24 self-start md:w-[24rem] p-8 ml-4">
             <div className="border-2 border-gray-300 bg-gradient-to-r from-blue-100 to-blue-900 p-6 rounded-lg">
               <Image
-loading="lazy" 
-  quality={75} src={logo} alt="logo" className="w-5px" />
+                loading="lazy"
+                quality={75}
+                src={logo}
+                alt="logo"
+                className="w-5px"
+              />
               <p className="text-center font-bold text-xl mt-4 text-black">
                 Let&apos;s connect! Explore more about IT solutions.
               </p>
@@ -661,8 +662,8 @@ function About() {
     <div className="flex flex-wrap items-center gap-4 mt-4 px-4">
       <div className="flex items-center">
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={projexticon}
           alt="About Us | Ultrafly Solutions"
           className="w-[3rem] h-auto mr-2"
@@ -685,8 +686,8 @@ loading="lazy"
 
       <div className="flex items-center">
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={clients}
           alt="icon_img ultraflysolutions"
           className="w-[3rem] h-auto mr-2"
@@ -709,8 +710,8 @@ loading="lazy"
 
       <div className="flex items-center">
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={customerservice}
           alt="icon_img ultraflysolutions"
           className="w-[3rem] h-auto mr-2"

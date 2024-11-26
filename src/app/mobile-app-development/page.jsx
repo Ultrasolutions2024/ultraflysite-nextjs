@@ -23,6 +23,7 @@ import {
   FaLaptopCode,
   FaTools,
 } from "react-icons/fa";
+import Link from "next/link";
 const Mobile = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -30,7 +31,9 @@ const Mobile = () => {
   return (
     <>
       <Head />
-      <title>Best Mobile App Development Company in Coimbatore | Ultrafly</title>
+      <title>
+        Best Mobile App Development Company in Coimbatore | Ultrafly
+      </title>
       <meta
         name="description"
         content="Get top-notch mobile app development services with Ultrafly Solutions. We create intuitive and engaging apps to enhance your business's digital presence.  "
@@ -41,26 +44,22 @@ const Mobile = () => {
       />
       <Head />
       <div className="mt-[20px]">
-   
-
         <div className="font-sans bg-gray-50 p-4 lg:pt-10 pt-10 md:pt-20 lg:pr-48 md:pl-16">
           <div className="lg:max-w-5xl max-w-xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 mb-10">
-              {/* Image Section */}
               <div
                 className="rounded-3xl md:w-[400px] md:-mt-8 md:-ml-20 lg:ml-0 lg:mt-0 lg:w-[600px] h-fit shadow-lg lg:relative md:absolute hidden md:block"
                 data-aos="fade-right"
               >
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg1}
                   alt="Placeholder Image"
                   className="object-contain rounded-3xl -z-10"
                 />
               </div>
 
-              {/* Text Section */}
               <div className="text-left bg-blue-50 mt-6 px-5 lg:px-10 lg:-translate-x-10 rounded-3xl w-full lg:w-[650px] z-10 h-auto lg:h-[400px] py-5 shadow-md">
                 <h2 className="text-gray-800 text-xl md:text-2xl font-bold mb-4">
                   Custom Mobile App Development Services
@@ -87,7 +86,6 @@ loading="lazy"
             <hr className="border-gray-300 my-12" />
 
             <div className="grid lg:grid-cols-2 gap-12 mb-10 relative">
-              {/* Text Section */}
               <div className="text-left bg-blue-50 mt-6 px-5 lg:px-10 rounded-3xl w-full lg:w-[650px] h-auto lg:h-[350px] py-5 shadow-lg z-10 relative">
                 <h2 className="text-gray-800 text-xl lg:text-2xl font-bold mb-4">
                   Your Vision, Our Passion
@@ -109,14 +107,13 @@ loading="lazy"
                 </p>
               </div>
 
-              {/* Image Section */}
               <div
                 className="rounded-3xl md:w-[400px] md:-mt-10 md:-ml-20 lg:ml-0 lg:mt-0 lg:w-[600px] h-fit shadow-lg lg:relative md:absolute hidden md:block"
                 data-aos="fade-left"
               >
                 <Image
-loading="lazy" 
-  quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={bg2}
                   alt="Placeholder Image"
                   className="object-contain rounded-3xl -z-10"
@@ -128,7 +125,6 @@ loading="lazy"
 
         <div className="bg-gradient-to-r bg-gray-50 py-6 sm:py-8 lg:py-24">
           <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-            {/* Header Section */}
             <div className="mb-4 flex flex-col items-center justify-center text-center sm:mb-8 md:mb-12">
               <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
                 Mission
@@ -140,9 +136,7 @@ loading="lazy"
               </p>
             </div>
 
-            {/* Cards Section */}
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:gap-10 lg:grid-cols-4 xl:gap-12">
-              {/* Card 1 */}
               <div className="group w-full p-6 flex flex-col justify-center items-center relative rounded-xl overflow-hidden bg-blue-100 hover:scale-[105%] transition-all duration-300 h-80">
                 <div className="flex flex-col justify-center items-center">
                   <div className="bg-blue-500 rounded-full p-4 mb-4">
@@ -159,7 +153,6 @@ loading="lazy"
                 </div>
               </div>
 
-              {/* Card 2 */}
               <div className="group w-full p-6 flex flex-col justify-center items-center relative rounded-xl overflow-hidden bg-blue-100 hover:scale-[105%] transition-all duration-300 h-80">
                 <div className="flex flex-col justify-center items-center">
                   <div className="bg-blue-500 rounded-full p-4 mb-4">
@@ -176,7 +169,6 @@ loading="lazy"
                 </div>
               </div>
 
-              {/* Card 3 */}
               <div className="group w-full p-6 flex flex-col justify-center items-center relative rounded-xl overflow-hidden bg-blue-100 hover:scale-[105%] transition-all duration-300 h-80">
                 <div className="flex flex-col justify-center items-center">
                   <div className="bg-blue-500 rounded-full p-4 mb-4">
@@ -192,7 +184,6 @@ loading="lazy"
                 </div>
               </div>
 
-              {/* Card 4 */}
               <div className="group w-full p-6 flex flex-col justify-center items-center relative rounded-xl overflow-hidden bg-blue-100 hover:scale-[105%] transition-all duration-300 h-80">
                 <div className="flex flex-col justify-center items-center">
                   <div className="bg-blue-500 rounded-full p-4 mb-4">
@@ -217,7 +208,6 @@ loading="lazy"
               Our Software Development Services
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* iOS App Development Card */}
               <div className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 flex flex-col items-center text-center">
                 <FaApple className="text-blue-600 w-12 h-12 mb-4 group-hover:text-blue-800" />
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -229,7 +219,6 @@ loading="lazy"
                 </p>
               </div>
 
-              {/* Android App Development Card */}
               <div className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 flex flex-col items-center text-center">
                 <FaAndroid className="text-green-600 w-12 h-12 mb-4 group-hover:text-green-800" />
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -241,7 +230,6 @@ loading="lazy"
                 </p>
               </div>
 
-              {/* Cross-Platform App Development Card */}
               <div className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 flex flex-col items-center text-center">
                 <FaLayerGroup className="text-indigo-600 w-12 h-12 mb-4 group-hover:text-indigo-800" />
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -253,7 +241,6 @@ loading="lazy"
                 </p>
               </div>
 
-              {/* UI/UX Design Card */}
               <div className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 flex flex-col items-center text-center">
                 <FaPaintBrush className="text-purple-600 w-12 h-12 mb-4 group-hover:text-purple-800" />
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -265,7 +252,6 @@ loading="lazy"
                 </p>
               </div>
 
-              {/* Web & Enterprise App Development Card */}
               <div className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 flex flex-col items-center text-center">
                 <FaLaptopCode className="text-teal-600 w-12 h-12 mb-4 group-hover:text-teal-800" />
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -277,7 +263,6 @@ loading="lazy"
                 </p>
               </div>
 
-              {/* Maintenance & Support Card */}
               <div className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 flex flex-col items-center text-center">
                 <FaTools className="text-yellow-600 w-12 h-12 mb-4 group-hover:text-yellow-800" />
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -301,9 +286,7 @@ loading="lazy"
               Your Trusted Partner for Innovation and Growth
             </p>
 
-            {/* Grid Layout for Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
-              {/* Card 1 */}
               <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-4">
                   <FiCode className="text-blue-500 w-8 h-8 mr-3" />
@@ -317,7 +300,6 @@ loading="lazy"
                 </p>
               </div>
 
-              {/* Card 2 */}
               <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-4">
                   <FiUsers className="text-blue-500 w-8 h-8 mr-3" />
@@ -331,7 +313,6 @@ loading="lazy"
                 </p>
               </div>
 
-              {/* Card 3 */}
               <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-4">
                   <FiShield className="text-blue-500 w-8 h-8 mr-3" />
@@ -345,7 +326,6 @@ loading="lazy"
                 </p>
               </div>
 
-              {/* Card 4 */}
               <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-4">
                   <FiHeadphones className="text-blue-500 w-8 h-8 mr-3" />
@@ -378,11 +358,11 @@ loading="lazy"
               something amazing together!
             </p>
             <div className="flex justify-center">
-              <a href="/contact-us">
+              <Link href="/contact-us">
                 <button className="bg-white text-blue-500 font-semibold py-3 px-6 rounded-lg shadow-lg transition ease-in-out delay-150 duration-300 hover:bg-blue-500 hover:text-white">
                   Contact Us
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

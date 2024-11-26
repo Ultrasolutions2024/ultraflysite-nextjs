@@ -1,9 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import background from "../images/Resources/background.webp";
-import faq from "../images/Resources/faq.webp";
 import { FaUser } from "react-icons/fa";
-import { FaMessage } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaMobileButton } from "react-icons/fa6";
 import Link from "next/link";
@@ -12,12 +10,10 @@ import developmentwebp from "../images/Resources/python/development.webp";
 import solutionwebp from "../images/Resources/python/solution.webp";
 import ideawebp from "../images/Resources/python/idea.webp";
 import micorwebp from "../images/Resources/python/self-development.webp";
-import servicewebp from "../images/Resources/python/service-provider.webp";
 import resource from "../images/Resources/resource.webp";
 import { IoIosArrowForward } from "react-icons/io";
 import emailjs from "emailjs-com";
 import { NotificationManager } from "react-notifications";
-import Head from "next/head";
 import Image from "next/image";
 const PHP = () => {
   useEffect(() => {
@@ -90,70 +86,68 @@ const PHP = () => {
 
   return (
     <>
-     <div className="relative hero min-h-screen">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src={background.src} // Source of the background image
-          alt="Hire PHP Developers"
-           layout="fill" // Ensures the image covers the entire container
-          objectFit="cover" // Covers the container without stretching
-          objectPosition="center" // Centers the image in the container
-          priority // Preloads the image for performance
-        />
-      </div>
+      <div className="relative hero min-h-screen">
+        <div className="absolute inset-0">
+          <Image
+            src={background.src}
+            alt="Hire PHP Developers"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
+            priority
+          />
+        </div>
 
-      {/* Overlay for Dimmed Effect */}
-      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
 
-      {/* Hero Content */}
-      <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
-        <div className="max-w-4xl text-left px-6 md:px-12 lg:px-16">
-          <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
-            Hire PHP Developers
-          </h1>
-          <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
-            Why Choose PHP Developers from UltraFly Solutions?
-          </h3>
-          <ul className="list-disc list-inside mb-7 text-white text-sm md:text-xl grid gap-4">
-            <li>
-              Expert PHP developers with extensive industry experience
-              delivering high-performance web solutions.
-            </li>
-            <li>
-              Flexible hiring options—choose full-time, part-time, or
-              project-based engagement that suits your needs.
-            </li>
-            <li>
-              Scalable, custom solutions built to grow with your business and
-              ensure long-term success.
-            </li>
-            <li>
-              Security-focused development following the latest standards to
-              protect your applications.
-            </li>
-            <li>
-              Comprehensive services from development to post-launch support,
-              ensuring a seamless experience.
-            </li>
-          </ul>
-          <div className="flex justify-center mb-5">
-            <a href="#sendBtn">
-              <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
-                Consult with Our Experts
-              </button>
-            </a>
+        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+          <div className="max-w-4xl text-left px-6 md:px-12 lg:px-16">
+            <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
+              Hire PHP Developers
+            </h1>
+            <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
+              Why Choose PHP Developers from UltraFly Solutions?
+            </h3>
+            <ul className="list-disc list-inside mb-7 text-white text-sm md:text-xl grid gap-4">
+              <li>
+                Expert PHP developers with extensive industry experience
+                delivering high-performance web solutions.
+              </li>
+              <li>
+                Flexible hiring options—choose full-time, part-time, or
+                project-based engagement that suits your needs.
+              </li>
+              <li>
+                Scalable, custom solutions built to grow with your business and
+                ensure long-term success.
+              </li>
+              <li>
+                Security-focused development following the latest standards to
+                protect your applications.
+              </li>
+              <li>
+                Comprehensive services from development to post-launch support,
+                ensuring a seamless experience.
+              </li>
+            </ul>
+            <div className="flex justify-center mb-5">
+              <Link href="#sendBtn">
+                <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
+                  Consult with Our Experts
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
       <div className="max-w-7xl mx-auto py-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 w-3/4 mx-auto">
           Experience Outstanding Outcomes with Personalized PHP Development
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
-          {/* Cards for Services */}
           <div
             className="group relative cursor-pointer overflow-hidden bg-white rounded-2xl px-6 pt-12 pb-10 shadow-2xl ring-1 ring-gray-900/5 transition-all duration-500 transform hover:scale-105 hover:shadow-3xl sm:mx-auto sm:max-w-sm sm:px-12"
             data-aos="fade-right"
@@ -162,8 +156,8 @@ const PHP = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={manualwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -188,8 +182,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={developmentwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -214,8 +208,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={solutionwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -240,8 +234,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={ideawebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -266,8 +260,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={micorwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -287,7 +281,6 @@ loading="lazy"
         </div>
       </div>
 
-      {/* Call to Action Section */}
       <div className="bg-gray-50 relative max-w-full shadow-sm shadow-[#000000] mx-auto rounded overflow-hidden">
         <div className="grid sm:grid-cols-2 max-sm:gap-6">
           <div className="text-center p-6 flex flex-col justify-center items-center">
@@ -312,13 +305,13 @@ loading="lazy"
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
               <Image
-loading="lazy"
-                 quality={75}
+                loading="lazy"
+                quality={75}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"
-                width={500} // Set width in pixels (e.g., the actual image width)
-                height={500} // Set height in pixels (maintain aspect ratio)
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -327,7 +320,6 @@ loading="lazy"
         <div className="absolute -top-10 -left-10 w-28 h-28 rounded-full bg-[#2e8bb6] opacity-40 shadow-lg"></div>
       </div>
 
-      {/* Additional Information Section */}
       <div className="py-10 max-md:px-10">
         <h2 className="text-2xl font-bold text-center">
           Propel Your Business Forward with Ultrafly PHP Expertise
@@ -339,9 +331,7 @@ loading="lazy"
           business results and productivity.
         </p>
 
-        {/* Flexbox container for benefits */}
         <div className="mt-6 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-          {/* Benefit 1 */}
           <div className="p-8 shadow-lg rounded-lg bg-white transition-transform transform hover:scale-105 border border-sky-400">
             <h2 className="font-bold text-gray-800 mb-3">
               Transparent Communication
@@ -352,7 +342,6 @@ loading="lazy"
             </p>
           </div>
 
-          {/* Benefit 2 */}
           <div className="p-8 shadow-lg rounded-lg bg-white transition-transform transform hover:scale-105 border border-sky-400">
             <h2 className="font-bold text-gray-800 mb-3">
               Flexible Hiring Options
@@ -364,7 +353,6 @@ loading="lazy"
             </p>
           </div>
 
-          {/* Benefit 3 */}
           <div className="p-8 shadow-lg rounded-lg bg-white transition-transform transform hover:scale-105 border border-sky-400">
             <h2 className="font-bold text-gray-800 mb-3">
               Proven Success Record
@@ -376,7 +364,6 @@ loading="lazy"
             </p>
           </div>
 
-          {/* Benefit 4 */}
           <div className="p-8 shadow-lg rounded-lg bg-white transition-transform transform hover:scale-105 border border-sky-400">
             <h2 className="font-bold text-gray-800 mb-3">
               Customer-Centric Approach
@@ -387,7 +374,6 @@ loading="lazy"
             </p>
           </div>
 
-          {/* Benefit 5 */}
           <div className="p-8 shadow-lg rounded-lg bg-white transition-transform transform hover:scale-105 border border-sky-400">
             <h2 className="font-bold text-gray-800 mb-3">
               Ongoing Support and Maintenance
@@ -421,7 +407,7 @@ loading="lazy"
             </div>
             <IoIosArrowForward className="absolute -bottom-[16px] -left-[16px] text-3xl font-bold max-md:hidden" />
           </div>
-          {/* <div className="divider md:divider-horizontal" /> */}
+
           <div className=" border-blue-600 max-md:border-b-[3px] max-md:border-l-[3px]">
             <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               2
@@ -436,7 +422,7 @@ loading="lazy"
               </p>
             </div>
           </div>
-          {/* <div className="divider md:divider-horizontal" /> */}
+
           <div className=" border-blue-600 border-b-[3px] max-md:border-r-[3px]">
             <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               3
@@ -449,7 +435,7 @@ loading="lazy"
               </p>
             </div>
           </div>
-          {/* <div className="divider md:divider-horizontal" /> */}
+
           <div className=" border-blue-600 max-md:border-l-[3px]">
             <h2 className="text-xl font-bold text-center bg-sky-500 rounded-full w-20 h-20 flex justify-center items-center mx-auto my-10 outline outline-offset-2 outline-1 outline-sky-600">
               4
@@ -474,45 +460,46 @@ loading="lazy"
       </section>
 
       <div className="relative hero h-fit md:h-96 my-2 md:my-10">
-      {/* Background Image using Next.js Image component */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={resource}
-          alt="PHP Development"
-           layout="fill" // Ensures the image fills the container
-          objectFit="cover" // Mimics background-size: cover
-          objectPosition="right" // Align the image to the right
-          quality={75} // Optimizes the image quality
-          priority // Load image quickly for better performance
-          className="z-0" // Ensures the image is behind the content
-        />
-      </div>
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={resource}
+            alt="PHP Development"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "right",
+            }}
+            quality={75}
+            priority
+            className="z-0"
+          />
+        </div>
 
-      {/* Overlay */}
-      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+        {/* Overlay */}
+        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60 z-10"></div>
 
-      {/* Content */}
-      <div className="pl-10 text-neutral-content text-left items-start py-10 z-20 relative">
-        <div>
-          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-            Hire Expert PHP Developers Today
-          </h1>
-          <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
-            At Ultrafly Solutions, we are committed to providing PHP
-            development services that keep your business ahead of the
-            competition. Our developers take a business-centric approach to
-            ensure that your software meets the highest standards of
-            performance and efficiency.
-          </p>
-          <Link
-            href={"/contact-us"}
-            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
-          >
-            Get in touch
-          </Link>
+        {/* Content */}
+        <div className="pl-10 text-neutral-content text-left items-start py-10 z-20 relative">
+          <div>
+            <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+              Hire Expert PHP Developers Today
+            </h1>
+            <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
+              At Ultrafly Solutions, we are committed to providing PHP
+              development services that keep your business ahead of the
+              competition. Our developers take a business-centric approach to
+              ensure that your software meets the highest standards of
+              performance and efficiency.
+            </p>
+            <Link
+              href={"/contact-us"}
+              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+            >
+              Get in touch
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-5 md:px-10 mb-10">
         {/* form */}
         <div

@@ -1,6 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import Head from "next/head"; // Import Head for managing metadata
+import Head from "next/head";
 
 const Website = dynamic(() => import("./Website"), {
   ssr: false,
@@ -9,7 +9,7 @@ const Website = dynamic(() => import("./Website"), {
 export const metadata = {
   title: "Website Development Company Coimbatore | Ultrafly Solutions",
   description:
-    "Professional website development services by Ultrafly Solutions. We build responsive and user-friendly websites tailored to your business needs.",
+    "Ultrafly Solutions create enterprise curated website development services in Coimbatore. we offer modern, responsive websites to grow your business online.",
   keywords:
     "website development, responsive websites, web design, Ultrafly Solutions",
   openGraph: {
@@ -18,10 +18,10 @@ export const metadata = {
       "Discover our professional website development services. We create responsive and user-friendly websites tailored to your business needs.",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp",
       },
     ],
-    url: "https://www.ultraflysolutions.com/website-development-company", // Updated to match main content
+    url: "https://www.ultraflysolutions.com/website-development-company",
     type: "website",
   },
 };

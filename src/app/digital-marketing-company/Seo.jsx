@@ -16,6 +16,7 @@ import {
   FaCloud,
   FaDollarSign,
 } from "react-icons/fa";
+import Link from "next/link";
 
 function Seo() {
   useEffect(() => {
@@ -277,11 +278,11 @@ loading="lazy"
               something amazing together!
             </p>
             <div className="flex justify-center">
-              <a href="/contact-us">
+              <Link href="/contact-us">
                 <button className="bg-white text-blue-500 font-semibold py-3 px-6 rounded-lg shadow-lg transition ease-in-out delay-150 duration-300 hover:bg-blue-500 hover:text-white">
                   Contact Us
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

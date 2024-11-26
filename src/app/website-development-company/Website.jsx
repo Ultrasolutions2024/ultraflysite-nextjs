@@ -21,6 +21,7 @@ import {
   FaCloud,
   FaDollarSign,
 } from "react-icons/fa";
+import Link from "next/link";
 
 function Website() {
   useEffect(() => {
@@ -31,21 +32,19 @@ function Website() {
       <div className="mt-[20px] md:mt-16">
         <div className="lg:max-w-5xl max-w-xl mx-auto lg:pr-40">
           <div className="grid lg:grid-cols-2 gap-12 mb-10">
-            {/* Image Section */}
             <div
               className="rounded-3xl md:w-[400px] md:-mt-10 md:-ml-20 lg:ml-0 lg:mt-0 lg:w-[600px] h-fit shadow-lg lg:relative md:absolute hidden md:block"
               data-aos="fade-right"
             >
               <Image
-loading="lazy" 
-  quality={75}
+                loading="lazy"
+                quality={75}
                 src={bg1}
                 alt="Placeholder Image"
                 className="object-contain rounded-3xl -z-10"
               />
             </div>
 
-            {/* Text Section */}
             <div className="text-left bg-gradient-to-r from-gray-50 to-blue-50 mt-6 px-5 lg:px-10 lg:-translate-x-10 rounded-3xl z-10  w-full lg:w-[650px]  h-auto lg:h-[400px] py-5 shadow-md">
               <h1 className="text-gray-800 text-xl md:text-2xl font-bold mb-4">
                 Professional Website Development Services
@@ -76,7 +75,7 @@ loading="lazy"
             <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
               Our Core Software Development Services
             </h2>
-            {/* frontend */}
+
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
               <h2 className="text-3xl md:text-2xl lg:text-2xl font-bold text-center mb-8">
                 Front-End Development
@@ -144,7 +143,6 @@ loading="lazy"
               </div>
             </div>
 
-            {/* backend */}
             <div className="bg-gray-100 py-12">
               <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
@@ -200,8 +198,6 @@ loading="lazy"
               </div>
             </div>
 
-            {/* cs */}
-
             <div className="bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 py-16 text-white rounded-xl">
               <div className="max-w-screen-xl mx-auto px-6 md:px-12 text-center">
                 <h2 className="text-4xl font-extrabold mb-8">
@@ -254,7 +250,6 @@ loading="lazy"
               </div>
             </div>
 
-            {/* ecommerce */}
             <div className="bg-gray-100 py-12">
               <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
@@ -322,7 +317,6 @@ loading="lazy"
               </div>
             </div>
 
-            {/* Maintanence */}
             <div className="bg-gray-100 py-12">
               <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
@@ -392,8 +386,6 @@ loading="lazy"
                 </div>
               </div>
             </div>
-
-            {/* Choose us */}
 
             <div className="bg-gradient-to-r from-purple-500 to-indigo-500 py-12">
               <div className="max-w-screen-xl mx-auto px-4 md:px-8">
@@ -583,11 +575,11 @@ loading="lazy"
             something amazing together!
           </p>
           <div className="flex justify-center">
-            <a href="/contact-us">
+            <Link href="/contact-us">
               <button className="bg-white text-blue-500 font-semibold py-3 px-6 rounded-lg shadow-lg transition ease-in-out delay-150 duration-300 hover:bg-blue-500 hover:text-white">
                 Contact Us
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

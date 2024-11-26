@@ -11,21 +11,22 @@ const PartneredWith = () => {
       </h2>
 
       <div className="flex flex-col sm:flex-row items-center gap-10 sm:gap-40 mb-10 p-5 sm:p-0">
-        {/* Partner Logo */}
         <div>
           <Image
-loading="lazy" 
-  quality={75} src={images} alt="Partner logo" className="w-80 sm:ml-10" />
+            loading="lazy"
+            quality={75}
+            src={images}
+            alt="Partner logo"
+            className="w-80 sm:ml-10"
+          />
         </div>
 
-        {/* Partner Description */}
         <div className="text-justify space-y-6">
           <h2 className="text-xl sm:font-extrabold font-bold">
             UTIP Technologies is a leading provider of software solutions for
             the Forex and OTC markets, offering a full set of services:
           </h2>
 
-          {/* Reusable List Items */}
           {[
             "Trading platform with terminals for traders and brokers, ensuring a reliable quotes flow;",
             "CRM designed for brokers and their specific needs;",
@@ -37,8 +38,12 @@ loading="lazy"
           ].map((text, index) => (
             <div key={index} className="flex items-start gap-2">
               <Image
-loading="lazy" 
-  quality={75} src={star} alt="Star icon" className="w-5 mt-1" />
+                loading="lazy"
+                quality={75}
+                src={star}
+                alt="Star icon"
+                className="w-5 mt-1"
+              />
               <p className="text-sm sm:text-base">{text}</p>
             </div>
           ))}

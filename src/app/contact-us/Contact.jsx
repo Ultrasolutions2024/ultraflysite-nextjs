@@ -8,9 +8,9 @@ import {
   NotificationManager,
 } from "react-notifications";
 import "react-notifications/lib/notifications.css";
-import Head from "next/head";
 import contact_banner from "../images/contact/contact_banner.webp";
 import Image from "next/image";
+import Link from "next/link";
 function Login() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -46,73 +46,83 @@ function Login() {
   return (
     <>
       <div className="relative h-60 w-screen flex items-center justify-center gap-4 max-sm:px-10">
-      {/* Next.js Image for Background */}
-      <Image
-        src={contact_banner}
-        alt="Contact Banner"
-         layout="fill" // Ensures the image covers the container
-        objectFit="cover" // Covers the container without distortion
-        objectPosition="center" // Center the image like the original CSS
-        priority // Ensures the banner loads immediately for performance
-        quality={75} // Optimize image quality
-        className="z-0" // Keeps the image behind other content
-      />
+        <Image
+          src={contact_banner}
+          alt="Contact Banner"
+          fill
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+          }}
+          priority
+          quality={75}
+          className="z-0"
+        />
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
 
-      {/* Content */}
-      <h2 className="relative z-20 text-[1.4rem] md:text-3xl lg:text-5xl text-white font-semibold">
-        GET IN TOUCH WITH US
-      </h2>
-    </div>
+        {/* Content */}
+        <h2 className="relative z-20 text-[1.4rem] md:text-3xl lg:text-5xl text-white font-semibold">
+          GET IN TOUCH WITH US
+        </h2>
+      </div>
       <div className="bg-white py-10 page-padding w-full container gap-10 items-center">
-          {/* Left Column */}
-          <div>
-            <h2 className="text-black text-centext-2xlr te md:text-3xl font-bold mb-4">
-              Our Capabilities
-            </h2>
-            <p className="text-base text-center md:text-lg text-[#646464] w-[95%] mb-10">
-              UltraFly Solutions operates services tailored to cater to the different needs of clients spread across the globe and varied industries. Some of our services include:
-            </p>
+        {/* Left Column */}
+        <div>
+          <h2 className="text-black text-centext-2xlr te md:text-3xl font-bold mb-4">
+            Our Capabilities
+          </h2>
+          <p className="text-base text-center md:text-lg text-[#646464] w-[95%] mb-10">
+            UltraFly Solutions operates services tailored to cater to the
+            different needs of clients spread across the globe and varied
+            industries. Some of our services include:
+          </p>
 
-            <div className="grid gap-10  md:grid-cols-2 ">
-              {[
-                {
-                  title: "Software Development",
-                  link: "/software-development",
-                  description: "Customized software solutions tailored to fit your business needs, scaled for efficiencies."
-                },
-                {
-                  title: "Web Development",
-                  link: "/website-development-company",
-                  description: "Complete web design and development services that include e-commerce platforms, websites of corporate organizations, user experience, and responsiveness."
-                },
-                {
-                  title: "Mobile Application Development",
-                  link: "/mobile-app-development",
-                  description: "Custom Mobile applications on iOS and Android will galvanize people's attention towards your business."
-                },
-                {
-                  title: "Search Engine Optimization (SEO)",
-                  link:"/digital-marketing-company",
-                  description: "Improving organic results in search, search engine ranking, and organic traffic."
-                },
-                {
-                  title: "Digital Marketing",
-                  link:"/digital-marketing-company",
-                  description: "Digital marketing solution areas include social media management, content marketing, and online advertising to increase brand presence."
-                },
-                {
-                  title: "Recruitment Services",
-                  link:"/hire-dot-net-developers",
-                  description: "Tailored recruitment services to support you in the talent acquisition process that helps drive your organizational goals."
-                },
-              ].map((service, index) => (
-                
-                <a href={service.link} key={index}
-                
-                className="verflow-hidden before:ease-in-out after:ease-in-out bg-white group cursor-pointer relative flex flex-col gap-4 justify-between border hover:after:w-full border-white-222 hover:border-[#237ff7] duration-300 p-4 md:p-6 px-8 before:h-full before:w-2 hover:before:w-full after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:duration-300 after:opacity-5 after:bg-[url('https://s3-alpha-sig.figma.com/img/6956/4aec/59afa93303a34a23ecc13368dc4094db?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PFrwNwC7QeqlIUsWFsC-jbQzlVTUSh7T5VfJ9vMNaAEsoOS92kRDH-OjWcAX~dmuZ77fPWjZJX0v1kXaZENeqa--USg1BcCN8z~Z1id5y5RQT1ZTU5OR4PRrLISHbowyTAu65h2jCKOSYXCrXN3F6fH8epD-Pm9TCGCYvD9svkhnbTSZxPKZhn8okHm7W~3wWyIhJBaZyQ30qWwD~JAh5r0BRE6XIfIpgTlUWeLq9wwCbwFZQR5RWInuHUfLrfhvAnxmzVVoTO1TxyjHOeXVb68Tc~nJuypwlDmcd0Sg02sJu3-uj7vFXRul6qw0LRfsQrWS5c5RJ~P-z5-eS~1jTA__')] before:duration-300 before:-z-1 before:bg-[#237ff7] before:absolute before:top-0 before:left-0">
+          <div className="grid gap-10  md:grid-cols-2 ">
+            {[
+              {
+                title: "Software Development",
+                link: "/software-development",
+                description:
+                  "Customized software solutions tailored to fit your business needs, scaled for efficiencies.",
+              },
+              {
+                title: "Web Development",
+                link: "/website-development-company",
+                description:
+                  "Complete web design and development services that include e-commerce platforms, websites of corporate organizations, user experience, and responsiveness.",
+              },
+              {
+                title: "Mobile Application Development",
+                link: "/mobile-app-development",
+                description:
+                  "Custom Mobile applications on iOS and Android will galvanize people's attention towards your business.",
+              },
+              {
+                title: "Search Engine Optimization (SEO)",
+                link: "/digital-marketing-company",
+                description:
+                  "Improving organic results in search, search engine ranking, and organic traffic.",
+              },
+              {
+                title: "Digital Marketing",
+                link: "/digital-marketing-company",
+                description:
+                  "Digital marketing solution areas include social media management, content marketing, and online advertising to increase brand presence.",
+              },
+              {
+                title: "Recruitment Services",
+                link: "/hire-dot-net-developers",
+                description:
+                  "Tailored recruitment services to support you in the talent acquisition process that helps drive your organizational goals.",
+              },
+            ].map((service, index) => (
+              <Link
+                href={service.link}
+                key={index}
+                className="verflow-hidden before:ease-in-out after:ease-in-out bg-white group cursor-pointer relative flex flex-col gap-4 justify-between border hover:after:w-full border-white-222 hover:border-[#237ff7] duration-300 p-4 md:p-6 px-8 before:h-full before:w-2 hover:before:w-full after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:duration-300 after:opacity-5 after:bg-[url('https://s3-alpha-sig.figma.com/img/6956/4aec/59afa93303a34a23ecc13368dc4094db?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PFrwNwC7QeqlIUsWFsC-jbQzlVTUSh7T5VfJ9vMNaAEsoOS92kRDH-OjWcAX~dmuZ77fPWjZJX0v1kXaZENeqa--USg1BcCN8z~Z1id5y5RQT1ZTU5OR4PRrLISHbowyTAu65h2jCKOSYXCrXN3F6fH8epD-Pm9TCGCYvD9svkhnbTSZxPKZhn8okHm7W~3wWyIhJBaZyQ30qWwD~JAh5r0BRE6XIfIpgTlUWeLq9wwCbwFZQR5RWInuHUfLrfhvAnxmzVVoTO1TxyjHOeXVb68Tc~nJuypwlDmcd0Sg02sJu3-uj7vFXRul6qw0LRfsQrWS5c5RJ~P-z5-eS~1jTA__')] before:duration-300 before:-z-1 before:bg-[#237ff7] before:absolute before:top-0 before:left-0"
+              >
                 <h4 className="font-medium text-lg duration-300 group-hover:text-white group-hover:z-[5]">
                   {service.title}
                 </h4>
@@ -136,16 +146,13 @@ function Login() {
                     ></path>
                   </svg>
                 </span>
-              </a>
-              ))}
-            </div>
+              </Link>
+            ))}
           </div>
-
-          {/* Visit Our Office Section */}
-         
-          {/* Right Column - Contact Form */}
-       
         </div>
+
+        {/* Right Column - Contact Form */}
+      </div>
       <section>
         {/* Contact Section */}
         <div className="bg-white py-3 page-padding grid md:grid-cols-2 container gap-10 items-center">
@@ -204,8 +211,8 @@ function Login() {
                 <div className="text-[#646464] pl-2">
                   <p className="text-base md:text-lg">
                     <Image
-loading="lazy" 
-  quality={75}
+                      loading="lazy"
+                      quality={75}
                       src={india}
                       alt="India Flag"
                       className="inline-block w-4 h-4"
@@ -214,8 +221,8 @@ loading="lazy"
                   </p>
                   <p className="text-base md:text-lg">
                     <Image
-loading="lazy" 
-  quality={75}
+                      loading="lazy"
+                      quality={75}
                       src={india}
                       alt="India Flag"
                       className="inline-block w-4 h-4"
@@ -224,8 +231,8 @@ loading="lazy"
                   </p>
                   <p className="text-base md:text-lg">
                     <Image
-loading="lazy" 
-  quality={75}
+                      loading="lazy"
+                      quality={75}
                       src={usa}
                       alt="USA Flag"
                       className="inline-block w-4 h-4"
@@ -238,8 +245,8 @@ loading="lazy"
                 </h3>
                 <p className="text-base md:text-lg pl-1">
                   <Image
-loading="lazy" 
-  quality={75}
+                    loading="lazy"
+                    quality={75}
                     src={india}
                     alt="India Flag"
                     className="inline-block w-4 h-4"

@@ -2,16 +2,21 @@ import React from "react";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Javascript = dynamic(() => import('./Javascript'), {
+const Javascript = dynamic(() => import("./Javascript"), {
   ssr: false,
 });
 
 export const metadata = {
-  title: "Hire JavaScript Developers | Ultrafly Solutions for Interactive Apps",
+  title: "Hire JavaScript Developers for Custom Web Solutions",
   description:
-    "Ultrafly Solutions offers expert JavaScript developers to create interactive, high-performance apps. Enhance engagement. Get in touch now!",
+    "Hire expert JavaScript developers from Ultrafly Solutions for high-quality, scalable web development. Enhance your projects with skilled professionals today",
+  keywords: [
+    "hire skilled JavaScript developers",
+    "custom JavaScript web development",
+  ],
   openGraph: {
-    title: "Hire JavaScript Developers | Ultrafly Solutions for Interactive Apps",
+    title:
+      "Hire JavaScript Developers | Ultrafly Solutions for Interactive Apps",
     description:
       "Ultrafly Solutions offers expert JavaScript developers to create interactive, high-performance apps. Enhance engagement. Get in touch now!",
     images: [
@@ -30,7 +35,10 @@ function Page() {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta property="og:title" content={metadata.openGraph.title} />
-        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta
+          property="og:description"
+          content={metadata.openGraph.description}
+        />
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
         <meta property="og:url" content={metadata.openGraph.url} />
         <link rel="canonical" href={metadata.openGraph.url} />

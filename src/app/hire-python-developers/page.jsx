@@ -7,9 +7,13 @@ const Python = dynamic(() => import('./Python'), {
 });
 
 export const metadata = {
-  title: "Hire Python Developers | Ultrafly Solutions for Secure Apps",
+  title: "Hire Python Developers | Expert Solutions for Your Business",
   description:
-    "Ultrafly Solutions offers skilled Python developers to create scalable, secure solutions. Drive growth with our expert services. Get started today!",
+    "Looking to hire Python developers? Get skilled professionals for your projects with Ultrafly Solutions. Drive success with our expert Python developmers",
+    keywords: [
+      "hire expert Python developers",
+      "secure Python app development",
+    ],
   openGraph: {
     title: "Hire Python Developers | Ultrafly Solutions for Secure Apps",
     description:

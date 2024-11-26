@@ -7,19 +7,23 @@ const FrontendDevelopers = dynamic(() => import('./FrontendDevelopers'), {
 });
 
 export const metadata = {
-  title: "Hire Frontend Developers | Ultrafly Solutions for Web Apps",
+  title: "Hire Expert Frontend Developers | Ultrafly Solutions",
   description:
-    "Hire frontend developers from Ultrafly Solutions for responsive, dynamic web apps. Deliver outstanding user experiences. Contact us today to learn more!",
+    "Hire our skilled frontend developers for custom software solutions. Boost your digital presence with responsive, user-friendly, and cutting-edge designs.",
+    keywords: [
+      "responsive frontend development services",
+      "hire dedicated frontend developers",
+    ],
   openGraph: {
     title: "Hire Frontend Developers | Ultrafly Solutions for Web Apps",
     description:
       "Hire frontend developers from Ultrafly Solutions for responsive, dynamic web apps. Deliver outstanding user experiences. Contact us today to learn more!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", // Updated to absolute URL
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", 
       },
     ],
-    url: "https://www.ultraflysolutions.com/hire-front-end-developers", // Updated to match main content
+    url: "https://www.ultraflysolutions.com/hire-front-end-developers",
   },
 };
 

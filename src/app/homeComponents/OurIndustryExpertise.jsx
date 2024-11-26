@@ -57,8 +57,8 @@ const OurIndustryExpertise = () => {
             className="group relative w-full h-32 rounded-lg bg-gray-50  p-5 border border-gray-50 flex flex-col lg:flex-row items-center transition-transform duration-300 cursor-pointer hover:shadow-2xl hover:scale-105 mb-3"
           >
             <Image
-loading="lazy" 
-  quality={75}
+              loading="lazy"
+              quality={75}
               src={industry.img}
               alt={industry.name}
               className="w-14 h-14 object-cover mr-4"
@@ -91,8 +91,8 @@ loading="lazy"
             rel="noopener noreferrer"
           >
             <Image
-loading="lazy" 
-  quality={75}
+              loading="lazy"
+              quality={75}
               src={review}
               alt="Review"
               className="w-full h-full object-contain"
@@ -109,8 +109,8 @@ loading="lazy"
             rel="noopener noreferrer"
           >
             <Image
-loading="lazy" 
-  quality={75}
+              loading="lazy"
+              quality={75}
               src={justdial}
               alt="Review"
               className="w-full h-full object-contain"
@@ -127,8 +127,8 @@ loading="lazy"
             rel="noopener noreferrer"
           >
             <Image
-loading="lazy" 
-  quality={75}
+              loading="lazy"
+              quality={75}
               src={glassdoor}
               alt="Review"
               className="w-full h-full object-contain"
