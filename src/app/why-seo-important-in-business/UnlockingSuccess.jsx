@@ -8,7 +8,6 @@ import clients from "../images/ultrafly/clients.webp";
 import customerservice from "../images/ultrafly/customer service.webp";
 import CountUp from "react-countup";
 import { FaEye } from "react-icons/fa";
-import Head from "next/head";
 import Image from "next/image";
 function UnlockingSuccess() {
   const [views, setViews] = useState(0);
@@ -27,7 +26,6 @@ function UnlockingSuccess() {
   return (
     <>
       <div className="mt-28 px-4 md:px-10 lg:px-46 grid gap-4 ml-6">
-        {/* Image and Text Section */}
         <div className="grid md:grid-cols-3 gap-3 pr-10">
           <div className="col-span-2 grid justify-center gap-2">
             <div className="flex items-center">
@@ -44,27 +42,27 @@ function UnlockingSuccess() {
             </div>
 
             <Image
-loading="lazy" 
-  quality={75}
+              loading="lazy"
+              quality={75}
               src={Simg}
               alt="Unlocking the Future"
-              className="h-[30vh] object-cover md:h-[50vh] p-2 w-full" // Decreased size
+              className="h-[30vh] object-cover md:h-[50vh] p-2 w-full"
             />
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               In the modern era of technology, people rely on the internet to
-              find necessary items. Whether it&apos;s discovering a different game to
-              enjoy, shopping for clothing, or searching for a recipe, the
-              initial choice for many individuals is typically a search engine
-              such as Google. However, have you ever considered why certain
-              websites appear on the first page while others are ranked much
-              lower? The solution is a technique called Search Engine
+              find necessary items. Whether it&apos;s discovering a different
+              game to enjoy, shopping for clothing, or searching for a recipe,
+              the initial choice for many individuals is typically a search
+              engine such as Google. However, have you ever considered why
+              certain websites appear on the first page while others are ranked
+              much lower? The solution is a technique called Search Engine
               Optimization.{" "}
             </p>
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               This functions as a special key that opens the pathway to success
               for online businesses. Understanding SEO allows a business to
-              improve its website&apos;s visibility in search results, resulting in
-              increased exposure to a larger audience. This holds great
+              improve its website&apos;s visibility in search results, resulting
+              in increased exposure to a larger audience. This holds great
               significance for every business as without awareness, customers
               cannot make purchases from you. However, what is the exact
               mechanism behind search engine, and what makes it crucial for
@@ -76,14 +74,14 @@ loading="lazy"
             </h2>
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               <b>1. Visibility and Traffic:</b> Consider owning a shop located
-              on a secluded street that is unfamiliar to most people. Wouldn&apos;t
-              it be difficult for anyone to locate it, don&apos;t you think? Websites
-              face the same situation. SEO assists companies in improving the
-              visibility of their websites. A higher ranking in search results
-              leads to increased clicks, resulting in higher traffic and
-              potential customer growth for a website. In the realm of digital
-              marketing, boosting the number of users accessing your website is
-              referred to as growing your &apos;traffic.&quot;
+              on a secluded street that is unfamiliar to most people.
+              Wouldn&apos;t it be difficult for anyone to locate it, don&apos;t
+              you think? Websites face the same situation. SEO assists companies
+              in improving the visibility of their websites. A higher ranking in
+              search results leads to increased clicks, resulting in higher
+              traffic and potential customer growth for a website. In the realm
+              of digital marketing, boosting the number of users accessing your
+              website is referred to as growing your &apos;traffic.&quot;
             </p>
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               <b>2. Establishing Trust:</b> If a website appears on the first
@@ -96,13 +94,14 @@ loading="lazy"
               particularly on the Internet.
             </p>
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
-              <b>3. Enhanced User Experience:</b> This doesn&apos;t only focus on
-              driving more traffic to your site, but also on ensuring visitors
-              have a positive experience on your site. This implies that the
-              website must load rapidly, have user-friendly navigation, and
-              appear appealing on various devices such as phones and tablets. An
-              optimally designed website ensures visitor satisfaction,
-              increasing the likelihood of converting them into customers.
+              <b>3. Enhanced User Experience:</b> This doesn&apos;t only focus
+              on driving more traffic to your site, but also on ensuring
+              visitors have a positive experience on your site. This implies
+              that the website must load rapidly, have user-friendly navigation,
+              and appear appealing on various devices such as phones and
+              tablets. An optimally designed website ensures visitor
+              satisfaction, increasing the likelihood of converting them into
+              customers.
             </p>
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               <b>4.Keeping ahead of rivals:</b> In the business realm, every
@@ -120,11 +119,12 @@ loading="lazy"
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               <b>1. Keyword Research:</b> Keywords are the terms individuals
               enter into search engines. For instance, if a person wants to buy
-              a new bike, they may enter &quot;top bikes for children&quot; in the Google
-              search bar. Businesses must identify the keywords their potential
-              customers are using and incorporate them into their website
-              content. This assists search engines in comprehending the content
-              of the website and displaying it to the appropriate audience.
+              a new bike, they may enter &quot;top bikes for children&quot; in
+              the Google search bar. Businesses must identify the keywords their
+              potential customers are using and incorporate them into their
+              website content. This assists search engines in comprehending the
+              content of the website and displaying it to the appropriate
+              audience.
             </p>
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               <b>2. Content Quality Matters:</b> High-quality content holds a
@@ -144,10 +144,10 @@ loading="lazy"
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               <b>4. Building Backlinks:</b> Search engines such as Google, also
               take into account the number of external websites that link to a
-              company&apos;s website. If many other websites are linking to it, it
-              indicates that the content is valuable. Businesses should aim to
-              have their content linked back to other websites to enhance their
-              SEO.
+              company&apos;s website. If many other websites are linking to it,
+              it indicates that the content is valuable. Businesses should aim
+              to have their content linked back to other websites to enhance
+              their SEO.
             </p>
             <br />
             <h2 className="text-base md:text-2xl font-medium text-justify max-w-[70rem] w-full mx-auto">
@@ -163,7 +163,7 @@ loading="lazy"
               if you’re thinking about starting a business or helping one grow,
               don’t forget the power of SEO!
             </p>
-            {/* Social Media Icons Section */}
+
             <div className="flex justify-center md:justify-start gap-6 text-[18px] text-[#646464] mt-8">
               <h2 className="text-blue font-bold">
                 <u>Share Our Blog:</u>
@@ -209,12 +209,15 @@ loading="lazy"
             </div>
           </div>
 
-          {/* Sticky Position Let's Connect Div */}
           <div className="sticky top-24 self-start md:w-[24rem] p-8 ml-4">
             <div className="border-2 border-gray-300 bg-gradient-to-r from-blue-100 to-blue-900 p-6 rounded-lg">
               <Image
-loading="lazy" 
-  quality={75} src={logo} alt="logo" className="w-5px" />
+                loading="lazy"
+                quality={75}
+                src={logo}
+                alt="logo"
+                className="w-5px"
+              />
               <p className="text-center font-bold text-xl mt-4 text-black">
                 Let&apos;s connect! Explore more about IT solutions.
               </p>
@@ -223,7 +226,7 @@ loading="lazy"
                   Check & Demo
                 </button>
               </Link>
-              {/* About Section inside the div */}
+
               <div className="mt-10">
                 <About />
               </div>
@@ -240,8 +243,8 @@ function About() {
     <div className="flex flex-wrap items-center gap-4 mt-4 px-4">
       <div className="flex items-center">
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={projexticon}
           alt="About Us | Ultrafly Solutions"
           className="w-[3rem] h-auto mr-2"
@@ -264,8 +267,8 @@ loading="lazy"
 
       <div className="flex items-center">
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={clients}
           alt="icon_img ultraflysolutions"
           className="w-[3rem] h-auto mr-2"
@@ -288,8 +291,8 @@ loading="lazy"
 
       <div className="flex items-center">
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={customerservice}
           alt="icon_img ultraflysolutions"
           className="w-[3rem] h-auto mr-2"

@@ -19,7 +19,6 @@ function About() {
             <AboutCarts />
           </div>
 
-          {/* text and stats section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
             {/* about text */}
             <div className="mt-[6rem] relative col-span-1">
@@ -44,8 +43,8 @@ function About() {
             {/* stats cards with background image */}
             <div className="relative w-full flex justify-center items-center">
               <Image
-loading="lazy" 
-  quality={75}
+                loading="lazy"
+                quality={75}
                 src={bgImage}
                 alt="background"
                 className="absolute inset-0 w-3/4 h-[400px] object-cover opacity-[0.7] rounded-lg max-lg:mx-auto lg:top-20 lg:left-28"
@@ -54,8 +53,8 @@ loading="lazy"
                 {/* Stat card 1 */}
                 <div className="flex flex-row items-center text-center bg-white rounded-lg shadow-lg py-2 px-4 w-48 transform -translate-x-20 md:-translate-x-60 lg:-translate-x-40 mt-4se sm:mt-12  hover:scale-105 transition-all duration-300 ease-in-out">
                   <Image
-loading="lazy" 
-  quality={75}
+                    loading="lazy"
+                    quality={75}
                     src={projexticon}
                     alt="Completed Projects"
                     className=" w-10 sm:w-[3.5rem] mb-4 h-auto"
@@ -80,8 +79,8 @@ loading="lazy"
                 {/* Stat card 2 */}
                 <div className="flex flex-row items-center text-center bg-white rounded-lg shadow-lg py-2 px-4 w-48 transform translate-x-20 md:translate-x-60 lg:translate-x-60  mt-12 sm:mt-0 md:self-end hover:scale-105 transition-all duration-300 ease-in-out">
                   <Image
-loading="lazy" 
-  quality={75}
+                    loading="lazy"
+                    quality={75}
                     src={clients}
                     alt="Happy Clients"
                     className=" w-10 sm:w-[3.5rem] mb-4 h-auto"
@@ -98,7 +97,7 @@ loading="lazy"
                       />
                     </h2>
                     <h3 className="uppercase font-semibold text-[12px] leading-snug text-gray-700">
-                      Happy  Clients
+                      Happy Clients
                     </h3>
                   </div>
                 </div>
@@ -106,8 +105,8 @@ loading="lazy"
                 {/* Stat card 3 */}
                 <div className="flex flex-row items-center text-center bg-white rounded-lg shadow-lg py-2 px-4 w-48 transform -translate-x-20 md:-translate-x-60 lg:-translate-x-40  hover:scale-105 transition-all duration-300 ease-in-out mt-6">
                   <Image
-loading="lazy" 
-  quality={75}
+                    loading="lazy"
+                    quality={75}
                     src={customerservice}
                     alt="Customer Service"
                     className=" w-10 sm:w-[3.5rem] mb-4 h-auto"

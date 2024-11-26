@@ -9,7 +9,6 @@ import clients from "../images/ultrafly/clients.webp";
 import customerservice from "../images/ultrafly/customer service.webp";
 import CountUp from "react-countup";
 import { FaEye } from "react-icons/fa";
-import Head from "next/head";
 import Image from "next/image";
 
 function MobileDevelopment() {
@@ -28,10 +27,7 @@ function MobileDevelopment() {
 
   return (
     <>
-      
-
       <div className="mt-28 px-4 md:px-10 lg:px-46 grid gap-4 ml-6">
-        {/* Image and Text Section */}
         <div className="grid md:grid-cols-3 gap-3 pr-10">
           <div className="col-span-2 grid justify-center gap-2">
             <div className="flex items-center">
@@ -47,11 +43,11 @@ function MobileDevelopment() {
             </div>
 
             <Image
-loading="lazy" 
-  quality={75}
+              loading="lazy"
+              quality={75}
               src={Timg}
               alt="Unlocking the Future"
-              className="h-[30vh] object-cover md:h-[50vh] p-2 w-full" // Decreased size
+              className="h-[30vh] object-cover md:h-[50vh] p-2 w-full"
             />
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               In 2024, there are many mobile app development framework
@@ -73,14 +69,14 @@ loading="lazy"
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               <b>1. React Native:</b>
               <br /> Consider owning a shop located on a secluded street that is
-              unfamiliar to most people. Wouldn&apos;t it be difficult for anyone to
-              locate it, don&apos;t you think? Websites face the same situation. SEO
-              assists companies in improving the visibility of their websites. A
-              higher ranking in search results leads to increased clicks,
-              resulting in higher traffic and potential customer growth for a
-              website. In the realm of digital marketing, boosting the number of
-              users accessing your website is referred to as growing your
-              &quot;traffic.&quot;
+              unfamiliar to most people. Wouldn&apos;t it be difficult for
+              anyone to locate it, don&apos;t you think? Websites face the same
+              situation. SEO assists companies in improving the visibility of
+              their websites. A higher ranking in search results leads to
+              increased clicks, resulting in higher traffic and potential
+              customer growth for a website. In the realm of digital marketing,
+              boosting the number of users accessing your website is referred to
+              as growing your &quot;traffic.&quot;
             </p>
             <br />
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
@@ -99,14 +95,14 @@ loading="lazy"
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               <b>3. Ionic:</b> <br />
               Ionic is completely free because it&apos;s an open-source mobile
-              application framework, developed in 2013 by Drifty Co. It&apos;s used
-              for building cross-platform applications using web technologies
-              like HTML, CSS, and JavaScript. The Ionic framework enables you to
-              create apps for three platforms: iOS, Android, and Windows. The
-              main advantage for developers using Ionic is that it allows them
-              developers to use a robust set of UI components, such as
-              nаvigаtiоn menus, list views, filters, fоrms, асtiоn sheets, and
-              many more.
+              application framework, developed in 2013 by Drifty Co. It&apos;s
+              used for building cross-platform applications using web
+              technologies like HTML, CSS, and JavaScript. The Ionic framework
+              enables you to create apps for three platforms: iOS, Android, and
+              Windows. The main advantage for developers using Ionic is that it
+              allows them developers to use a robust set of UI components, such
+              as nаvigаtiоn menus, list views, filters, fоrms, асtiоn sheets,
+              and many more.
             </p>
             <br />
             <h2 className="text-base md:text-2xl font-medium text-justify max-w-[70rem] w-full mx-auto">
@@ -129,9 +125,9 @@ loading="lazy"
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               <b>5. Swiftic:</b> <br />
               Swiftic is primarily focused on iOS apps. If you don&apos;t have
-              advanced coding knowledge you can go with this because of it&apos;s
-              user-friendly interface. It is particularly suitable for small
-              businesses, entrepreneurs, and organizations that need a
+              advanced coding knowledge you can go with this because of
+              it&apos;s user-friendly interface. It is particularly suitable for
+              small businesses, entrepreneurs, and organizations that need a
               cost-effective way to build and maintain mobile apps. With Swiftic
               drag-and-drop feature, you can customize without writing a single
               line of code.
@@ -139,14 +135,14 @@ loading="lazy"
             <br />
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               <b>Conclusion: </b> <br />
-              These are the top five mobile app development frameworks we&apos;ve
-              selected. But you can choose the one that best fits your project&apos;s
-              requirements. Choosing the right framework plays an important role
-              in 2024. So, if you&apos;re having trouble to pick the right mobile app
-              development framework, don&apos;t worry! UltraFly Solutions is here to
-              help you navigate these options and delivering innovative,
-              user-friendly mobile applications customized to your business
-              goals.
+              These are the top five mobile app development frameworks
+              we&apos;ve selected. But you can choose the one that best fits
+              your project&apos;s requirements. Choosing the right framework
+              plays an important role in 2024. So, if you&apos;re having trouble
+              to pick the right mobile app development framework, don&apos;t
+              worry! UltraFly Solutions is here to help you navigate these
+              options and delivering innovative, user-friendly mobile
+              applications customized to your business goals.
             </p>
 
             {/* Social Media Icons Section */}
@@ -195,12 +191,15 @@ loading="lazy"
             </div>
           </div>
 
-          {/* Sticky Position Let's Connect Div */}
           <div className="sticky top-24 self-start md:w-[24rem] p-8 ml-4">
             <div className="border-2 border-gray-300 bg-gradient-to-r from-blue-100 to-blue-900 p-6 rounded-lg">
               <Image
-loading="lazy" 
-  quality={75} src={logo} alt="logo" className="w-5px" />
+                loading="lazy"
+                quality={75}
+                src={logo}
+                alt="logo"
+                className="w-5px"
+              />
               <p className="text-center font-bold text-xl mt-4 text-black">
                 Let&apos;s connect! Explore more about IT solutions.
               </p>
@@ -209,7 +208,7 @@ loading="lazy"
                   Check & Demo
                 </button>
               </Link>
-              {/* About Section inside the div */}
+
               <div className="mt-10">
                 <About />
               </div>
@@ -226,8 +225,8 @@ function About() {
     <div className="flex flex-wrap items-center gap-4 mt-4 px-4">
       <div className="flex items-center">
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={projexticon}
           alt="About Us | Ultrafly Solutions"
           className="w-[3rem] h-auto mr-2"
@@ -250,8 +249,8 @@ loading="lazy"
 
       <div className="flex items-center">
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={clients}
           alt="icon_img ultraflysolutions"
           className="w-[3rem] h-auto mr-2"
@@ -274,8 +273,8 @@ loading="lazy"
 
       <div className="flex items-center">
         <Image
-loading="lazy" 
-  quality={75}
+          loading="lazy"
+          quality={75}
           src={customerservice}
           alt="icon_img ultraflysolutions"
           className="w-[3rem] h-auto mr-2"

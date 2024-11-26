@@ -7,10 +7,21 @@ const Web = dynamic(() => import("./web/Web"), {
 });
 
 export const metadata = {
-  title: "Careers | Ultrafly Solutions",
+  title: "Join Our Skillful Team at Ultrafly Solutions | Careers",
   description:
-    "Join the Ultrafly Solutions team and build a rewarding career in the tech industry. Explore our current job openings and apply today.",
-  keywords: "careers, job openings, tech jobs, Ultrafly Solutions careers",
+    "Explore career opportunities at Ultrafly Solutions. Join our team of innovators and achieve professional growth in software development and digital marketing.",
+    keywords: [
+      "careers",
+      "job openings",
+      "tech jobs",
+      "Ultrafly Solutions careers",
+      "software development jobs",
+      "digital marketing careers",
+      "Ultrafly Solutions job openings",
+      "career growth opportunities",
+      "tech industry careers",
+      "software engineering jobs",
+    ],
   openGraph: {
     title: "Careers | Ultrafly Solutions",
     description:

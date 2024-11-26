@@ -1,9 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import background from "../images/Resources/background.webp";
-import faq from "../images/Resources/faq.webp";
 import { FaUser } from "react-icons/fa";
-import { FaMessage } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaMobileButton } from "react-icons/fa6";
 import Link from "next/link";
@@ -17,7 +15,6 @@ import resource from "../images/Resources/resource.webp";
 import { IoIosArrowForward } from "react-icons/io";
 import emailjs from "emailjs-com";
 import { NotificationManager } from "react-notifications";
-import Head from "next/head";
 import Image from "next/image";
 
 const DevOps = () => {
@@ -92,62 +89,65 @@ const DevOps = () => {
 
   return (
     <>
-    <div className="relative hero min-h-screen">
-      {/* Optimized Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src={background}
-          alt="Background"
-           layout="fill"
-          objectFit="cover"
-          quality={75}
-          priority
-          className="-z-10"
-        />
-      </div>
+      <div className="relative hero min-h-screen">
+        {/* Optimized Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src={background}
+            alt="Background"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
+            quality={75}
+            priority
+            className="-z-10"
+          />
+        </div>
 
-      {/* Dimmed Background Overlay */}
-      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+        {/* Dimmed Background Overlay */}
+        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
 
-      {/* Hero Content - Centered */}
-      <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
-        <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
-          <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
-            Hire DevOps Developers
-          </h1>
-          <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
-            Why Hire DevOps Developers from Ultrafly Solutions
-          </h3>
-          <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-lg grid gap-4">
-            <li>
-              Expert developers with extensive experience in seamless
-              infrastructure integration
-            </li>
-            <li>
-              Flexible hiring options: full-time, part-time, or project-based
-            </li>
-            <li>
-              Efficient, automated processes tailored to your business needs
-            </li>
-            <li>
-              Dedicated project managers for clear communication and regular
-              updates
-            </li>
-            <li>
-              End-to-end DevOps services from development to maintenance with
-              a focus on performance and security
-            </li>
-          </ul>
-          <div className="flex justify-center mb-5">
-            <a href="#sendBtn">
-              <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
-                Talk with Our Experts
-              </button>
-            </a>
+        {/* Hero Content - Centered */}
+        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+          <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
+            <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
+              Hire DevOps Developers
+            </h1>
+            <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
+              Why Hire DevOps Developers from Ultrafly Solutions
+            </h3>
+            <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-lg grid gap-4">
+              <li>
+                Expert developers with extensive experience in seamless
+                infrastructure integration
+              </li>
+              <li>
+                Flexible hiring options: full-time, part-time, or project-based
+              </li>
+              <li>
+                Efficient, automated processes tailored to your business needs
+              </li>
+              <li>
+                Dedicated project managers for clear communication and regular
+                updates
+              </li>
+              <li>
+                End-to-end DevOps services from development to maintenance with
+                a focus on performance and security
+              </li>
+            </ul>
+            <div className="flex justify-center mb-5">
+              <Link href="#sendBtn">
+                <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
+                  Talk with Our Experts
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
       <div className="max-w-7xl mx-auto py-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 w-3/4 mx-auto">
@@ -163,8 +163,8 @@ const DevOps = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={manualwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -189,8 +189,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={developmentwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -215,8 +215,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={solutionwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -241,8 +241,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={ideawebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -267,8 +267,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={micorwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -293,8 +293,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={servicewebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -339,13 +339,13 @@ loading="lazy"
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
               <Image
-loading="lazy"
-                 quality={75}
+                loading="lazy"
+                quality={75}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"
-                width={500} // Set width in pixels (e.g., the actual image width)
-                height={500} // Set height in pixels (maintain aspect ratio)
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -511,39 +511,40 @@ loading="lazy"
       </section>
 
       <div className="relative hero h-fit md:h-96 my-2 md:my-10">
-      {/* Background Image using Next.js Image component */}
-      <Image
-        src={resource}
-        alt="DevOps Talent"
-         layout="fill" // Ensures the image fills the container
-        objectFit="cover" // Mimics background-size: cover
-        objectPosition="right" // Mimics background-position: right
-        quality={75} // Optimizes the image quality
-        priority // Load image quickly for better performance
-        className="z-0" // Ensures the image is behind the content
-      />
+        <Image
+          src={resource}
+          alt="DevOps Talent"
+          fill
+          style={{
+            objectFit: "cover",
+            objectPosition: "right",
+          }}
+          quality={75}
+          priority
+          className="z-0"
+        />
 
-      {/* Content Overlay */}
-      <div className="relative z-10 text-neutral-content text-left pl-10 items-start py-10">
-        <div>
-          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-            Hire the Best DevOps Talent Today
-          </h1>
-          <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
-            At Ultrafly Solutions, we are committed to providing DevOps
-            services that help your business thrive. Our developers are not
-            only experts in automation and integration but also focus on
-            delivering solutions that add business value and efficiency.
-          </p>
-          <Link
-            href="/contact-us"
-            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
-          >
-            Get in touch
-          </Link>
+        {/* Content Overlay */}
+        <div className="relative z-10 text-neutral-content text-left pl-10 items-start py-10">
+          <div>
+            <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+              Hire the Best DevOps Talent Today
+            </h1>
+            <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
+              At Ultrafly Solutions, we are committed to providing DevOps
+              services that help your business thrive. Our developers are not
+              only experts in automation and integration but also focus on
+              delivering solutions that add business value and efficiency.
+            </p>
+            <Link
+              href="/contact-us"
+              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+            >
+              Get in touch
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-5 md:px-10 mb-10">
         {/* form */}
         <div
@@ -609,7 +610,7 @@ loading="lazy"
                 style={{
                   overflow: "hidden",
                   transition: "max-height 0.3s ease-in-out",
-                  maxHeight: openIndex === index ? "300px" : "60px", // adjust maxHeight based on the open or closed state
+                  maxHeight: openIndex === index ? "300px" : "60px",
                 }}
                 role="accordion"
               >

@@ -26,23 +26,23 @@ function Hero() {
     return () => clearInterval(interval);
   }, []);
 
-  const slideVariants = {
-    enter: { x: "100%", opacity: 0 },
-    center: { x: 0, opacity: 1 },
-    exit: { x: "-100%", opacity: 0 },
-  };
   return (
     <>
-      <div id="home" className="h-full md:h-screen w-full max-sm:mb-28 relative">
-  <Image
-    src={homeimg} // Using the imported image
-    alt="Hero Background"
-     layout="fill" // Fills the parent container
-    objectFit="cover" // Ensures the image covers the container like a background
-    objectPosition="center" // Centers the image
-    quality={75} // Image quality optimization
-    priority // Ensures the image is loaded as soon as possible
-  />
+      <div
+        id="home"
+        className="h-full md:h-screen w-full max-sm:mb-28 relative"
+      >
+        <Image
+          src={homeimg}
+          alt="Hero Background"
+          fill
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+          }}
+          quality={75}
+          priority
+        />
         <div className="grid lg:grid-cols-2 h-full px-4 md:px-8">
           {/* Swiper Section */}
           <div className="px-4 md:px-0 pt-16 max-md:pb-16">
@@ -128,8 +128,8 @@ function Hero() {
             {/* Main Hexagon Background with Image */}
             <div className="max-sm:w-48 max-sm:h-48 max-sm:mt-10 sm:absolute bottom-10 h-full w-[400px] lg:translate-x-36  rounded-xl  mx-auto flex justify-center items-center max-sm:p-10  clip-hexagon bg-[#eca918]">
               <Image
-loading="lazy"
-                 quality={75}
+                loading="lazy"
+                quality={75}
                 src={womenImg}
                 alt="women"
                 className="object-cover w-full h-full"
@@ -172,8 +172,8 @@ loading="lazy"
                   }}
                 >
                   <Image
-loading="lazy"
-                     quality={75}
+                    loading="lazy"
+                    quality={75}
                     src={mobile}
                     alt="review"
                     className="w-full h-full object-cover "
@@ -191,8 +191,8 @@ loading="lazy"
                   }}
                 >
                   <Image
-loading="lazy"
-                     quality={75}
+                    loading="lazy"
+                    quality={75}
                     src={screen}
                     alt="face recognition"
                     className="w-40 h-20 md:w-56 md:h-32 mx-auto"
@@ -210,8 +210,8 @@ loading="lazy"
                   }}
                 >
                   <Image
-loading="lazy"
-                     quality={75}
+                    loading="lazy"
+                    quality={75}
                     src={seo}
                     alt="SEO"
                     className="w-full h-full object-cover"

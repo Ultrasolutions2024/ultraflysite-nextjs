@@ -27,6 +27,7 @@ import {
 } from "react-icons/fa";
 
 import { FiTarget, FiBox, FiLayers, FiTool } from "react-icons/fi";
+import Link from "next/link";
 
 function Software() {
   useEffect(() => {
@@ -87,8 +88,8 @@ function Software() {
     "Desktop Application Development",
   ];
 
-  const [visibleCount, setVisibleCount] = useState(6); // Initially show 3 cards
-  const [isExpanded, setIsExpanded] = useState(false); // To toggle between "More" and "Less"
+  const [visibleCount, setVisibleCount] = useState(6);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const loadMore = () => {
     setVisibleCount((prevCount) => prevCount + 3);
@@ -113,21 +114,19 @@ function Software() {
           <div className="font-sans bg-gray-50 p-4 lg:pt-10 pt-10 md:pt-20 lg:pr-48 md:pl-24">
             <div className="lg:max-w-5xl max-w-xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 mb-10">
-                {/* Image Section */}
                 <div
                   className="rounded-3xl md:w-[400px] md:-mt-10 md:-ml-20 lg:ml-0 lg:mt-0 lg:w-[600px] h-fit shadow-lg lg:relative md:absolute hidden md:block"
                   data-aos="fade-right"
                 >
                   <Image
-loading="lazy"
-                     quality={75}
+                    loading="lazy"
+                    quality={75}
                     src={bg1}
                     alt="Placeholder Image"
                     className="object-contain rounded-3xl -z-10"
                   />
                 </div>
 
-                {/* Text Section */}
                 <div className="text-left bg-blue-50 mt-6 px-5 lg:px-10 lg:-translate-x-10 rounded-3xl w-full lg:w-[650px]  h-auto lg:h-[380px] py-5 shadow-md">
                   <h1 className="text-gray-800 text-xl md:text-2xl font-bold mb-4">
                     Custom Software Development (CSD)
@@ -154,7 +153,6 @@ loading="lazy"
               <hr className="border-gray-300 my-12" />
 
               <div className="grid lg:grid-cols-2 gap-12 mb-10 relative">
-                {/* Text Section */}
                 <div className="text-left  bg-blue-50 mt-6 px-5 lg:px-10 rounded-3xl w-full lg:w-[650px] h-auto lg:h-[350px] py-5 shadow-lg z-10 relative">
                   <h2 className="text-gray-800 text-xl lg:text-2xl font-bold mb-4">
                     Enterprise Software Development to Raise Business
@@ -173,14 +171,13 @@ loading="lazy"
                   </p>
                 </div>
 
-                {/* Image Section */}
                 <div
                   className="rounded-3xl md:w-[400px] md:-mt-10 md:-ml-20 lg:ml-0 lg:mt-0 lg:w-[600px] h-fit shadow-lg lg:relative md:absolute hidden md:block"
                   data-aos="fade-left"
                 >
                   <Image
-loading="lazy"
-                     quality={75}
+                    loading="lazy"
+                    quality={75}
                     src={bg2}
                     alt="Placeholder Image"
                     className="object-contain rounded-3xl -z-10"
@@ -200,17 +197,16 @@ loading="lazy"
                   key={index}
                   className="relative flex w-80 flex-col rounded-xl lg:mt-10 bg-white text-gray-700 shadow-md hover:scale-[104%] transition-all duration-300"
                 >
-                  {/* Card header */}
                   <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg shadow-blue-500/40">
                     <Image
-loading="lazy"
-                       quality={75}
+                      loading="lazy"
+                      quality={75}
                       src={expertise.icon}
                       alt={`${expertise.title} icon`}
                       className="h-full w-full object-cover"
                     />
                   </div>
-                  {/* Card body */}
+
                   <div className="p-6">
                     <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                       {expertise.title}
@@ -219,7 +215,7 @@ loading="lazy"
                       {expertise.description}
                     </p>
                   </div>
-                  {/* Card footer with button */}
+
                   <div className="p-6 pt-0"></div>
                 </div>
               ))}
@@ -228,7 +224,6 @@ loading="lazy"
 
           <div className="bg-gradient-to-r from-gray-50 to-blue-50 py-6 sm:py-8 lg:py-24">
             <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-              {/* Header Section */}
               <div className="mb-4 flex flex-col items-center justify-center text-center sm:mb-8 md:mb-12">
                 <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
                   Our Consulting Expertise
@@ -239,9 +234,7 @@ loading="lazy"
                 </p>
               </div>
 
-              {/* Cards Section */}
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:gap-10 lg:grid-cols-4 xl:gap-12">
-                {/* Card 1 */}
                 <div className="group w-full p-6 h-72 flex flex-col justify-center items-center relative rounded-xl overflow-hidden shadow-lg bg-white transition transform hover:scale-105">
                   <div className="flex flex-col justify-center items-center">
                     <div className="bg-blue-500 rounded-full p-4 mb-4 group-hover:bg-blue-600 transition duration-300 ease-in-out">
@@ -257,7 +250,6 @@ loading="lazy"
                   </div>
                 </div>
 
-                {/* Card 2 */}
                 <div className="group w-full p-6 h-72 flex flex-col justify-center items-center relative rounded-xl overflow-hidden shadow-lg bg-white transition transform hover:scale-105">
                   <div className="flex flex-col justify-center items-center">
                     <div className="bg-blue-500 rounded-full p-4 mb-4 group-hover:bg-blue-600 transition duration-300 ease-in-out">
@@ -273,7 +265,6 @@ loading="lazy"
                   </div>
                 </div>
 
-                {/* Card 3 */}
                 <div className="group w-full p-6 h-72 flex flex-col justify-center items-center relative rounded-xl overflow-hidden shadow-lg bg-white transition transform hover:scale-105">
                   <div className="flex flex-col justify-center items-center">
                     <div className="bg-blue-500 rounded-full p-4 mb-4 group-hover:bg-blue-600 transition duration-300 ease-in-out">
@@ -290,7 +281,6 @@ loading="lazy"
                   </div>
                 </div>
 
-                {/* Card 4 */}
                 <div className="group w-full p-6 h-72 flex flex-col justify-center items-center relative rounded-xl overflow-hidden shadow-lg bg-white transition transform hover:scale-105">
                   <div className="flex flex-col justify-center items-center">
                     <div className="bg-blue-500 rounded-full p-4 mb-4 group-hover:bg-blue-600 transition duration-300 ease-in-out">
@@ -310,7 +300,6 @@ loading="lazy"
           </div>
 
           <div className="flex flex-col bg-gray-100 p-4 ">
-            {/* Top Section Content */}
             <div className="w-full flex flex-col items-center text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl mb-4">
                 Types of Software Development Services
@@ -323,10 +312,8 @@ loading="lazy"
               </p>
             </div>
 
-            {/* Bottom Section: Cards */}
             <div className="w-full flex justify-center mt-7 mb-7">
               <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
-                {/* Card 1: Agile Development */}
                 <div className="lg:h-[12em] h-[180px] w-full max-w-[400px] md:h-[300px] bg-white rounded-[1em] overflow-hidden relative group p-4 z-0 shadow-lg transition-transform transform hover:scale-105 md:p-6 lg:p-8 mx-auto flex flex-col items-center justify-center">
                   <div className="circle absolute h-[5em] w-[5em] -top-[2em] -right-[2em] rounded-full bg-blue-400 group-hover:scale-[1200%] duration-500 z-[-1]"></div>
                   <h2 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
@@ -341,7 +328,6 @@ loading="lazy"
                   </p>
                 </div>
 
-                {/* Card 2: Waterfall Methodology */}
                 <div className="lg:h-[12em] h-[180px] w-full max-w-[400px] md:h-[300px] bg-white m-auto rounded-[1em] overflow-hidden relative group p-4 z-0 shadow-lg transition-transform transform hover:scale-105 mx-auto flex flex-col items-center justify-center">
                   <div className="circle absolute h-[5em] w-[5em] -top-[2em] -right-[2em] rounded-full bg-blue-400 group-hover:scale-[1200%] duration-500 z-[-1]"></div>
                   <h2 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
@@ -354,7 +340,6 @@ loading="lazy"
                   </p>
                 </div>
 
-                {/* Card 3: DevOps Practices */}
                 <div className="lg:h-[12em] h-[180px] w-full max-w-[400px] md:h-[300px] bg-white m-auto rounded-[1em] overflow-hidden relative group p-4 z-0 shadow-lg transition-transform transform hover:scale-105 mx-auto flex flex-col items-center justify-center">
                   <div className="circle absolute h-[5em] w-[5em] -top-[2em] -right-[2em] rounded-full bg-blue-400 group-hover:scale-[1200%] duration-500 z-[-1]"></div>
                   <h2 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
@@ -368,7 +353,6 @@ loading="lazy"
                   </p>
                 </div>
 
-                {/* Card 4: Custom Software Development */}
                 <div className="lg:h-[12em] h-[180px] w-full max-w-[400px] md:h-[300px] bg-white m-auto rounded-[1em] overflow-hidden relative group p-4 z-0 shadow-lg transition-transform transform hover:scale-105 mx-auto flex flex-col items-center justify-center">
                   <div className="circle absolute h-[5em] w-[5em] -top-[2em] -right-[2em] rounded-full bg-blue-400 group-hover:scale-[1200%] duration-500 z-[-1]"></div>
                   <h2 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
@@ -382,7 +366,6 @@ loading="lazy"
                   </p>
                 </div>
 
-                {/* Card 5: Legacy System Modernization */}
                 <div className="lg:h-[12em] h-[180px] w-full max-w-[400px] md:h-[300px] lg:translate-x-[250px] md:translate-x-[200px] bg-white m-auto rounded-[1em] overflow-hidden relative group p-4 z-0 shadow-lg transition-transform transform hover:scale-105 mx-auto flex flex-col items-center justify-center">
                   <div className="circle absolute h-[5em] w-[5em] -top-[2em] -right-[2em] rounded-full bg-blue-400 group-hover:scale-[1200%] duration-500 z-[-1]"></div>
                   <h2 className="z-20 font-bold font-Poppins group-hover:text-white duration-500 text-[1.4em] mb-2 text-center">
@@ -432,7 +415,6 @@ loading="lazy"
               </div>
             </div>
 
-            {/* More / Less button */}
             <div className="flex justify-center mt-8">
               {!isExpanded ? (
                 <button
@@ -481,7 +463,6 @@ loading="lazy"
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Increased Efficiency & Productivity */}
               <div className="bg-gradient-to-br from-blue-50 via-white to-blue-50 p-8 rounded-xl shadow-lg transform transition-transform hover:scale-105 flex items-start space-x-4">
                 <FaRocket className="text-blue-700 text-3xl" />
                 <div>
@@ -495,7 +476,6 @@ loading="lazy"
                 </div>
               </div>
 
-              {/* Customer Satisfaction Increased */}
               <div className="bg-gradient-to-br from-blue-50 via-white to-blue-50 p-8 rounded-xl shadow-lg transform transition-transform hover:scale-105 flex items-start space-x-4">
                 <FaSmile className="text-blue-700 text-3xl" />
                 <div>
@@ -509,7 +489,6 @@ loading="lazy"
                 </div>
               </div>
 
-              {/* Competitive Advantage */}
               <div className="bg-gradient-to-br from-blue-50 via-white to-blue-50 p-8 rounded-xl shadow-lg transform transition-transform hover:scale-105 flex items-start space-x-4">
                 <FaTrophy className="text-blue-700 text-3xl" />
                 <div>
@@ -523,7 +502,6 @@ loading="lazy"
                 </div>
               </div>
 
-              {/* Scalability & Flexibility */}
               <div className="bg-gradient-to-br from-blue-50 via-white to-blue-50 p-8 rounded-xl shadow-lg transform transition-transform hover:scale-105 flex items-start space-x-4">
                 <FaExpand className="text-blue-700 text-3xl" />
                 <div>
@@ -537,7 +515,6 @@ loading="lazy"
                 </div>
               </div>
 
-              {/* Return on Investment (ROI) */}
               <div className="md:col-span-2 bg-gradient-to-br from-blue-50 via-white to-blue-50 p-8 rounded-xl shadow-lg transform transition-transform hover:scale-105 flex items-start space-x-4">
                 <FaDollarSign className="text-blue-700 text-3xl" />
                 <div>
@@ -565,7 +542,6 @@ loading="lazy"
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Languages */}
               <div className="bg-blue-50 p-8 rounded-xl shadow-lg transform hover:scale-105 hover:shadow-2xl transition duration-300 ease-in-out flex items-start space-x-4">
                 <FaCode className="text-blue-700 text-3xl" />
                 <div>
@@ -579,7 +555,6 @@ loading="lazy"
                 </div>
               </div>
 
-              {/* Frameworks */}
               <div className="bg-blue-50 p-8 rounded-xl shadow-lg transform hover:scale-105 hover:shadow-2xl transition duration-300 ease-in-out flex items-start space-x-4">
                 <FaLayerGroup className="text-blue-700 text-3xl" />
                 <div>
@@ -593,7 +568,6 @@ loading="lazy"
                 </div>
               </div>
 
-              {/* Databases */}
               <div className="bg-blue-50 p-8 rounded-xl shadow-lg transform hover:scale-105 hover:shadow-2xl transition duration-300 ease-in-out flex items-start space-x-4">
                 <FaDatabase className="text-blue-700 text-3xl" />
                 <div>
@@ -607,7 +581,6 @@ loading="lazy"
                 </div>
               </div>
 
-              {/* Cloud Platforms */}
               <div className="bg-blue-50 p-8 rounded-xl shadow-lg transform hover:scale-105 hover:shadow-2xl transition duration-300 ease-in-out flex items-start space-x-4 lg:translate-x-[160px]">
                 <FaCloud className="text-blue-700 text-3xl" />
                 <div>
@@ -621,7 +594,6 @@ loading="lazy"
                 </div>
               </div>
 
-              {/* DevOps Tools */}
               <div className="bg-blue-50 p-8 rounded-xl shadow-lg transform hover:scale-105 hover:shadow-2xl transition duration-300 ease-in-out flex items-start space-x-4 lg:translate-x-[160px] md:translate-x-48">
                 <FaTools className="text-blue-700 text-3xl" />
                 <div>
@@ -661,15 +633,15 @@ loading="lazy"
             </div>
             <div className="lg:w-1/2 mt-6 lg:mt-0">
               <Image
-loading="lazy"
-                 quality={75}
+                loading="lazy"
+                quality={75}
                 src={cased}
                 alt="Case Studies"
                 className="w-full h-auto rounded-lg "
               />
             </div>
           </div>
-          {/* footer */}
+
           <div className="bg-gradient-to-r from-blue-500 to-purple-500 py-16 text-white">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
               <h2 className="text-3xl md:text-4xl text-white lg:text-5xl font-bold text-center mb-4">
@@ -687,11 +659,11 @@ loading="lazy"
                 something amazing together!
               </p>
               <div className="flex justify-center">
-                <a href="/contact-us">
+                <Link href="/contact-us">
                   <button className="bg-white text-blue-500 font-semibold py-3 px-6 rounded-lg shadow-lg transition ease-in-out delay-150 duration-300 hover:bg-blue-500 hover:text-white">
                     Contact Us
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

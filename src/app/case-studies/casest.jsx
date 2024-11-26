@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import team from "../images/our_services/websiteImg/team.webp";
 import dental from "../images/our_services/websiteImg/dental.webp";
 import division from "../images/our_services/websiteImg/division.webp";
 import mgs from "../images/our_services/websiteImg/mgs.webp";
-import { FaIndustry, FaChartLine, FaStar, FaEnvelope } from "react-icons/fa";
+import { FaIndustry, FaChartLine,  FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 
 const Casest = () => {
@@ -14,8 +13,6 @@ const Casest = () => {
         Ultrafly Solutions Case Studies
       </h1>
       <div className="lg:max-w-5xl max-w-xl mx-auto lg:pr-24 md:mt-20 p-4">
-      
-
         {/* New Section for Dental Care Professionals */}
         <h1 className="text-3xl font-semibold mb-8 text-center ">
           Here are three success stories from Ultrafly Solutions&aposs digital
@@ -26,8 +23,8 @@ const Casest = () => {
           {/* Image Section for Dental Care */}
           <div className="rounded-3xl w-full md:w-[550px] lg:w-[500px] h-fit shadow-lg">
             <Image
-loading="lazy" 
-  quality={75}
+              loading="lazy"
+              quality={75}
               src={dental}
               alt="Dental Care Professionals"
               className="object-contain rounded-3xl transition-transform duration-300 hover:scale-105 "
@@ -96,8 +93,8 @@ loading="lazy"
           {/* Image Section */}
           <div className="rounded-3xl w-full md:w-[550px] lg:w-[620px] h-fit shadow-lg lg:mt-7">
             <Image
-loading="lazy" 
-  quality={75}
+              loading="lazy"
+              quality={75}
               src={division}
               alt="Team Image"
               className="object-contain rounded-3xl transition-transform duration-300 hover:scale-105"
@@ -113,8 +110,8 @@ loading="lazy"
           {/* Image Section for Dental Care */}
           <div className="rounded-3xl w-full md:w-[550px] lg:w-[500px] h-fit shadow-lg">
             <Image
-loading="lazy" 
-  quality={75}
+              loading="lazy"
+              quality={75}
               src={mgs}
               alt="Dental Care Professionals"
               className="object-contain rounded-3xl transition-transform duration-300 hover:scale-105"

@@ -58,7 +58,7 @@ function App() {
 
       {/* ---- */}
       <h1 className="text-black text-center text-2xl md:text-3xl font-bold pt-12 md:pt-24">
-      Current Openings
+        Current Openings
       </h1>
       {/* boxes */}
       <div className="mt-[2rem] md:mt-[5rem]">
@@ -68,10 +68,10 @@ function App() {
           <ul className="flex justify-between w-full flex-col text-center md:flex-row md:text-start">
             {/* class name */}
             <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
-              <p className="text-[14px] font-medium text-[#a0a0a0]">
-               Job
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Job</p>
+              <p className="text-[18px] text-black font-bold mt-3">
+                Application Testing
               </p>
-              <p className="text-[18px] text-black font-bold mt-3">Application Testing</p>
             </li>
             {/* time */}
             <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
@@ -82,26 +82,22 @@ function App() {
             </li>
             {/* trainer */}
             <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
-              <p className="text-[14px] font-medium text-[#a0a0a0]">Exerience</p>
-              <p className="text-[18px] text-black font-bold mt-3">
-                1 Year
+              <p className="text-[14px] font-medium text-[#a0a0a0]">
+                Exerience
               </p>
+              <p className="text-[18px] text-black font-bold mt-3">1 Year</p>
             </li>
-           
+
             <li className="bg-[#f2f2f2] w-full flex justify-center items-center pb-4">
               <Link
-              
-                href="https://www.linkedin.com/jobs/view/3893600947" 
-                className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] hover:bg-[#483de4] ease-in duration-200  " target="_blank"
+                href="https://www.linkedin.com/jobs/view/3893600947"
+                className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] hover:bg-[#483de4] ease-in duration-200  "
+                target="_blank"
               >
                 Apply Now
               </Link>
             </li>
-            
-
           </ul>
-
-       
         </div>
       </div>
     </>

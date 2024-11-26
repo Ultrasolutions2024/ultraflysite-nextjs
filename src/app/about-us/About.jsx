@@ -1,13 +1,6 @@
 "use client";
-import MainButton from "../Featured/MainButton";
 import React, { useEffect } from "react";
-import Img3 from "../images/AboutPage/3.webp";
-import Img4 from "../images/GalleryPage/4.webp";
-import Target from "../images/AboutPage/target.webp";
-import Mountain from "../images/AboutPage/mountain.webp";
-import aboutImg from "../images/AboutPage/new.webp";
 import intro from "../images/AboutPage/intro.webp";
-import aboutBanner from "../images/AboutPage/about_us_banner.webp";
 import Image from "next/image";
 import {
   FaUsers,
@@ -75,8 +68,8 @@ function About() {
 
         <div className="center-image mx-auto">
           <Image
-loading="lazy" 
-  quality={75}
+            loading="lazy"
+            quality={75}
             src={intro}
             alt="Center Image"
             className="w-full  md:w-full mt-10 md:h-full lg:w-96 lg:h-96 h-full object-contain animate-bounce-slow"

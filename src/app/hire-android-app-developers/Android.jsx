@@ -1,9 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import background from "../images/Resources/background.webp";
-import faq from "../images/Resources/faq.webp";
 import { FaUser } from "react-icons/fa";
-import { FaMessage } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaMobileButton } from "react-icons/fa6";
 import manualwebp from "../images/Resources/python/manual.webp";
@@ -16,7 +14,6 @@ import resource from "../images/Resources/resource.webp";
 import { IoIosArrowForward } from "react-icons/io";
 import emailjs from "emailjs-com";
 import { NotificationManager } from "react-notifications";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 const Android = () => {
@@ -91,64 +88,63 @@ const Android = () => {
 
   return (
     <>
-       <div className="relative hero min-h-screen">
-     
-      <div className="absolute inset-0">
-        <Image
-          src={background} 
-          alt="Background"
-           layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          priority 
-        />
-      </div>
+      <div className="relative hero min-h-screen">
+        <div className="absolute inset-0">
+          <Image
+            src={background}
+            alt="Background"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
+            priority
+          />
+        </div>
 
- 
-      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
 
-
-      <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
-        <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
-          <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
-            Hire Android Developers
-          </h1>
-          <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
-            Why Hire Android App Developers from Ultrafly Solutions?
-          </h3>
-          <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-lg grid gap-4">
-            <li>
-              Expert Android developers with comprehensive knowledge and
-              hands-on experience in building high-performance, user-friendly
-              mobile applications.
-            </li>
-            <li>
-              Flexible hiring models—choose from full-time, part-time, or
-              project-based options to suit your business requirements.
-            </li>
-            <li>
-              Scalable solutions designed to grow with your business, ensuring
-              optimal performance across all devices.
-            </li>
-            <li>
-              Seamless communication with dedicated project managers, ensuring
-              regular updates and smooth project progress.
-            </li>
-            <li>
-              Security-first development, adhering to the latest best
-              practices to guarantee secure and reliable mobile apps.
-            </li>
-          </ul>
-          <div className="flex justify-center mb-5">
-            <a href="#sendBtn">
-              <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
-                Talk with Our Experts
-              </button>
-            </a>
+        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+          <div className="max-w-54 text-left px-6 md:px-12 lg:px-8">
+            <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
+              Hire Android Developers
+            </h1>
+            <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
+              Why Hire Android App Developers from Ultrafly Solutions?
+            </h3>
+            <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-lg grid gap-4">
+              <li>
+                Expert Android developers with comprehensive knowledge and
+                hands-on experience in building high-performance, user-friendly
+                mobile applications.
+              </li>
+              <li>
+                Flexible hiring models—choose from full-time, part-time, or
+                project-based options to suit your business requirements.
+              </li>
+              <li>
+                Scalable solutions designed to grow with your business, ensuring
+                optimal performance across all devices.
+              </li>
+              <li>
+                Seamless communication with dedicated project managers, ensuring
+                regular updates and smooth project progress.
+              </li>
+              <li>
+                Security-first development, adhering to the latest best
+                practices to guarantee secure and reliable mobile apps.
+              </li>
+            </ul>
+            <div className="flex justify-center mb-5">
+              <Link href="#sendBtn">
+                <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
+                  Talk with Our Experts
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
       <div className="max-w-7xl mx-auto py-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 w-3/4 mx-auto">
@@ -164,7 +160,7 @@ const Android = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                   quality={75}
+                  quality={75}
                   src={manualwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -189,7 +185,7 @@ const Android = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                   quality={75}
+                  quality={75}
                   src={developmentwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -214,7 +210,7 @@ const Android = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                   quality={75}
+                  quality={75}
                   src={solutionwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -239,7 +235,7 @@ const Android = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                   quality={75}
+                  quality={75}
                   src={ideawebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -264,7 +260,7 @@ const Android = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                   quality={75}
+                  quality={75}
                   src={micorwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -290,7 +286,7 @@ const Android = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-                   quality={75}
+                  quality={75}
                   src={servicewebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -335,7 +331,7 @@ const Android = () => {
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
               <Image
-                 quality={75}
+                quality={75}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"
@@ -505,37 +501,40 @@ const Android = () => {
       </section>
 
       <div className="relative hero h-fit md:h-96 my-2 md:my-10">
-      {/* Background Image */}
-      <Image
-        src={resource}
-        alt="Hero Background"
-         layout="fill" // Makes the image span the container
-        objectFit="cover" // Mimics CSS `background-size: cover`
-        objectPosition="right" // Mimics CSS `background-position: right`
-        priority // Ensures the image is loaded promptly
-        quality={75} // Optimizes image quality
-        className="z-0" // Ensures the image is behind content
-      />
+        <Image
+          src={resource}
+          alt="Hero Background"
+          fill
+          style={{
+            objectFit: "cover",
+            objectPosition: "right",
+          }}
+          priority
+          quality={75}
+          className="z-0"
+        />
 
-      {/* Content Overlay */}
-      <div className="relative z-10 pl-10 text-neutral-content text-left items-start py-10">
-        <div>
-          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-            Hire top Android app developers today.
-          </h1>
-          <p className="mb-5 text-xs md:text-xl text-white w-3/4">
-            At Ultrafly Solutions, we’re dedicated to delivering Android app
-            solutions that give your business a competitive edge. Our developers bring a results-driven approach, ensuring your mobile applications deliver efficiency and value.
-          </p>
-          <Link
-            href="/contact-us"
-            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
-          >
-            Get in touch
-          </Link>
+        {/* Content Overlay */}
+        <div className="relative z-10 pl-10 text-neutral-content text-left items-start py-10">
+          <div>
+            <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+              Hire top Android app developers today.
+            </h1>
+            <p className="mb-5 text-xs md:text-xl text-white w-3/4">
+              At Ultrafly Solutions, we’re dedicated to delivering Android app
+              solutions that give your business a competitive edge. Our
+              developers bring a results-driven approach, ensuring your mobile
+              applications deliver efficiency and value.
+            </p>
+            <Link
+              href="/contact-us"
+              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+            >
+              Get in touch
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-10 mb-10">
         {/* form */}
         <div
@@ -601,7 +600,7 @@ const Android = () => {
                 style={{
                   overflow: "hidden",
                   transition: "max-height 0.3s ease-in-out",
-                  maxHeight: openIndex === index ? "300px" : "60px", // adjust maxHeight based on the open or closed state
+                  maxHeight: openIndex === index ? "300px" : "60px",
                 }}
                 role="accordion"
               >

@@ -1,9 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import background from "../images/Resources/background.webp";
-import faq from "../images/Resources/faq.webp";
 import { FaUser } from "react-icons/fa";
-import { FaMessage } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaMobileButton } from "react-icons/fa6";
 import Link from "next/link";
@@ -17,7 +15,6 @@ import resource from "../images/Resources/resource.webp";
 import { IoIosArrowForward } from "react-icons/io";
 import emailjs from "emailjs-com";
 import { NotificationManager } from "react-notifications";
-import Head from "next/head";
 import Image from "next/image";
 const Flutter = () => {
   useEffect(() => {
@@ -92,64 +89,65 @@ const Flutter = () => {
   return (
     <>
       <div className="relative hero min-h-screen">
-      {/* Optimized Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src={background.src} // Background image passed as a prop
-          alt="Hire Flutter Developers"
-           layout="fill" // Ensures the image fills the container
-          objectFit="cover" // Ensures the image covers the container without distortion
-          objectPosition="center" // Centers the image
-          priority // Preloads the image for better performance
-        />
-      </div>
+        <div className="absolute inset-0">
+          <Image
+            src={background.src}
+            alt="Hire Flutter Developers"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
+            priority
+          />
+        </div>
 
-      {/* Dimmed Background Overlay */}
-      <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
+        {/* Dimmed Background Overlay */}
+        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
 
-      {/* Hero Content - Centered */}
-      <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
-        <div className="max-w-4xl text-left px-6 md:px-12 lg:px-8">
-          <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
-            Hire Flutter Developers
-          </h1>
-          <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
-            Why Hire Flutter Developers from Ultrafly Solutions?
-          </h3>
-          <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-xl grid gap-4">
-            <li>
-              Expert Flutter developers with extensive experience and deep
-              knowledge in building high-performance, cross-platform mobile
-              applications.
-            </li>
-            <li>
-              Flexible hiring models—choose full-time, part-time, or
-              project-based options to match your business needs.
-            </li>
-            <li>
-              Scalable solutions designed to support the growth of your
-              business, ensuring optimal performance across both Android and
-              iOS platforms.
-            </li>
-            <li>
-              Seamless communication with dedicated project managers,
-              providing regular updates and ensuring smooth project flow.
-            </li>
-            <li>
-              Security-driven development, following the latest industry
-              standards for secure, reliable, and high-quality Flutter apps.
-            </li>
-          </ul>
-          <div className="flex justify-center mb-5">
-            <a href="#sendBtn">
-              <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
-                Talk with Our Experts
-              </button>
-            </a>
+        {/* Hero Content - Centered */}
+        <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
+          <div className="max-w-4xl text-left px-6 md:px-12 lg:px-8">
+            <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
+              Hire Flutter Developers
+            </h1>
+            <h3 className="mb-5 text-white font-semibold text-xl md:text-2xl">
+              Why Hire Flutter Developers from Ultrafly Solutions?
+            </h3>
+            <ul className="list-disc list-inside mb-7 text-left text-white text-sm md:text-xl grid gap-4">
+              <li>
+                Expert Flutter developers with extensive experience and deep
+                knowledge in building high-performance, cross-platform mobile
+                applications.
+              </li>
+              <li>
+                Flexible hiring models—choose full-time, part-time, or
+                project-based options to match your business needs.
+              </li>
+              <li>
+                Scalable solutions designed to support the growth of your
+                business, ensuring optimal performance across both Android and
+                iOS platforms.
+              </li>
+              <li>
+                Seamless communication with dedicated project managers,
+                providing regular updates and ensuring smooth project flow.
+              </li>
+              <li>
+                Security-driven development, following the latest industry
+                standards for secure, reliable, and high-quality Flutter apps.
+              </li>
+            </ul>
+            <div className="flex justify-center mb-5">
+              <Link href="#sendBtn">
+                <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
+                  Talk with Our Experts
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
       <div className="max-w-7xl mx-auto py-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 w-3/4 mx-auto">
@@ -165,8 +163,8 @@ const Flutter = () => {
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={manualwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -192,8 +190,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={servicewebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -218,8 +216,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={solutionwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -245,8 +243,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={ideawebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -272,8 +270,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={micorwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -298,8 +296,8 @@ loading="lazy"
             <div className="relative z-10 mx-auto max-w-md">
               <span className="grid h-24 w-24 p-4 place-items-center rounded-full bg-[#03a4ed] transition-all duration-500 transform group-hover:bg-[#eca918]">
                 <Image
-loading="lazy"
-                   quality={75}
+                  loading="lazy"
+                  quality={75}
                   src={developmentwebp}
                   alt="custom"
                   className="rounded-xl w-full h-full mb-8 object-contain mx-auto"
@@ -345,13 +343,13 @@ loading="lazy"
           <div className="flex justify-end items-center p-2 bg-gradient-to-r from-[#8799ff] to-[#03a4ed] rounded-bl-[230px] w-full h-full">
             <div className="h-72 w-72 rounded-full bg-[#eca918] p-5">
               <Image
-loading="lazy"
-                 quality={75}
+                loading="lazy"
+                quality={75}
                 src="https://readymadeui.com/team-image.webp"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"
-                width={500} // Set width in pixels (e.g., the actual image width)
-                height={500} // Set height in pixels (maintain aspect ratio)
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -515,39 +513,40 @@ loading="lazy"
       </section>
 
       <div className="relative hero h-fit md:h-96 my-2 md:my-10">
-      {/* Background Image using Next.js Image component */}
-      <Image
-        src={resource}
-        alt="Flutter Developers"
-         layout="fill" // Ensures the image fills the container
-        objectFit="cover" // Mimics background-size: cover
-        objectPosition="right" // Mimics background-position: right
-        quality={75} // Optimizes the image quality
-        priority // Load image quickly for better performance
-        className="z-0" // Ensures the image is behind the content
-      />
+        <Image
+          src={resource}
+          alt="Flutter Developers"
+          fill
+          style={{
+            objectFit: "cover",
+            objectPosition: "right",
+          }}
+          quality={75}
+          priority
+          className="z-0"
+        />
 
-      {/* Content Overlay */}
-      <div className="relative z-10 pl-10 text-neutral-content text-left items-start py-10">
-        <div>
-          <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-            Hire top Flutter developers today.
-          </h1>
-          <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
-            At Ultrafly Solutions, we specialize in delivering Flutter app
-            solutions that give your business a competitive edge. Our
-            results-driven developers ensure that your mobile apps are
-            efficient, scalable, and aligned with your business goals.
-          </p>
-          <Link
-            href="/contact-us"
-            className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
-          >
-            Get in Touch
-          </Link>
+        {/* Content Overlay */}
+        <div className="relative z-10 pl-10 text-neutral-content text-left items-start py-10">
+          <div>
+            <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+              Hire top Flutter developers today.
+            </h1>
+            <p className="md:mb-5 text-[10px] max-sm:leading-3 md:text-xl text-white w-3/4">
+              At Ultrafly Solutions, we specialize in delivering Flutter app
+              solutions that give your business a competitive edge. Our
+              results-driven developers ensure that your mobile apps are
+              efficient, scalable, and aligned with your business goals.
+            </p>
+            <Link
+              href="/contact-us"
+              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+            >
+              Get in Touch
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-10 mb-10">
         {/* form */}
         <div
@@ -614,7 +613,7 @@ loading="lazy"
                 style={{
                   overflow: "hidden",
                   transition: "max-height 0.3s ease-in-out",
-                  maxHeight: openIndex === index ? "300px" : "60px", // adjust maxHeight based on the open or closed state
+                  maxHeight: openIndex === index ? "300px" : "60px",
                 }}
                 role="accordion"
               >

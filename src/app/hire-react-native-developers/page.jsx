@@ -7,9 +7,13 @@ const ReactNative = dynamic(() => import('./ReactNative'), {
 });
 
 export const metadata = {
-  title: "Hire React Native Developers | Ultrafly Solutions for Fast Apps",
+  title: "Hire ReactNative Developers | Ultrafly Solutions",
   description:
-    "Ultrafly Solutions offers React Native developers to build fast, cross-platform mobile apps. Optimize your mobile presence. Contact us today!",
+    "Hire top ReactNative developers from Ultrafly Solutions for custom, scalable, and high-performance mobile app solutions tailored to your business needs.",
+    keywords: [
+      "hire skilled React Native developers",
+      "cross-platform mobile app development",
+    ],
   openGraph: {
     title: "Hire React Native Developers | Ultrafly Solutions for Fast Apps",
     description:
