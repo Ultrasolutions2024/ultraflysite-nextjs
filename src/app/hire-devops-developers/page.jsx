@@ -18,7 +18,7 @@ export const metadata = {
       "Hire DevOps developers from Ultrafly Solutions to streamline development with automated workflows. Optimize your processes. Get in touch today!",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", L
+        url: "https://www.ultraflysolutions.com/images/blog/timg.webp", 
       },
     ],
     url: "https://www.ultraflysolutions.com/hire-devops-developers"
