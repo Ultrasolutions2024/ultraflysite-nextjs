@@ -243,7 +243,7 @@ function LinkedinFollowers() {
                     potential in 2025, ensuring more meaningful connections and
                     professional growth.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-teal-400">
+                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
                     Basics Understanding
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -252,7 +252,7 @@ function LinkedinFollowers() {
                     profile is your online business card and bases its whole
                     work on good impressions.
                   </p>
-                  <h4 className="font-bold text-xl md:text-xl pl-2 my-2 border-l-[6px] border-gray-400">
+                  <h4 className="font-bold text-xl md:text-xl pl-2 my-2  ">
                     Fully Complete Your Profile
                   </h4>
                   <p className="pb-6 pt-3 text-[17px] text-justify">
@@ -263,7 +263,7 @@ function LinkedinFollowers() {
                     often you appear in people's searches, and it attracts
                     possible followers.
                   </p>
-                  <h4 className="font-bold text-xl md:text-xl pl-2 my-2 border-l-[6px] border-gray-400">
+                  <h4 className="font-bold text-xl md:text-xl pl-2 my-2 ">
                     Professional Photo
                   </h4>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -273,7 +273,7 @@ function LinkedinFollowers() {
                     individual. It often proves to be the first point that
                     everyone views; therefore, do not compromise there also.
                   </p>
-                  <h4 className="font-bold text-xl md:text-xl pl-2 my-2  border-l-[6px] border-gray-400">
+                  <h4 className="font-bold text-xl md:text-xl pl-2 my-2  ">
                     Interacting Banner
                   </h4>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -283,7 +283,7 @@ function LinkedinFollowers() {
                     Canva to create a personalized banner can represent your
                     professional identity.
                   </p>
-                  <h4 className="font-bold text-xl md:text-xl pl-2 my-2 border-l-[6px] border-gray-400 ">
+                  <h4 className="font-bold text-xl md:text-xl pl-2 my-2  ">
                     Keyword Optimization
                   </h4>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -295,7 +295,7 @@ function LinkedinFollowers() {
                     difference in the chances of being found by the right
                     people.
                   </p>
-                  <h4 className="font-bold text-xl md:text-xl pl-2 my-2  border-l-[6px] border-gray-400">
+                  <h4 className="font-bold text-xl md:text-xl pl-2 my-2   ">
                     Writing Effective Content
                   </h4>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -303,7 +303,7 @@ function LinkedinFollowers() {
                     relevant, informative, and engaging that could be of
                     interest to your target market.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-indigo-400">
+                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400 ">
                     Thought Leadership
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -314,7 +314,7 @@ function LinkedinFollowers() {
                     thought leader and are likely to follow you for your
                     insights.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-indigo-400">
+                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400 ">
                     Share Company Updates
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -325,7 +325,7 @@ function LinkedinFollowers() {
                     connected to your brand. This connection may encourage them
                     to share your posts, and you will have increased your reach.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-indigo-400">
+                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400">
                     Personal Branding
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -345,7 +345,7 @@ function LinkedinFollowers() {
                     with the choice of relevant infographics: such is one way
                     that pictures help bring your message together.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-indigo-400">
+                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400">
                     Curated Content
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -354,7 +354,7 @@ function LinkedinFollowers() {
                     creates you as a resource known and keeps reciprocal sharing
                     which creates more avenues for you audience.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-indigo-400">
+                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
                     Engage your audience
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -365,7 +365,7 @@ function LinkedinFollowers() {
                     If one is engaging wisely, people notice it, and they become
                     very interested in visiting one's profile.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-indigo-400">
+                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
                     Join Groups
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -381,7 +381,7 @@ function LinkedinFollowers() {
                     sharing somebody else's work, the chances are they will
                     reciprocate by showing your work to their audience.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] bor border-indigo-400">
+                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400">
                     Comment and Message Response
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -391,7 +391,7 @@ function LinkedinFollowers() {
                     a bond as well as attract more of them in the future too.
                   </p>
                   <div className=" mx-auto">
-                    <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-indigo-400">
+                    <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400">
                       Use LinkedIn&apos;s Feature
                     </h3>
 
@@ -409,13 +409,13 @@ function LinkedinFollowers() {
                       </p>
                     </figure>
 
-                    <h4 className="font-bold text-xl md:text-2xl pl-2 my-2 border-l-[11px]  border-indigo-400">
+                    <h4 className="font-bold text-xl md:text-2xl pl-2 my-2 border-l-[11px]  border-gray-400">
                       Special Features of LinkedIn
                     </h4>
 
                     <div className="space-y-6">
                       <div className=" p-4 rounded-md shadow-sm hover:shadow-md transition-shadow duration-200">
-                        <h5 className="font-bold text-xl md:text-xl pl-2 my-2 border-l-[11px] border-gray-400">
+                        <h5 className="font-bold text-xl md:text-xl pl-2 my-2 border-l-[11px] ">
                           LinkedIn Live
                         </h5>
                         <p className="text-base text-gray-600 leading-relaxed">
@@ -428,7 +428,7 @@ function LinkedinFollowers() {
                       </div>
 
                       <div className=" p-4 rounded-md shadow-sm hover:shadow-md transition-shadow duration-200">
-                        <h3 className="font-bold text-xl md:text-xl pl-2 my-2 border-l-[11px] border-gray-400">
+                        <h3 className="font-bold text-xl md:text-xl pl-2 my-2 ">
                           LinkedIn Polls
                         </h3>
                         <p className="text-base text-gray-600 leading-relaxed">
@@ -440,7 +440,7 @@ function LinkedinFollowers() {
                       </div>
 
                       <div className=" p-4 rounded-md shadow-sm hover:shadow-md transition-shadow duration-200">
-                        <h3 className="font-bold text-xl md:text-xl pl-2 my-2 border-l-[11px] border-gray-400">
+                        <h3 className="font-bold text-xl md:text-xl pl-2 my-2  ">
                           Articles on LinkedIn
                         </h3>
                         <p className="text-base text-gray-600 leading-relaxed">
@@ -452,7 +452,7 @@ function LinkedinFollowers() {
                       </div>
 
                       <div className=" p-4 rounded-md shadow-sm hover:shadow-md transition-shadow duration-200">
-                        <h3 className="font-bold text-xl md:text-xl pl-2 my-2 border-l-[11px] border-gray-400">
+                        <h3 className="font-bold text-xl md:text-xl pl-2 my-2 ">
                           LinkedIn Events
                         </h3>
                         <p className="text-base text-gray-600 leading-relaxed">
@@ -466,7 +466,7 @@ function LinkedinFollowers() {
                   </div>
 
                   <div className=" mx-auto">
-                    <h2 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-indigo-400">
+                    <h2 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
                       Sponsored Content
                     </h2>
 
@@ -493,7 +493,7 @@ function LinkedinFollowers() {
                   </div>
 
                   <div className=" mx-auto">
-                    <h2 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-indigo-400">
+                    <h2 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
                       Text Ads
                     </h2>
 
@@ -528,7 +528,7 @@ function LinkedinFollowers() {
                   </div>
 
                   <div className=" mx-auto">
-                    <h2 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-indigo-400">
+                    <h2 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
                       Wrapping It All
                     </h2>
 
