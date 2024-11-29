@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const BackendDevelopers = dynamic(() => import("./BackendDevelopers"), {
-  ssr: false,
-});
+import BackendDevelopers from "./BackendDevelopers";
 
 export const metadata = {
   title: "Hire Skilled Backend Developers for Your Projects",

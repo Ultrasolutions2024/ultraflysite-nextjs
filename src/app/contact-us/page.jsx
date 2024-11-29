@@ -1,10 +1,6 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
-
-const Contact = dynamic(() => import("./Contact"), {
-  ssr: false,
-});
+import Contact from './Contact'
 
 export const metadata = {
   title: "Contact the Best Software Development Company in Coimbatore",

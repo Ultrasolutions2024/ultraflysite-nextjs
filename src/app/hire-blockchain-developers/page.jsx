@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const BlockchainDevelopers = dynamic(() => import("./BlockchainDevelopers"), {
-  ssr: false,
-});
+import BlockchainDevelopers from "./BlockchainDevelopers";
 
 export const metadata = {
   title: "Hire Expert Blockchain Developers | Ultrafly Solutions",

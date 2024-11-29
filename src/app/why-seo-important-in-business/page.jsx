@@ -1,9 +1,6 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
-const UnlockingSuccess = dynamic(() => import("./UnlockingSuccess"), {
-  ssr: false,
-});
+import UnlockingSuccess from "./UnlockingSuccess";
 
 export const metadata = {
   title:

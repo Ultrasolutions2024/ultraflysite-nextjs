@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Python = dynamic(() => import('./Python'), {
-  ssr: false,
-});
+import Python from "./Python";
 
 export const metadata = {
   title: "Hire Python Developers | Expert Solutions for Your Business",

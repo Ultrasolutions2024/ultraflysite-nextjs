@@ -1,9 +1,6 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head"; 
-const ChooseUs = dynamic(() => import("./ChooseUs"), {
-  ssr: false,
-});
+import ChooseUs from "./ChooseUs";
 
 const metadata = {
   title: "Why Choose Us | Ultrafly Solutions",

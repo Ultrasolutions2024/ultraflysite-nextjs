@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Javascript = dynamic(() => import("./Javascript"), {
-  ssr: false,
-});
+import Javascript from "./Javascript";
 
 export const metadata = {
   title: "Hire JavaScript Developers for Custom Web Solutions",

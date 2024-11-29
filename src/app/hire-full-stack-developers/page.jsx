@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const FullstackDevelopers = dynamic(() => import("./FullstackDevelopers"), {
-  ssr: false,
-});
+import FullstackDevelopers from "./FullstackDevelopers";
 
 export const metadata = {
   title: "Hire Expert Full-Stack Developers | Ultrafly Solutions",

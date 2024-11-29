@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Dotnet = dynamic(() => import("./Dotnet"), {
-  ssr: false,
-});
+import Dotnet from "./Dotnet";
 
 export const metadata = {
   title: `Hire .NET Developers – Expert Resources for Your Projects`,

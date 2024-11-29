@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const MernFullStack = dynamic(() => import("./MernFullStack"), {
-  ssr: false,
-});
+import MernFullStack from "./MernFullStack";
 
 export const metadata = {
   title: "Hire Top MERN Stack Developers for Custom Web Solutions",

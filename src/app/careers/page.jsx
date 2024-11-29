@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Web = dynamic(() => import("./web/Web"), {
-  ssr: false,
-});
+import Web from "./web/Web";
 
 export const metadata = {
   title: "Join Our Skillful Team at Ultrafly Solutions | Careers",

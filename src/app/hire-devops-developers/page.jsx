@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const DevOps = dynamic(() => import("./DevOps"), {
-  ssr: false,
-});
+import DevOps from "./DevOps";
 
 export const metadata = {
   title: "Hire DevOps Developers - Expert DevOps Solutions",

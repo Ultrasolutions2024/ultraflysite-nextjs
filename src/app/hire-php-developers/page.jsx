@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const PHP = dynamic(() => import("./php"), {
-  ssr: false,
-});
+import PHP from "./php";
 
 export const metadata = {
   title: `Hire PHP Developers | Expert PHP Development Servic`,

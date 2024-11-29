@@ -1,8 +1,5 @@
 import React from "react";
-import dynamic from "next/dynamic";
-const More = dynamic(() => import("./More"), {
-  ssr: false,
-});
+import More from "./More";
 function page() {
   return <More />;
 }

@@ -1,10 +1,6 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
-
-const Blog = dynamic(() => import('./Blog'), {
-  ssr: false,
-});
+import Blog from "./Blog";
 
 export const metadata = {
   title: "Ultrafly Solutions Blog – Latest Tech Insights & Innovations",
@@ -34,7 +30,10 @@ function Page() {
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <meta property="og:title" content={metadata.openGraph.title} />
-        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta
+          property="og:description"
+          content={metadata.openGraph.description}
+        />
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
         <meta property="og:url" content={metadata.openGraph.url} />
         <meta property="og:type" content={metadata.openGraph.type} />

@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Seo = dynamic(() => import("./Seo"), {
-  ssr: false,
-});
+import Seo from "./Seo";
 
 export const metadata = {
   title: "SEO & Digital Marketing Company Coimbatore Ultrafly Solution",

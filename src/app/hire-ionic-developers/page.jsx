@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Ionic = dynamic(() => import("./Ionic"), {
-  ssr: false,
-});
+import Ionic from "./Ionic";
 
 export const metadata = {
   title: "Hire Ionic Developers | Top-Rated Ionic Development Services",

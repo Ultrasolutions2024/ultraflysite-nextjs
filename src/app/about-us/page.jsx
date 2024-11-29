@@ -1,11 +1,6 @@
 import React from "react";
-import dynamic from "next/dynamic";
-import Head from "next/head"; 
-
-// Dynamically import the About component
-const About = dynamic(() => import('./About'), {
-  ssr: false,
-});
+import Head from "next/head";
+import About from "./About";
 
 const metadata = {
   title: "Software Development Company Coimbatore | Ultrafly Solutions",
@@ -34,10 +29,13 @@ function Page() {
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <meta property="og:title" content={metadata.openGraph.title} />
-        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta
+          property="og:description"
+          content={metadata.openGraph.description}
+        />
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
         <meta property="og:url" content={metadata.openGraph.url} />
-        <link rel="canonical" href={metadata.openGraph.url}/>
+        <link rel="canonical" href={metadata.openGraph.url} />
       </Head>
       <About />
     </>

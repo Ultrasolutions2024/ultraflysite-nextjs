@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Website = dynamic(() => import("./Website"), {
-  ssr: false,
-});
+import Website from "./Website";
 
 export const metadata = {
   title: "Website Development Company Coimbatore | Ultrafly Solutions",
