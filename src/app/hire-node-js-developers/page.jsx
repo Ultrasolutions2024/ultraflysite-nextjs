@@ -2,9 +2,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Node = dynamic(() => import("./Node"), {
-  ssr: false,
-});
+import Node from "./Node";
 
 export const metadata = {
   title: "Hire Node.js Developers, Expert Developers for Your Projects",

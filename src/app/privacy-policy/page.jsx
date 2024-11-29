@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const PrivacyPolicy = dynamic(() => import("./PrivacyPolicy"), {
-  ssr: false,
-});
+import PrivacyPolicy from "./PrivacyPolicy";
 
 const metadata = {
   title: "Company's Privacy Policy | Ultrafly Solutions",

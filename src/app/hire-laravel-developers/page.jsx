@@ -1,11 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Laravel = dynamic(() => import("./Laravel"), {
-  ssr: false,
-});
-
+import Laravel from "./Laravel";
 export const metadata = {
   title: "Hire Laravel Developers - Top Talent for Your Projects",
   description:

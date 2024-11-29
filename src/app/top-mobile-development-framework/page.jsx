@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const MobileDevelopment = dynamic(() => import("./MobileDevelopment"), {
-  ssr: false,
-});
+import MobileDevelopment from "./MobileDevelopment";
 
 export const metadata = {
   title: "Best Mobile App Development Company in Coimbatore | Ultrafly",

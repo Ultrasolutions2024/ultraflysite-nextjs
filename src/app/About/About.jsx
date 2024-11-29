@@ -67,7 +67,6 @@ function About() {
                         separator=" "
                         decimal=","
                         suffix=" +"
-                        ref={countUpRef}
                       />
                     </h2>
                     <h3 className="uppercase font-semibold text-[12px] leading-snug text-gray-700">
@@ -93,7 +92,6 @@ function About() {
                         separator=" "
                         decimal=","
                         suffix=" +"
-                        ref={countUpRef}
                       />
                     </h2>
                     <h3 className="uppercase font-semibold text-[12px] leading-snug text-gray-700">
@@ -119,7 +117,6 @@ function About() {
                         separator=" "
                         decimal=","
                         suffix=" +"
-                        ref={countUpRef}
                       />
                     </h2>
                     <h3 className="uppercase font-semibold text-[12px] leading-snug text-gray-700">

@@ -14,104 +14,132 @@ function Blog() {
 
   return (
     <>
-      <div>
-        <div>
-          <h1 className="text-blue-500 text-center text-3xl md:text-4xl font-bold pb-12 pt-12 w-full">
-            ULTRAFLY SOLUTIONS BLOG
+      <div
+        className="flex justify-center items-center  px-6"
+        style={{ font: "Manrope" }}
+      >
+        <div className="bg-white rounded-3xl shadow-lg p-8 w-full max-w-7xl">
+          <h1 className="text-black text-center text-3xl md:text-4xl font-bold pb-8">
+            <span className=""></span>ULTRAFLY SOLUTIONS BLOG
           </h1>
-          <p className="px-10 sm:px-24 pb-10 md:pb-10 ">
+
+          <p className="text-center text-black px-1 md:px-20 pb-8">
             Welcome to the Ultrafly Solutions blog! Here, we explore the latest
             in tech innovations, industry trends, and our groundbreaking
             solutions designed to elevate your business. Stay tuned for
             insights, updates, and expert advice to help you stay ahead in the
             fast-paced digital world.
           </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10 px-10 sm:px-24 gap-8">
-          {/* Post 1 */}
-          <Link href="/ultrafly-solutions-driving-tech-innovation">
-            <div className="w-full rounded overflow-hidden shadow-2xl sm:h-[380px] p-4 hover:scale-105 transition-all duration-300">
-              <Image
-                loading="lazy"
-                quality={75}
-                className="w-full"
-                src={Fimg}
-                alt="Unlocking the Future"
-              />
-              <div className="py-4">
-                <h2 className="font-bold text-xl">Unlocking the Future:</h2>
-                <p className="text-gray-700 text-base font-bold">
-                  How Ultrafly Solutions is Shaping the Next Generation of
-                  Technology
-                </p>
-              </div>
-            </div>
-          </Link>
-          {/* Post 2 */}
-          <Link href="/why-seo-important-in-business">
-            <div className="w-full rounded overflow-hidden shadow-2xl sm:h-[380px] p-4 hover:scale-105 transition-all duration-300">
-              <Image
-                loading="lazy"
-                quality={75}
-                className="w-full"
-                src={Simg}
-                alt="Unlocking the Future"
-              />
-              <div className="py-4">
-                <h2 className="font-bold text-xl">Unlocking Success:</h2>
-                <p className="text-gray-700 text-base font-bold">
-                  Why SEO Is Important in Business and How Leverage It Today!
-                </p>
-              </div>
-            </div>
-          </Link>
-          {/* Post 3 */}
-          <Link href="/top-mobile-development-framework">
-            <div className="w-full rounded overflow-hidden shadow-2xl sm:h-[380px] p-4 hover:scale-105 transition-all duration-300">
-              <Image
-                loading="lazy"
-                quality={75}
-                className="w-full"
-                src={Timg}
-                alt="Unlocking the Future"
-              />
-              <div className="py-4">
-                <h2 className="font-bold text-xl">Application Development:</h2>
-                <p className="text-gray-700 text-base font-bold">
-                  Top 5 Mobile App Development Frameworks in 2024
-                </p>
-              </div>
-            </div>
-          </Link>
-          {/* Post 4 - LinkedIn */}
-          <Link href="/increase-linkedin-followers">
-            <div className="w-full rounded h-fit overflow-hidden shadow-2xl p-4 hover:scale-105 transition-all duration-300">
-              <Image
-                loading="lazy"
-                quality={75}
-                className="w-full"
-                src={bg1}
-                alt="Unlocking the Future"
-              />
-              <div className="py-4">
-                <h2 className="font-bold text-xl">LinkedIn Assists</h2>
-                <p className="text-gray-700 text-base font-bold">
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="group relative bg-black rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+              <Link href="/increase-linkedin-followers">
+                <Image
+                  quality={100}
+                  className="w-full h-80 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                  src={bg1}
+                  alt="Unlocking the Future"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent opacity-90"></div>
+              </Link>
+              <div className="absolute bottom-4 left-6">
+                <h2 className="text-white font-bold text-2xl relative group">
+                  LinkedIn Assists:
+                  <span className="absolute inset-0 bottom-[4px] h-[4px] bg-[#ffffff] scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 -translate-y-3"></span>
+                </h2>
+
+                <p className="text-gray-300 mt-">
                   How to Increase Your LinkedIn Followers and Make a Living in
                   2025?
                 </p>
-                <p className="text-gray-500 text-sm mt-2">
-                  By{" "}
-                  <Link
-                    href="/jeeva-shanmugam"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Jeeva Shanmugam
-                  </Link>{" "}
-                  this content
-                </p>
               </div>
             </div>
-          </Link>
+
+            <div className="grid md:grid-cols-2 gap-4 grid-col-1">
+              {/* <div className="group bg-black overflow-hidden rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 relative">
+                <Link href="/why-seo-important-in-business">
+                  <Image
+                    quality={100}
+                    className="w-full h-36 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                    src={Simg}
+                    alt="SEO Importance"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-white font-bold text-lg relative">
+                      Unlocking Success:
+                      <span className="absolute inset-0 bottom-[-2px] h-[4px] bg-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 -translate-y-3"></span>
+                    </h3>
+                    <p className="text-gray-300 text-sm">
+                      Why SEO Is Important in Business and How to Leverage It
+                      Today!
+                    </p>
+                  </div>
+                </Link>
+              </div>
+
+              <div className="group bg-black overflow-hidden rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 relative">
+                <Link href="/top-mobile-development-framework">
+                  <Image
+                    quality={100}
+                    className="w-full h-36 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                    src={Timg}
+                    alt="Mobile Frameworks"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-white font-bold text-lg relative">
+                      Application Development:
+                      <span className="absolute inset-0 bottom-[-2px] h-[4px] bg-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 -translate-y-3"></span>
+                    </h3>
+                    <p className="text-gray-300 text-sm">
+                      Top 5 Mobile App Development Frameworks in 2024
+                    </p>
+                  </div>
+                </Link>
+              </div>
+
+              <div className="group bg-black overflow-hidden rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 relative">
+                <Link href="/increase-linkedin-followers">
+                  <Image
+                    quality={100}
+                    className="w-full h-36 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                    src={bg1}
+                    alt="LinkedIn Followers"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-white font-bold text-lg relative">
+                      LinkedIn Assists:
+                      <span className="absolute inset-0 bottom-[-2px] h-[4px] bg-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 -translate-y-3"></span>
+                    </h3>
+                    <p className="text-gray-300 text-sm">
+                      How to Increase Your LinkedIn Followers and Make a Living
+                      in 2025?
+                    </p>
+                  </div>
+                </Link>
+              </div> */}
+
+              {/* <div className="group bg-black overflow-hidden shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 relative rounded-xl">
+                <Link href="/fifth-blog-topic">
+                  <Image
+                    quality={100}
+                    className="w-full h-36 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                    src={bg1}
+                    alt="Fifth Blog Topic"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-white font-bold text-lg relative">
+                      Fifth Blog Topic:
+                      <span className="absolute inset-0 bottom-[-2px] h-[4px] bg-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 -translate-y-3"></span>
+                    </h3>
+                    <p className="text-gray-300 text-sm">
+                      Explore our latest insights in the tech industry and
+                      beyond.
+                    </p>
+                  </div>
+                </Link>
+              </div> */}
+            </div>
+          </div>
         </div>
       </div>
     </>

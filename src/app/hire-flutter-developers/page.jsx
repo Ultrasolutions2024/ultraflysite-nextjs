@@ -1,11 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Flutter = dynamic(() => import("./Flutter"), {
-  ssr: false,
-});
-
+import Flutter from "./Flutter";
 export const metadata = {
   title: "Hire Flutter Developers | Expert Resources for Your Projects",
   description:

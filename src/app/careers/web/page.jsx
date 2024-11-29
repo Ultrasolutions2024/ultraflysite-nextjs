@@ -1,8 +1,5 @@
 import React from "react";
-import dynamic from "next/dynamic";
-const Web = dynamic(() => import("./Web"), {
-  ssr: false,
-});
+import Web from "./Web";
 function page() {
   return <Web />;
 }

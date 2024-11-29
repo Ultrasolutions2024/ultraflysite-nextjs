@@ -1,10 +1,7 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
-const ITStaffing = dynamic(() => import("./ITStaffing"), {
-  ssr: false,
-});
+import ITStaffing from './ITStaffing';
 
 export const metadata = {
   title: "Expert IT Staffing Solutions Coimbatore | Ultrafly Solutions",

@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import daisyui from "daisyui";
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        domine: ['Domine', 'serif'], // Make sure it's inside 'extend'
+      },
       animation: {
         "infinite-scroll": "infinite-scroll 25s linear infinite",
         marquee: "marquee 25s linear infinite",
@@ -31,7 +34,7 @@ module.exports = {
         },
         scroll: {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-50%)" }, // Shift by 50% for smooth scrolling
+          "100%": { transform: "translateX(-50%)" },
         },
       },
     },

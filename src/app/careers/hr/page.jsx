@@ -1,8 +1,5 @@
 import React from "react";
-import dynamic from "next/dynamic";
-const Hr = dynamic(() => import("./Hr"), {
-  ssr: false,
-});
+import Hr from "./Hr";
 function page() {
   return <Hr />;
 }

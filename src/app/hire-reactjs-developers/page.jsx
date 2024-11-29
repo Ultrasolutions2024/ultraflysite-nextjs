@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Reactjs = dynamic(() => import("./React"), {
-  ssr: false,
-});
+import Reactjs from "./React";
 
 export const metadata = {
   title: "Hire ReactJS Developers for Robust Web Solutions | Ultrafly",

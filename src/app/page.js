@@ -10,9 +10,9 @@ import PartneredWith from "./homeComponents/PartneredWith";
 import Head from "next/head";
 // Global metadata
 export const metadata = {
-  title: "Ultrafly Solutions: Software Development & Digital Marketing Company",
+  title: "Ultrafly Solutions: Software Development & Digital Marketing",
   description:
-    "Ultrafly Solutions is a trusted enterprise partner in software development and digital marketing services. It offers innovative, data-driven solutions for business growth.",
+    "Ultrafly Solutions is a trusted enterprise partner in software development and digital marketing services. It offers innovative solutions for business growth",
   keywords:
     "IT solutions, mobile app development, digital marketing, website development, Ultrafly Solutions",
   icons: {

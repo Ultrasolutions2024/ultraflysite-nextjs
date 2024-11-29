@@ -1,9 +1,7 @@
 import React from "react";
 
 import dynamic from "next/dynamic";
-const Bd = dynamic(() => import("./Bd"), {
-  ssr: false,
-});
+import Bd from "./Bd";
 function page() {
   return <Bd />;
 }

@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Portfolio = dynamic(() => import("./portfolio"), {
-  ssr: false,
-});
+import Portfolio from "./portfolio";
 
 export const metadata = {
   title: `Our Portfolio | Ultrafly Solutions`,

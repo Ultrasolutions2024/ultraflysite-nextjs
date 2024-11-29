@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const ReactNative = dynamic(() => import('./ReactNative'), {
-  ssr: false,
-});
+import ReactNative from "./ReactNative";
 
 export const metadata = {
   title: "Hire ReactNative Developers | Ultrafly Solutions",

@@ -55,9 +55,9 @@ function Hero() {
                 style={{ display: currentIndex === 0 ? "block" : "none" }}
               >
                 <div className="flex flex-col items-center justify-center w-full h-fit p-6  rounded-lg backdrop-blur-lg bg-white/10 shadow-lg border border-white/20">
-                  <h1 className="text-2xl md:text-4xl font-bold text-center">
+                  <h2 className="text-2xl md:text-4xl font-bold text-center">
                     Welcome to Ultrafly Solutions
-                  </h1>
+                  </h2>
                   <h2 className="text-2xl md:text-3xl font-bold text-center">
                     &quot;Your Partner in Digital Transformation&quot;
                   </h2>

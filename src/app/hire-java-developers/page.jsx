@@ -1,10 +1,6 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
-
-const Java = dynamic(() => import("./Java"), {
-  ssr: false,
-});
+import Java from "./Java";
 
 export const metadata = {
   title: "Hire Java Developers - Java Solutions for Your Projects",

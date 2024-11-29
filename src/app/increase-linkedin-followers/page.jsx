@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const LinkedinFollowers = dynamic(() => import('./LinkedinFollowers'), {
-  ssr: false,
-});
+import LinkedinFollowers from "./LinkedinFollowers";
 
 export const metadata = {
   title: "Top 05 Mobile App Development Frameworks in 2024",
@@ -29,7 +26,10 @@ function Page() {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta property="og:title" content={metadata.openGraph.title} />
-        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta
+          property="og:description"
+          content={metadata.openGraph.description}
+        />
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
         <meta property="og:url" content={metadata.openGraph.url} />
         <meta property="og:type" content={metadata.openGraph.type} />

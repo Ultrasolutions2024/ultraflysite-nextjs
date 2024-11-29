@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Software = dynamic(() => import("./Software"), {
-  ssr: false,
-});
+import Software from "./Software";
 
 export const metadata = {
   title: `

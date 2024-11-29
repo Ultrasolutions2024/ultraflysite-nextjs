@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const JeevaBlogs = dynamic(() => import("./JeevaBlogs"), {
-  ssr: false,
-});
+import JeevaBlogs from "./JeevaBlogs";
 
 export const metadata = {
   title: "Top 05 Mobile App Development Frameworks in 2024",

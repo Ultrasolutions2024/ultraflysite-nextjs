@@ -1,11 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Angular = dynamic(() => import("./Angular"), {
-  ssr: false,
-});
-
+import Angular from "./Angular";
 export const metadata = {
   title: "Hire Angular Developers | Expert Angular Development Services",
   description:

@@ -1,11 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Android = dynamic(() => import("./Android"), {
-  ssr: false,
-});
-
+import Android from "./Android";
 export const metadata = {
   title: "Hire Our Resources | Expert Software & Marketing Solutions",
   description:

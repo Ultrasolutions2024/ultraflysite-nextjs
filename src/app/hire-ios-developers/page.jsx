@@ -1,10 +1,7 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const IOS = dynamic(() => import("./IOS"), {
-  ssr: false,
-});
+import IOS from "./IOS";
 
 export const metadata = {
   title: "Hire Expert iOS Developers | Custom iOS App Development",

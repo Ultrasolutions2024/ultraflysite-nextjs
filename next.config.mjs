@@ -1,6 +1,7 @@
 import path from 'path';
 import withBundleAnalyzer from '@next/bundle-analyzer';
-
+// "resize-images": "node resize-images.js",
+// "dev": "npm run resize-images && next dev -p 3000",
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
@@ -24,7 +25,7 @@ const nextConfig = {
   output: 'export', // Ensures the build creates a static site.
   trailingSlash: true, // Optional: Ensures proper linking for static pages.
   images: {
-    domains: ['readymadeui.com', 'ultraflysolutions.com', 'c.statcounter.com'], // External domains for image optimization
+    domains: ['readymadeui.com', 'ultraflysolutions.com', 'c.statcounter.com','miro.medium.com'], 
     unoptimized: true, // If you want to disable image optimization (use only if necessary)
   },
 };
