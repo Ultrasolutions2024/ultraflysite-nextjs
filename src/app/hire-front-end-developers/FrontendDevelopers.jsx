@@ -416,7 +416,7 @@ const FrontendDevelopers = () => {
             </h2>
             <p className="text-gray-600">
               We focus on understanding your business needs to create tailored
-              solutions that align with your goals.{" "}
+              solutions that align with your goals.
             </p>
           </div>
 

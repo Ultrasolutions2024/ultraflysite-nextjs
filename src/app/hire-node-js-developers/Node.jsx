@@ -384,7 +384,7 @@ const Node = () => {
             </h2>
             <p className="text-gray-600">
               We leverage the latest technologies and frameworks to develop
-              robust and scalable applications tailored to your business needs.{" "}
+              robust and scalable applications tailored to your business needs.
             </p>
           </div>
 

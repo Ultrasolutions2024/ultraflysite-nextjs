@@ -46,7 +46,7 @@ function LinkedinFollowers() {
                 </p>
                 <div className="flex justify-center space-x-4 mb-6">
                   <Link
-                    href="https://www.instagram.com/emvric"
+                    href="https://www.instagram.com/emvric/"
                     className="text-gray-600 hover:text-indigo-800 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors duration-300"
                   >
                     <FaInstagram className="text-4xl font-bold mt-[2px] text-rose-500" />
@@ -196,12 +196,10 @@ function LinkedinFollowers() {
                       />
                       <div>
                         <p className="font-semibold text-gray-200 text-sm">
-                          {" "}
-                          Jeeva Shanmugam{" "}
+                          Jeeva Shanmugam
                         </p>
                         <p className="font-semibold text-gray-400 text-xs">
-                          {" "}
-                          14 Aug{" "}
+                          14 Aug
                         </p>
                       </div>
                     </div>

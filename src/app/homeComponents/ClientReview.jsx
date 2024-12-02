@@ -215,8 +215,7 @@ const ClientReview = () => {
                 Reputable education institute
               </p>
               <p className="group-hover:text-indigo-600 font-bold text-lg text-center w-full">
-                {" "}
-                &quot;Australia&quot;{" "}
+                &quot;Australia&quot;
               </p>
               <p className="text-center text-lg text-gray-500 leading-8 h-52 transition-all duration-500 mb-9 group-hover:text-gray-800">
                 &quot;Thanks to Ultrafly Solutions, our e-learning platform is
@@ -281,7 +280,6 @@ const ClientReview = () => {
                 &quot;Germany&quot;
               </p>
               <p className="text-center text-lg text-gray-500 leading-8 h-52 transition-all duration-500 mb-9 group-hover:text-gray-800">
-                {" "}
                 &quot;Ultrafly Solutions delivered a top-notch mobile app that
                 streamlined our supply chain management. Their professionalism
                 and tech expertise are unmatched!&quot;
@@ -463,7 +461,6 @@ const ClientReview = () => {
                 Leading Banking Institution
               </p>
               <p className="group-hover:text-indigo-600 font-bold text-lg text-center w-full">
-                {" "}
                 &quot;Switzerland&quot;
               </p>
               <p className="text-center text-lg text-gray-500 leading-8 h-52 transition-all duration-500 mb-9 group-hover:text-gray-800">

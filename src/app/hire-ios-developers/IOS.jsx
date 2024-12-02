@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import background from "../images/Resources/background.webp";
 import { FaUser } from "react-icons/fa";
-import { FaMessage, FaMobileButton } from "react-icons/fa6";
+import { FaMobileButton } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 import manualwebp from "../images/Resources/python/manual.webp";
@@ -427,7 +427,7 @@ const IOS = () => {
             data-aos="flip-up"
           >
             <h2 className="font-bold text-gray-800  mb-3">
-              Innovation-Driven Development{" "}
+              Innovation-Driven Development
             </h2>
             <p className="text-gray-600">
               We leverage the latest iOS tools and technologies to build
@@ -492,7 +492,7 @@ const IOS = () => {
               <p className=" ">
                 We provide continuous collaboration and support throughout the
                 project to ensure everything runs smoothly and meets your
-                objectives.{" "}
+                objectives.
               </p>
               <IoIosArrowForward className="absolute -top-[16px] -right-[16px] text-3xl font-bold max-md:hidden" />
             </div>

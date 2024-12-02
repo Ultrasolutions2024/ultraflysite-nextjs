@@ -290,7 +290,7 @@ const Angular = () => {
         <div className="grid sm:grid-cols-2 max-sm:gap-6">
           <div className="text-center p-6 flex flex-col justify-center items-center">
             <h3 className="font-extrabold text-2xl text-[#4e0083] leading-tight">
-              Ignite Your Business Potential with AngularJS!{" "}
+              Ignite Your Business Potential with AngularJS!
             </h3>
             <p className="mt-4 text-lg text-gray-800">
               Looking for a custom AngularJS solution to elevate your business?
@@ -327,7 +327,7 @@ const Angular = () => {
       {/* Additional Information Section */}
       <div className="py-10 max-md:px-10">
         <h2 className="text-2xl font-bold text-center">
-          Propel Your Business Forward with UltraFly AngularJS Expertise{" "}
+          Propel Your Business Forward with UltraFly AngularJS Expertise
         </h2>
         <p className="mt-4 max-w-4xl mx-auto text-gray-600">
           When you hire an AngularJS developer from UltraFly Solutions, you gain
@@ -386,11 +386,11 @@ const Angular = () => {
             data-aos="fade-left"
           >
             <h2 className="font-bold text-gray-800  mb-3">
-              Customer-Centric Approach{" "}
+              Customer-Centric Approach
             </h2>
             <p className="text-gray-600">
               We work closely with you to understand your specific needs,
-              ensuring that our solutions align with your business goals.{" "}
+              ensuring that our solutions align with your business goals.
             </p>
           </div>
 
@@ -399,7 +399,7 @@ const Angular = () => {
             data-aos="flip-up"
           >
             <h2 className="font-bold text-gray-800  mb-3">
-              Ongoing Support and Maintenance{" "}
+              Ongoing Support and Maintenance
             </h2>
             <p className="text-gray-600">
               After project completion, we provide continuous support and

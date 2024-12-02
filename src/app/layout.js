@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
         />
 
         {/* <!-- Twitter Meta Tags --> */}
-        {/* <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="ultraflysolutions.com" />
         <meta
           property="twitter:url"
@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:title"
-          content="Ultrafly Solutions | Best Software Development Company"
+         content="Ultrafly Solutions | Software Development & Digital Marketing Company"
         />
         <meta
           name="twitter:description"
@@ -70,12 +70,8 @@ export default function RootLayout({ children }) {
         <meta
           name="twitter:image"
           content="https://opengraph.b-cdn.net/production/images/1d54d2c6-31a8-42c5-ba1e-747d6c79bddd.png?token=Ty_PLD9MwsDhernxtU33kOEaHGTdMKBrxIzkPnAGa2g&height=630&width=1200&expires=33268088827"
-        /> */}
-        <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:site" content="@UltraflyS"/>
-<meta name="twitter:title" content="Ultrafly Solutions | Software Development & Digital Marketing Company"/>
-<meta name="twitter:description" content="UltraFly Solutions is a premier technology and consulting firm committed to driving digital transformation and innovation."/>
-<meta name="twitter:image" content="https://www.ultraflysolutions.com/_next/static/media/ultraflysolutionslog.fd3cc1ae.webp"></meta>
+        />
+ 
       </Head>
       <body>
         <TopHeader />
@@ -266,7 +262,7 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* Tawk.to Script */}
-        <Script id="tawk-chat" strategy="lazyOnload">
+        {/* <Script id="tawk-chat" strategy="lazyOnload">
           {`
             var Tawk_API = Tawk_API || {};
             var Tawk_LoadStart = new Date();
@@ -280,7 +276,7 @@ export default function RootLayout({ children }) {
                 s0.parentNode.insertBefore(s1, s0);
             })();
           `}
-        </Script>
+        </Script> */}
         <Script 
         src="https://www.statcounter.com/counter/counter.js" 
         strategy="lazyOnload" 
