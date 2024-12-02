@@ -56,7 +56,7 @@ function UnlockingSuccess() {
               engine such as Google. However, have you ever considered why
               certain websites appear on the first page while others are ranked
               much lower? The solution is a technique called Search Engine
-              Optimization.{" "}
+              Optimization.
             </p>
             <p className="text-base md:text-xl font-medium text-justify max-w-[60rem] w-full mx-auto">
               This functions as a special key that opens the pathway to success
@@ -66,7 +66,7 @@ function UnlockingSuccess() {
               significance for every business as without awareness, customers
               cannot make purchases from you. However, what is the exact
               mechanism behind search engine, and what makes it crucial for
-              modern businesses? Let&apos;s jump right in!{" "}
+              modern businesses? Let&apos;s jump right in!
             </p>
             <br />
             <h2 className="text-base md:text-2xl font-medium text-justify max-w-[70rem] w-full mx-auto">

@@ -121,7 +121,7 @@ function Seo() {
                 <p className="text-base text-justify text-gray-700 mb-4">
                   An effective online presence is not just the new competitive
                   advantage; it is also the only prerequisite for survival for
-                  any business.{" "}
+                  any business
                 </p>
                 <p className="text-base text-justify text-gray-700 mb-4">
                   Here at Ultrafly Solutions, we help organizations navigate
@@ -155,7 +155,7 @@ function Seo() {
                 >
                   <div className="md:w-1/3">
                     <Image
-loading="lazy"
+                      loading="lazy"
                       quality={75}
                       src={service.image}
                       alt={service.title}

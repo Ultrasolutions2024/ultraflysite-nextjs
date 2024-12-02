@@ -177,7 +177,7 @@ const Flutter = () => {
                 <p className="font-medium group-hover:text-gray-100">
                   Develop tailored, cross-platform applications that address
                   your specific business challenges, delivering flexibility and
-                  top-notch performance.{" "}
+                  top-notch performance.
                 </p>
               </div>
             </div>
@@ -497,7 +497,7 @@ const Flutter = () => {
               <h2 className="text-xl font-bold">Ongoing Support</h2>
               <p className=" ">
                 Enjoy continuous collaboration and support throughout the
-                project to ensure success and seamless operations.{" "}
+                project to ensure success and seamless operations.
               </p>
               <IoIosArrowForward className="absolute -top-[16px] -right-[16px] text-3xl font-bold max-md:hidden" />
             </div>

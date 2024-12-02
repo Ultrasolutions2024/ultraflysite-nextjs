@@ -16,6 +16,7 @@ const Popular = () => {
         />
         <div className="flex flex-col flex-grow">
           <Link
+            target="_blank"
             href="https://medium.com/@ultraflysolutions/how-to-grow-your-ecommerce-business-in-2025-55df0149bacd"
             className="font-serif hover:underline hover:text-blue-500 "
           >
@@ -24,6 +25,7 @@ const Popular = () => {
           <p className="mt-auto text-xs dark:text-gray-600">
             Nov 21, 2024
             <Link
+              target="_blank"
               href="https://medium.com/@ultraflysolutions/how-to-grow-your-ecommerce-business-in-2025-55df0149bacd"
               className="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline hover:text-blue-500"
             >
@@ -43,6 +45,7 @@ const Popular = () => {
         />
         <div className="flex flex-col flex-grow">
           <Link
+            target="_blank"
             href="https://medium.com/@ultraflysolutions/how-to-grow-your-business-using-meta-ads-in-2025-61d0642d3aff"
             className="font-serif hover:underline hover:text-blue-500"
           >
@@ -51,6 +54,7 @@ const Popular = () => {
           <p className="mt-auto text-xs dark:text-gray-600">
             Nov 18, 2024
             <Link
+              target="_blank"
               href="https://medium.com/@ultraflysolutions/how-to-grow-your-business-using-meta-ads-in-2025-61d0642d3aff"
               className="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline hover:text-blue-500"
             >
@@ -70,6 +74,7 @@ const Popular = () => {
         />
         <div className="flex flex-col flex-grow">
           <Link
+            target="_blank"
             href="https://medium.com/@ultraflysolutions/how-to-make-use-of-crm-software-for-your-business-3821bc816038"
             className="font-serif hover:underline hover:text-blue-500 "
           >
@@ -78,6 +83,7 @@ const Popular = () => {
           <p className="mt-auto text-xs dark:text-gray-600">
             Nov 15, 2024
             <Link
+              target="_blank"
               href="https://medium.com/@ultraflysolutions/how-to-make-use-of-crm-software-for-your-business-3821bc816038"
               className="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline hover:text-blue-500"
             >
@@ -96,6 +102,7 @@ const Popular = () => {
         />
         <div className="flex flex-col flex-grow">
           <Link
+            target="_blank"
             href="https://medium.com/@ultraflysolutions/what-to-look-for-in-a-good-software-company-as-a-client-004fa16d0666"
             className="font-serif hover:underline hover:text-blue-500"
           >
@@ -104,6 +111,7 @@ const Popular = () => {
           <p className="mt-auto text-xs dark:text-gray-600">
             Nov 8, 2024
             <Link
+              target="_blank"
               href="https://medium.com/@ultraflysolutions/what-to-look-for-in-a-good-software-company-as-a-client-004fa16d0666"
               className="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline hover:text-blue-500"
             >
@@ -123,6 +131,7 @@ const Popular = () => {
         />
         <div className="flex flex-col flex-grow">
           <Link
+            target="_blank"
             href="https://medium.com/@ultraflysolutions/what-to-look-for-in-a-good-software-company-as-a-client-004fa16d0666"
             className="font-serif hover:underline hover:text-blue-500"
           >
@@ -131,6 +140,7 @@ const Popular = () => {
           <p className="mt-auto text-xs dark:text-gray-600">
             Oct 26, 2024
             <Link
+              target="_blank"
               href="https://medium.com/@ultraflysolutions/what-to-look-for-in-a-good-software-company-as-a-client-004fa16d0666"
               className="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline hover:text-blue-500"
             >

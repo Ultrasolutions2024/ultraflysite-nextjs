@@ -3,7 +3,7 @@ import Image from "next/image";
 import dental from "../images/our_services/websiteImg/dental.webp";
 import division from "../images/our_services/websiteImg/division.webp";
 import mgs from "../images/our_services/websiteImg/mgs.webp";
-import { FaIndustry, FaChartLine,  FaEnvelope } from "react-icons/fa";
+import { FaIndustry, FaChartLine, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 
 const Casest = () => {
@@ -191,7 +191,7 @@ const Casest = () => {
             </h3>
             <ul className="list-disc list-inside text-sm lg:text-[18px] font-sans text-justify leading-relaxed text-gray-900">
               <li>
-                Total sales growth of{" "}
+                Total sales growth of
                 <strong className="text-gray-800">75%</strong> across clients
               </li>
               <li>
@@ -199,7 +199,7 @@ const Casest = () => {
                 engagement
               </li>
               <li>
-                Customer revenue increased by{" "}
+                Customer revenue increased by
                 <strong className="text-gray-800">45%</strong> from campaigns
               </li>
             </ul>
@@ -224,13 +224,13 @@ const Casest = () => {
               Contact Us
             </h3>
             <p className="text-sm lg:text-[18px] font-sans text-justify leading-relaxed text-gray-800">
-              Reach us at{" "}
+              Reach us at
               <Link
                 href="mailto:info@ultraflysolutions.com"
                 className="text-blue-900 hover:underline"
               >
                 info@ultraflysolutions.com
-              </Link>{" "}
+              </Link>
               for more on how we can promote your business and drive growth.
             </p>
           </div>

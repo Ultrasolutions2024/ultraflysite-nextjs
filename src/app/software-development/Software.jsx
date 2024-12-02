@@ -407,7 +407,7 @@ function Software() {
                       {service}
                     </h3>
                     <p className="text-sm text-gray-600 text-center">
-                      We offer comprehensive solutions to meet your needs in{" "}
+                      We offer comprehensive solutions to meet your needs in
                       {service.toLowerCase()}.
                     </p>
                   </div>

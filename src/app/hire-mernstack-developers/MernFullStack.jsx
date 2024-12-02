@@ -359,7 +359,7 @@ const MernfullStack = () => {
           When you hire a MERN stack developer from Ultrafly Solutions, you
           partner with a team dedicated to delivering high-quality, scalable,
           and efficient web applications. We ensure your business thrives
-          through innovative MERN practices.{" "}
+          through innovative MERN practices.
         </p>
 
         <div className="mt-6 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">

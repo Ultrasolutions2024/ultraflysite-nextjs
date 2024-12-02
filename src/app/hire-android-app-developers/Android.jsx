@@ -433,7 +433,7 @@ const Android = () => {
 
       <section className="p-20 w-full">
         <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-          4 Easy Steps to Hire an Android App Developer{" "}
+          4 Easy Steps to Hire an Android App Developer
         </h2>
         <div className="grid md:grid-cols-4 md:justify-between">
           <div className=" relative border-blue-600 border-b-[3px] max-md:border-r-[3px]">

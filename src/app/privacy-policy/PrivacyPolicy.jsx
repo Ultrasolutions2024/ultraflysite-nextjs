@@ -115,7 +115,7 @@ const PrivacyPolicy = () => {
         <li>Request for data erasure, where legally permitted.</li>
         <li>Withdrawal of consent for processing.</li>
         <li>
-          To exercise these rights, please contact us at{" "}
+          To exercise these rights, please contact us at
           <Link
             href="mailto:info@ultraflysolutions.com"
             className="text-blue-500"
@@ -125,7 +125,9 @@ const PrivacyPolicy = () => {
         </li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">Children&aposs Privacy</h2>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">
+        Children&aposs Privacy
+      </h2>
       <p className="mb-4">
         Our services are not intended for individuals under 13 years of age. We
         do not knowingly collect personal information from children under 13. If
@@ -147,7 +149,7 @@ const PrivacyPolicy = () => {
       </p>
       <p className="font-semibold">Ultrafly Solutions Private Limited</p>
       <p>
-        Email:{" "}
+        Email:
         <Link
           href="mailto:info@ultraflysolutions.com"
           className="text-blue-500"

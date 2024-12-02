@@ -106,7 +106,6 @@ function MobileDevelopment() {
             </p>
             <br />
             <h2 className="text-base md:text-2xl font-medium text-justify max-w-[70rem] w-full mx-auto">
-              {" "}
               Ionic is best for those who want to create a high-performance
               hybrid/сrоss-рlаtfоrm mobile and web aрpliсаtiоns.
             </h2>

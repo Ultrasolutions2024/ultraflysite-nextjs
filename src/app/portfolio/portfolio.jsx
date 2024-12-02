@@ -1,14 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
-import bg1 from "../images/classes/cycling.webp";
-import bg2 from "../images/classes/meditation.webp";
-import bg3 from "../images/classes/A.webp";
-import bg4 from "../images/classes/app1.webp";
-import bg5 from "../images/classes/app2.webp";
-import bg6 from "../images/classes/mobileapps.webp";
 import Link from "next/link";
 import Image from "next/image";
-import division from "../images/our_services/websiteImg/division.webp";
+import division from "../images/our_services/websiteImg/renault-logo.png";
 import mgs from "../images/our_services/websiteImg/mgs.webp";
 import { FaIndustry, FaChartLine, FaEnvelope } from "react-icons/fa";
 import dental from "../images/our_services/websiteImg/dental.webp";
@@ -17,70 +11,6 @@ function Portfolio() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
-
-  const projects = [
-    {
-      bgImg: bg1,
-      title: "Den Mark",
-      trainer: "",
-      date: "",
-      text: "Den Mark is a mobile app for a movie OTT platform, offering features like multi-language support, personalized recommendations, and offline viewing. Built with React Native, React.js, Node.js, and MongoDB, it ensures a smooth and secure user experience. This app is designed to delight and satisfy clients with its reliability and ease of use.",
-    },
-    {
-      bgImg: bg2,
-      title: "Sales Life Site - Website",
-      trainer: "",
-      date: "",
-      text: "A website without SEO is like a car with no gas.” Paul Cookson",
-    },
-    {
-      bgImg: bg3,
-      title: "Adappt - Website",
-      trainer: "John Flex",
-      date: "Tue: 4:00 pm",
-      text: "Websites promote you 24/7: No employee will do that",
-    },
-    {
-      bgImg: bg4,
-      title: "Time Sheet - Website",
-      trainer: "David Rich",
-      date: "Sat: 9:00 am",
-      text: "Our mobile time sheets app simplifies tracking work hours for small teams and individuals. It offers easy time entry, real-time reporting, and seamless integration with payroll systems. Designed for efficiency and accuracy, it helps manage time effectively and streamline administrative tasks.",
-    },
-    {
-      bgImg: bg5,
-      title: "Mobile App",
-      trainer: "Larry Wheels",
-      date: "Mon: 8:00 pm",
-      text: "A bad website is like a grumpy salesperson.",
-    },
-    {
-      bgImg: bg6,
-      title: "Mobile App",
-      trainer: "Shawn Ray",
-      date: "Sun: 10:00 am",
-      text: "Website without visitors is like a ship lost in the horizon.",
-    },
-  ];
-
-  const getCardClass = (index) => {
-    switch (index) {
-      case 0:
-        return "card1";
-      case 1:
-        return "card2";
-      case 2:
-        return "card3";
-      case 3:
-        return "card4";
-      case 4:
-        return "card5";
-      case 5:
-        return "card6";
-      default:
-        return "";
-    }
-  };
 
   return (
     <>
@@ -161,11 +91,11 @@ function Portfolio() {
 
             <div className="rounded-3xl w-full md:w-[550px] lg:w-[620px] h-fit shadow-lg lg:mt-7">
               <Image
-                loading="lazy"
+                // loading="lazy"
                 quality={75}
                 src={division}
                 alt="Team Image"
-                className="object-contain rounded-3xl transition-transform duration-300 hover:scale-105"
+                className="object-contain h-[500px] rounded-3xl transition-transform duration-300 hover:scale-105"
                 width={700}
                 height={450}
               />
@@ -255,7 +185,7 @@ function Portfolio() {
               </h3>
               <ul className="list-disc list-inside text-sm lg:text-[18px] font-sans text-justify leading-relaxed text-gray-900">
                 <li>
-                  Total sales growth of{" "}
+                  Total sales growth of
                   <strong className="text-gray-800">75%</strong> across clients
                 </li>
                 <li>
@@ -263,7 +193,7 @@ function Portfolio() {
                   engagement
                 </li>
                 <li>
-                  Customer revenue increased by{" "}
+                  Customer revenue increased by
                   <strong className="text-gray-800">45%</strong> from campaigns
                 </li>
               </ul>
@@ -286,13 +216,13 @@ function Portfolio() {
                 Contact Us
               </h3>
               <p className="text-sm lg:text-[18px] font-sans text-justify leading-relaxed text-gray-800">
-                Reach us at{" "}
+                Reach us at
                 <Link
                   href="mailto:info@ultraflysolutions.com"
                   className="text-blue-900 hover:underline"
                 >
                   info@ultraflysolutions.com
-                </Link>{" "}
+                </Link>
                 for more on how we can promote your business and drive growth.
               </p>
             </div>

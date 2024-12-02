@@ -215,8 +215,8 @@ function Login() {
                       quality={75}
                       src={india}
                       alt="India Flag"
-                      className="inline-block w-4 h-4"
-                    />{" "}
+                      className="inline-block w-4 h-4 mx-[5px]"
+                    />
                     +91 91500 01089
                   </p>
                   <p className="text-base md:text-lg">
@@ -225,8 +225,8 @@ function Login() {
                       quality={75}
                       src={india}
                       alt="India Flag"
-                      className="inline-block w-4 h-4"
-                    />{" "}
+                      className="inline-block w-4 h-4 mx-[5px]"
+                    />
                     +91 91500 01090
                   </p>
                   <p className="text-base md:text-lg">
@@ -235,8 +235,8 @@ function Login() {
                       quality={75}
                       src={usa}
                       alt="USA Flag"
-                      className="inline-block w-4 h-4"
-                    />{" "}
+                      className="inline-block w-4 h-4 mx-[5px]"
+                    />
                     +1 562 521 9684
                   </p>
                 </div>
@@ -249,8 +249,8 @@ function Login() {
                     quality={75}
                     src={india}
                     alt="India Flag"
-                    className="inline-block w-4 h-4"
-                  />{" "}
+                    className="inline-block w-4 h-4 mx-[5px]"
+                  />
                   +0422-350 0024
                 </p>
                 <h3 className="text-xl md:text-2xl font-semibold mt-4">

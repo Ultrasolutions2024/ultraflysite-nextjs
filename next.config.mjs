@@ -25,7 +25,7 @@ const nextConfig = {
   output: 'export', // Ensures the build creates a static site.
   trailingSlash: true, // Optional: Ensures proper linking for static pages.
   images: {
-    domains: ['readymadeui.com', 'ultraflysolutions.com', 'c.statcounter.com','miro.medium.com'], 
+    domains: ['readymadeui.com', 'ultraflysolutions.com', 'c.statcounter.com', 'miro.medium.com'], 
     unoptimized: true, // If you want to disable image optimization (use only if necessary)
   },
 };

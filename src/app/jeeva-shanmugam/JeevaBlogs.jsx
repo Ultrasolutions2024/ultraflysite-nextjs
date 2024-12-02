@@ -16,7 +16,6 @@ const JeevaBlogs = () => {
             className="w-16 h-16 rounded-full object-cover"
           />
           <h2 className="text-2xl md:text-[30px] font-bold text-justify pr-6">
-            {" "}
             Jeeva Shanmugam
           </h2>
         </div>
@@ -43,13 +42,13 @@ const JeevaBlogs = () => {
                   2025?
                 </p>
                 <p className="text-gray-500 text-sm mt-2">
-                  By{" "}
+                  By
                   <Link
                     href="/jeeva-shanmugam"
                     className="text-blue-600 hover:underline"
                   >
                     Jeeva Shanmugam
-                  </Link>{" "}
+                  </Link>
                   this content
                 </p>
               </div>
