@@ -88,13 +88,13 @@ function Web() {
               <p className="text-[18px] text-black font-bold mt-3">2 years</p>
             </li>
             <li className="bg-[#f2f2f2] w-full flex justify-center items-center pb-4">
-              <a
-                href="https://www.linkedin.com/jobs/view/3893600947"
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeWCY_wzq4OhZKrhJPRoAgvfDdpnFEyuSJr2a82PRfoQ0fmzw/viewform"
                 className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] h-10 rounded-[30px] hover:bg-[#483de4] ease-in duration-200  "
                 target="_blank"
               >
                 Apply Now
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

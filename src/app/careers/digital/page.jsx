@@ -85,13 +85,13 @@ function Digital() {
               <p className="text-[18px] text-black font-bold mt-3">2 years</p>
             </li>
             <li className="bg-[#f2f2f2] w-full flex justify-center items-center pb-4">
-              <a
-                href="https://www.linkedin.com/jobs/view/3893607379"
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeWCY_wzq4OhZKrhJPRoAgvfDdpnFEyuSJr2a82PRfoQ0fmzw/viewform"
                 className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] hover:bg-[#483de4] ease-in duration-200  "
                 target="_blank"
               >
                 Apply Now
-              </a>
+              </Link>
             </li>
           </ul>
           {/* row */}
@@ -116,13 +116,13 @@ function Digital() {
               <p className="text-[18px] text-black font-bold mt-3">5 Years</p>
             </li>
             <li className="bg-[#f2f2f2] w-full flex justify-center items-center pb-4">
-              <a
-                href="https://www.linkedin.com/jobs/search/?currentJobId=3893600947&f_C=71255931&geoId=92000000&origin=COMPANY_PAGE_JOBS_CLUSTER_EXPANSION&originToLandingJobPostings=3893600947%2C3893601636%2C3893602992%2C3893609194%2C3893607379%2C3893607108%2C3893607301%2C3893612000%2C3893611037"
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeWCY_wzq4OhZKrhJPRoAgvfDdpnFEyuSJr2a82PRfoQ0fmzw/viewform"
                 className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] hover:bg-[#483de4] ease-in duration-200  "
                 target="_blank"
               >
                 Apply Now
-              </a>
+              </Link>
             </li>
           </ul>
           {/* row */}
