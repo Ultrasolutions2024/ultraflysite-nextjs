@@ -40,7 +40,6 @@ function AidrivenDigital() {
     <>
       <section className="flex w-full h-[100%] mt-0 font-domine">
         {/* Left Sidebar */}
-        
 
         {/* Center Scrolling Section */}
         <div className="flex-1 overflow-y-scroll rounded-xl w-full ">
@@ -186,14 +185,15 @@ function AidrivenDigital() {
                   </div>
                 </div>
                 <p className="text-center text-sm text-gray-500 mb-4">
-                  Image Credits: <Link
-                        href="https://www.freepik.com/free-photo/corporate-management-strategy-solution-branding-concept_28096443.htm#fromView=search&page=1&position=4&uuid=0101c888-841a-4df1-bce1-5172a6f78397"
-                        target="blank"
-                        className="underline text-blue-600"
-                      >
-                        {" "}
-                        FreePik{" "}
-                      </Link>
+                  Image Credits:{" "}
+                  <Link
+                    href="https://www.freepik.com/free-photo/corporate-management-strategy-solution-branding-concept_28096443.htm#fromView=search&page=1&position=4&uuid=0101c888-841a-4df1-bce1-5172a6f78397"
+                    target="blank"
+                    className="underline text-blue-600"
+                  >
+                    {" "}
+                    FreePik{" "}
+                  </Link>
                 </p>
                 <div className="px-4 lg:px- mt-12 text-gray-700 -md mx-auto text-lg leading-relaxed ">
                   <h1 className="text-gray-900 font-extrabold mb-3">
@@ -269,7 +269,15 @@ function AidrivenDigital() {
                     />
 
                     <p className="text-center text-sm text-gray-500 mb-4">
-                      Image Credits: Freepik
+                      Image Credits:{" "}
+                      <Link
+                        href="https://www.freepik.com/free-photo/colleagues-working-project-discussing-details_5542978.htm#fromView=search&page=1&position=1&uuid=e4aa4fc6-5401-4272-81d7-806d520eb265"
+                        target="blank"
+                        className="underline text-blue-600"
+                      >
+                        {" "}
+                        FreePik{" "}
+                      </Link>
                     </p>
                   </figure>
                   <h4 className="font-bold text-xl md:text-2xl pl-2 my-2 ">
@@ -380,28 +388,21 @@ function AidrivenDigital() {
                     interaction your network. Even running a blog on industry
                     traits will put you on the radar of ability employers.
                   </p>
-                  <div className=" mx-auto">
-                    <h3 className="font-bold text-xl md:text-xl pl-2 my-2  ">
-                      Networking Like a Pro
-                    </h3>
-                    <div className="space-y-6">
-                      <div className=" p-4 rounded-md shadow-sm hover:shadow-md transition-shadow duration-200">
-                        <p className="text-base text-gray-600 leading-relaxed">
-                          Attend webinars, be part of on-line communities, or
-                          even reach out to enterprise specialists on LinkedIn.
-                          Remember, it is no longer what you recognize however
-                          who you understand that regularly brings opportunities
-                          your way.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  <h3 className="font-bold text-xl md:text-xl pl-2 my-2  ">
+                    Networking Like a Pro
+                  </h3>
+                  <p className="pb-6 pt-3  text-[17px] text-justify">
+                    Attend webinars, be part of on-line communities, or even
+                    reach out to enterprise specialists on LinkedIn. Remember,
+                    it is no longer what you recognize however who you
+                    understand that regularly brings opportunities your way.
+                  </p>
 
                   <div className=" mx-auto">
                     <h2 className="font-bold text-xl md:text-xl pl-2 my-2  ">
                       Embracing AI as an Ally
                     </h2>
-                    <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                    <p className="text-lg leading-relaxed mb-8">
                       Think of AI as your assistant. Use it for repetitive
                       tasks, including scheduling posts or reading overall
                       performance metrics. AI-powered tools can save time, but
@@ -419,16 +420,21 @@ function AidrivenDigital() {
                       vibrant, however it comes with its demanding situations.
                       AI is converting the game, however it is beginning new
                       doors as nicely. Creativity, emotional intelligence, and
-                      adaptableness will assist you stay ahead.Use AI as a
-                      accomplice, now not a competitor, and upload price that
-                      only a human can. Remember, achievement in virtual
-                      advertising does not come from understanding everything;
-                      it comes from knowing what makes you unique and leveraging
-                      that to create something excellent. So, if you are looking
-                      have a career in digital marketing in 2025 then our
-                      training sessions will be a great help for you, we offer
-                      corporate training for students and interns to improve
-                      their skills and get placed in a high paying job.
+                      adaptableness will assist you stay ahead.
+                      <br />
+                      <br />
+                      Use AI as a accomplice, now not a competitor, and upload
+                      price that only a human can. Remember, achievement in
+                      virtual advertising does not come from understanding
+                      everything; it comes from knowing what makes you unique
+                      and leveraging that to create something excellent.
+                      <br />
+                      <br />
+                      So, if you are looking have a career in digital marketing
+                      in 2025 then our training sessions will be a great help
+                      for you, we offer corporate training for students and
+                      interns to improve their skills and get placed in a high
+                      paying job.
                     </p>
                     <p className="text-lg text-gray-700 leading-relaxed mb-8">
                       And If you are looking to grow your business online then,
@@ -464,7 +470,9 @@ function AidrivenDigital() {
                     </p>
                   </div>
                 </div>
-                <h1 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400 ml-6">FAQ</h1>
+                <h1 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400 ml-6">
+                  FAQ
+                </h1>
                 <div className="col-span-2 grid gap-2 pb-10">
                   <div className="font-[sans-serif] space-y-4 max-w-6xl mx-auto mt-4">
                     {accordionData.map((item, index) => (
@@ -523,79 +531,78 @@ function AidrivenDigital() {
 
         {/* Right Sidebar */}
         <div className="flex flex-col">
-
-        <div className="w-[300px] bg-white p-4 hidden lg:block rounded-xl shadow-2xl">
-          <div className="sticky top-0">
-            <div className="mb-8 space-x-5 border-b-2 border-opacity-10 dark:border-violet-600">
-              <ul className="flex max-lg:flex-col max-lg:space-y-4 bg-gray-100">
-                <li
-                  onClick={() => setActiveTab("Latest")}
-                  className={`tab text-gray-600 font-semibold text-[15px] py-3.5 px-7 border-t-[3px] ${
-                    activeTab === "Latest"
-                      ? "border-blue-500 text-blue-500 font-bold"
-                      : "border-gray-100 cursor-pointer"
-                  }`}
-                >
-                  Latest
-                </li>
-                <li
-                  onClick={() => setActiveTab("Popular")}
-                  className={`tab text-gray-600 font-semibold text-[15px] py-3.5 px-7 border-t-[3px] ${
-                    activeTab === "Popular"
-                      ? "border-blue-500 text-blue-500 font-bold"
-                      : "border-gray-100 cursor-pointer"
-                  }`}
-                >
-                  Popular
-                </li>
-              </ul>
-            </div>
-            {activeTab === "Latest" ? <Latest /> : <Popular />}
-          </div>
-        </div>
-        <div className="w-[300px] bg-white  rounded-3xl  px-4 hidden lg:block mt-10">
-          {/* Add your static left sidebar content here */}
-          <div className="sticky top-0">
-            <div className="bg-white  rounded-xl shadow-2xl max-w-sm w-full overflow-hidden transition-all duration-300 hover:shadow-indigo-500/50 dark:hover:shadow-blue-900/50">
-              <div className="relative h-32 bg-gradient-to-r from-[#3067ab] to-blue-700">
-                <Image
-                  quality={80}
-                  loading="lazy"
-                  src={jeeva}
-                  alt="jeeva shanmugam"
-                  className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-24 h-24 rounded-full border-4 border-white dark:border-gray-800 transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-              <div className="pt-16 pb-6 px-6 text-center">
-                <h1 className="text-2xl font-bold text-gray-800  mb-1">
-                  Jeeva Shanmugam
-                </h1>
-                <p className="text-indigo-600 font-semibold mb-4">
-                  Content Writer
-                </p>
-                <p className="text-gray-600  mb-4 text-justify">
-                  A boy with a ton of pending bucket lists that has to be ticked
-                  | Blogger | otherwise commonly known for his absurd stories!
-                </p>
-                <div className="flex justify-center space-x-4 mb-6">
-                  <Link
-                    href="https://www.instagram.com/emvric/"
-                    className="text-gray-600 hover:text-indigo-800  dark:hover:text-indigo-400 transition-colors duration-300"
+          <div className="w-[300px] bg-white p-4 hidden lg:block rounded-xl shadow-2xl">
+            <div className="sticky top-0">
+              <div className="mb-8 space-x-5 border-b-2 border-opacity-10 dark:border-violet-600">
+                <ul className="flex max-lg:flex-col max-lg:space-y-4 bg-gray-100">
+                  <li
+                    onClick={() => setActiveTab("Latest")}
+                    className={`tab text-gray-600 font-semibold text-[15px] py-3.5 px-7 border-t-[3px] ${
+                      activeTab === "Latest"
+                        ? "border-blue-500 text-blue-500 font-bold"
+                        : "border-gray-100 cursor-pointer"
+                    }`}
                   >
-                    <FaInstagram className="text-4xl font-bold mt-[2px] text-rose-500" />
-                  </Link>
+                    Latest
+                  </li>
+                  <li
+                    onClick={() => setActiveTab("Popular")}
+                    className={`tab text-gray-600 font-semibold text-[15px] py-3.5 px-7 border-t-[3px] ${
+                      activeTab === "Popular"
+                        ? "border-blue-500 text-blue-500 font-bold"
+                        : "border-gray-100 cursor-pointer"
+                    }`}
+                  >
+                    Popular
+                  </li>
+                </ul>
+              </div>
+              {activeTab === "Latest" ? <Latest /> : <Popular />}
+            </div>
+          </div>
+          <div className="w-[300px] bg-white  rounded-3xl  px-4 hidden lg:block mt-10">
+            {/* Add your static left sidebar content here */}
+            <div className="sticky top-0">
+              <div className="bg-white  rounded-xl shadow-2xl max-w-sm w-full overflow-hidden transition-all duration-300 hover:shadow-indigo-500/50 dark:hover:shadow-blue-900/50">
+                <div className="relative h-32 bg-gradient-to-r from-[#3067ab] to-blue-700">
+                  <Image
+                    quality={80}
+                    loading="lazy"
+                    src={jeeva}
+                    alt="jeeva shanmugam"
+                    className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-24 h-24 rounded-full border-4 border-white dark:border-gray-800 transition-transform duration-300 hover:scale-105"
+                  />
+                </div>
+                <div className="pt-16 pb-6 px-6 text-center">
+                  <h1 className="text-2xl font-bold text-gray-800  mb-1">
+                    Jeeva Shanmugam
+                  </h1>
+                  <p className="text-indigo-600 font-semibold mb-4">
+                    Content Writer
+                  </p>
+                  <p className="text-gray-600  mb-4 text-justify">
+                    A boy with a ton of pending bucket lists that has to be
+                    ticked | Blogger | otherwise commonly known for his absurd
+                    stories!
+                  </p>
+                  <div className="flex justify-center space-x-4 mb-6">
+                    <Link
+                      href="https://www.instagram.com/emvric/"
+                      className="text-gray-600 hover:text-indigo-800  dark:hover:text-indigo-400 transition-colors duration-300"
+                    >
+                      <FaInstagram className="text-4xl font-bold mt-[2px] text-rose-500" />
+                    </Link>
+                  </div>
+                </div>
+                <div className="bg-gray-50 px-6 py-4">
+                  <button className="w-full bg-indigo-800 text-white py-2 rounded-lg font-semibold hover:bg-blue-900 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
+                    Follow
+                  </button>
                 </div>
               </div>
-              <div className="bg-gray-50 px-6 py-4">
-                <button className="w-full bg-indigo-800 text-white py-2 rounded-lg font-semibold hover:bg-blue-900 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
-                  Follow
-                </button>
-              </div>
             </div>
           </div>
         </div>
-        </div>
-
       </section>
     </>
   );
