@@ -67,7 +67,7 @@ function Blog() {
                   />
                   <div className="p-4">
                     <h3 className="text-white font-bold text-lg relative">
-                      AI-Driven Success
+                      Career in Digital Marketing!
                       <span className="absolute inset-0 bottom-[-2px] h-[4px] bg-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 -translate-y-3"></span>
                     </h3>
                     <p className="text-gray-300 text-sm">
