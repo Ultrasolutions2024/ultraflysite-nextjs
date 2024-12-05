@@ -1,20 +1,22 @@
 import React from "react";
 import Head from "next/head";
 
-import AidrivenDigital from "./AidrivenDigital";
+import AidrivenDigital from "./career-in-digital-marketing-2025";
 
 export const metadata = {
-  title: "AI-Driven Digital Marketing Trends in 2024",
-  description: "Explore the top AI-driven digital marketing trends reshaping the industry in 2024.",
+  title: "How to Build a Career in Digital Marketing in 2025?",
+  description:
+    "Get to know how you can become a digital marketing expertand make a living in 2025 with these useful tips",
   openGraph: {
-    title: "AI-Driven Digital Marketing Trends in 2024",
-    description: "Discover how AI is transforming digital marketing strategies in 2024 and beyond.",
+    title: "How to Build a Career in Digital Marketing in 2025?",
+    description:
+      "How to get started with digital marketing in 2025? with tese useful tips and make a money in digital marketing",
     images: [
       {
         url: "/images/blog/ai-digital-marketing.webp", // Ensure this path is correct
       },
     ],
-    url: "https://www.ultraflysolutions.com/ai-digital-marketing-trends",
+    url: "https://www.ultraflysolutions.com/career-in-digital-marketing-2025",
     type: "article",
   },
 };

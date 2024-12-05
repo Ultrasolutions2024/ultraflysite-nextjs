@@ -14,6 +14,28 @@ function AidrivenDigital() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   const [activeTab, setActiveTab] = useState("Popular");
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+  const accordionData = [
+    {
+      question: "Is AI a threat to digital marketing jobs?",
+      answer:
+        "No, AI is more of a tool than a replacement. It complements human creativity and strategy.",
+    },
+    {
+      question: "What’s the best way to learn digital marketing?",
+      answer:
+        " Combine formal education, online courses, and hands-on experience. Networking and staying updated with trends are also key.",
+    },
+    {
+      question: "How can I use AI in my digital marketing career?",
+      answer:
+        "Use AI for automation, data analysis, and content ideas, but remember to add your personal touch to make campaigns impactful.  ",
+    },
+  ];
   return (
     <>
       <section className="flex w-full h-[100%] mt-0 font-domine">
@@ -84,9 +106,9 @@ function AidrivenDigital() {
                     <div className="flex items-center mt-[36px]">
                       <Link
                         href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                          "https://www.ultraflysolutions.com/increase-linkedin-followers"
+                          "https://www.ultraflysolutions.com/career-in-digital-marketing-2025"
                         )}&quote=${encodeURIComponent(
-                          "Top 05 Mobile App Development Frameworks in 2024"
+                          "How to Build A Successful Career in Digital Marketing in 2025 Despite AI Trends?"
                         )}&hashtag=${encodeURIComponent("#UltraflySolutions")}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -115,11 +137,11 @@ function AidrivenDigital() {
                     <div className="flex items-center mt-[36px]">
                       <Link
                         href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-                          "https://www.ultraflysolutions.com/increase-linkedin-followers"
+                          "https://www.ultraflysolutions.com/career-in-digital-marketing-2025"
                         )}&title=${encodeURIComponent(
-                          "Top 05 Mobile App Development Frameworks in 2024"
+                          "How to Build A Successful Career in Digital Marketing in 2025 Despite AI Trends?"
                         )}&summary=${encodeURIComponent(
-                          "Top 05 Mobile App Development Frameworks in 2024"
+                          "How to Build A Successful Career in Digital Marketing in 2025 Despite AI Trends?"
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -148,9 +170,9 @@ function AidrivenDigital() {
                     <div className="flex items-center mt-[36px]">
                       <Link
                         href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                          "Top 05 Mobile App Development Frameworks in 2024"
+                          "How to Build A Successful Career in Digital Marketing in 2025 Despite AI Trends?"
                         )}&url=${encodeURIComponent(
-                          "https://www.ultraflysolutions.com/increase-linkedin-followers"
+                          "https://www.ultraflysolutions.com/career-in-digital-marketing-2025"
                         )}&hashtag=${encodeURIComponent("#UltraflySolutions")}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -204,7 +226,14 @@ function AidrivenDigital() {
                   </div>
                 </div>
                 <p className="text-center text-sm text-gray-500 mb-4">
-                  Image Credits: Alexander Shatov on Unsplash
+                  Image Credits: <Link
+                        href="https://www.freepik.com/free-photo/corporate-management-strategy-solution-branding-concept_28096443.htm#fromView=search&page=1&position=4&uuid=0101c888-841a-4df1-bce1-5172a6f78397"
+                        target="blank"
+                        className="underline text-blue-600"
+                      >
+                        {" "}
+                        FreePik{" "}
+                      </Link>
                 </p>
                 <div className="px-4 lg:px- mt-12 text-gray-700 -md mx-auto text-lg leading-relaxed ">
                   <h1 className="text-gray-900 font-extrabold mb-3">
@@ -248,7 +277,7 @@ function AidrivenDigital() {
                     humans. This manual will stroll you via the entirety you
                     need to realize to thrive in this evolving area.
                   </p>
-                  <h4 className="font-bold text-xl md:text-xl pl-2 my-2  ">
+                  <h4 className="font-bold text-xl md:text-2xl pl-2 my-2  ">
                     The Evolving Digital Marketing Landscape
                   </h4>
                   <p className="pb-6 pt-3 text-[17px] text-justify">
@@ -280,10 +309,10 @@ function AidrivenDigital() {
                     />
 
                     <p className="text-center text-sm text-gray-500 mb-4">
-                      Image Credits: LinkedIn Sales Solutions on Unsplash
+                      Image Credits: Freepik
                     </p>
                   </figure>
-                  <h4 className="font-bold text-xl md:text-xl pl-2 my-2 ">
+                  <h4 className="font-bold text-xl md:text-2xl pl-2 my-2 ">
                     Key Skills to Become More Outstanding:
                   </h4>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -320,7 +349,7 @@ function AidrivenDigital() {
                     ahead, prepared to analyze and test with clean equipment or
                     structures.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400 ">
+                  <h3 className="font-bold text-xl md:text-xl pl-2 my-2   ">
                     Communication Skills
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -330,7 +359,7 @@ function AidrivenDigital() {
                     listening and conveying your thoughts truly and
                     persuasively.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400 ">
+                  <h3 className="font-bold text-xl md:text-xl pl-2 my-2  ">
                     Emotional Intelligence
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -338,7 +367,7 @@ function AidrivenDigital() {
                     Understanding their feelings, studying between the traces,
                     and forming real connections will make you priceless.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400">
+                  <h3 className="font-bold text-xl md:text-xl pl-2 my-2  ">
                     Data Analysis
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -356,7 +385,7 @@ function AidrivenDigital() {
                     overwhelming, but with the right steps, it turns into
                     attainable—or even interesting.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
+                  <h3 className="font-bold text-xl md:text-xl pl-2 my-2  ">
                     Finding Your Niche
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -368,7 +397,7 @@ function AidrivenDigital() {
                     love numbers, dive into analytics. If storytelling excites
                     you, bear in mind content advertising and marketing.
                   </p>
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
+                  <h3 className="font-bold text-xl md:text-xl pl-2 my-2  ">
                     Acquiring Relevant Skills
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -380,7 +409,7 @@ function AidrivenDigital() {
                     extra than any book ever ought to
                   </p>
 
-                  <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400">
+                  <h3 className="font-bold text-xl md:text-xl pl-2 my-2  ">
                     Building Your Online Presence
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
@@ -392,7 +421,7 @@ function AidrivenDigital() {
                     traits will put you on the radar of ability employers.
                   </p>
                   <div className=" mx-auto">
-                    <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400">
+                    <h3 className="font-bold text-xl md:text-xl pl-2 my-2  ">
                       Networking Like a Pro
                     </h3>
                     <div className="space-y-6">
@@ -409,7 +438,7 @@ function AidrivenDigital() {
                   </div>
 
                   <div className=" mx-auto">
-                    <h2 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
+                    <h2 className="font-bold text-xl md:text-xl pl-2 my-2  ">
                       Embracing AI as an Ally
                     </h2>
                     <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -420,43 +449,6 @@ function AidrivenDigital() {
                       that make advertising campaigns a success.
                     </p>
                   </div>
-
-                  <div className=" mx-auto">
-                    <h2 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
-                      Wrapping It Up
-                    </h2>
-
-                    <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                      The future of virtual advertising appears surprisingly
-                      vibrant, however it comes with its demanding situations.
-                      AI is converting the game, however it is beginning new
-                      doors as nicely. Creativity, emotional intelligence, and
-                      adaptableness will assist you stay ahead.
-                    </p>
-                    <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                      Use AI as a accomplice, now not a competitor, and upload
-                      price that only a human can. Remember, achievement in
-                      virtual advertising does not come from understanding
-                      everything; it comes from knowing what makes you unique
-                      and leveraging that to create something excellent.
-                    </p>
-                    <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                      So, if you are looking have a career in digital marketing
-                      in 2025 then our training sessions will be a great help
-                      for you, we offer corporate training for students and
-                      interns to improve their skills and get placed in a high
-                      paying job.
-                    </p>
-                    <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                      And If you are looking to grow your business online then,
-                      we at Ultrafly Solutions have a decade of experience in
-                      this digital marketing sector, and we have experienced
-                      professionals to handle all types of your business
-                      requirements, for further assistance email us to
-                      info@ultraflysolutions.com.
-                    </p>
-                  </div>
-
                   <div className=" mx-auto">
                     <h2 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
                       Wrapping It All
@@ -467,50 +459,101 @@ function AidrivenDigital() {
                       vibrant, however it comes with its demanding situations.
                       AI is converting the game, however it is beginning new
                       doors as nicely. Creativity, emotional intelligence, and
-                      adaptableness will assist you stay ahead.
-                    </p>
-                    <p className="ml-6 border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
-                      Use AI as a accomplice, now not a competitor, and upload
-                      price that only a human can. Remember, achievement in
-                      virtual advertising does not come from understanding
-                      everything; it comes from knowing what makes you unique
-                      and leveraging that to create something excellent.
-                    </p>
-                    <p className="ml-6 border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
-                      So, if you are looking have a career in digital marketing
-                      in 2025 then our training sessions will be a great help
-                      for you, we offer corporate training for students and
-                      interns to improve their skills and get placed in a high
-                      paying job.
+                      adaptableness will assist you stay ahead.Use AI as a
+                      accomplice, now not a competitor, and upload price that
+                      only a human can. Remember, achievement in virtual
+                      advertising does not come from understanding everything;
+                      it comes from knowing what makes you unique and leveraging
+                      that to create something excellent. So, if you are looking
+                      have a career in digital marketing in 2025 then our
+                      training sessions will be a great help for you, we offer
+                      corporate training for students and interns to improve
+                      their skills and get placed in a high paying job.
                     </p>
                     <p className="text-lg text-gray-700 leading-relaxed mb-8">
                       And If you are looking to grow your business online then,
-                      we at 
-                      <Link href="https://www.ultraflysolutions.com" target="blank" className="underline text-blue-600">
-                      {" "}Ultrafly Solutions{" "}
+                      we at
+                      <Link
+                        href="https://www.ultraflysolutions.com"
+                        target="blank"
+                        className="underline text-blue-600"
+                      >
+                        {" "}
+                        Ultrafly Solutions{" "}
                       </Link>
-                       have a decade of experience in
-                      this 
-                      <Link href="https://www.ultraflysolutions.com/digital-marketing-company/" target="blank" className="underline text-blue-600">
-                      {" "} digital marketing{" "}
+                      have a decade of experience in this
+                      <Link
+                        href="https://www.ultraflysolutions.com/digital-marketing-company/"
+                        target="blank"
+                        className="underline text-blue-600"
+                      >
+                        {" "}
+                        digital marketing{" "}
                       </Link>
-                       sector, and we have experienced
-                      professionals to handle all types of your business
-                      requirements, for further assistance email us to
-                      <Link href="mailto:info@ultraflysolutions.com" target="blank" className="underline text-blue-600">
-                      {" "}info@ultraflysolutions.com.{" "}
+                      sector, and we have experienced professionals to handle
+                      all types of your business requirements, for further
+                      assistance email us to
+                      <Link
+                        href="mailto:info@ultraflysolutions.com"
+                        target="blank"
+                        className="underline text-blue-600"
+                      >
+                        {" "}
+                        info@ultraflysolutions.com.{" "}
                       </Link>
-                      
                     </p>
                   </div>
-                  {/* <div className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
-                    In this blog, we’ll explore how Ultrafly Solutions
-                    integrates these modern technologies to push the boundaries
-                    of what’s possible, showcasing our latest projects, success
-                    stories, and the innovations that are driving the future of
-                    web development. Join us as we unlock new potential and
-                    shape the digital world with the latest advancements.
-                  </div> */}
+                </div>
+                <h1 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400 ml-6">FAQ</h1>
+                <div className="col-span-2 grid gap-2 pb-10">
+                  <div className="font-[sans-serif] space-y-4 max-w-6xl mx-auto mt-4">
+                    {accordionData.map((item, index) => (
+                      <div
+                        key={index}
+                        className={`shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] border-2 ${
+                          openIndex === index
+                            ? "border-blue-600"
+                            : "border-transparent"
+                        } rounded-lg transition-all duration-300`}
+                        style={{
+                          overflow: "hidden",
+                          transition: "max-height 0.3s ease-in-out",
+                          maxHeight: openIndex === index ? "300px" : "80px",
+                        }}
+                        role="accordion"
+                      >
+                        <button
+                          onClick={() => toggleAccordion(index)}
+                          type="button"
+                          className="w-full text-base font-semibold text-left p-5 text-gray-800 flex items-center"
+                        >
+                          <span className="mr-4">{item.question}</span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className={`w-4 fill-current ml-auto shrink-0 transition-transform ${
+                              openIndex === index ? "rotate-180" : "-rotate-90"
+                            }`}
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                              clipRule="evenodd"
+                            ></path>
+                          </svg>
+                        </button>
+                        <div
+                          className={`transition-opacity duration-300 ${
+                            openIndex === index ? "opacity-100" : "opacity-0"
+                          } pb-5 px-5`}
+                        >
+                          <p className="text-sm text-gray-600 leading-relaxed">
+                            {item.answer}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </main>
               {/* main ends here */}
