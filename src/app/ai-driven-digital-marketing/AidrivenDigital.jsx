@@ -2,16 +2,14 @@
 
 import React, { useEffect, useState } from "react";
 import { FaInstagram } from "react-icons/fa6";
-import bg1 from "../images/blog/linkedin.webp";
+import bg1 from "../images/blog/aidriven.jpeg";
+import bg10 from "../images/blog/aidriven2.jpeg";
 import jeeva from "../images/blog/jeeva-shanmugam.jpeg";
-import bg10 from "../images/blog/Picture10.webp";
-import bg11 from "../images/blog/Picture11.webp";
-import bg12 from "../images/blog/Picture12.webp";
 import Image from "next/image";
 import Link from "next/link";
-import Latest from "./Latest";
-import Popular from "./Papular";
-function LinkedinFollowers() {
+import Latest from "../increase-linkedin-followers/Latest";
+import Popular from "../increase-linkedin-followers/Papular";
+function AidrivenDigital() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
@@ -177,14 +175,14 @@ function LinkedinFollowers() {
                     </div>
                   </div>
 
-                  <div className="p-4 absolute bottom-0 left-0 z-20  mb-[30px]">
+                  <div className="p-4 absolute bottom-0 left-0 z-20  mb-[30px] ">
                     <span className="bg-green-500 text-white text-[12px] md:text-md me-2 px-2.5 py-0.5 rounded  border border-green-300 inline-flex items-center justify-center mb-2 font-bold">
                       Blog : 1
                     </span>
 
-                    <h2 className=" text-lg md:text-4xl font-semibold text-gray-100 leading-tight ">
-                      How to Increase Your LinkedIn Followers and Make a Living
-                      in 2025?
+                    <h2 className=" text-lg md:text-4xl font-semibold text-white leading-tight backdrop-blur-3xl p-2 rounded-2xl">
+                      How to Build A Successful Career in Digital Marketing in
+                      2025 Despite AI Trends?
                     </h2>
                     <div className="flex mt-3">
                       <Image
@@ -194,11 +192,11 @@ function LinkedinFollowers() {
                         alt="jeeva profile"
                         className="h-10 w-10 rounded-full mr-2 object-cover"
                       />
-                      <div>
-                        <p className="font-semibold text-gray-200 text-sm">
+                      <div className="backdrop-blur-3xl rounded-xl p-2">
+                        <p className="font-semibold text-gray-800 text-sm">
                           Jeeva Shanmugam
                         </p>
-                        <p className="font-semibold text-gray-400 text-xs">
+                        <p className="font-semibold text-gray-800 text-xs">
                           14 Aug
                         </p>
                       </div>
@@ -209,256 +207,202 @@ function LinkedinFollowers() {
                   Image Credits: Alexander Shatov on Unsplash
                 </p>
                 <div className="px-4 lg:px- mt-12 text-gray-700 -md mx-auto text-lg leading-relaxed ">
-                  {/* <p className="pb-6 md-">
-                    At Ultrafly Solutions, we're at the forefront of the digital
-                    revolution, harnessing the power of the latest web
-                    development technologies to drive innovation and transform
-                    businesses. Our focus on cutting-edge tools and frameworks
-                    ensures that we deliver state-of-the-art solutions tailored
-                    to meet the dynamic needs of today’s digital landscape.
-                  </p> */}
-                  <h1 className="text-gray-900 font-extrabold mb-3">HIGHLIGHTS:</h1>
+                  <h1 className="text-gray-900 font-extrabold mb-3">
+                    HIGHLIGHTS:
+                  </h1>
                   <ol className="list-decimal pl-5 space-y-4 text-gray-700">
                     <li className="text-lg md:text-md font-semibold text-justify font-domine">
-                      Understand the fundamentals of LinkedIn and optimize your
-                      profile effectively.
+                      AI is transforming digital marketing, but it’s not a
+                      replacement for human creativity.
                     </li>
                     <li className="text-lg md:text-md font-semibold text-justify">
-                      Create and share engaging content that resonates with your
-                      audience.
+                      Strategic thinking, adaptability, and emotional
+                      intelligence are crucial skills.
                     </li>
                     <li className="text-lg md:text-md font-semibold text-justify">
-                      Leverage LinkedIn&apos;s unique features and engage
-                      meaningfully with your network.
+                      Embracing AI as a tool can enhance your potential and not
+                      replace it.
                     </li>
                   </ol>
                   <p className="pb-6 pt-3 text-[17px] text-justify mb-3 text-gray-500   first-letter:text-7xl first-letter:font-bold first-letter:text-purple-500  first-letter:me-3 first-letter:float-start">
-                    For better or worse, LinkedIn is no longer that old portal
-                    mainly preferred for professionals, companies, or marketers.
-                    Now, it’s a vibrant platform for professionals, businesses,
-                    and marketers to connect, totaling over a billion users
-                    worldwide. Discover how to increase your LinkedIn following
-                    by leveraging strategies to unlock the platform's full
-                    potential in 2025, ensuring more meaningful connections and
-                    professional growth.
+                    ﻿Business-to-consumer verbal exchange has been redone inside
+                    the digital age. A bakery downtown to a multinational logo,
+                    it would not count-they all want to recognition on digital
+                    advertising.
+                  </p>
+                  <p className="pb-6 pt-3 text-[17px] text-justify mb-3 text-gray-500   first-letter:text-7xl first-letter:font-bold first-letter:text-purple-500  first-letter:me-3 first-letter:float-start">
+                    The demand for skilled entrepreneurs suggests no signs and
+                    symptoms of slowing anytime soon. But right here's the
+                    twist-the emergence of AI is approaching and automating
+                    things that even we never notion machines would ever do. So,
+                    how do you carve out a a hit career in digital advertising
+                    in 2025 while AI is literally anywhere?
                   </p>
                   <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
-                    Basics Understanding
+                    Start in Digital Marketing in 2025
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
-                    Before delving into details of techniques, make sure that
-                    you have appropriately maximized your LinkedIn profile. Your
-                    profile is your online business card and bases its whole
-                    work on good impressions.
+                    Simple: by specializing in what makes you irreplaceable. AI
+                    is only a device; it cannot mirror human creativity,
+                    emotional intelligence, or the ability to connect with
+                    humans. This manual will stroll you via the entirety you
+                    need to realize to thrive in this evolving area.
                   </p>
                   <h4 className="font-bold text-xl md:text-xl pl-2 my-2  ">
-                    Fully Complete Your Profile
+                    The Evolving Digital Marketing Landscape
                   </h4>
                   <p className="pb-6 pt-3 text-[17px] text-justify">
-                    A professional LinkedIn profile will resemble who you are
-                    professionally, and your profile should always be complete.
-                    Fill every section, like your headline, summary, experience,
-                    education, and skills. A complete profile will increase how
-                    often you appear in people's searches, and it attracts
-                    possible followers.
+                    AI has absolutely added massive shifts to digital
+                    advertising and marketing. From chatbots answering client
+                    queries at 2 AM to algorithms making suggestions on Netflix,
+                    AI is making our lives easier—and marketing smarter. But
+                    here's the factor: AI can most effective move thus far.
                   </p>
+                  <p className="pb-6 pt-3 text-[17px] text-justify mb-1 text-gray-500 ">
+                    It excels at crunching data, automating repetitive
+                    obligations, or even drafting fundamental content material.
+                    But it lacks the soul. It would not apprehend emotions,
+                    cannot brainstorm wild thoughts, and actually can't update
+                    the human contact. This is wherein you are available in.
+                  </p>
+                  <p className="pb-6 pt-3 text-[17px] text-justify mb-3 text-gray-500 ">
+                    You are now capable of present your self as the marketer who
+                    comes in with creativity and approach, something machines
+                    can by no means do.
+                  </p>
+                  <figure>
+                    <Image
+                      loading="lazy"
+                      quality={75}
+                      src={bg10}
+                      alt="Unlocking the Future"
+                      className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
+                    />
+
+                    <p className="text-center text-sm text-gray-500 mb-4">
+                      Image Credits: LinkedIn Sales Solutions on Unsplash
+                    </p>
+                  </figure>
                   <h4 className="font-bold text-xl md:text-xl pl-2 my-2 ">
-                    Professional Photo
+                    Key Skills to Become More Outstanding:
                   </h4>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
-                    A good impression surely requires a high-quality image for a
-                    clear picture. For your profile picture, the headshot must
-                    appear professionally and yet say about who you are as an
-                    individual. It often proves to be the first point that
-                    everyone views; therefore, do not compromise there also.
+                    To stand out in virtual advertising, you want to master
+                    abilties that AI can't mimic. Let's dive into what these are
+                    and why they're crucial:
                   </p>
                   <h4 className="font-bold text-xl md:text-xl pl-2 my-2  ">
-                    Interacting Banner
+                    Creative Thinking
                   </h4>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
-                    Displaying your brand is also another avenue in your
-                    LinkedIn banner. An attractive banner that represents your
-                    personal brand attracts people's attention. Using tools like
-                    Canva to create a personalized banner can represent your
-                    professional identity.
+                    Imagine scrolling thru Instagram and seeing a campaign that
+                    makes you stop, snicker, or even cry. That is creativity. AI
+                    can not make viral-worth campaigns or suppose out of the
+                    container-it takes human ingenuity to hook up with audiences
+                    on an emotional degree.
                   </p>
                   <h4 className="font-bold text-xl md:text-xl pl-2 my-2  ">
-                    Keyword Optimization
+                    Strategic Thinking
                   </h4>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
-                    Use relevant keywords throughout your profile to increase
-                    the chances of being found during searches. Consider what
-                    words people might use to find someone in your field and
-                    include those words strategically in your headline, summary,
-                    and experience sections. This simple step can make a huge
-                    difference in the chances of being found by the right
-                    people.
+                    A exact marketer does not observe developments; they set
+                    them. Strategic thinking means know-how the bigger photo,
+                    decoding facts (with AI's help), and making selections that
+                    power lengthy-term outcomes.
                   </p>
                   <h4 className="font-bold text-xl md:text-xl pl-2 my-2   ">
-                    Writing Effective Content
+                    Adaptability
                   </h4>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
-                    Content reigns supreme on LinkedIn, so include something
-                    relevant, informative, and engaging that could be of
-                    interest to your target market.
+                    Digital advertising adjustments faster than fashion
+                    tendencies. One day it’s all about TikTok; the next, it’s
+                    some thing new. Being adaptable guarantees you’re always
+                    ahead, prepared to analyze and test with clean equipment or
+                    structures.
                   </p>
                   <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400 ">
-                    Thought Leadership
+                    Communication Skills
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
-                    Become a thought leader in your industry. Articles, blog
-                    posts, and research findings can be shared with people to
-                    prove your knowledge in the field. If you are able to give
-                    constant value, then people are going to think of you as a
-                    thought leader and are likely to follow you for your
-                    insights.
+                    Whether it’s pitching an idea to a purchaser or taking part
+                    along with your crew, strong verbal exchange is your
+                    superpower. It’s no longer pretty much talking; it’s about
+                    listening and conveying your thoughts truly and
+                    persuasively.
                   </p>
                   <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400 ">
-                    Share Company Updates
+                    Emotional Intelligence
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
-                    Remember that, as a business, update your followers on the
-                    news and achievements of your company as well as new product
-                    launches. Updating them from time to time creates trust and
-                    transparency with your audience, which makes them more
-                    connected to your brand. This connection may encourage them
-                    to share your posts, and you will have increased your reach.
+                    Marketing is not approximately the product however people.
+                    Understanding their feelings, studying between the traces,
+                    and forming real connections will make you priceless.
                   </p>
                   <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400">
-                    Personal Branding
+                    Data Analysis
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
-                    Share your personal story and your experience as an
-                    employee. Nothing can get the audience involved with you
-                    like sharing glimpses of your professional life, including
-                    what you learned over time. This creates an opportunity to
-                    build a narrative that the audience can then relate to. View
-                    a glimpse into behind-the-scenes peeks at work going on
-                    around you adds some humanity to your profile.
+                    Although AI can acquire records for you, it is up to you to
+                    interpret the facts and convert it into actionable insights
+                    which can further help in making campaigns focused and
+                    impactful.
                   </p>
-                  <p className="pb-6 pt-3  text-[17px] text-justify">
-                    It makes your post look bigger and more shareable with
-                    pictures, infographics, or videos. Visual content seems to
-                    gain more engagement than plain text so mix and match them.
-                    Be quick with your videos, short updates, and be creative
-                    with the choice of relevant infographics: such is one way
-                    that pictures help bring your message together.
-                  </p>
+
                   <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400">
-                    Curated Content
+                    Steps to Build a Career in Digital Marketing
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
-                    Share other industry leaders' posts and articles by not
-                    forgetting that the power is upon you. Curating content
-                    creates you as a resource known and keeps reciprocal sharing
-                    which creates more avenues for you audience.
+                    Starting your adventure in digital advertising can be
+                    overwhelming, but with the right steps, it turns into
+                    attainable—or even interesting.
                   </p>
                   <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
-                    Engage your audience
+                    Finding Your Niche
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
-                    The best thing about getting a following through LinkedIn is
-                    building real relationships with your audience. Engage by
-                    commenting, Like and comment on other people's posts. This
-                    will not only update you but also increase your visibility.
-                    If one is engaging wisely, people notice it, and they become
-                    very interested in visiting one's profile.
+                    Digital advertising is like a buffet, supplying the entirety
+                    from search engine optimization and content material
+                    advertising to PPC and social media. Specializing in a
+                    single vicinity makes you the cross-to expert and opens
+                    doors to particular possibilities. For instance, in case you
+                    love numbers, dive into analytics. If storytelling excites
+                    you, bear in mind content advertising and marketing.
                   </p>
                   <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
-                    Join Groups
+                    Acquiring Relevant Skills
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
-                    Joining the most relevant groups in LinkedIn will connect
-                    you to like-minded professionals, and participation in
-                    discussions increases visibility and offers opportunities
-                    for bridging with peers in the field. All you have to do is
-                    remember to contribute meaningfully: quality over quantity.
+                    The global of advertising and marketing is ever-changing,
+                    and so is the system of studying. You can take online guides
+                    from web sites like Google Digital Garage or HubSpot
+                    Academy. You can also intern in organizations or work on
+                    small freelance gigs. These fingers-on stories educate you
+                    extra than any book ever ought to
                   </p>
-                  <p className="pb-6 pt-3  text-[17px] text-justify">
-                    Sharing other's content will provide you with relationships
-                    and very much force your content out there. If you are
-                    sharing somebody else's work, the chances are they will
-                    reciprocate by showing your work to their audience.
-                  </p>
+
                   <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400">
-                    Comment and Message Response
+                    Building Your Online Presence
                   </h3>
                   <p className="pb-6 pt-3  text-[17px] text-justify">
-                    If you could easily get back to the comments and messages
-                    then it will be clear for the audience that you truly care
-                    for them and for their sayings. It might further strengthen
-                    a bond as well as attract more of them in the future too.
+                    Your non-public emblem matters. Begin with a basic website
+                    of your capabilities, tasks, and studies. You have to
+                    community the usage of LinkedIn, but additionally use
+                    Instagram or Twitter to percentage insights or have
+                    interaction your network. Even running a blog on industry
+                    traits will put you on the radar of ability employers.
                   </p>
                   <div className=" mx-auto">
                     <h3 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px]  border-gray-400">
-                      Use LinkedIn&apos;s Feature
+                      Networking Like a Pro
                     </h3>
-
-                    <figure>
-                      <Image
-                        loading="lazy"
-                        quality={75}
-                        src={bg10}
-                        alt="Unlocking the Future"
-                        className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
-                      />
-
-                      <p className="text-center text-sm text-gray-500 mb-4">
-                        Image Credits: LinkedIn Sales Solutions on Unsplash
-                      </p>
-                    </figure>
-
-                    <h4 className="font-bold text-xl md:text-2xl pl-2 my-2 border-l-[11px]  border-gray-400">
-                      Special Features of LinkedIn
-                    </h4>
-
                     <div className="space-y-6">
                       <div className=" p-4 rounded-md shadow-sm hover:shadow-md transition-shadow duration-200">
-                        <h5 className="font-bold text-xl md:text-xl pl-2 my-2 border-l-[11px] ">
-                          LinkedIn Live
-                        </h5>
                         <p className="text-base text-gray-600 leading-relaxed">
-                          Host live streams and engage with your community in
-                          real time. People can reach out directly to ask
-                          questions, helping you build deeper, longer-lasting
-                          relationships and attract followers who are genuinely
-                          interested in your expertise.
-                        </p>
-                      </div>
-
-                      <div className=" p-4 rounded-md shadow-sm hover:shadow-md transition-shadow duration-200">
-                        <h3 className="font-bold text-xl md:text-xl pl-2 my-2 ">
-                          LinkedIn Polls
-                        </h3>
-                        <p className="text-base text-gray-600 leading-relaxed">
-                          Polls are a great way to start discussions and receive
-                          feedback from your audience. They not only engage your
-                          followers but also offer insights into their
-                          preferences, which can refine your content strategy.
-                        </p>
-                      </div>
-
-                      <div className=" p-4 rounded-md shadow-sm hover:shadow-md transition-shadow duration-200">
-                        <h3 className="font-bold text-xl md:text-xl pl-2 my-2  ">
-                          Articles on LinkedIn
-                        </h3>
-                        <p className="text-base text-gray-600 leading-relaxed">
-                          Publishing long-form articles allows you to share
-                          in-depth knowledge. Unlike shorter posts, articles
-                          provide the space to fully explore topics, positioning
-                          you as a thought leader in your field.
-                        </p>
-                      </div>
-
-                      <div className=" p-4 rounded-md shadow-sm hover:shadow-md transition-shadow duration-200">
-                        <h3 className="font-bold text-xl md:text-xl pl-2 my-2 ">
-                          LinkedIn Events
-                        </h3>
-                        <p className="text-base text-gray-600 leading-relaxed">
-                          Hosting or attending LinkedIn events is an excellent
-                          networking opportunity. It helps you connect with
-                          like-minded professionals, gain followers, and
-                          potentially open new business avenues.
+                          Attend webinars, be part of on-line communities, or
+                          even reach out to enterprise specialists on LinkedIn.
+                          Remember, it is no longer what you recognize however
+                          who you understand that regularly brings opportunities
+                          your way.
                         </p>
                       </div>
                     </div>
@@ -466,63 +410,50 @@ function LinkedinFollowers() {
 
                   <div className=" mx-auto">
                     <h2 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
-                      Sponsored Content
+                      Embracing AI as an Ally
                     </h2>
-
-                    <figure>
-                      <Image
-                        loading="lazy"
-                        quality={75}
-                        src={bg11}
-                        alt="Unlocking the Future"
-                        className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md mt-4"
-                      />
-
-                      <p className="text-center text-sm text-gray-500 mb-4">
-                        Image Credits: Kenny Eliason on Unsplash
-                      </p>
-                    </figure>
-
                     <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                      Posting sponsored content makes your post appear more in
-                      front of the audience outside the list of your followers
-                      so that you can get your profile a good exposure and
-                      attract a few new followers.
+                      Think of AI as your assistant. Use it for repetitive
+                      tasks, including scheduling posts or reading overall
+                      performance metrics. AI-powered tools can save time, but
+                      they can't create the emotional and innovative components
+                      that make advertising campaigns a success.
                     </p>
                   </div>
 
                   <div className=" mx-auto">
                     <h2 className="font-bold text-xl md:text-3xl pl-2 my-2 border-l-[11px] border-gray-400">
-                      Text Ads
+                      Wrapping It Up
                     </h2>
 
-                    <figure>
-                      <Image
-                        loading="lazy"
-                        quality={75}
-                        src={bg12}
-                        alt="Unlocking the Future"
-                        className="h-[30vh] object-cover md:h-[50vh] w-full rounded-md "
-                      />
-
-                      <p className="text-center text-sm text-gray-500 mb-4">
-                        Image Credits: Will Francis on Unsplash
-                      </p>
-                    </figure>
-
                     <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                      They would be text-based ads that link directly to certain
-                      demographics or interests; the right people will surely
-                      see these soon enough. The more compelling it is, the more
-                      that probably follows you from the ad, interested in
-                      content that you have provided.
+                      The future of virtual advertising appears surprisingly
+                      vibrant, however it comes with its demanding situations.
+                      AI is converting the game, however it is beginning new
+                      doors as nicely. Creativity, emotional intelligence, and
+                      adaptableness will assist you stay ahead.
                     </p>
                     <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                      If the result is great, constant activity is necessary for
-                      success. Posting and engaging with the audience and trying
-                      different types of content should become habitual to see
-                      results. Time passes, and constant presence can start to
-                      help in the formation of reputation on the network.
+                      Use AI as a accomplice, now not a competitor, and upload
+                      price that only a human can. Remember, achievement in
+                      virtual advertising does not come from understanding
+                      everything; it comes from knowing what makes you unique
+                      and leveraging that to create something excellent.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                      So, if you are looking have a career in digital marketing
+                      in 2025 then our training sessions will be a great help
+                      for you, we offer corporate training for students and
+                      interns to improve their skills and get placed in a high
+                      paying job.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                      And If you are looking to grow your business online then,
+                      we at Ultrafly Solutions have a decade of experience in
+                      this digital marketing sector, and we have experienced
+                      professionals to handle all types of your business
+                      requirements, for further assistance email us to
+                      info@ultraflysolutions.com.
                     </p>
                   </div>
 
@@ -532,16 +463,44 @@ function LinkedinFollowers() {
                     </h2>
 
                     <p className="ml-6 border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
-                      The bottom line is that if you do all these tips and start
-                      actively engaging on LinkedIn, you will most likely grow
-                      your followers steadily, building a robust professional
-                      network. Remember, it is always better to have a few good
-                      connections than thousands of low-quality ones.
+                      The future of virtual advertising appears surprisingly
+                      vibrant, however it comes with its demanding situations.
+                      AI is converting the game, however it is beginning new
+                      doors as nicely. Creativity, emotional intelligence, and
+                      adaptableness will assist you stay ahead.
+                    </p>
+                    <p className="ml-6 border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
+                      Use AI as a accomplice, now not a competitor, and upload
+                      price that only a human can. Remember, achievement in
+                      virtual advertising does not come from understanding
+                      everything; it comes from knowing what makes you unique
+                      and leveraging that to create something excellent.
+                    </p>
+                    <p className="ml-6 border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
+                      So, if you are looking have a career in digital marketing
+                      in 2025 then our training sessions will be a great help
+                      for you, we offer corporate training for students and
+                      interns to improve their skills and get placed in a high
+                      paying job.
                     </p>
                     <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                      Focus on creating real relationships and providing value
-                      to your audience, and you will see that your presence on
-                      LinkedIn grows organically over time.
+                      And If you are looking to grow your business online then,
+                      we at 
+                      <Link href="https://www.ultraflysolutions.com" target="blank" className="underline text-blue-600">
+                      {" "}Ultrafly Solutions{" "}
+                      </Link>
+                       have a decade of experience in
+                      this 
+                      <Link href="https://www.ultraflysolutions.com/digital-marketing-company/" target="blank" className="underline text-blue-600">
+                      {" "} digital marketing{" "}
+                      </Link>
+                       sector, and we have experienced
+                      professionals to handle all types of your business
+                      requirements, for further assistance email us to
+                      <Link href="mailto:info@ultraflysolutions.com" target="blank" className="underline text-blue-600">
+                      {" "}info@ultraflysolutions.com.{" "}
+                      </Link>
+                      
                     </p>
                   </div>
                   {/* <div className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
@@ -594,4 +553,4 @@ function LinkedinFollowers() {
   );
 }
 
-export default LinkedinFollowers;
+export default AidrivenDigital;
