@@ -54,7 +54,7 @@ function AidrivenDigital() {
                 />
               </div>
               <div className="pt-16 pb-6 px-6 text-center">
-                <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-1">
+                <h1 className="text-2xl font-bold text-gray-800  mb-1">
                   Jeeva Shanmugam
                 </h1>
                 <p className="text-indigo-600 font-semibold mb-4">
@@ -106,7 +106,7 @@ function AidrivenDigital() {
                     <div className="flex items-center mt-[36px]">
                       <Link
                         href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                          "https://www.ultraflysolutions.com/career-in-digital-marketing-2025"
+                          "https://www.ultraflysolutions.com/_next/static/media/aidriven.01c23ecb.jpeg"
                         )}&quote=${encodeURIComponent(
                           "How to Build A Successful Career in Digital Marketing in 2025 Despite AI Trends?"
                         )}&hashtag=${encodeURIComponent("#UltraflySolutions")}`}
@@ -137,7 +137,7 @@ function AidrivenDigital() {
                     <div className="flex items-center mt-[36px]">
                       <Link
                         href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-                          "https://www.ultraflysolutions.com/career-in-digital-marketing-2025"
+                          "https://www.ultraflysolutions.com/_next/static/media/aidriven.01c23ecb.jpeg"
                         )}&title=${encodeURIComponent(
                           "How to Build A Successful Career in Digital Marketing in 2025 Despite AI Trends?"
                         )}&summary=${encodeURIComponent(
@@ -172,7 +172,7 @@ function AidrivenDigital() {
                         href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
                           "How to Build A Successful Career in Digital Marketing in 2025 Despite AI Trends?"
                         )}&url=${encodeURIComponent(
-                          "https://www.ultraflysolutions.com/career-in-digital-marketing-2025"
+                          "https://www.ultraflysolutions.com/_next/static/media/aidriven.01c23ecb.jpeg"
                         )}&hashtag=${encodeURIComponent("#UltraflySolutions")}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -215,10 +215,10 @@ function AidrivenDigital() {
                         className="h-10 w-10 rounded-full mr-2 object-cover"
                       />
                       <div className="backdrop-blur-3xl rounded-xl p-2">
-                        <p className="font-semibold text-gray-800 text-sm">
+                        <p className="font-semibold text-gray-200 text-sm">
                           Jeeva Shanmugam
                         </p>
-                        <p className="font-semibold text-gray-800 text-xs">
+                        <p className="font-semibold text-gray-200 text-xs">
                           14 Aug
                         </p>
                       </div>

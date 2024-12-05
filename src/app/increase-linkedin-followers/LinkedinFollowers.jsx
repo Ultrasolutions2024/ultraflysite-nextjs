@@ -34,7 +34,7 @@ function LinkedinFollowers() {
                 />
               </div>
               <div className="pt-16 pb-6 px-6 text-center">
-                <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-1">
+                <h1 className="text-2xl font-bold text-gray-800  mb-1">
                   Jeeva Shanmugam
                 </h1>
                 <p className="text-indigo-600 font-semibold mb-4">
@@ -86,7 +86,7 @@ function LinkedinFollowers() {
                     <div className="flex items-center mt-[36px]">
                       <Link
                         href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                          "https://www.ultraflysolutions.com/increase-linkedin-followers"
+                          "https://www.ultraflysolutions.com/_next/static/media/linkedin.694338a2.webp"
                         )}&quote=${encodeURIComponent(
                           "Top 05 Mobile App Development Frameworks in 2024"
                         )}&hashtag=${encodeURIComponent("#UltraflySolutions")}`}
@@ -117,7 +117,7 @@ function LinkedinFollowers() {
                     <div className="flex items-center mt-[36px]">
                       <Link
                         href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-                          "https://www.ultraflysolutions.com/increase-linkedin-followers"
+                          "https://www.ultraflysolutions.com/_next/static/media/linkedin.694338a2.webp"
                         )}&title=${encodeURIComponent(
                           "Top 05 Mobile App Development Frameworks in 2024"
                         )}&summary=${encodeURIComponent(
@@ -152,7 +152,7 @@ function LinkedinFollowers() {
                         href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
                           "Top 05 Mobile App Development Frameworks in 2024"
                         )}&url=${encodeURIComponent(
-                          "https://www.ultraflysolutions.com/increase-linkedin-followers"
+                          "https://www.ultraflysolutions.com/_next/static/media/linkedin.694338a2.webp"
                         )}&hashtag=${encodeURIComponent("#UltraflySolutions")}`}
                         target="_blank"
                         rel="noopener noreferrer"
