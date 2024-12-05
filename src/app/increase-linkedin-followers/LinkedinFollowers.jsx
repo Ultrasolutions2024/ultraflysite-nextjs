@@ -19,48 +19,6 @@ function LinkedinFollowers() {
   return (
     <>
       <section className="flex w-full h-[100%] mt-0 font-domine">
-        {/* Left Sidebar */}
-        <div className="w-[300px] bg-gray-100  px-4 hidden lg:block ml-[-40px]">
-          {/* Add your static left sidebar content here */}
-          <div className="sticky top-0">
-            <div className="bg-white  rounded-xl shadow-2xl max-w-sm w-full overflow-hidden transition-all duration-300 hover:shadow-indigo-500/50 dark:hover:shadow-blue-900/50">
-              <div className="relative h-32 bg-gradient-to-r from-[#3067ab] to-blue-700">
-                <Image
-                  quality={80}
-                  loading="lazy"
-                  src={jeeva}
-                  alt="jeeva shanmugam"
-                  className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-24 h-24 rounded-full border-4 border-white dark:border-gray-800 transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-              <div className="pt-16 pb-6 px-6 text-center">
-                <h1 className="text-2xl font-bold text-gray-800  mb-1">
-                  Jeeva Shanmugam
-                </h1>
-                <p className="text-indigo-600 font-semibold mb-4">
-                  Content Writer
-                </p>
-                <p className="text-gray-600  mb-4 text-justify">
-                  A boy with a ton of pending bucket lists that has to be ticked
-                  | Blogger | otherwise commonly known for his absurd stories!
-                </p>
-                <div className="flex justify-center space-x-4 mb-6">
-                  <Link
-                    href="https://www.instagram.com/emvric/"
-                    className="text-gray-600 hover:text-indigo-800  dark:hover:text-indigo-400 transition-colors duration-300"
-                  >
-                    <FaInstagram className="text-4xl font-bold mt-[2px] text-rose-500" />
-                  </Link>
-                </div>
-              </div>
-              <div className="bg-gray-50 px-6 py-4">
-                <button className="w-full bg-indigo-800 text-white py-2 rounded-lg font-semibold hover:bg-blue-900 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
-                  Follow
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Center Scrolling Section */}
         <div className="flex-1 overflow-y-scroll rounded-xl w-full ">
@@ -560,6 +518,8 @@ function LinkedinFollowers() {
         </div>
 
         {/* Right Sidebar */}
+        <div className="flex flex-col">
+
         <div className="w-[300px] bg-white p-4 hidden lg:block rounded-xl shadow-2xl">
           <div className="sticky top-0">
             <div className="mb-8 space-x-5 border-b-2 border-opacity-10 dark:border-violet-600">
@@ -588,6 +548,48 @@ function LinkedinFollowers() {
             </div>
             {activeTab === "Latest" ? <Latest /> : <Popular />}
           </div>
+        </div>
+        <div className="w-[300px] bg-white  rounded-3xl  px-4 hidden lg:block mt-10">
+          {/* Add your static left sidebar content here */}
+          <div className="sticky top-0">
+            <div className="bg-white  rounded-xl shadow-2xl max-w-sm w-full overflow-hidden transition-all duration-300 hover:shadow-indigo-500/50 dark:hover:shadow-blue-900/50">
+              <div className="relative h-32 bg-gradient-to-r from-[#3067ab] to-blue-700">
+                <Image
+                  quality={80}
+                  loading="lazy"
+                  src={jeeva}
+                  alt="jeeva shanmugam"
+                  className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-24 h-24 rounded-full border-4 border-white dark:border-gray-800 transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+              <div className="pt-16 pb-6 px-6 text-center">
+                <h1 className="text-2xl font-bold text-gray-800  mb-1">
+                  Jeeva Shanmugam
+                </h1>
+                <p className="text-indigo-600 font-semibold mb-4">
+                  Content Writer
+                </p>
+                <p className="text-gray-600  mb-4 text-justify">
+                  A boy with a ton of pending bucket lists that has to be ticked
+                  | Blogger | otherwise commonly known for his absurd stories!
+                </p>
+                <div className="flex justify-center space-x-4 mb-6">
+                  <Link
+                    href="https://www.instagram.com/emvric/"
+                    className="text-gray-600 hover:text-indigo-800  dark:hover:text-indigo-400 transition-colors duration-300"
+                  >
+                    <FaInstagram className="text-4xl font-bold mt-[2px] text-rose-500" />
+                  </Link>
+                </div>
+              </div>
+              <div className="bg-gray-50 px-6 py-4">
+                <button className="w-full bg-indigo-800 text-white py-2 rounded-lg font-semibold hover:bg-blue-900 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </section>
     </>
