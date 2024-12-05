@@ -58,7 +58,7 @@ function Blog() {
 
             <div className="grid md:grid-cols-2 gap-4 grid-col-1">
               <div className="group bg-black overflow-hidden rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 relative">
-                <Link href="/ai-driven-digital-marketing">
+                <Link href="/career-in-digital-marketing-2025">
                   <Image
                     quality={100}
                     className="w-full h-36 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
