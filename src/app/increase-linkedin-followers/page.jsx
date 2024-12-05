@@ -4,17 +4,17 @@ import Head from "next/head";
 import LinkedinFollowers from "./LinkedinFollowers";
 
 export const metadata = {
-  title: "Top 05 Mobile App Development Frameworks in 2024",
-  description: "Top 05 Mobile App Development Frameworks in 2024",
+  title: "How to Increase LinkedIn Followers in 2024",
+  description: "Learn effective strategies to increase your LinkedIn followers and grow your professional network in 2024.",
   openGraph: {
-    title: "Top 05 Mobile App Development Frameworks in 2024",
-    description: "Top 05 Mobile App Development Frameworks in 2024",
+    title: "How to Increase LinkedIn Followers in 2024",
+    description: "Discover proven tips and tricks to boost your LinkedIn followers and enhance your brand visibility.",
     images: [
       {
-        url: "/images/blog/timg.webp", // Ensure this path is correct
+        url: "/images/blog/linkedin-followers.webp", // Ensure this path is correct
       },
     ],
-    url: "https://www.ultraflysolutions.com/top-mobile-development-framework",
+    url: "https://www.ultraflysolutions.com/increase-linkedin-followers",
     type: "article",
   },
 };
