@@ -97,7 +97,7 @@ const Popular = () => {
           width={80}
           height={80}
           alt="Software"
-          className="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500"
+          className="flex-shrink-0 object-cover w-20 h-20 mr-4  dark:bg-gray-500"
           src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*IyC9f2atqNGURqIu5G0SGQ.jpeg"
         />
         <div className="flex flex-col flex-grow">
