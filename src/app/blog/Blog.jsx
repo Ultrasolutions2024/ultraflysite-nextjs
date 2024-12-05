@@ -6,6 +6,7 @@ import Fimg from "../images/blog/first.webp";
 import Simg from "../images/blog/seoblog.webp";
 import Timg from "../images/blog/timg.webp";
 import bg1 from "../images/blog/linkedin.webp";
+import aidriven from "../images/blog/aidriven.jpeg";
 
 function Blog() {
   useEffect(() => {
@@ -56,27 +57,27 @@ function Blog() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-4 grid-col-1">
-              {/* <div className="group bg-black overflow-hidden rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 relative">
-                <Link href="/why-seo-important-in-business">
+              <div className="group bg-black overflow-hidden rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 relative">
+                <Link href="/ai-driven-digital-marketing">
                   <Image
                     quality={100}
                     className="w-full h-36 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
-                    src={Simg}
+                    src={aidriven}
                     alt="SEO Importance"
                   />
                   <div className="p-4">
                     <h3 className="text-white font-bold text-lg relative">
-                      Unlocking Success:
+                      AI-Driven Success
                       <span className="absolute inset-0 bottom-[-2px] h-[4px] bg-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 -translate-y-3"></span>
                     </h3>
                     <p className="text-gray-300 text-sm">
-                      Why SEO Is Important in Business and How to Leverage It
-                      Today!
+                      How to Build A Successful Career in Digital Marketing in
+                      2025 Despite AI Trends?
                     </p>
                   </div>
                 </Link>
               </div>
-
+              {/* 
               <div className="group bg-black overflow-hidden rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 relative">
                 <Link href="/top-mobile-development-framework">
                   <Image
