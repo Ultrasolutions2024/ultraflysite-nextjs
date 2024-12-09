@@ -26,7 +26,7 @@ function Seo() {
   const services = [
     {
       id: 1,
-      title: "Digital Marketing ",
+      title: "Search Engine Optimization (SEO)",
       description: `A good SEO strategy is the first true secret to digital victory. We offer a wide range of services in SEO that make sure your website stays visible on search engines, attracts organic visitors, and converts visitors into your customers.`,
       highlights: [
         "Organic Growth through proven techniques.",
@@ -108,7 +108,7 @@ function Seo() {
     <>
       <div className=" mt-[20px] bg-gray-50">
         <h1 className="text-[1.4rem] text-center text-gray-800 md:text-3xl lg:text-5xl mt-16 font-semibold">
-          Result-Driven  Digital Marketing Services
+          Search Engine Optimization 
         </h1>
         <div className="flex flex-col lg:flex-row bg-gray-50 lg:h-screen p-4">
           {/* Left Column (100% on small screens, 30% on medium and above) */}
@@ -116,7 +116,7 @@ function Seo() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden p-6 transition-transform transform hover:scale-105">
               <div className="flex flex-col">
                 <h2 className="text-2xl text-center font-bold text-gray-900 mb-4">
-                  Digital Marketing
+                  SEO 
                 </h2>
                 <p className="text-base text-justify text-gray-700 mb-4">
                   An effective online presence is not just the new competitive

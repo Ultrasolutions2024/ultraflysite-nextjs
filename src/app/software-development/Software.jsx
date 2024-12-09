@@ -384,7 +384,7 @@ function Software() {
           </div>
 
           <div className="p-8 bg-gray-50 pt-10">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">
+            <h2 className="text-4xl font-bold text-gray-800 mb-6 text-center">
               Types of Custom Software Development
             </h2>
             <p className="text-lg text-gray-600 mb-8">

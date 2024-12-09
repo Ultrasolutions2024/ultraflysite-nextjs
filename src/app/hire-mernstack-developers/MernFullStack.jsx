@@ -23,6 +23,15 @@ const MernfullStack = () => {
   }, []);
   const form = useRef();
 
+  const sectionRef = useRef(null);
+
+  const scrollToSection = () => {
+    sectionRef.current?.scrollIntoView({
+      behavior: "smooth", // Enables smooth scrolling
+      block: "start", // Scrolls to the start of the element
+    });
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -138,11 +147,11 @@ const MernfullStack = () => {
               </li>
             </ul>
             <div className="flex justify-center mb-5">
-              <Link href="#sendBtn">
-                <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
+              
+                <button onClick={scrollToSection} className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
                   Talk with Our Experts
                 </button>
-              </Link>
+        
             </div>
           </div>
         </div>
@@ -503,23 +512,22 @@ const MernfullStack = () => {
       </section>
 
       <div className="relative hero h-fit md:h-96 my-2 md:my-10">
-        <div className="absolute inset-0">
-          <Image
-            src={resource}
-            alt="MERN Stack Development"
-            style={{
-              objectFit: "cover",
-              objectPosition: "right",
-            }}
-            quality={75}
-            priority
-            className="z-0"
-          />
-        </div>
+        {/* Background Image */}
+        <Image
+          src={resource}
+          alt="Backend Development"
+          fill
+          style={{
+            objectFit: "cover",
+            objectPosition: "right",
+          }}
+          quality={75}
+          priority
+          className="z-0"
+        />
 
-        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60 z-10"></div>
-
-        <div className="pl-10 text-neutral-content text-left items-start py-10 z-20 relative">
+        {/* Content Overlay */}
+        <div className="relative z-10 pl-10 text-neutral-content text-left items-start py-10">
           <div>
             <h1 className="md:mb-5 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
               Hire the Best MERN Stack Talent Today
@@ -531,8 +539,8 @@ const MernfullStack = () => {
               deliver value and efficiency.
             </p>
             <Link
-              href={"/contact-us"}
-              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+              href="/contact-us"
+              className="text-xs md:text-xl text-white bg-blue-500 p-4 rounded-xl "
             >
               Get in touch
             </Link>
@@ -542,49 +550,50 @@ const MernfullStack = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-5 md:px-10 mb-10">
         <div
           className="w-full flex items-center justify-center col-span-full md:col-span-1 max-lg:order-last"
-          id="sendBtn"
+          ref={sectionRef} 
         >
           <form className="w-full" ref={form} onSubmit={sendEmail}>
-            <div className="grid gap-8 outline outline-offset-2 outline-2 outline-slate-400 p-10 bg-gray-200 rounded-xl">
-              <label className="input input-bordered flex items-center gap-2">
-                <FaUser />
+            <div className="grid gap-6 outline outline-offset-4 outline-2 outline-gray-300 p-12 bg-gray-100 rounded-2xl shadow-lg">
+              <label className="flex items-center gap-3 bg-white border border-gray-300 rounded-lg px-4 py-3 focus-within:border-blue-500 focus-within:shadow-lg transition-all">
+                <FaUser className="text-gray-500" />
                 <input
                   name="user_name"
                   type="text"
-                  className="w-full"
+                  className="w-full bg-transparent outline-none placeholder-gray-400 text-gray-700"
                   placeholder="Name"
                   required
                 />
               </label>
-              <label className="input input-bordered flex items-center gap-2">
-                <MdEmail />
+              <label className="flex items-center gap-3 bg-white border border-gray-300 rounded-lg px-4 py-3 focus-within:border-blue-500 focus-within:shadow-lg transition-all">
+                <MdEmail className="text-gray-500" />
                 <input
                   name="user_email"
                   type="email"
-                  className="w-full"
+                  className="w-full bg-transparent outline-none placeholder-gray-400 text-gray-700"
                   placeholder="Email"
                   required
                 />
               </label>
-              <label className="input input-bordered flex items-center gap-2">
-                <FaMobileButton />
+              <label className="flex items-center gap-3 bg-white border border-gray-300 rounded-lg px-4 py-3 focus-within:border-blue-500 focus-within:shadow-lg transition-all">
+                <FaMobileButton className="text-gray-500" />
                 <input
                   name="user_phone"
                   type="text"
-                  className="w-full"
+                  className="w-full bg-transparent outline-none placeholder-gray-400 text-gray-700"
                   placeholder="Number"
                 />
               </label>
               <label>
                 <textarea
-                  className="textarea textarea-bordered w-full"
+                  className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 resize-none outline-none placeholder-gray-400 text-gray-700 focus:border-blue-500 focus:shadow-lg transition-all"
                   placeholder="Bio"
                   name="message"
+                  rows="4"
                 />
               </label>
               <button
                 type="submit"
-                className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300"
+                className="w-full px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 shadow-md transition-all duration-300"
               >
                 Send
               </button>

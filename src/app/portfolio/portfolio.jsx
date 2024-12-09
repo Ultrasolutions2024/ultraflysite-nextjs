@@ -89,13 +89,13 @@ function Portfolio() {
               </p>
             </div>
 
-            <div className="rounded-3xl w-full md:w-[550px] lg:w-[620px] h-fit shadow-lg lg:mt-7">
+            <div className="rounded-3xl w-full md:w-[550px] lg:w-[620px] h-fit shadow-lg lg:mt-7 transition-transform duration-300 hover:scale-105">
               <Image
                 // loading="lazy"
                 quality={75}
                 src={division}
                 alt="Team Image"
-                className="object-contain h-[500px] rounded-3xl transition-transform duration-300 hover:scale-105"
+                className="object-fill h-[500px] rounded-3xl "
                 width={700}
                 height={450}
               />
@@ -186,7 +186,7 @@ function Portfolio() {
               <ul className="list-disc list-inside text-sm lg:text-[18px] font-sans text-justify leading-relaxed text-gray-900">
                 <li>
                   Total sales growth of
-                  <strong className="text-gray-800">75%</strong> across clients
+                  <strong className="text-gray-800">{" "}75%</strong> across clients
                 </li>
                 <li>
                   <strong className="text-gray-800">60%</strong> uplift in media
@@ -194,7 +194,7 @@ function Portfolio() {
                 </li>
                 <li>
                   Customer revenue increased by
-                  <strong className="text-gray-800">45%</strong> from campaigns
+                  <strong className="text-gray-800">{" "}45%</strong> from campaigns
                 </li>
               </ul>
             </div>
@@ -221,7 +221,7 @@ function Portfolio() {
                   href="mailto:info@ultraflysolutions.com"
                   className="text-blue-900 hover:underline"
                 >
-                  info@ultraflysolutions.com
+                  {" "}info@ultraflysolutions.com{" "}
                 </Link>
                 for more on how we can promote your business and drive growth.
               </p>

@@ -178,8 +178,9 @@ const Mobile = () => {
                     Client Satisfaction
                   </h5>
                   <p className="text-base font-semibold text-center text-gray-600">
-                    Your satisfaction is our goal. We work alongside you to meet
-                    and exceed expectations.
+                    Your satisfaction is our primary goal. We work alongside you
+                    to meet, consistently exceed expectations, and ensure
+                    exceptional results every time.
                   </p>
                 </div>
               </div>

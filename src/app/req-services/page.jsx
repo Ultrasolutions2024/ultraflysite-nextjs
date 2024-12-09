@@ -1,25 +1,24 @@
 import React from "react";
 import Head from "next/head";
-
-import Seo from "./Seo";
+import Contact from './Contact'
 
 export const metadata = {
-  title: "Digital Marketing Company Coimbatore Ultrafly Solution",
+  title: "Contact the Best Software Development Company in Coimbatore",
   description:
-    "Boost your online presence with Ultrafly Solutions, We're a leading SEO & Digital Marketing company in Coimbatore. We offer expert strategies for proven results",
+    "Reach out to Ultrafly Solutions, the top software development and digital marketing company in Coimbatore, for innovative solutions tailored to your needs.",
   keywords:
-    "digital marketing, online presence, search engine optimization, Ultrafly Solutions",
+    "contact Ultrafly Solutions, get in touch, IT solutions, business inquiries",
   openGraph: {
-    title: "Digital Marketing | Ultrafly Solutions",
+    title: "Contact Us | Ultrafly Solutions",
     description:
-      "Boost your online presence with our SEO and digital marketing services. Ultrafly Solutions helps your business reach its full potential.",
+      "Get in touch with Ultrafly Solutions for expert IT solutions and services. We're here to help your business grow and succeed.",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.webp",
+        url: "../images/blog/timg.webp",
       },
     ],
-    url: "https://www.ultraflysolutions.com/digital-marketing-company",
-    type: "website",
+    url: "https://www.ultraflysolutions.com/contact-us",
+    // type: "article",
   },
 };
 
@@ -37,10 +36,9 @@ function Page() {
         />
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
         <meta property="og:url" content={metadata.openGraph.url} />
-        <meta property="og:type" content={metadata.openGraph.type} />
         <link rel="canonical" href={metadata.openGraph.url} />
       </Head>
-      <Seo />
+      <Contact />
     </>
   );
 }

@@ -1,25 +1,23 @@
 import React from "react";
 import Head from "next/head";
 
-import Seo from "./Seo";
+import ChatGPT from "./Chatgpt-pro-subscription-review";
 
 export const metadata = {
-  title: "Digital Marketing Company Coimbatore Ultrafly Solution",
+  title: "How to Build a Career in Digital Marketing in 2025?",
   description:
-    "Boost your online presence with Ultrafly Solutions, We're a leading SEO & Digital Marketing company in Coimbatore. We offer expert strategies for proven results",
-  keywords:
-    "digital marketing, online presence, search engine optimization, Ultrafly Solutions",
+    "Get to know how you can become a digital marketing expertand make a living in 2025 with these useful tips",
   openGraph: {
-    title: "Digital Marketing | Ultrafly Solutions",
+    title: "How to Build a Career in Digital Marketing in 2025?",
     description:
-      "Boost your online presence with our SEO and digital marketing services. Ultrafly Solutions helps your business reach its full potential.",
+      "How to get started with digital marketing in 2025? with tese useful tips and make a money in digital marketing",
     images: [
       {
-        url: "https://www.ultraflysolutions.com/images/blog/timg.webp",
+        url: "/images/blog/ai-digital-marketing.webp", // Ensure this path is correct
       },
     ],
-    url: "https://www.ultraflysolutions.com/digital-marketing-company",
-    type: "website",
+    url: "https://www.ultraflysolutions.com/career-in-digital-marketing-2025",
+    type: "article",
   },
 };
 
@@ -29,7 +27,6 @@ function Page() {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords} />
         <meta property="og:title" content={metadata.openGraph.title} />
         <meta
           property="og:description"
@@ -40,7 +37,7 @@ function Page() {
         <meta property="og:type" content={metadata.openGraph.type} />
         <link rel="canonical" href={metadata.openGraph.url} />
       </Head>
-      <Seo />
+      <ChatGPT />
     </>
   );
 }

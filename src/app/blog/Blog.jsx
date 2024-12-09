@@ -38,20 +38,20 @@ function Blog() {
                 <Image
                   quality={100}
                   className="w-full h-80 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
-                  src={bg1}
+                  src={aidriven}
                   alt="Unlocking the Future"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent opacity-90"></div>
               </Link>
               <div className="absolute bottom-4 left-6">
                 <h2 className="text-white font-bold text-2xl relative group">
-                  LinkedIn Assists:
+                Career in Digital Marketing!
                   <span className="absolute inset-0 bottom-[4px] h-[4px] bg-[#ffffff] scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 -translate-y-3"></span>
                 </h2>
 
                 <p className="text-gray-300 mt-">
-                  How to Increase Your LinkedIn Followers and Make a Living in
-                  2025?
+                How to Build A Successful Career in Digital Marketing in
+                2025 Despite AI Trends?
                 </p>
               </div>
             </div>
@@ -62,17 +62,17 @@ function Blog() {
                   <Image
                     quality={100}
                     className="w-full h-36 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
-                    src={aidriven}
+                    src={bg1}
                     alt="SEO Importance"
                   />
                   <div className="p-4">
                     <h3 className="text-white font-bold text-lg relative">
-                      Career in Digital Marketing!
+                    LinkedIn Assists:
                       <span className="absolute inset-0 bottom-[-2px] h-[4px] bg-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 -translate-y-3"></span>
                     </h3>
                     <p className="text-gray-300 text-sm">
-                      How to Build A Successful Career in Digital Marketing in
-                      2025 Despite AI Trends?
+                    How to Increase Your LinkedIn Followers and Make a Living in
+                    2025?
                     </p>
                   </div>
                 </Link>

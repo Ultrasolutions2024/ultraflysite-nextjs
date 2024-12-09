@@ -23,6 +23,15 @@ const Reactjs = () => {
   }, []);
   const form = useRef();
 
+  const sectionRef = useRef(null);
+
+  const scrollToSection = () => {
+    sectionRef.current?.scrollIntoView({
+      behavior: "smooth", // Enables smooth scrolling
+      block: "start", // Scrolls to the start of the element
+    });
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -89,25 +98,21 @@ const Reactjs = () => {
   return (
     <>
       <div className="relative hero min-h-screen">
-       
         <div className="absolute inset-0">
           <Image
-            src={background} 
+            src={background}
             alt="Hire ReactJS Developers"
-            fill 
+            fill
             style={{
-              objectFit: "cover", 
+              objectFit: "cover",
               objectPosition: "center",
-            }} 
-           
-            priority 
+            }}
+            priority
           />
         </div>
 
-        
         <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60"></div>
 
-       
         <div className="hero-content absolute inset-0 flex justify-center items-center text-neutral-content text-left">
           <div className="max-w-4xl text-left px-6 md:px-12 lg:px-16">
             <h1 className="mb-5 text-4xl sm:text-5xl font-bold text-white">
@@ -139,11 +144,12 @@ const Reactjs = () => {
               </li>
             </ul>
             <div className="flex justify-center mb-5">
-              <Link href="#sendBtn">
-                <button className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
-                  Talk with Our Experts
-                </button>
-              </Link>
+              <button
+                onClick={scrollToSection}
+                className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300"
+              >
+                Talk with Our Experts
+              </button>
             </div>
           </div>
         </div>
@@ -154,7 +160,6 @@ const Reactjs = () => {
           Accelerate Your Success with Custom ReactJS Solutions!
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
-          
           <div
             className="group relative cursor-pointer overflow-hidden bg-white rounded-2xl px-6 pt-12 pb-10 shadow-2xl ring-1 ring-gray-900/5 transition-all duration-500 transform hover:scale-105 hover:shadow-3xl sm:mx-auto sm:max-w-sm sm:px-12"
             data-aos="fade-right"
@@ -316,7 +321,6 @@ const Reactjs = () => {
         </div>
       </div>
 
-      
       <div className="bg-gray-50 relative max-w-full shadow-sm shadow-[#000000] mx-auto rounded overflow-hidden">
         <div className="grid sm:grid-cols-2 max-sm:gap-6">
           <div className="text-center p-6 flex flex-col justify-center items-center">
@@ -347,7 +351,7 @@ const Reactjs = () => {
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="Team"
                 width={500}
-                height={500} 
+                height={500}
               />
             </div>
           </div>
@@ -355,7 +359,6 @@ const Reactjs = () => {
         <div className="absolute -top-[50px] -left-[50px] w-28 h-28 rounded-full bg-[#03a4ed] opacity-40 shadow-lg"></div>
         <div className="absolute -top-10 -left-10 w-28 h-28 rounded-full bg-[#2e8bb6] opacity-40 shadow-lg"></div>
       </div>
-
 
       <div className="py-10 max-md:px-10">
         <h2 className="text-2xl font-bold text-center">
@@ -368,9 +371,7 @@ const Reactjs = () => {
           results and increase efficiency.
         </p>
 
-       
         <div className="mt-6 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-        
           <div
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="fade-left"
@@ -384,7 +385,6 @@ const Reactjs = () => {
             </p>
           </div>
 
-        
           <div
             className="p-8 shadow-lg rounded-lg bg-white flex-1 transition-transform transform hover:scale-105 border border-sky-400"
             data-aos="flip-up"
@@ -529,7 +529,6 @@ const Reactjs = () => {
         </div>
 
         {/* Overlay */}
-        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-60 z-10"></div>
 
         {/* Content */}
         <div className="pl-10 text-neutral-content text-left items-start py-10 z-20 relative">
@@ -546,7 +545,7 @@ const Reactjs = () => {
             </p>
             <Link
               href={"/contact-us"}
-              className="text-xs md:text-xl text-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-warning mt-2"
+              className="text-xs md:text-xl text-white bg-blue-500 p-4 rounded-xl "
             >
               Get in touch
             </Link>
@@ -557,55 +556,57 @@ const Reactjs = () => {
         {/* form */}
         <div
           className="w-full flex items-center justify-center col-span-full md:col-span-1 max-lg:order-last"
-          id="sendBtn"
+          ref={sectionRef} 
         >
           <form className="w-full" ref={form} onSubmit={sendEmail}>
-            <div className="grid gap-8 outline outline-offset-2 outline-2 outline-slate-400 p-10 bg-gray-200 rounded-xl">
-              <label className="input input-bordered flex items-center gap-2">
-                <FaUser />
+            <div className="grid gap-6 outline outline-offset-4 outline-2 outline-gray-300 p-12 bg-gray-100 rounded-2xl shadow-lg">
+              <label className="flex items-center gap-3 bg-white border border-gray-300 rounded-lg px-4 py-3 focus-within:border-blue-500 focus-within:shadow-lg transition-all">
+                <FaUser className="text-gray-500" />
                 <input
                   name="user_name"
                   type="text"
-                  className="w-full"
+                  className="w-full bg-transparent outline-none placeholder-gray-400 text-gray-700"
                   placeholder="Name"
                   required
                 />
               </label>
-              <label className="input input-bordered flex items-center gap-2">
-                <MdEmail />
+              <label className="flex items-center gap-3 bg-white border border-gray-300 rounded-lg px-4 py-3 focus-within:border-blue-500 focus-within:shadow-lg transition-all">
+                <MdEmail className="text-gray-500" />
                 <input
                   name="user_email"
                   type="email"
-                  className="w-full"
+                  className="w-full bg-transparent outline-none placeholder-gray-400 text-gray-700"
                   placeholder="Email"
                   required
                 />
               </label>
-              <label className="input input-bordered flex items-center gap-2">
-                <FaMobileButton />
+              <label className="flex items-center gap-3 bg-white border border-gray-300 rounded-lg px-4 py-3 focus-within:border-blue-500 focus-within:shadow-lg transition-all">
+                <FaMobileButton className="text-gray-500" />
                 <input
                   name="user_phone"
                   type="text"
-                  className="w-full"
+                  className="w-full bg-transparent outline-none placeholder-gray-400 text-gray-700"
                   placeholder="Number"
                 />
               </label>
               <label>
                 <textarea
-                  className="textarea textarea-bordered w-full"
+                  className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 resize-none outline-none placeholder-gray-400 text-gray-700 focus:border-blue-500 focus:shadow-lg transition-all"
                   placeholder="Bio"
                   name="message"
+                  rows="4"
                 />
               </label>
               <button
                 type="submit"
-                className=" px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300"
+                className="w-full px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 shadow-md transition-all duration-300"
               >
                 Send
               </button>
             </div>
           </form>
         </div>
+
         {/* faq */}
 
         <div className="col-span-2 grid gap-2 ">

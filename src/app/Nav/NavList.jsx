@@ -161,6 +161,9 @@ function NavList() {
             </li>
           </ul>
         </div>
+        <li className="hover:text-blue-600">
+              <Link href="/">Privacy & Policy</Link>
+            </li>
       </ul>
     </>
   );

@@ -51,14 +51,6 @@ function Footer() {
             <Link href="/privacy-policy">
               <p className="font-medium hover:text-blue-600">Privacy Policy</p>
             </Link>
-            <Link href="#">
-              <p className="font-medium hover:text-blue-600">Cookie Policy</p>
-            </Link>
-            <Link href="#">
-              <p className="font-medium hover:text-blue-600">
-                Terms and Conditions
-              </p>
-            </Link>
             <h2 className="text-xl font-bold mt-4">Resources</h2>
             <Link href="/blog">
               <p className="font-medium hover:text-blue-600">Blogs</p>
@@ -110,18 +102,16 @@ function Footer() {
               <MdOutlineEmail className="mt-1" /> info@ultraflysolutions.com
             </Link>
 
-            <Link href="/">
-              <p className="flex items-center gap-2 hover:text-blue-600">
-                <Image
-                  loading="lazy"
-                  quality={75}
-                  src={india}
-                  alt="india"
-                  className="w-4 h-4"
-                />
-                +91 91500 01089
-              </p>
-            </Link>
+            <p className="flex items-center gap-2 hover:text-blue-600">
+              <Image
+                loading="lazy"
+                quality={75}
+                src={india}
+                alt="india"
+                className="w-4 h-4"
+              />
+              <Link href="tel:+919150001089">+91 91500 01089</Link>
+            </p>
 
             <p className="flex items-center gap-2 hover:text-blue-600">
               <Image
@@ -131,8 +121,9 @@ function Footer() {
                 alt="india"
                 className="w-4 h-4"
               />
-              +91 91500 01090
+              <Link href="tel:+919150001090">+91 91500 01090</Link>
             </p>
+
             <p className="flex items-center gap-2 hover:text-blue-600">
               <Image
                 loading="lazy"
@@ -141,7 +132,7 @@ function Footer() {
                 alt="usa"
                 className="w-4 h-4"
               />
-              +1 562 521 9684
+              <Link href="tel:+15625219684">+1 562 521 9684</Link>
             </p>
 
             <h2 className="text-xl font-bold mt-4">Social</h2>
