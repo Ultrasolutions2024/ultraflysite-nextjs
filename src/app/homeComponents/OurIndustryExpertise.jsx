@@ -12,7 +12,7 @@ import retail from "../images/Company/retail.webp";
 import savings from "../images/Company/savings.webp";
 import telecoms from "../images/Company/telecom.webp";
 import review from "../images/features/review.webp";
-import justdial from "../images/technologies/justdial review.webp";
+import justdial from "../images/technologies/justdial review.png";
 import glassdoor from "../images/technologies/glassdoor.webp";
 import Image from "next/image";
 import Link from "next/link";
@@ -68,11 +68,6 @@ const OurIndustryExpertise = () => {
                 {industry.name}
               </p>
             </div>
-
-            {/* Hovering button (More Info) */}
-            <button className="absolute left-1/2 bottom-0 translate-x-[-50%] translate-y-[125%] w-[60%] rounded-lg border-none bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 transition-all ease-out duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2">
-              More info
-            </button>
           </div>
         ))}
       </div>
@@ -113,7 +108,7 @@ const OurIndustryExpertise = () => {
               quality={75}
               src={justdial}
               alt="Review"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain scale-125"
             />
           </Link>
         </div>

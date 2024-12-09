@@ -286,6 +286,10 @@ loading="lazy"
           <Link href="/blog" className="hover:text-[#007bff] text-gray-700 font-semibold ">
             Blog
           </Link>
+
+         
+
+
           <div  className="group max-lg:border-b max-lg:py-3 relative">
             <p
              
@@ -322,6 +326,10 @@ loading="lazy"
                   </p>
                 </li>
               </Link>
+
+
+              
+
              {/*  <Link href="/case-studies">
                 <li className="border-b py-2 px-2 -ml-2 rounded-lg transition-transform transform hover:scale-105 hover:shadow-lg">
                   <p className="hover:text-[#007bff] text-gray-600 text-[15px] font-bold block">
@@ -336,8 +344,14 @@ loading="lazy"
                   </p>
                 </li>
               </Link>
+              
+
             </ul>
+           
           </div>
+          <Link href="/req-services" className="hover:text-[#007bff] text-gray-700 font-semibold ">
+            Request Services 
+          </Link>
         </nav>
 
         {/* Mobile Menu */}

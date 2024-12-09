@@ -261,8 +261,8 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* Tawk.to Script */}
-        {/* <Script id="tawk-chat" strategy="lazyOnload">
+       
+        <Script id="tawk-chat" strategy="lazyOnload">
           {`
             var Tawk_API = Tawk_API || {};
             var Tawk_LoadStart = new Date();
@@ -276,7 +276,7 @@ export default function RootLayout({ children }) {
                 s0.parentNode.insertBefore(s1, s0);
             })();
           `}
-        </Script> */}
+        </Script>
         <Script 
         src="https://www.statcounter.com/counter/counter.js" 
         strategy="lazyOnload" 

@@ -7,7 +7,7 @@ function ChooseUs() {
     <div className="container mx-auto p-2 md:p-8 bg-white mt-5 md:my-14 grid md:grid-cols-2">
       {/* Title Section */}
       <h2 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl mb-8 col-span-2">
-        CHOOSE US
+        Choose Us
       </h2>
       <div className="px-5">
         <h3 className="text-xl md:text-2xl font-bold mb-6 text-center">
@@ -68,7 +68,7 @@ function ChooseUs() {
               href="/contact-us"
               className="bg-blue-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-blue-600 transition"
             >
-              Learn More
+              Need To Reach Us
             </Link>
           </div>
         </div>

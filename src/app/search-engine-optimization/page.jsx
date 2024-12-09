@@ -4,13 +4,13 @@ import Head from "next/head";
 import Seo from "./Seo";
 
 export const metadata = {
-  title: "Digital Marketing Company Coimbatore Ultrafly Solution",
+  title: "Search Engine Optimizations",
   description:
     "Boost your online presence with Ultrafly Solutions, We're a leading SEO & Digital Marketing company in Coimbatore. We offer expert strategies for proven results",
   keywords:
-    "digital marketing, online presence, search engine optimization, Ultrafly Solutions",
+    "SEO, digital marketing, online presence, search engine optimization, Ultrafly Solutions",
   openGraph: {
-    title: "Digital Marketing | Ultrafly Solutions",
+    title: "SEO  | Ultrafly Solutions",
     description:
       "Boost your online presence with our SEO and digital marketing services. Ultrafly Solutions helps your business reach its full potential.",
     images: [

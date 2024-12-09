@@ -51,7 +51,7 @@ function ITStaffing() {
         <div className=" ">
           <div className="max-w-7xl mx-auto p-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white shadow-lg rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-xl cursor-pointer card">
+              <div className="flex flex-col bg-white shadow-lg rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-xl cursor-pointer card">
                 <h2 className="text-xl font-bold mb-4">Contract Staffing</h2>
                 <p className="mb-2">
                   Strategic workforce solutions tailored for your needs.
@@ -70,7 +70,7 @@ function ITStaffing() {
                 </ul>
               </div>
 
-              <div className="bg-white shadow-lg rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-xl cursor-pointer card">
+              <div className="flex flex-col bg-white shadow-lg rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-xl cursor-pointer card">
                 <h2 className="text-xl font-bold mb-4">Direct Hire</h2>
                 <p className="mb-2">
                   Find permanent, full-time employees who drive your vision.
@@ -89,7 +89,7 @@ function ITStaffing() {
                 </ul>
               </div>
 
-              <div className="bg-white shadow-lg rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-xl cursor-pointer card">
+              <div className="flex flex-col bg-white shadow-lg rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-xl cursor-pointer card">
                 <h2 className="text-xl font-bold mb-4">
                   Technical Recruitment
                 </h2>
@@ -109,7 +109,7 @@ function ITStaffing() {
                 </ul>
               </div>
 
-              <div className="bg-white shadow-lg rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-xl cursor-pointer card">
+              <div className="flex flex-col bg-white shadow-lg rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-xl cursor-pointer card">
                 <h2 className="text-xl font-bold mb-4">IT Project Staffing</h2>
                 <p className="mb-2">Expertise for your critical IT projects.</p>
                 <ul className="list-disc list-inside">
@@ -126,7 +126,7 @@ function ITStaffing() {
                 </ul>
               </div>
 
-              <div className="bg-white shadow-lg rounded-lg p-6  hover:scale-105 hover:shadow-xl cursor-pointer card md:translate-x-[190px] lg:translate-x-[320px]">
+              <div className="flex flex-col bg-white shadow-lg rounded-lg p-6  hover:scale-105 hover:shadow-xl cursor-pointer card md:translate-x-[190px] lg:translate-x-[320px]">
                 <h2 className="text-xl font-bold mb-4">Managed IT Services</h2>
                 <p className="mb-2">
                   Outsource your IT operations for greater focus.
