@@ -42,7 +42,7 @@ const PartneredWith = () => {
                 quality={75}
                 src={star}
                 alt="Star icon"
-                className="w-5 mt-1"
+                className="w-5"
               />
               <p className="text-sm sm:text-base">{text}</p>
             </div>
