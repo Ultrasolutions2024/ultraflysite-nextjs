@@ -34,7 +34,7 @@ function Blog() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="group relative bg-black rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <Link href="/increase-linkedin-followers">
+              <Link href="/career-in-digital-marketing-2025">
                 <Image
                   quality={100}
                   className="w-full h-80 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
@@ -58,7 +58,7 @@ function Blog() {
 
             <div className="grid md:grid-cols-2 gap-4 grid-col-1">
               <div className="group bg-black overflow-hidden rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 relative">
-                <Link href="/career-in-digital-marketing-2025">
+                <Link href="/increase-linkedin-followers">
                   <Image
                     quality={100}
                     className="w-full h-36 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
