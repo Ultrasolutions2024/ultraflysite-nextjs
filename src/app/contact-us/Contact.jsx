@@ -235,10 +235,10 @@ function Login() {
               <option value="Software Development">Software Development</option>
               <option value="Website Development">Website Development</option>
               <option value="Mobile App Development">
-                Mobile App Development
+                Mobile Application Development
               </option>
-              <option value="Digital Marketing">Digital Marketing</option>
-              <option value="Digital Marketing">IT Staff Augmentation</option>
+              <option value="Digital Marketing">SEO & Digital Marketing</option>
+              <option value="Digital Marketing">IT Staffing</option>
               <option value="Digital Marketing">UI/UX Design</option>
               <option value="Other">Other</option>
             </select>

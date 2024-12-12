@@ -47,6 +47,7 @@ function Contact({ closeModal }) {
         }
       );
   };
+  
 
   const handleCloseModal = () => {
     setIsVisible(false); // Trigger animation out
@@ -60,7 +61,9 @@ function Contact({ closeModal }) {
       <div className="fixed inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center z-50">
         <div
           className={`bg-white rounded-lg shadow-lg w-full max-w-4xl transform transition-all duration-300 ${
-            isVisible ? "opacity-100 scale-100 mx-5 my-10" : "opacity-0 scale-90"
+            isVisible
+              ? "opacity-100 scale-100 mx-5 my-10"
+              : "opacity-0 scale-90"
           }`}
         >
           <div className="grid grid-cols-1 md:grid-cols-2">
@@ -94,14 +97,14 @@ function Contact({ closeModal }) {
               <form ref={form} onSubmit={sendEmail}>
                 <div className=" mb-1 md:mb-4">
                   <label
-                    htmlFor="name"
+                    htmlFor="user_name"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
                     Name
                   </label>
                   <input
-                    id="name"
-                    name="name"
+                    id="user_name"
+                    name="user_name"
                     type="text"
                     className="w-full p-2 md:p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all duration-300 hover:shadow-lg focus:shadow-blue-300"
                     placeholder="Enter your name"
@@ -110,14 +113,14 @@ function Contact({ closeModal }) {
                 </div>
                 <div className="mb-4">
                   <label
-                    htmlFor="email"
+                    htmlFor="user_email"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
                     Email
                   </label>
                   <input
-                    id="email"
-                    name="email"
+                    id="user_email"
+                    name="user_email"
                     type="email"
                     className="w-full  p-2 md:p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all duration-300 hover:shadow-lg focus:shadow-blue-300"
                     placeholder="Enter your email"
@@ -126,15 +129,17 @@ function Contact({ closeModal }) {
                 </div>
                 <div className="mb-4">
                   <label
-                    htmlFor="contact"
+                    htmlFor="user_phone"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
                     Contact Number
                   </label>
                   <input
-                    id="contact"
-                    name="contact"
+                    id="user_phone"
+                    name="user_phone"
                     type="tel"
+                    minLength="10" 
+                    maxLength="10" 
                     className="w-full p-2 md:p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all duration-300 hover:shadow-lg focus:shadow-blue-300"
                     placeholder="Enter your contact number"
                     required
@@ -142,14 +147,14 @@ function Contact({ closeModal }) {
                 </div>
                 <div className="mb-4">
                   <label
-                    htmlFor="reason"
+                    htmlFor="message"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
                     Message
                   </label>
                   <textarea
-                    id="reason"
-                    name="reason"
+                    id="message"
+                    name="message"
                     rows="2"
                     className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all duration-300 hover:shadow-lg focus:shadow-blue-300"
                     placeholder="Enter Your Message"

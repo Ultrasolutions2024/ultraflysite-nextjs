@@ -40,7 +40,7 @@ loading="lazy"
         />
         <Link href="tel:+919150001089">+91 91500 01089</Link>
         <span className="mx-1 sm:mx-2">{"|"}</span>
-        <Link href="tel:+919150001090">+91 91500 01090</Link>
+        <Link href="tel:+919150001090">+91 91500 01091</Link>
       </div>
       <div className="hidden md:block">
         <Link href="/contact-us" passHref>
