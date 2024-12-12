@@ -63,32 +63,34 @@ const ReactNative = () => {
   };
   const accordionData = [
     {
-      question: "Why should I hire a Python developer from Ultrafly Solutions?",
+      question:
+        "Why should I hire a React Native developer from Ultrafly Solutions?",
       answer:
-        "At Ultrafly Solutions, we bring years of expertise in Python development, providing custom, scalable, and secure solutions tailored to your business needs. Our developers are skilled in the latest technologies and follow best practices to ensure optimal performance.",
+        "At Ultrafly Solutions, we bring years of expertise in React Native development, providing high-performance, cross-platform mobile app solutions tailored to your business needs. Our developers are skilled in the latest technologies and follow best practices to deliver seamless and scalable apps.",
     },
     {
-      question: "Can I hire a Python developer on a project basis?",
+      question: "Can I hire a React Native developer on a project basis?",
       answer:
         "Yes! We offer flexible hiring models to fit your requirements. Whether you need a full-time developer, a part-time team, or project-based support, we can customize the engagement to suit your project scope and budget.",
     },
     {
-      question: "What type of applications can your Python developers build?",
+      question:
+        "What type of applications can your React Native developers build?",
       answer:
-        "Our Python developers have experience building a variety of applications, including custom web applications, enterprise solutions, API integrations, mobile apps, and more. We cater to both startups and large-scale enterprises.",
+        "Our React Native developers have experience building a variety of applications, including e-commerce apps, social media platforms, enterprise solutions, custom mobile apps, and more. We cater to both startups and large-scale enterprises.",
     },
     {
-      question: "How do I ensure the security of my project?",
+      question: "How do I ensure the quality and security of my mobile app?",
       answer:
-        "We take security seriously at Ultrafly Solutions. Our developers follow industry best practices for code security, data protection, and secure coding standards. We also offer post-launch maintenance and support to ensure your application remains secure.",
+        "We prioritize quality and security at Ultrafly Solutions. Our developers follow industry best practices for code quality, data protection, and secure coding standards. We also conduct rigorous testing and offer post-launch maintenance and support to ensure your app's success.",
     },
     {
-      question: "What is the typical timeline for a Python project?",
+      question: "What is the typical timeline for a React Native project?",
       answer:
         "The timeline depends on the complexity and scope of your project. After discussing your requirements, we provide a clear project plan with estimated timelines to ensure transparency and alignment with your goals.",
     },
     {
-      question: "How do I communicate with the Python development team?",
+      question: "How do I communicate with the React Native development team?",
       answer:
         "We prioritize clear, transparent communication. You'll have direct access to your dedicated project manager and development team via email, calls, or collaboration tools to ensure smooth progress and updates throughout the project.",
     },
@@ -149,11 +151,12 @@ const ReactNative = () => {
               </li>
             </ul>
             <div className="flex justify-center mb-5">
-            
-                <button onClick={scrollToSection} className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300">
-                  Talk with Our Experts
-                </button>
-         
+              <button
+                onClick={scrollToSection}
+                className="px-4 py-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300"
+              >
+                Talk with Our Experts
+              </button>
             </div>
           </div>
         </div>
@@ -553,7 +556,7 @@ const ReactNative = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-10 mb-10">
         <div
           className="w-full flex items-center justify-center col-span-full md:col-span-1 max-lg:order-last"
-          ref={sectionRef} 
+          ref={sectionRef}
         >
           <form className="w-full" ref={form} onSubmit={sendEmail}>
             <div className="grid gap-6 outline outline-offset-4 outline-2 outline-gray-300 p-12 bg-gray-100 rounded-2xl shadow-lg">

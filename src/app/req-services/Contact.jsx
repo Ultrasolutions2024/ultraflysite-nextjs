@@ -1,22 +1,26 @@
 "use client";
-import React, { useRef, useEffect } from "react";
-import india from "../images/hero/india.webp";
-import usa from "../images/hero/united-states.webp";
+import React, { useRef, useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import {
   NotificationContainer,
   NotificationManager,
 } from "react-notifications";
 import "react-notifications/lib/notifications.css";
-import contact_banner from "../images/contact/contact_banner.webp";
 import Image from "next/image";
+import logo from "../images/ultrafly/ultraflysolutionslog.webp";
 import Link from "next/link";
-function Login() {
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, []);
 
+function Contact({ closeModal }) {
+  const [isVisible, setIsVisible] = useState(false); // Track modal visibility
   const form = useRef();
+
+  useEffect(() => {
+    // Trigger animation after mount
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 10); // Small delay to allow CSS transitions
+    return () => clearTimeout(timer);
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -32,6 +36,7 @@ function Login() {
         (result) => {
           NotificationManager.success("Message sent successfully!", "Success");
           form.current.reset();
+          handleCloseModal(); // Close modal on success
         },
         (error) => {
           console.log(error.text);
@@ -43,228 +48,138 @@ function Login() {
       );
   };
 
+  const handleCloseModal = () => {
+    setIsVisible(false); // Trigger animation out
+    setTimeout(() => {
+      closeModal(); // Close modal after animation
+    }, 300); // Match the transition duration
+  };
+
   return (
     <>
-      <div className="relative h-60 w-screen flex items-center justify-center gap-4 max-sm:px-10">
-        <Image
-          src={contact_banner}
-          alt="Contact Banner"
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "center",
-          }}
-          priority
-          quality={75}
-          className="z-0"
-        />
-
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-
-        {/* Content */}
-        <h2 className="relative z-20 text-[1.4rem] md:text-3xl lg:text-5xl text-white font-semibold">
-         Request Services
-        </h2>
-      </div>
-    <section>
-        {/* Contact Section */}
-        <div className="bg-white py-3 page-padding grid md:grid-cols-2 container gap-10 items-center">
-          {/* Left Column */}
-          <div>
-            <h2 className="text-black text-2xl md:text-3xl font-bold mb-4">
-              We are here to help you! To uplift your business.
-            </h2>
-            <p className="text-base md:text-lg text-[#646464] w-[95%] mb-10">
-              Our field of expertise includes Software Development, Web
-              Development, Mobile App Development, SEO, Digital Marketing &
-              Recruitment Services. Our global clients come from diverse
-              industries with varying requirements.
-            </p>
-
-            <div className="grid gap-10">
-              {/* Office Location */}
-              <div className="flex flex-col relative">
-                <h2 className="text-2xl md:text-3xl font-bold mb-3">
-                  Visit Our Office
+      <div className="fixed inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center z-50">
+        <div
+          className={`bg-white rounded-lg shadow-lg w-full max-w-4xl transform transition-all duration-300 ${
+            isVisible ? "opacity-100 scale-100 mx-5 my-10" : "opacity-0 scale-90"
+          }`}
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            {/* Left Column: Full-Height Logo, Heading, and Text */}
+            <div className="bg-gray-100 p-6 flex flex-col justify-center rounded-lg">
+              <div className="flex flex-col items-center md:items-start">
+                <Image
+                  src={logo}
+                  alt="Ultrafly Logo"
+                  className="md:w-full md:h-full w-44"
+                />
+                <h2 className="text-xl font-bold text-gray-800 mt-2 md:mt-6 text-center">
+                  Request Services
                 </h2>
-                <h3 className="text-xl md:text-2xl font-semibold mb-2">
-                  Office Location
-                </h3>
-                <p className="text-base md:text-lg text-[#646464]">
-                  27/9, Nivedh Vikas, Pankaja Mills Road, Puliakulam,
-                  Coimbatore-641 045.
+                <p className="text-sm text-gray-600 mt-2 md:mt-4 text-center md:text-left">
+                  We will respond as soon as possible. If the response is not
+                  fast enough or you are in a hurry, please contact us directly
+                  at{" "}
+                  <Link
+                    href="tel:+919150001089"
+                    className="font-bold text-black"
+                  >
+                    +91 91500 01091
+                  </Link>
                 </p>
               </div>
+            </div>
 
-              {/* Opening Hours */}
-              <div className="flex flex-col relative">
-                <h3 className="text-2xl md:text-3xl mb-2 font-bold">
-                  Opening Hours
-                </h3>
-                <div className="text-[#646464] grid grid-cols-3 w-full md:w-[60%]">
-                  <p className="text-base md:text-lg">Mon - Fri :</p>
-                  <p className="text-base md:text-lg col-span-2">
-                    9:30 am — 6:30 pm
-                  </p>
-                  <p className="text-base md:text-lg">Saturday :</p>
-                  <p className="text-base md:text-lg col-span-2">
-                    9:30 am — 5:30 pm
-                  </p>
-                </div>
-              </div>
-
-              {/* Contact Details */}
-              <div className="flex flex-col relative">
-                <h2 className="text-2xl md:text-3xl mb-2 font-bold">
-                  Send Us a Message
-                </h2>
-                <h3 className="text-xl md:text-2xl font-semibold mb-2">
-                  Phone
-                </h3>
-                <div className="text-[#646464] pl-2">
-                  <p className="text-base md:text-lg">
-                    <Image
-                      loading="lazy"
-                      quality={75}
-                      src={india}
-                      alt="India Flag"
-                      className="inline-block w-4 h-4 mx-[5px]"
-                    />
-                    +91 91500 01089
-                  </p>
-                  <p className="text-base md:text-lg">
-                    <Image
-                      loading="lazy"
-                      quality={75}
-                      src={india}
-                      alt="India Flag"
-                      className="inline-block w-4 h-4 mx-[5px]"
-                    />
-                    +91 91500 01090
-                  </p>
-                  <p className="text-base md:text-lg">
-                    <Image
-                      loading="lazy"
-                      quality={75}
-                      src={usa}
-                      alt="USA Flag"
-                      className="inline-block w-4 h-4 mx-[5px]"
-                    />
-                    +1 562 521 9684
-                  </p>
-                </div>
-                <h3 className="text-xl md:text-2xl font-semibold mt-4">
-                  Landline
-                </h3>
-                <p className="text-base md:text-lg pl-1">
-                  <Image
-                    loading="lazy"
-                    quality={75}
-                    src={india}
-                    alt="India Flag"
-                    className="inline-block w-4 h-4 mx-[5px]"
+            {/* Right Column: Form */}
+            <div className="p-6 flex flex-col justify-center">
+              <form ref={form} onSubmit={sendEmail}>
+                <div className=" mb-1 md:mb-4">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    className="w-full p-2 md:p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all duration-300 hover:shadow-lg focus:shadow-blue-300"
+                    placeholder="Enter your name"
+                    required
                   />
-                  +0422-350 0024
-                </p>
-                <h3 className="text-xl md:text-2xl font-semibold mt-4">
-                  Email
-                </h3>
-                <div className="text-base md:text-xl text-[#646464] pl-1">
-                  <a href="mailto:info@ultraflysolutions.com">
-                    <i className="fa-solid fa-envelope"></i> Business -
-                    info@ultraflysolutions.com
-                  </a>
-                  <br />
-                  <a href="mailto:hr@ultraflysolutions.com">
-                    <i className="fa-solid fa-envelope"></i> HR/Careers -
-                    hr@ultraflysolutions.com
-                  </a>
                 </div>
-              </div>
-
-              {/* Social Media Links */}
-              {/* <div className="flex flex-col relative">
-                <h3 className="text-[2rem] font-bold mb-10"></h3>
-                <div className="text-[18px] font-medium text-black flex gap-5">
-                  <i className="fa-brands fa-facebook-f bg-[#f4f4f4] rounded-full cursor-pointer hover:bg-[#ff695f] ease-in duration-200 hover:text-white"></i>
-                  Add more social media icons here
+                <div className="mb-4">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    className="w-full  p-2 md:p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all duration-300 hover:shadow-lg focus:shadow-blue-300"
+                    placeholder="Enter your email"
+                    required
+                  />
                 </div>
-              </div> */}
+                <div className="mb-4">
+                  <label
+                    htmlFor="contact"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Contact Number
+                  </label>
+                  <input
+                    id="contact"
+                    name="contact"
+                    type="tel"
+                    className="w-full p-2 md:p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all duration-300 hover:shadow-lg focus:shadow-blue-300"
+                    placeholder="Enter your contact number"
+                    required
+                  />
+                </div>
+                <div className="mb-4">
+                  <label
+                    htmlFor="reason"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="reason"
+                    name="reason"
+                    rows="2"
+                    className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all duration-300 hover:shadow-lg focus:shadow-blue-300"
+                    placeholder="Enter Your Message"
+                    required
+                  />
+                </div>
+                <div className="flex justify-end space-x-4">
+                  <button
+                    type="button"
+                    onClick={handleCloseModal}
+                    className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 transition"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="px-4 py-2 bg-blue-600 text-white rounded-md shadow-md hover:bg-blue-700 transition"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
-
-          {/* Right Column - Contact Form */}
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            className="flex flex-col pt-[30px] pr-[50px] pb-[50px] pl-[45px] bg-[#f8f8f8] relative"
-          >
-            <h2 className="text-[22px] md:text-[28px] font-bold mb-4">
-              Contact Information
-            </h2>
-            <h3 className="text-xl md:text-2xl font-semibold my-4">
-              Contact Form
-            </h3>
-            <input
-              name="user_name"
-              className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8"
-              placeholder="Full Name *"
-              type="text"
-              required
-            />
-            <input
-              name="user_email"
-              className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8"
-              placeholder="Email Address *"
-              type="email"
-              required
-            />
-            <input
-              name="user_phone"
-              className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8"
-              placeholder="Your phone number"
-              type="number"
-            />
-            <select
-              name="user_domain"
-              className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8"
-              required
-            >
-              <option value="">Select Domain</option>
-              <option value="Software Development">Software Development</option>
-              <option value="Website Development">Website Development</option>
-              <option value="Mobile App Development">
-                Mobile App Development
-              </option>
-              <option value="Digital Marketing">Digital Marketing</option>
-              <option value="Digital Marketing">IT Staffing </option>
-              <option value="Other">Other</option>
-            </select>
-            <textarea
-              name="message"
-              className="w-full py-[12px] px-[20px] h-[120px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8"
-              placeholder="Your message"
-              required
-            />
-            <button
-              className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-200"
-              type="submit"
-            >
-              Send Message
-            </button>
-          </form>
         </div>
+      </div>
 
-        {/* Google Map */}
-        
-      </section>
-    
-      
-      
       <NotificationContainer />
     </>
   );
 }
 
-export default Login;
+export default Contact;

@@ -231,13 +231,15 @@ function Login() {
               className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8"
               required
             >
-              <option value="">Select Domain</option>
+              <option value="">Select Services</option>
               <option value="Software Development">Software Development</option>
               <option value="Website Development">Website Development</option>
               <option value="Mobile App Development">
                 Mobile App Development
               </option>
               <option value="Digital Marketing">Digital Marketing</option>
+              <option value="Digital Marketing">IT Staff Augmentation</option>
+              <option value="Digital Marketing">UI/UX Design</option>
               <option value="Other">Other</option>
             </select>
             <textarea
