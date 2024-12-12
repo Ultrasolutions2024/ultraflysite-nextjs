@@ -166,23 +166,25 @@ function Featured() {
             </h2>
           </div>
         </div>
-        {/* card -4 */}
-        <div className="featured_card">
+        {/* Combined Card - SEO & Digital Marketing */}
+        <div className="featured_card lg:translate-x-56">
           <div className="hover-text">
             <h2 className="text-center text-xl md:text-2xl font-bold mb-2">
-              Result-Driven SEO
+              SEO & Digital Marketing
             </h2>
             <div className="flex justify-center items-center p-3">
               <span className="text-[13px] md:text-[16px] text-white text-justify max-w-3xl leading-relaxed">
-                In Ultrafly Solutions social media marketing, you use popular
-                social media networks to achieve your marketing and branding
-                goals. Social media marketing isn&apos;t just about creating a
-                business account and posting whenever you want. You need to
-                develop a strategy with measurable goals that includes.
+                At Ultrafly Solutions, we specialize in result-driven SEO and
+                innovative social media marketing. Our SEO services focus on
+                optimizing your online presence for better search engine
+                rankings and improved visibility. Our social media marketing
+                strategies utilize popular platforms to achieve measurable
+                marketing and branding goals, ensuring that your business stays
+                ahead of the competition.
               </span>
             </div>
             <Link href={"/digital-marketing-company"}>
-              <button className=" group relative flex items-center justify-center gap-2 px-5 py-2.5 bg-yellow-400   text-white font-bold rounded-full border-3 border-white/30 transition-all duration-300 ease-in-out shadow-lg hover:scale-105 hover:border-white/60 overflow-hidden m-auto">
+              <button className="group relative flex items-center justify-center gap-2 px-5 py-2.5 bg-yellow-400 text-white font-bold rounded-full border-3 border-white/30 transition-all duration-300 ease-in-out shadow-lg hover:scale-105 hover:border-white/60 overflow-hidden m-auto">
                 Read More
                 <svg
                   fill="currentColor"
@@ -199,67 +201,31 @@ function Featured() {
               </button>
             </Link>
           </div>
-          <Image
-            loading="lazy"
-            quality={75}
-            src={Image4}
-            alt="df"
-            className="h-full w-full"
-          />
+          <div className="grid grid-cols-2">
+            <Image
+              loading="lazy"
+              quality={75}
+              src={Image4}
+              alt="SEO Optimization"
+              className="h-full w-full"
+            />
+            <Image
+              loading="lazy"
+              quality={75}
+              src={Image5}
+              alt="Digital Marketing"
+              className="h-full w-full"
+            />
+          </div>
           <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
             <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
-              SEO OPTIMIZATION
+              SEO & DIGITAL MARKETING
             </h2>
           </div>
         </div>
-        {/* card -5 */}
-        <div className="featured_card">
-          <div className="hover-text">
-            <h2 className="text-center text-xl md:text-2xl font-bold mb-2">
-              Social Media Marketing
-            </h2>
-            <div className="flex justify-center items-center p-3">
-              <span className="text-[13px] md:text-[16px] text-white text-justify max-w-3xl leading-relaxed">
-                Digital marketing content is a pivotal tool for online success.
-                It encompasses various forms, from blog posts and videos to
-                social media updates and email campaigns. Effective content
-                resonates with your audience, delivers value, and aligns with
-                your brand&apos;s message.
-              </span>
-            </div>
-            <Link href={"/digital-marketing-company"}>
-              <button className=" group relative flex items-center justify-center gap-2 px-5 py-2.5 bg-yellow-400   text-white font-bold rounded-full border-3 border-white/30 transition-all duration-300 ease-in-out shadow-lg hover:scale-105 hover:border-white/60 overflow-hidden m-auto">
-                Read More
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  className="w-6 h-6 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
-                >
-                  <path
-                    clipRule="evenodd"
-                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                    fillRule="evenodd"
-                  ></path>
-                </svg>
-                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/80 to-transparent opacity-60 transition-all duration-300 ease-out transform -translate-x-full group-hover:translate-x-full"></span>
-              </button>
-            </Link>
-          </div>
-          <Image
-            loading="lazy"
-            quality={75}
-            src={Image5}
-            alt="df"
-            className="h-full w-full"
-          />
-          <div className="absolute top-[90%] right-0 transform -translate-x-0 -translate-y-3/4 text-white p-4 rounded-lg backdrop-blur-lg bg-black/40 shadow-md">
-            <h2 className="featured_title sm:text-xl sm:font-semibold tracking-wide">
-              DIGITAL MARKETING
-            </h2>
-          </div>
-        </div>
+
         {/* card -6 */}
-        <div className="featured_card">
+        <div className="featured_card md:translate-x-56">
           <div className="hover-text leading-4">
             <h2 className="text-center text-xl md:text-2xl font-bold mb-2">
               Expert IT Staffing Solutions
