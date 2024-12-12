@@ -5,11 +5,18 @@ import logo from "../images/ultrafly/ultraflysolutionslog.webp";
 import { motion, useScroll } from "framer-motion";
 import "./nav.css";
 import Link from "next/link";
+import Contact from "../req-services/Contact";
 
 function Navbar() {
   const { scrollYProgress } = useScroll();
   const [isOpen, setIsOpen] = useState(false); // State to manage mobile menu visibility
   const [dropdownOpen, setDropdownOpen] = useState(null); // State to manage dropdowns
+
+  // Modal state management
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   // Function to toggle mobile menu
   const toggleMenu = () => {
@@ -31,8 +38,12 @@ function Navbar() {
       <div className="flex items-center justify-between px-10 py-4 bg-gray-50">
         <Link href="/">
           <Image
-loading="lazy" 
-  quality={75} src={logo} alt="logo" className="w-36" />
+            loading="lazy"
+            quality={75}
+            src={logo}
+            alt="logo"
+            className="w-36"
+          />
         </Link>
 
         {/* Hamburger button for mobile */}
@@ -55,14 +66,14 @@ loading="lazy"
 
         {/* Desktop Menu */}
         <nav className="hidden lg:flex space-x-8 ">
-          <Link href="/" className="hover:text-[#007bff] text-gray-700 font-semibold">
+          <Link
+            href="/"
+            className="hover:text-[#007bff] text-gray-700 font-semibold"
+          >
             Home
           </Link>
           <div className="group max-lg:border-b max-lg:py-3 relative">
-            <p
-              
-              className="hover:text-[#007bff] text-[15px] text-gray-700 font-semibold hover:cursor-pointer  lg:hover:fill-[#007bff] block"
-            >
+            <p className="hover:text-[#007bff] text-[15px] text-gray-700 font-semibold hover:cursor-pointer  lg:hover:fill-[#007bff] block">
               Services
             </p>
             <ul className="absolute lg:top-[30px] shadow-xl bg-white space-y-3 max-lg:top-8 -left-56 min-w-[350px] z-50 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500 rounded-xl">
@@ -105,10 +116,7 @@ loading="lazy"
           </div>
           <div className="relative group">
             <div className="group text-[14px] max-lg:border-b max-lg:px-3 max-lg:py-2 relative">
-              <p
-                
-                className="hover:text-[#007bff] hover:fill-[#007bff] hover:cursor-pointer  text-[15px] text-gray-700 font-semibold block"
-              >
+              <p className="hover:text-[#007bff] hover:fill-[#007bff] hover:cursor-pointer  text-[15px] text-gray-700 font-semibold block">
                 Hire Our Resources
               </p>
               <div className="absolute lg:top-[30px] max-lg:top-8 -left-[750px] z-50 flex shadow-lg bg-white max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[400px] min-w-[550px] px-8 group-hover:pb-8 group-hover:pt-6 transition-all duration-500 rounded-xl">
@@ -283,18 +291,15 @@ loading="lazy"
             </div>
           </div>
 
-          <Link href="/blog" className="hover:text-[#007bff] text-gray-700 font-semibold ">
+          <Link
+            href="/blog"
+            className="hover:text-[#007bff] text-gray-700 font-semibold "
+          >
             Blog
           </Link>
 
-         
-
-
-          <div  className="group max-lg:border-b max-lg:py-3 relative">
-            <p
-             
-              className="hover:text-[#007bff] hover:cursor-pointer  text-[15px]  lg:hover:fill-[#007bff] text-gray-700 font-semibold  block"
-            >
+          <div className="group max-lg:border-b max-lg:py-3 relative">
+            <p className="hover:text-[#007bff] hover:cursor-pointer  text-[15px]  lg:hover:fill-[#007bff] text-gray-700 font-semibold  block">
               Company
             </p>
             <ul className="absolute shadow-lg lg:top-[30px] bg-white space-y-3 max-lg:top-8 -left-28 min-w-[200px] z-50 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500 rounded-xl">
@@ -327,10 +332,7 @@ loading="lazy"
                 </li>
               </Link>
 
-
-              
-
-             {/*  <Link href="/case-studies">
+              {/*  <Link href="/case-studies">
                 <li className="border-b py-2 px-2 -ml-2 rounded-lg transition-transform transform hover:scale-105 hover:shadow-lg">
                   <p className="hover:text-[#007bff] text-gray-600 text-[15px] font-bold block">
                     Case Studies
@@ -344,14 +346,14 @@ loading="lazy"
                   </p>
                 </li>
               </Link>
-              
-
             </ul>
-           
           </div>
-          <Link href="/req-services" className="hover:text-[#007bff] text-gray-700 font-semibold ">
-            Request Services 
-          </Link>
+          <button
+            onClick={openModal}
+            className="hover:text-[#007bff] text-gray-600 text-[15px] font-bold block"
+          >
+            Request Services
+          </button>
         </nav>
 
         {/* Mobile Menu */}
@@ -364,8 +366,12 @@ loading="lazy"
           <div className="flex justify-between items-center p-4 text-white ">
             <Link href="/">
               <Image
-loading="lazy" 
-  quality={75} src={logo} alt="logo" className="w-28" />
+                loading="lazy"
+                quality={75}
+                src={logo}
+                alt="logo"
+                className="w-28"
+              />
             </Link>
             <button onClick={toggleMenu} aria-label="Close Menu">
               <svg
@@ -427,12 +433,18 @@ loading="lazy"
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/website-development-company" className="block py-1">
+                    <Link
+                      href="/website-development-company"
+                      className="block py-1"
+                    >
                       Website Development
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/digital-marketing-company" className="block py-1">
+                    <Link
+                      href="/digital-marketing-company"
+                      className="block py-1"
+                    >
                       SEO & Digital Marketing
                     </Link>
                   </li>
@@ -471,7 +483,10 @@ loading="lazy"
               {dropdownOpen === 1 && (
                 <ul className="ml-4 mt-2 space-y-2">
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-dot-net-developers" className="block py-1">
+                    <Link
+                      href="/hire-dot-net-developers"
+                      className="block py-1"
+                    >
                       Hire .NET Developers
                     </Link>
                   </li>
@@ -481,12 +496,18 @@ loading="lazy"
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-laravel-developers" className="block py-1">
+                    <Link
+                      href="/hire-laravel-developers"
+                      className="block py-1"
+                    >
                       Hire Laravel Developers
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-node-js-developers" className="block py-1">
+                    <Link
+                      href="/hire-node-js-developers"
+                      className="block py-1"
+                    >
                       Hire Node.js Devlopers
                     </Link>
                   </li>
@@ -501,27 +522,42 @@ loading="lazy"
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-angularjs-developers" className="block py-1">
+                    <Link
+                      href="/hire-angularjs-developers"
+                      className="block py-1"
+                    >
                       Hire AngularJS Developers
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-reactjs-developers" className="block py-1">
+                    <Link
+                      href="/hire-reactjs-developers"
+                      className="block py-1"
+                    >
                       Hire ReactJS Developers
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-javascript-developers" className="block py-1">
+                    <Link
+                      href="/hire-javascript-developers"
+                      className="block py-1"
+                    >
                       Hire JavaScript Developers
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-android-app-developers" className="block py-1">
+                    <Link
+                      href="/hire-android-app-developers"
+                      className="block py-1"
+                    >
                       Hire Android Developers
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-flutter-developers" className="block py-1">
+                    <Link
+                      href="/hire-flutter-developers"
+                      className="block py-1"
+                    >
                       Hire Flutter Developers
                     </Link>
                   </li>
@@ -536,17 +572,26 @@ loading="lazy"
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-react-native-developers" className="block py-1">
+                    <Link
+                      href="/hire-react-native-developers"
+                      className="block py-1"
+                    >
                       Hire React Native Developers
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-back-end-developers" className="block py-1">
+                    <Link
+                      href="/hire-back-end-developers"
+                      className="block py-1"
+                    >
                       Hire Backend Developers
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-blockchain-developers" className="block py-1">
+                    <Link
+                      href="/hire-blockchain-developers"
+                      className="block py-1"
+                    >
                       Hire Blockchain Developers
                     </Link>
                   </li>
@@ -556,17 +601,26 @@ loading="lazy"
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-front-end-developers" className="block py-1">
+                    <Link
+                      href="/hire-front-end-developers"
+                      className="block py-1"
+                    >
                       Hire Frontend Developers
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-full-stack-developers" className="block py-1">
+                    <Link
+                      href="/hire-full-stack-developers"
+                      className="block py-1"
+                    >
                       Hire Full-Stack Developers
                     </Link>
                   </li>
                   <li onClick={toggleMenu}>
-                    <Link href="/hire-mernstack-developers" className="block py-1">
+                    <Link
+                      href="/hire-mernstack-developers"
+                      className="block py-1"
+                    >
                       Hire MERN Stack Developers
                     </Link>
                   </li>
@@ -623,7 +677,7 @@ loading="lazy"
                       Portfolio
                     </Link>
                   </li>
-                 {/*  <li onClick={toggleMenu}>
+                  {/*  <li onClick={toggleMenu}>
                     <Link href="/case-studies" className="block py-1">
                       Case Studies
                     </Link>
@@ -636,8 +690,18 @@ loading="lazy"
                 </ul>
               )}
             </li>
+            <li className="border-b" onClick={toggleMenu}>
+              <button
+                onClick={openModal}
+                className="block py-2"
+              >
+                Request Services
+              </button>
+            </li>
           </ul>
         </div>
+
+        {isModalOpen && <Contact closeModal={closeModal} />}
 
         {/* Overlay */}
         {isOpen && (
