@@ -262,7 +262,7 @@ export default function RootLayout({ children }) {
         </Script>
 
        
-        <Script id="tawk-chat" strategy="lazyOnload">
+        {/* <Script id="tawk-chat" strategy="lazyOnload">
           {`
             var Tawk_API = Tawk_API || {};
             var Tawk_LoadStart = new Date();
@@ -276,7 +276,9 @@ export default function RootLayout({ children }) {
                 s0.parentNode.insertBefore(s1, s0);
             })();
           `}
-        </Script>
+        </Script> */}
+
+<script id="messenger-widget-b" src="https://cdn.botpenguin.com/website-bot.js" defer>675ec3fd936c5217814b60d5,675ec3da51a51890d60989cb</script>
         <Script 
         src="https://www.statcounter.com/counter/counter.js" 
         strategy="lazyOnload" 
