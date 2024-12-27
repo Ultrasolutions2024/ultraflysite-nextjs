@@ -61,41 +61,32 @@ function Portfolio() {
           <hr className="border-gray-300 my-12" />
 
           <div className="lg:max-w-7xl max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 mb-12 mt-5">
-            <div className="text-left bg-gradient-to-r from-gray-50 to-blue-50 -mt-6 px-5 lg:px-10 lg:-translate-x-10 z-10 rounded-3xl w-full lg:w-[700px] h-auto lg:h-[450px] py-6 shadow-md">
-              <h2 className="text-gray-800 text-xl md:text-2xl font-bold mb-4">
+            <div className="text-left bg-gradient-to-r from-gray-50 to-blue-50 -mt-6 px-5 lg:px-10 lg:-translate-x-10 z-10 rounded-3xl w-full lg:w-[700px] h-auto lg:mt-[27px] lg:h-[560px] py-6 shadow-md">
+              <h2 className="text-gray-800 text-xl md:text-2xl font-bold mb-4 ">
                 Annamalai Motors – Renault Division
               </h2>
-              <h3>
-                <strong>
-                  Marketing Sales Online with Strategic Digital Marketing
-                </strong>
-              </h3>
+              <strong>About the Client
+              </strong>
               <p className="mb-4 text-sm lg:text-[18px] font-sans text-justify leading-relaxed text-gray-500">
-                Founded in 2019 in Coimbatore, Tamil Nadu, Ultrafly Solutions
-                Private Limited has emerged as a strong name in software
-                development. In five years, we&aposve built a solid reputation
-                for tailored software solutions, digital marketing strategies,
-                IT staffing, and development services.
+              Annamalai Motors is an automobile dealership in Coimbatore. They have exclusive Renault franchises. Within the automotive market, they were looked down upon. They wanted to get differentiated so that the car sales of Renault increased.
               </p>
+              <strong>Problem Statement</strong>
               <p className="mb-4 text-sm lg:text-[18px] font-sans text-justify leading-relaxed text-gray-500">
-                We drive innovation and ensure quality and customer
-                satisfaction, excelling in enterprise solutions, web
-                applications, mobile apps, and embedded systems.
+              Annamalai Motors required a targeted digital marketing campaign for increased test drives, footfalls at the dealership, and improved sales of Renault vehicles. Till then no previous marketing efforts had gained great mileage.
               </p>
+              <strong>Solution</strong>
               <p className="text-sm lg:text-[18px] font-sans text-justify leading-relaxed text-gray-500">
-                As digital marketing partners, we enhance online visibility and
-                maximize revenue growth, helping clients thrive in a competitive
-                landscape.
+               We designed a three-point selling proposition digital marketing campaign for Renault: style, performance, and affordability. We generated interest in Renault cars by leveraging Google Ads and social media advertising together with influence. We also offered limited-time offers and exclusive deals to new customers.
               </p>
             </div>
 
-            <div className="rounded-3xl w-full md:w-[550px] lg:w-[620px] h-fit shadow-lg lg:mt-7 transition-transform duration-300 hover:scale-105">
+            <div className="rounded-3xl w-full md:w-[550px] lg:w-[620px] h-fit shadow-lg lg:mt-auto mb-[30px] transition-transform duration-300 hover:scale-105 hover:z-50">
               <Image
                 // loading="lazy"
                 quality={75}
                 src={division}
                 alt="Team Image"
-                className="object-fill h-[500px] rounded-3xl "
+                className="object-fill lg:h-[400px] rounded-3xl  "
                 width={700}
                 height={450}
               />
