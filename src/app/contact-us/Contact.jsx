@@ -92,8 +92,8 @@ function Login() {
                   Office Location
                 </h3>
                 <p className="text-base md:text-lg text-[#646464]">
-                  27/9, Nivedh Vikas, Pankaja Mills Road, Puliakulam,
-                  Coimbatore-641 045.
+                  27/9, 3rd floor, flat-9, Nivedh Vikas, Pankaja Mills Road, Puliakulam,
+                  Coimbatore - 641045.
                 </p>
               </div>
 
@@ -109,7 +109,7 @@ function Login() {
                   </p>
                   <p className="text-base md:text-lg">Saturday :</p>
                   <p className="text-base md:text-lg col-span-2">
-                    9:30 am — 5:30 pm
+                    9:30 am — 5:00 pm
                   </p>
                 </div>
               </div>
