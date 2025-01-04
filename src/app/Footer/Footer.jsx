@@ -6,6 +6,7 @@ import medium from "../images/logo/medium.png";
 import Map from "../images/logo/map.png";
 import Image from "next/image";
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <footer className="bg-[#b3eeff5c] ">
@@ -338,7 +339,7 @@ function Footer() {
         <hr />
         <div>
           <p className="text-center py-4 text-[#a2a2a2] text-[10px] sm:text-base">
-            Copyright © 2024 Ultrafly Solutions – All Rights Reserved
+            Copyright © {currentYear} Ultrafly Solutions – All Rights Reserved
           </p>
         </div>
       </footer>
