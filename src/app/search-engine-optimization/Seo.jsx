@@ -108,7 +108,7 @@ function Seo() {
     <>
       <div className=" mt-[20px] bg-gray-50">
         <h1 className="text-[1.4rem] text-center text-gray-800 md:text-3xl lg:text-5xl mt-16 font-semibold">
-          Search Engine Optimization 
+          Search Engine Optimization
         </h1>
         <div className="flex flex-col lg:flex-row bg-gray-50 lg:h-screen p-4">
           {/* Left Column (100% on small screens, 30% on medium and above) */}
@@ -116,30 +116,23 @@ function Seo() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden p-6 transition-transform transform hover:scale-105">
               <div className="flex flex-col">
                 <h2 className="text-2xl text-center font-bold text-gray-900 mb-4">
-                  SEO 
+                  SEO
                 </h2>
                 <p className="text-base text-justify text-gray-700 mb-4">
-                  An effective online presence is not just the new competitive
-                  advantage; it is also the only prerequisite for survival for
-                  any business
+                  An effective online presence is not just the new competitive advantage; it is also the only prerequisite for survival for any business.
+
                 </p>
                 <p className="text-base text-justify text-gray-700 mb-4">
-                  Here at Ultrafly Solutions, we help organizations navigate
-                  through the digital arena and leverage technology for
-                  sustainable growth.
+                  Here at Ultrafly Solutions, recognized as the best digital marketing company in Coimbatore, we help organizations navigate through the digital arena and leverage technology for sustainable growth.
+
                 </p>
 
                 <p className="text-base text-justify text-gray-700 mb-4">
-                  Our mission is to propel your business ahead with leading-edge
-                  digital solutions, innovative strategies, and data-driven
-                  results.
+                  Our mission is to propel your business ahead with leading-edge digital solutions, innovative strategies, and data-driven results.
+
                 </p>
                 <p className="text-base text-justify text-gray-700 mb-4">
-                  We have an experienced team of specialists across various
-                  domains, striving to provide a full suite of services for
-                  digital marketing and software development tailored to enhance
-                  visibility, increase conversion rates, and transform your
-                  business into a powerful digital force.
+                  We have an experienced team of specialists across various domains, striving to provide a full suite of services for digital marketing and software development tailored to enhance visibility, increase conversion rates, and transform your business into a powerful digital force.
                 </p>
               </div>
             </div>
@@ -191,11 +184,7 @@ function Seo() {
               Why Ultrafly Solutions?
             </h2>
             <p className="text-lg md:text-xl text-center text-white mb-12">
-              Ultrafly Solutions is the result of the need to deliver results.
-              Our team of industry veterans and handpicked experts deliver a
-              unique approach to every client, focusing on the specific goals
-              and industry needs.
-            </p>
+            Ultrafly Solutions is widely recognized as the best digital marketing company in Coimbatore, a result of the need to deliver results. Our team of industry veterans and handpicked experts deliver a unique approach to every client, focusing on the specific goals and industry needs.            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white shadow-lg rounded-xl p-6 transition-all transform hover:scale-105 hover:shadow-2xl flex flex-col items-center text-center">
@@ -267,10 +256,7 @@ function Seo() {
               Let&apos;s Build Something Amazing Together
             </h2>
             <p className="text-lg md:text-xl text-white text-center mb-6">
-              Is your business in need of a lift-off? Do you want to be a new
-              startup in the market or an established business looking to
-              streamline operations and enhance customer engagement? Let
-              Ultrafly Solutions assist you.
+            Is your business in need of a lift-off? Do you want to be a new startup in the market or an established business looking to streamline operations and enhance customer engagement? Let Ultrafly Solutions, the best digital marketing company in Coimbatore, assist you.
             </p>
             <p className="text-lg md:text-xl text-white text-center mb-8">
               Contact us now to discuss how we can transform your mobile

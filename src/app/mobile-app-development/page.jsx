@@ -60,16 +60,12 @@ const Mobile = () => {
                 />
               </div>
 
-              <div className="text-left bg-blue-50 mt-6 px-5 lg:px-10 lg:-translate-x-10 rounded-3xl w-full lg:w-[650px] z-10 h-auto lg:h-[400px] py-5 shadow-md">
+              <div className="text-left bg-blue-50 mt-6 px-5 lg:px-10 lg:-translate-x-10 rounded-3xl w-full lg:w-[650px] z-10 h-auto lg:h-[420px] py-5 shadow-md">
                 <h2 className="text-gray-800 text-xl md:text-2xl font-bold mb-4">
                   Custom Mobile App Development Services
                 </h2>
                 <p className="mb-4 text-sm lg:text-[16px] font-sans text-justify leading-relaxed text-gray-500">
-                  The minimum prerequisite for businesses to connect with and
-                  interact with customers, streamline operations, and maintain
-                  growth is mobile applications. Ultrafly Solutions turns your
-                  dreams into reality, ensuring cutting-edge mobile app
-                  solutions that meet and exceed all your needs.
+                  The minimum prerequisite for businesses to connect with and interact with customers, streamline operations, and maintain growth is mobile applications. Ultrafly Solutions provides the Best Custom Mobile App Development Company, turning your dreams into reality, and ensuring cutting-edge mobile app solutions that meet and exceed all your needs.
                 </p>
                 <p className="text-sm lg:text-[16px] font-sans text-justify leading-relaxed text-gray-500">
                   We are not a house for mobile application development;
@@ -78,7 +74,7 @@ const Mobile = () => {
                   launch, and beyond. That&apos;s all of the seasoned
                   developers, designers, and strategists with whom we work
                   together to produce fantastic mobile applications that can be
-                  functional, engaging, and future-ready.
+                  functional, engaging, and future-ready. For those seeking Custom Mobile App Development Company in Coimbatore, Ultrafly Solutions delivers unmatched quality and innovation.
                 </p>
               </div>
             </div>
@@ -86,24 +82,15 @@ const Mobile = () => {
             <hr className="border-gray-300 my-12" />
 
             <div className="grid lg:grid-cols-2 gap-12 mb-10 relative">
-              <div className="text-left bg-blue-50 mt-6 px-5 lg:px-10 rounded-3xl w-full lg:w-[650px] h-auto lg:h-[350px] py-5 shadow-lg z-10 relative">
+              <div className="text-left bg-blue-50 mt-6 px-5 lg:px-10 rounded-3xl w-full lg:w-[650px] h-auto lg:h-[360px] py-5 shadow-lg z-10 relative">
                 <h2 className="text-gray-800 text-xl lg:text-2xl font-bold mb-4">
                   Your Vision, Our Passion
                 </h2>
                 <p className="mb-4 text-sm lg:text-[16px] text-justify font-sans leading-relaxed text-gray-500">
-                  Behind code lines and many other technicalities, it is the
-                  people at Ultrafly Solutions who can turn your ideas into
-                  reality with full passion, creativity, and innovation. With
-                  years of mobile technology expertise and knowledge of how
-                  users behave, we can develop mobile applications that are not
-                  only operational but also interesting, visually awesome, and
-                  capable of captivating your audience.
+                Behind code lines and many other technicalities, it is the people at Ultrafly Solutions who can turn your ideas into reality with full passion, creativity, and innovation. With years of mobile technology expertise and knowledge of how users behave, we excel in Custom Mobile App Development Company in Coimbatore, crafting applications that are not only operational but also interesting, visually awesome, and capable of captivating your audience.
                 </p>
                 <p className="text-sm lg:text-[16px] text-justify font-sans leading-relaxed text-gray-500">
-                  Our mission is simple: Equip business leaders to best outfit
-                  their organizations with the most advanced and innovative
-                  mobile solutions that can accelerate growth and power
-                  long-term success.
+                Our mission is simple: Equip business leaders to best outfit their organizations with the most advanced and innovative mobile solutions that can accelerate growth and power long-term success.
                 </p>
               </div>
 
@@ -348,15 +335,10 @@ const Mobile = () => {
               Let&apos;s Build Something Amazing Together
             </h2>
             <p className="text-lg md:text-xl text-white text-center mb-6">
-              Is your business in need of a lift-off? Do you want to be a new
-              startup in the market or an established business looking to
-              streamline operations and enhance customer engagement? Let
-              Ultrafly Solutions assist you.
+            Is your business in need of a lift-off? Do you want to be a new startup in the market or an established business looking to streamline operations and enhance customer engagement? Let Ultrafly Solutions assist you with custom mobile app development company in Coimbatore.
             </p>
             <p className="text-lg md:text-xl text-white text-center mb-8">
-              Contact us now to discuss how we can transform your mobile
-              application idea into a fully functioning creation. Let’s do
-              something amazing together!
+            Contact us now to discuss how we can transform your mobile application idea into a fully functioning creation. Let’s do something amazing together!
             </p>
             <div className="flex justify-center">
               <Link href="/contact-us">

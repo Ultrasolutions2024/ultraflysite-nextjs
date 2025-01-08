@@ -45,26 +45,15 @@ function Website() {
               />
             </div>
 
-            <div className="text-left bg-gradient-to-r from-gray-50 to-blue-50 mt-6 px-5 lg:px-10 lg:-translate-x-10 rounded-3xl z-10  w-full lg:w-[650px]  h-auto lg:h-[400px] py-5 shadow-md">
+            <div className="text-left bg-gradient-to-r from-gray-50 to-blue-50 mt-6 px-5 lg:px-10 lg:-translate-x-10 rounded-3xl z-10  w-full lg:w-[650px]  h-auto lg:h-[450px] py-5 shadow-md">
               <h1 className="text-gray-800 text-xl md:text-2xl font-bold mb-4">
                 Professional Website Development Services
               </h1>
               <p className="mb-4 text-sm lg:text-[16px] font-sans text-justify leading-relaxed text-gray-500">
-                A business cannot afford not to have an adequate online presence
-                is the need of every modern business that wants to survive in
-                the digital age. We at Ultrafly Solutions boast of leading-edge
-                digital solutions that make your business more effective as well
-                as unique from other forms. We blend creativity and technical
-                expertise coupled with our strategic insights into your vision
-                to bring you together in a dynamic user-centric experience.
+              A business cannot afford not to have an adequate online presence, and choosing the right Website Development Company is the need of every modern business that wants to survive in the digital age. We at Ultrafly Solutions boast of leading-edge digital solutions that make your business more effective as well as unique from other forms. As a trusted Website Development Company in Coimbatore, we blend creativity and technical expertise coupled with our strategic insights into your vision to bring you together in a dynamic user-centric experience.
               </p>
               <p className="text-sm lg:text-[16px] font-sans text-justify leading-relaxed text-gray-500">
-                Our expert developers, designers, and digital strategists can
-                build your website from the ground up, work on your existing
-                site, or build into a high-dollar e-commerce powerhouse.
-                Everything from the aesthetics on the front lines to the backend
-                functionality is covered with attention and care throughout the
-                development process.
+              Our expert developers, designers, and digital strategists can build your website from the ground up, work on your existing site, or build it into a high-dollar e-commerce powerhouse. Everything from the aesthetics on the front lines to the backend functionality is covered with attention and care throughout the development process.
               </p>
             </div>
           </div>
@@ -154,7 +143,9 @@ function Website() {
                   functionality to ensure optimal performance of your website or
                   application.
                 </p>
-
+                <p className="text-lg md:text-lg text-center mb-8">
+                As a trusted Website Development Company, we provide robust and reliable back-end services to power your digital presence effectively.
+                </p>
                 <h3 className="text-xl md:text-2xl font-semibold mb-4 text-center">
                   Our Back-End Services Include
                 </h3>
@@ -392,13 +383,16 @@ function Website() {
                 <h2 className="text-center text-4xl font-extrabold text-white mb-6">
                   Why Choose Ultrafly Solutions?
                 </h2>
+             
                 <p className="text-lg md:text-xl text-center text-white mb-12">
                   Partner with a team invested in your success at Ultrafly
                   Solutions. We deliver more than just technical expertise; our
                   collaborative approach aims to bring your vision to life in a
                   powerful digital experience.
                 </p>
-
+                <h3 className="text-center text-xl font-extrabold text-white mb-6">
+                As a preferred Website Development Company, we stand out for:
+                </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   <div className="bg-white shadow-lg rounded-xl p-6 transition-all transform hover:scale-105 hover:shadow-2xl flex flex-col items-center text-center">
                     <FaUsers className="text-5xl text-purple-600 mb-4" />
